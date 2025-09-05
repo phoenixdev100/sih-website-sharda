@@ -52,9 +52,9 @@ const Header = () => {
                                 </div>
                             </div>
                             {/* Animated Tech Indicator */}
-                            <div className="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center shadow-md">
+                            {/* <div className="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center shadow-md">
                                 <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
-                            </div>
+                            </div> */}
                             {/* Subtle Glow Effect */}
                             <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-600 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300 blur-sm"></div>
                         </div>
