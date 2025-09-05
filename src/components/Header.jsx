@@ -30,12 +30,12 @@ const Header = () => {
             : 'bg-white shadow-lg'
             }`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between items-center py-3">
+                <div className="flex justify-between items-center py-2 sm:py-3">
                     {/* Logo and Title */}
                     <Link to="/" className="flex items-center space-x-3 hover:opacity-90 transition-opacity group">
                         <div className="relative">
                             {/* Modern Logo Design */}
-                            <div className="w-12 h-12 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
+                            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
                                 <div className="relative">
                                     {/* Main Logo Icon - Stylized SU with Tech Elements */}
                                     <svg className="w-7 h-7 text-white" viewBox="0 0 32 32" fill="currentColor">
