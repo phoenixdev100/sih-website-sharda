@@ -193,19 +193,19 @@ const Terms = () => {
         </div>
 
         {/* Navigation Tabs */}
-        <div className="flex flex-wrap justify-center mb-8 sm:mb-12 px-4">
-          <div className="bg-white rounded-xl shadow-lg p-2 flex flex-wrap gap-1 sm:gap-2 w-full sm:w-auto overflow-x-auto">
+        <div className="flex justify-center mb-8 sm:mb-12 px-4">
+          <div className="bg-white rounded-xl shadow-lg p-1 sm:p-2 flex flex-wrap sm:flex-nowrap gap-1 sm:gap-2 w-full sm:w-auto max-w-full overflow-x-auto">
             {sections.map((section) => (
               <button
                 key={section.id}
                 onClick={() => setActiveSection(section.id)}
-                className={`flex items-center justify-center space-x-1 sm:space-x-2 px-2 sm:px-4 py-2 sm:py-3 rounded-lg font-medium transition-all duration-300 text-xs sm:text-sm whitespace-nowrap ${activeSection === section.id
+                className={`flex items-center justify-center space-x-1 sm:space-x-2 px-2 sm:px-3 py-2 sm:py-3 rounded-lg font-medium transition-all duration-300 text-xs sm:text-sm flex-1 sm:flex-none min-w-0 ${activeSection === section.id
                   ? 'bg-green-600 text-white shadow-lg transform scale-105'
                   : 'text-gray-600 hover:text-green-600 hover:bg-green-50'
                   }`}
               >
-                <span className="text-sm sm:text-base">{section.icon}</span>
-                <span className="hidden xs:inline sm:inline">{section.title}</span>
+                <span className="text-sm sm:text-base flex-shrink-0">{section.icon}</span>
+                <span className="hidden xs:inline sm:inline truncate">{section.title}</span>
               </button>
             ))}
           </div>
