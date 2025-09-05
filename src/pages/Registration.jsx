@@ -66,52 +66,148 @@ const Registration = () => {
 
   const problemCategories = [
     {
-      category: "Healthcare",
-      count: 12,
-      description: "Digital health solutions, telemedicine, medical devices",
+      category: "MedTech/BioTech/HealthTech",
+      count: 85,
+      description: "Cutting-edge healthcare technology, medical devices, biotechnology solutions",
       icon: "🏥",
-      difficulty: "Medium",
-      examples: ["Patient Management System", "Drug Discovery Platform", "Mental Health App"]
+      difficulty: "Hard",
+      examples: ["AI Diagnostic Tools", "Telemedicine Platforms", "Medical Device Innovation"]
     },
     {
-      category: "Education",
-      count: 15,
-      description: "EdTech platforms, learning management, skill development",
+      category: "Smart Education",
+      count: 92,
+      description: "Digital learning solutions, educational technology, skill development platforms",
       icon: "📚",
-      difficulty: "Easy",
-      examples: ["Online Learning Platform", "Skill Assessment Tool", "Virtual Classroom"]
+      difficulty: "Medium",
+      examples: ["Adaptive Learning Systems", "Virtual Classrooms", "Assessment Tools"]
     },
     {
-      category: "Agriculture",
-      count: 10,
-      description: "Smart farming, crop monitoring, agricultural marketplace",
+      category: "Agriculture, FoodTech & Rural Development",
+      count: 78,
+      description: "Smart farming, food processing, rural technology solutions",
       icon: "🌾",
-      difficulty: "Hard",
-      examples: ["Crop Disease Detection", "Smart Irrigation System", "Farmer Marketplace"]
+      difficulty: "Medium",
+      examples: ["Precision Agriculture", "Food Supply Chain", "Rural Banking Solutions"]
     },
     {
-      category: "Smart Cities",
+      category: "Smart Automation",
+      count: 65,
+      description: "AI-powered automation, intelligent systems, resource optimization",
+      icon: "🤖",
+      difficulty: "Hard",
+      examples: ["Industrial Automation", "Smart Manufacturing", "Process Optimization"]
+    },
+    {
+      category: "Fintech",
+      count: 58,
+      description: "Financial technology, digital payments, blockchain solutions",
+      icon: "💰",
+      difficulty: "Medium",
+      examples: ["Digital Payment Systems", "Cryptocurrency Solutions", "Financial Analytics"]
+    },
+    {
+      category: "Clean & Green Technology",
+      count: 72,
+      description: "Environmental solutions, waste management, sustainability technology",
+      icon: "🌱",
+      difficulty: "Medium",
+      examples: ["Waste Segregation Systems", "Pollution Monitoring", "Green Energy Solutions"]
+    },
+    {
+      category: "Transportation & Logistics",
+      count: 54,
+      description: "Smart transportation, logistics optimization, urban mobility solutions",
+      icon: "🚛",
+      difficulty: "Medium",
+      examples: ["Route Optimization", "Fleet Management", "Public Transport Systems"]
+    },
+    {
+      category: "Blockchain & Cybersecurity",
+      count: 48,
+      description: "Decentralized systems, cybersecurity solutions, data protection",
+      icon: "🔐",
+      difficulty: "Hard",
+      examples: ["Secure Communication", "Identity Management", "Fraud Detection"]
+    },
+    {
+      category: "Robotics and Drones",
+      count: 42,
+      description: "Autonomous systems, drone technology, robotic solutions",
+      icon: "🤖",
+      difficulty: "Hard",
+      examples: ["Search & Rescue Drones", "Medical Robots", "Agricultural Drones"]
+    },
+    {
+      category: "Smart Vehicles",
+      count: 36,
+      description: "Autonomous vehicles, intelligent transportation, vehicle technology",
+      icon: "🚗",
+      difficulty: "Hard",
+      examples: ["Self-Driving Cars", "Vehicle Safety Systems", "Traffic Management"]
+    },
+    {
+      category: "Renewable/Sustainable Energy",
+      count: 45,
+      description: "Clean energy solutions, energy management, sustainability systems",
+      icon: "⚡",
+      difficulty: "Medium",
+      examples: ["Solar Energy Systems", "Energy Storage", "Grid Management"]
+    },
+    {
+      category: "Disaster Management",
+      count: 38,
+      description: "Emergency response, risk mitigation, disaster preparedness solutions",
+      icon: "🚨",
+      difficulty: "Medium",
+      examples: ["Early Warning Systems", "Emergency Response", "Risk Assessment Tools"]
+    },
+    {
+      category: "Tourism",
+      count: 28,
+      description: "Travel technology, hospitality solutions, cultural promotion",
+      icon: "🏖️",
+      difficulty: "Easy",
+      examples: ["Travel Planning Apps", "Virtual Tours", "Hospitality Management"]
+    },
+    {
+      category: "Heritage & Culture",
+      count: 32,
+      description: "Cultural preservation, digital heritage, traditional knowledge systems",
+      icon: "🏛️",
+      difficulty: "Medium",
+      examples: ["Digital Museums", "Cultural Apps", "Heritage Conservation"]
+    },
+    {
+      category: "Games & Toys",
+      count: 25,
+      description: "Educational games, interactive toys, entertainment technology",
+      icon: "🎮",
+      difficulty: "Easy",
+      examples: ["Educational Games", "AR/VR Toys", "Interactive Learning"]
+    },
+    {
+      category: "Space Technology",
+      count: 22,
+      description: "Aerospace solutions, satellite technology, space exploration",
+      icon: "🚀",
+      difficulty: "Hard",
+      examples: ["Satellite Applications", "Space Communication", "Navigation Systems"]
+    },
+    {
+      category: "Fitness & Sports",
       count: 18,
-      description: "Urban planning, traffic management, citizen services",
-      icon: "🏙️",
-      difficulty: "Medium",
-      examples: ["Traffic Optimization", "Waste Management", "Citizen Portal"]
+      description: "Health monitoring, sports technology, fitness applications",
+      icon: "⚽",
+      difficulty: "Easy",
+      examples: ["Fitness Trackers", "Sports Analytics", "Health Monitoring"]
     },
     {
-      category: "Defense & Security",
-      count: 8,
-      description: "Cybersecurity, surveillance, strategic applications",
-      icon: "🛡️",
-      difficulty: "Hard",
-      examples: ["Threat Detection System", "Secure Communication", "Border Monitoring"]
-    },
-    {
-      category: "Environment",
-      count: 7,
-      description: "Climate monitoring, sustainability, green technology",
-      icon: "🌍",
+      category: "Miscellaneous",
+      count: 95,
+      description: "Cross-domain solutions, innovative applications, emerging technologies",
+      icon: "🔧",
       difficulty: "Medium",
-      examples: ["Air Quality Monitor", "Carbon Footprint Tracker", "Renewable Energy System"]
+      examples: ["IoT Solutions", "Data Analytics", "Emerging Tech Applications"]
     }
   ]
 
@@ -148,7 +244,7 @@ const Registration = () => {
         "Fill team and member details",
         "Upload required documents",
         "Confirm problem statement selection",
-        "Pay registration fee (if applicable)"
+        "Fill the google form given below"
       ],
       timeEstimate: "2-3 hours"
     },
@@ -248,8 +344,8 @@ const Registration = () => {
                   key={index}
                   onClick={() => setFormData(prev => ({ ...prev, selectedCategory: category.category }))}
                   className={`bg-white border-2 rounded-xl p-6 hover:shadow-lg transition-all duration-300 cursor-pointer ${formData.selectedCategory === category.category
-                      ? 'border-blue-500 bg-blue-50 shadow-lg'
-                      : 'border-gray-200 hover:border-blue-500'
+                    ? 'border-blue-500 bg-blue-50 shadow-lg'
+                    : 'border-gray-200 hover:border-blue-500'
                     }`}
                 >
                   <div className="text-center mb-4">
@@ -522,7 +618,7 @@ const Registration = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Coordinator 1 */}
             <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 border-2 border-transparent hover:border-blue-300">
               <div className="text-center mb-6">
@@ -613,7 +709,7 @@ const Registration = () => {
                   />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-2">Yashaswini Uddavolu</h3>
-                <p className="text-green-600 font-medium mb-4">Co-Cordinator</p>
+                <p className="text-green-600 font-medium mb-4">Coordinator</p>
               </div>
 
               <div className="space-y-4">
@@ -648,7 +744,7 @@ const Registration = () => {
                   />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-2">Saurav Suman</h3>
-                <p className="text-yellow-600 font-medium mb-4">Co-Coordinator</p>
+                <p className="text-yellow-600 font-medium mb-4">Coordinator</p>
               </div>
 
               <div className="space-y-4">

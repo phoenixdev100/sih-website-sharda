@@ -4,8 +4,8 @@ const Home = () => {
   const stats = [
     { number: "36", label: "Hours", icon: "⏰" },
     { number: "₹1L+", label: "Prize Money", icon: "💰" },
-    { number: "1000+", label: "Participants", icon: "👥" },
-    { number: "50+", label: "Problem Statements", icon: "📋" }
+    { number: "13,91,884", label: "Participants", icon: "👥" },
+    { number: "2877+", label: "Problem Statements", icon: "📋" }
   ]
 
   const highlights = [
@@ -36,18 +36,18 @@ const Home = () => {
   ]
 
   const tracks = [
-    { name: "Software", color: "bg-blue-500", count: "15+" },
-    { name: "Hardware", color: "bg-green-500", count: "12+" },
-    { name: "Healthcare", color: "bg-red-500", count: "8+" },
-    { name: "Agriculture", color: "bg-yellow-500", count: "10+" },
-    { name: "Education", color: "bg-purple-500", count: "6+" },
-    { name: "Smart City", color: "bg-indigo-500", count: "9+" }
+    { name: "MedTech/HealthTech", color: "bg-red-500", count: "85+", icon: "🏥" },
+    { name: "Smart Education", color: "bg-blue-500", count: "92+", icon: "🎓" },
+    { name: "Agriculture/FoodTech", color: "bg-green-500", count: "78+", icon: "🌱" },
+    { name: "Smart Automation", color: "bg-purple-500", count: "65+", icon: "🤖" },
+    { name: "Fintech", color: "bg-yellow-500", count: "58+", icon: "💰" },
+    { name: "Clean & Green Tech", color: "bg-teal-500", count: "72+", icon: "🌍" }
   ]
 
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section with 3D Background */}
-      <section className="relative py-8 sm:py-16 pt-20 sm:pt-24 h-screen overflow-hidden bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900">
+      <section className="relative py-8 sm:py-16 pt-20 sm:pt-10 h-screen overflow-hidden bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900">
         {/* 3D Background Elements */}
         <div className="absolute inset-0">
           {/* Animated geometric shapes */}
@@ -153,13 +153,21 @@ const Home = () => {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6">
             {tracks.map((track, index) => (
-              <div key={index} className="group">
-                <div className="bg-white rounded-2xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center">
-                  <div className={`w-12 h-12 ${track.color} rounded-xl mx-auto mb-4 flex items-center justify-center text-white font-bold text-lg`}>
+              <div key={index} className="group flex">
+                <div className="bg-white rounded-2xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center border border-gray-100 hover:border-gray-200 w-full flex flex-col items-center justify-center min-h-[160px] sm:min-h-[180px]">
+                  {/* Large Icon */}
+                  <div className="text-3xl sm:text-4xl mb-3 flex items-center justify-center">
+                    {track.icon}
+                  </div>
+                  
+                  {/* Count Badge */}
+                  <div className={`inline-flex items-center justify-center w-14 h-7 ${track.color} rounded-full text-white font-bold text-xs mb-3`}>
                     {track.count}
                   </div>
-                  <h3 className="text-sm sm:text-base font-bold text-gray-900 mb-2">{track.name}</h3>
-                  <p className="text-xs sm:text-sm text-gray-600">Problems</p>
+                  
+                  {/* Title */}
+                  <h3 className="text-xs sm:text-sm font-bold text-gray-900 mb-1 leading-tight text-center px-1">{track.name}</h3>
+                  <p className="text-xs text-gray-600">Problems</p>
                 </div>
               </div>
             ))}
@@ -183,7 +191,7 @@ const Home = () => {
                 1
               </div>
               <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2">Registration</h3>
-              <p className="text-sm sm:text-base text-gray-600">Opens January 15, 2025</p>
+              <p className="text-sm sm:text-base text-gray-600">Opens August 2025</p>
               <p className="text-sm text-gray-500">Form your team and register</p>
             </div>
             <div className="text-center">
@@ -191,7 +199,7 @@ const Home = () => {
                 2
               </div>
               <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2">Internal Hackathon</h3>
-              <p className="text-sm sm:text-base text-gray-600 mb-2">Feb 1-2, 2025</p>
+              <p className="text-sm sm:text-base text-gray-600 mb-2">Aug-Sep 2025</p>
               <p className="text-sm text-gray-500">Campus-level competition</p>
             </div>
             <div className="text-center">
@@ -199,7 +207,7 @@ const Home = () => {
                 3
               </div>
               <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2">Grand Finale</h3>
-              <p className="text-sm sm:text-base text-gray-600 mb-2">March 2025</p>
+              <p className="text-sm sm:text-base text-gray-600 mb-2">December 2025</p>
               <p className="text-sm text-gray-500">National-level finale</p>
             </div>
           </div>

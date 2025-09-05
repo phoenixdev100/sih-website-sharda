@@ -8,9 +8,7 @@ const Privacy = () => {
     { id: 'collection', title: 'Data Collection', icon: '📊' },
     { id: 'usage', title: 'Data Usage', icon: '🔧' },
     { id: 'sharing', title: 'Data Sharing', icon: '🤝' },
-    { id: 'security', title: 'Security', icon: '🔒' },
-    { id: 'rights', title: 'Your Rights', icon: '⚖️' },
-    { id: 'contact', title: 'Contact Us', icon: '📞' }
+    { id: 'security', title: 'Security', icon: '🔒' }
   ]
 
   const renderContent = () => {
@@ -21,12 +19,12 @@ const Privacy = () => {
             <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-200">
               <h3 className="text-2xl font-bold text-blue-800 mb-4">🛡️ Privacy Overview</h3>
               <p className="text-blue-700 text-lg leading-relaxed mb-4">
-                At Sharda University's Smart India Hackathon 2025, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, and safeguard your data.
+                At Sharda University's Smart India Hackathon 2025, we are committed to protecting your privacy. This website serves as an information portal only. We do not collect any personal data through this website. All registration and data collection occurs exclusively through official Google Forms.
               </p>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="bg-white rounded-lg p-4 border border-blue-100">
                   <h4 className="font-semibold text-blue-800 mb-2">🎯 Our Commitment</h4>
-                  <p className="text-blue-600 text-sm">We collect only necessary information to provide you with the best hackathon experience.</p>
+                  <p className="text-blue-600 text-sm">This website does not collect any personal information. All data collection happens through Google Forms.</p>
                 </div>
                 <div className="bg-white rounded-lg p-4 border border-blue-100">
                   <h4 className="font-semibold text-blue-800 mb-2">🔐 Data Security</h4>
@@ -40,7 +38,7 @@ const Privacy = () => {
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-gray-700">We collect minimal personal information required for registration and participation</span>
+                  <span className="text-gray-700">This website does not collect any personal information - all registration is done via Google Forms</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
@@ -65,27 +63,28 @@ const Privacy = () => {
             <div className="bg-white rounded-xl shadow-lg p-6">
               <h3 className="text-2xl font-bold text-gray-800 mb-6">📊 Information We Collect</h3>
               
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-6">
-                  <h4 className="text-lg font-semibold text-purple-800 mb-4">Personal Information</h4>
-                  <ul className="space-y-2 text-purple-700">
+              <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-6">
+                <h4 className="text-lg font-semibold text-blue-800 mb-3">🌐 Website Data Collection</h4>
+                <p className="text-blue-700 mb-4">
+                  <strong>This website does NOT collect any personal information.</strong> We do not use cookies, tracking scripts, or any data collection mechanisms on this informational website.
+                </p>
+              </div>
+              
+              <div className="grid md:grid-cols-1 gap-6">
+                <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-6">
+                  <h4 className="text-lg font-semibold text-green-800 mb-4">📝 Google Forms Data Collection</h4>
+                  <p className="text-green-700 mb-3">All personal information is collected exclusively through official Google Forms for registration purposes:</p>
+                  <ul className="space-y-2 text-green-700">
                     <li>• Full name and contact details</li>
                     <li>• Email address and phone number</li>
                     <li>• Educational institution information</li>
                     <li>• Student ID and academic details</li>
                     <li>• Team member information</li>
+                    <li>• Problem statement preferences</li>
                   </ul>
-                </div>
-                
-                <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-6">
-                  <h4 className="text-lg font-semibold text-green-800 mb-4">Technical Information</h4>
-                  <ul className="space-y-2 text-green-700">
-                    <li>• IP address and device information</li>
-                    <li>• Browser type and version</li>
-                    <li>• Usage patterns and preferences</li>
-                    <li>• Login timestamps and activity</li>
-                    <li>• File uploads and submissions</li>
-                  </ul>
+                  <p className="text-green-600 text-sm mt-3 italic">
+                    This data is collected and managed by Google Forms according to Google's Privacy Policy.
+                  </p>
                 </div>
               </div>
               
@@ -109,7 +108,7 @@ const Privacy = () => {
                 <div className="border-l-4 border-blue-500 pl-6">
                   <h4 className="text-lg font-semibold text-blue-800 mb-3">Registration & Participation</h4>
                   <p className="text-gray-700 mb-3">
-                    We use your personal information to process your registration, verify eligibility, and facilitate your participation in the hackathon.
+                    Personal information collected through Google Forms is used to process your registration, verify eligibility, and facilitate your participation in the hackathon.
                   </p>
                   <ul className="text-gray-600 space-y-1">
                     <li>• Team formation and management</li>
@@ -121,7 +120,7 @@ const Privacy = () => {
                 <div className="border-l-4 border-green-500 pl-6">
                   <h4 className="text-lg font-semibold text-green-800 mb-3">Communication</h4>
                   <p className="text-gray-700 mb-3">
-                    We send important updates, announcements, and support communications related to the hackathon.
+                    We send important updates, announcements, and support communications related to the hackathon using the contact information provided in your Google Form submission.
                   </p>
                   <ul className="text-gray-600 space-y-1">
                     <li>• Event schedules and changes</li>
@@ -133,7 +132,7 @@ const Privacy = () => {
                 <div className="border-l-4 border-purple-500 pl-6">
                   <h4 className="text-lg font-semibold text-purple-800 mb-3">Improvement & Analytics</h4>
                   <p className="text-gray-700 mb-3">
-                    We analyze usage patterns to improve our platform and enhance the hackathon experience.
+                    We analyze registration data to improve our processes and enhance future hackathon experiences. This website does not track or analyze user behavior.
                   </p>
                   <ul className="text-gray-600 space-y-1">
                     <li>• Platform performance optimization</li>
@@ -243,114 +242,6 @@ const Privacy = () => {
           </div>
         )
 
-      case 'rights':
-        return (
-          <div className="space-y-6">
-            <div className="bg-white rounded-xl shadow-lg p-6">
-              <h3 className="text-2xl font-bold text-gray-800 mb-6">⚖️ Your Privacy Rights</h3>
-              
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-4">
-                  <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-4 border border-blue-200">
-                    <h4 className="text-lg font-semibold text-blue-800 mb-3">📋 Access & Review</h4>
-                    <p className="text-blue-700 text-sm mb-2">
-                      You have the right to access and review all personal information we have collected about you.
-                    </p>
-                    <button className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700 transition-colors">
-                      Request Data Access
-                    </button>
-                  </div>
-                  
-                  <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-4 border border-green-200">
-                    <h4 className="text-lg font-semibold text-green-800 mb-3">✏️ Correction & Update</h4>
-                    <p className="text-green-700 text-sm mb-2">
-                      You can request corrections to inaccurate information or update your personal details at any time.
-                    </p>
-                    <button className="bg-green-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-green-700 transition-colors">
-                      Update Information
-                    </button>
-                  </div>
-                </div>
-                
-                <div className="space-y-4">
-                  <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-lg p-4 border border-red-200">
-                    <h4 className="text-lg font-semibold text-red-800 mb-3">🗑️ Deletion Rights</h4>
-                    <p className="text-red-700 text-sm mb-2">
-                      You can request deletion of your personal information, subject to legal and operational requirements.
-                    </p>
-                    <button className="bg-red-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-red-700 transition-colors">
-                      Request Deletion
-                    </button>
-                  </div>
-                  
-                  <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-4 border border-purple-200">
-                    <h4 className="text-lg font-semibold text-purple-800 mb-3">📧 Communication Control</h4>
-                    <p className="text-purple-700 text-sm mb-2">
-                      You can opt-out of non-essential communications while maintaining access to important updates.
-                    </p>
-                    <button className="bg-purple-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-purple-700 transition-colors">
-                      Manage Preferences
-                    </button>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="mt-6 bg-gray-50 rounded-lg p-4">
-                <h4 className="text-lg font-semibold text-gray-800 mb-2">⏱️ Response Timeline</h4>
-                <p className="text-gray-700">
-                  We will respond to your privacy requests within 30 days. For complex requests, we may extend this period by an additional 60 days with proper notification.
-                </p>
-              </div>
-            </div>
-          </div>
-        )
-
-      case 'contact':
-        return (
-          <div className="space-y-6">
-            <div className="bg-white rounded-xl shadow-lg p-6">
-              <h3 className="text-2xl font-bold text-gray-800 mb-6">📞 Contact Information</h3>
-              
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-6">
-                  <h4 className="text-lg font-semibold text-blue-800 mb-4">🏛️ Data Protection Officer</h4>
-                  <div className="space-y-3">
-                    <div className="flex items-center">
-                      <svg className="w-5 h-5 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                      </svg>
-                      <span className="text-blue-700">privacy@sharda.ac.in</span>
-                    </div>
-                    <div className="flex items-center">
-                      <svg className="w-5 h-5 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                      </svg>
-                      <span className="text-blue-700">+91 120 4571000</span>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-6">
-                  <h4 className="text-lg font-semibold text-green-800 mb-4">🏫 University Address</h4>
-                  <div className="space-y-2 text-green-700">
-                    <p>Sharda University</p>
-                    <p>Plot No. 32-34, Knowledge Park III</p>
-                    <p>Greater Noida, UP 201310</p>
-                    <p>India</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="mt-6 bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-                <h4 className="text-lg font-semibold text-yellow-800 mb-2">📝 Privacy Complaints</h4>
-                <p className="text-yellow-700">
-                  If you have concerns about how we handle your personal information, please contact our Data Protection Officer first. 
-                  You also have the right to lodge a complaint with the relevant data protection authority.
-                </p>
-              </div>
-            </div>
-          </div>
-        )
 
       default:
         return null
@@ -394,7 +285,7 @@ const Privacy = () => {
 
         {/* Last Updated */}
         <div className="text-center mt-8 text-gray-500">
-          <p>Last updated: September 4, 2025</p>
+          <p>Last updated: September 5, 2025</p>
         </div>
       </div>
     </div>

@@ -16,7 +16,7 @@ const FAQ = () => {
         },
         {
           q: "Who can participate in SIH 2025?",
-          a: "All undergraduate and postgraduate students currently enrolled in recognized educational institutions in India can participate. Teams must consist of exactly 6 members from the same institution."
+          a: "All undergraduate and postgraduate students currently enrolled in recognized educational institutions in India can participate. Teams must consist of exactly 6 members from the same institution, including at least one female member."
         },
         {
           q: "Is there any registration fee for SIH 2025?",
@@ -39,7 +39,7 @@ const FAQ = () => {
         },
         {
           q: "When does registration open and close?",
-          a: "Registration typically opens in August 2025 and closes in September 2025. Check the official SIH website and your institution's announcements for exact dates."
+          a: "Registration for Internal Hackathon opens in August 2025 and closes by September 2025. No extensions will be granted, and incomplete registrations will be rejected. Check with Sharda University coordinators for exact dates."
         },
         {
           q: "Can team members be from different colleges?",
@@ -58,7 +58,7 @@ const FAQ = () => {
       questions: [
         {
           q: "How many members should be in a team?",
-          a: "Each team must have exactly 6 members. Teams with fewer or more members will not be accepted."
+          a: "Each team must have exactly 6 members, including 1 team leader. It is mandatory to have at least one female member in the team. Teams with fewer or more members will not be accepted."
         },
         {
           q: "Is it mandatory to have a female team member?",
@@ -131,7 +131,7 @@ const FAQ = () => {
         },
         {
           q: "When are problem statements released?",
-          a: "Problem statements are typically released in August 2025. They cover various domains like healthcare, education, agriculture, smart cities, and more."
+          a: "Problem statements are released in August 2025 as part of the SIH Problem Statement Launch phase. They cover 18 major themes including MedTech/BioTech/HealthTech, Smart Education, Agriculture/FoodTech & Rural Development, Smart Automation, Fintech, Clean & Green Technology, Transportation & Logistics, Blockchain & Cybersecurity, Robotics and Drones, Smart Vehicles, Renewable/Sustainable Energy, Disaster Management, Tourism, Heritage & Culture, Games & Toys, Space Technology, Fitness & Sports, and Miscellaneous."
         },
         {
           q: "Can we suggest our own problem statement?",
@@ -253,11 +253,11 @@ const FAQ = () => {
         {/* Quick Stats */}
         <div className="mt-12 grid md:grid-cols-4 gap-6">
           <div className="bg-white rounded-xl shadow-lg p-6 text-center">
-            <div className="text-3xl font-bold text-blue-600 mb-2">1000+</div>
+            <div className="text-3xl font-bold text-blue-600 mb-2">2877+</div>
             <div className="text-gray-600">Problem Statements</div>
           </div>
           <div className="bg-white rounded-xl shadow-lg p-6 text-center">
-            <div className="text-3xl font-bold text-green-600 mb-2">50,000+</div>
+            <div className="text-3xl font-bold text-green-600 mb-2">13,91,884</div>
             <div className="text-gray-600">Participants</div>
           </div>
           <div className="bg-white rounded-xl shadow-lg p-6 text-center">

@@ -18,48 +18,18 @@ const About = () => {
   ]
 
   const impactAreas = [
-    {
-      title: "Healthcare",
-      description: "Digital health solutions, telemedicine platforms, and medical device innovations",
-      icon: "🏥",
-      projects: 150,
-      color: "from-red-500 to-pink-500"
-    },
-    {
-      title: "Education",
-      description: "EdTech solutions, learning management systems, and skill development platforms",
-      icon: "🎓",
-      projects: 200,
-      color: "from-blue-500 to-indigo-500"
-    },
-    {
-      title: "Agriculture",
-      description: "Smart farming, crop monitoring, and agricultural marketplace solutions",
-      icon: "🌾",
-      projects: 120,
-      color: "from-green-500 to-emerald-500"
-    },
-    {
-      title: "Smart Cities",
-      description: "Urban planning, traffic management, and citizen service platforms",
-      icon: "🏙️",
-      projects: 180,
-      color: "from-purple-500 to-violet-500"
-    },
-    {
-      title: "Defense",
-      description: "Security solutions, surveillance systems, and strategic applications",
-      icon: "🛡️",
-      projects: 90,
-      color: "from-orange-500 to-red-500"
-    },
-    {
-      title: "Environment",
-      description: "Climate monitoring, waste management, and sustainability solutions",
-      icon: "🌍",
-      projects: 110,
-      color: "from-teal-500 to-cyan-500"
-    }
+    { icon: "🏥", title: "MedTech/HealthTech", description: "Digital health solutions and medical innovations" },
+    { icon: "🎓", title: "Smart Education", description: "EdTech and learning management systems" },
+    { icon: "🌱", title: "Agriculture/FoodTech", description: "Smart farming and food security solutions" },
+    { icon: "🤖", title: "Smart Automation", description: "AI-driven automation and robotics solutions" },
+    { icon: "💰", title: "Fintech", description: "Financial technology and digital payment solutions" },
+    { icon: "🌍", title: "Clean & Green Tech", description: "Climate change and sustainability solutions" },
+    { icon: "🏙️", title: "Smart Cities", description: "Urban planning and infrastructure solutions" },
+    { icon: "🔒", title: "Cybersecurity", description: "Security and surveillance solutions" },
+    { icon: "🚗", title: "Transportation", description: "Mobility and logistics solutions" },
+    { icon: "⚡", title: "Energy", description: "Renewable energy and power solutions" },
+    { icon: "🏭", title: "Manufacturing", description: "Industry 4.0 and smart manufacturing" },
+    { icon: "🎯", title: "Social Innovation", description: "Solutions for social challenges and inclusion" }
   ]
 
   const benefits = [
@@ -121,7 +91,7 @@ const About = () => {
                   Smart India Hackathon is a nationwide initiative by the Government of India to harness the creative and innovative spirit of students to solve pressing problems faced by our society, government, and industries.
                 </p>
                 <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
-                  It's not just a competition—it's a platform where ideas meet implementation, where students become solution creators, and where innovation drives national development.
+                  It's not just a competition - it's a platform where ideas meet implementation, where students become solution creators, and where innovation drives national development.
                 </p>
               </div>
               <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-4 sm:p-6 lg:p-8">
@@ -135,12 +105,12 @@ const About = () => {
                     <div className="text-gray-600 text-sm sm:text-base">Hours</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-1 sm:mb-2">50+</div>
+                    <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-1 sm:mb-2">100+</div>
                     <div className="text-gray-600 text-sm sm:text-base">Ministries</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-1 sm:mb-2">1000+</div>
-                    <div className="text-gray-600 text-sm sm:text-base">Colleges</div>
+                    <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-1 sm:mb-2">6497+</div>
+                    <div className="text-gray-600 text-sm sm:text-base">Institutes</div>
                   </div>
                 </div>
               </div>
@@ -193,7 +163,7 @@ const About = () => {
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {impactAreas.map((area, index) => (
                 <div key={index} className="group bg-white rounded-xl shadow-lg p-4 sm:p-6 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                  <div className={`w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r ${area.color} rounded-xl flex items-center justify-center text-xl sm:text-2xl text-white mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                  <div className="text-4xl sm:text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
                     {area.icon}
                   </div>
                   <h4 className="text-lg sm:text-xl font-bold text-gray-800 mb-2 sm:mb-3">{area.title}</h4>

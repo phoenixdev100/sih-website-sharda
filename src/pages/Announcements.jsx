@@ -7,15 +7,15 @@ const Announcements = () => {
     {
       id: 1,
       title: "🚀 SIH 2025 Problem Statements Are Now Live!",
-      content: "We're excited to announce that the official Smart India Hackathon 2025 problem statements have been released! Teams can now browse through various categories including Healthcare, Education, Agriculture, Smart Cities, Defense & Security, and Environment. Each category contains multiple challenging problem statements from government ministries and organizations.",
+      content: "We're excited to announce that the official Smart India Hackathon 2025 problem statements have been released! Teams can now browse through 18 major themes including MedTech/BioTech/HealthTech, Smart Education, Agriculture/FoodTech & Rural Development, Smart Automation, Fintech, Clean & Green Technology, and many more cutting-edge categories.",
       category: "updates",
       priority: "high",
       date: "2025-08-27",
       details: [
-        "Over 100+ problem statements across 6 major categories",
-        "Problems sourced from 50+ government ministries and departments",
-        "Detailed problem descriptions with expected outcomes",
-        "Evaluation criteria and judging parameters included"
+        "Over 2877+ problem statements across 18 major themes",
+        "Problems sourced from 100+ government ministries and departments",
+        "New themes include Space Technology, Robotics & Drones, Heritage & Culture",
+        "Enhanced focus on emerging technologies like Blockchain & Cybersecurity"
       ],
       link: "https://www.sih.gov.in/sih2025PS",
       linkText: "View Problem Statements"
