@@ -87,16 +87,16 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
       {/* Main Footer */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="grid md:grid-cols-4 gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
           {/* Brand Section */}
-          <div>
+          <div className="col-span-1 sm:col-span-2 md:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
               {/* Modern Logo Design */}
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
                 <div className="relative">
                   {/* Main Logo Icon - Stylized SU with Tech Elements */}
-                  <svg className="w-7 h-7 text-white" viewBox="0 0 32 32" fill="currentColor">
+                  <svg className="w-6 h-6 sm:w-7 sm:h-7 text-white" viewBox="0 0 32 32" fill="currentColor">
                     {/* S Shape */}
                     <path d="M8 6c-2.2 0-4 1.8-4 4s1.8 4 4 4h8c1.1 0 2 .9 2 2s-.9 2-2 2H8c-1.1 0-2-.9-2-2H4c0 2.2 1.8 4 4 4h8c2.2 0 4-1.8 4-4s-1.8-4-4-4H8c-1.1 0-2-.9-2-2s.9-2 2-2h8c1.1 0 2 .9 2 2h2c0-2.2-1.8-4-4-4H8z" />
                     {/* U Shape */}
@@ -110,25 +110,25 @@ const Footer = () => {
                 </div>
               </div>
               <div>
-                <h3 className="text-lg font-bold text-white">Sharda University</h3>
-                <p className="text-orange-400 font-medium text-sm">SIH 2025</p>
+                <h3 className="text-base sm:text-lg font-bold text-white">Sharda University</h3>
+                <p className="text-orange-400 font-medium text-xs sm:text-sm">SIH 2025</p>
               </div>
             </div>
 
-            <p className="text-gray-300 mb-4 text-sm leading-relaxed">
+            <p className="text-gray-300 mb-4 text-xs sm:text-sm leading-relaxed">
               India's premier innovation platform for solving real-world challenges.
             </p>
 
             {/* Social Links */}
-            <div className="flex space-x-2">
+            <div className="flex flex-wrap gap-2">
               {socialLinks.slice(0, 4).map((social, index) => (
                 <a
                   key={index}
                   href={social.url}
-                  className={`w-8 h-8 bg-gray-800 ${social.color} rounded-lg flex items-center justify-center text-sm transition-all duration-300 hover:scale-110`}
+                  className={`w-7 h-7 sm:w-8 sm:h-8 bg-gray-800 ${social.color} rounded-lg flex items-center justify-center text-sm transition-all duration-300 hover:scale-110`}
                   title={social.name}
                 >
-                  {social.icon}
+                  <div className="w-4 h-4 sm:w-5 sm:h-5">{social.icon}</div>
                 </a>
               ))}
             </div>
@@ -136,14 +136,14 @@ const Footer = () => {
 
           {/* Links Sections */}
           {footerSections.map((section, index) => (
-            <div key={index}>
-              <h4 className="text-base font-semibold mb-4 text-blue-200">{section.title}</h4>
-              <ul className="space-y-2">
+            <div key={index} className="mt-6 sm:mt-0">
+              <h4 className="text-sm sm:text-base font-semibold mb-3 sm:mb-4 text-blue-200">{section.title}</h4>
+              <ul className="space-y-1 sm:space-y-2">
                 {section.links.slice(0, 4).map((link, linkIndex) => (
                   <li key={linkIndex}>
                     <Link
                       to={link.path}
-                      className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
+                      className="text-gray-300 hover:text-white transition-colors duration-200 text-xs sm:text-sm"
                     >
                       {link.name}
                     </Link>
@@ -157,23 +157,23 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
-            <div className="text-center md:text-left">
-              <p className="text-gray-400 text-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
+          <div className="flex flex-col sm:flex-row justify-between items-center space-y-3 sm:space-y-0">
+            <div className="text-center sm:text-left">
+              <p className="text-gray-400 text-xs sm:text-sm">
                 © {currentYear} Sharda University. All rights reserved.
               </p>
             </div>
-            <div className="flex items-center space-x-4 text-sm text-gray-400">
+            <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-xs sm:text-sm text-gray-400">
               <a href="/privacy" className="hover:text-white transition-colors">Privacy</a>
-              <span>•</span>
+              <span className="hidden sm:inline">•</span>
               <a href="/terms" className="hover:text-white transition-colors">Terms</a>
-              <span>•</span>
+              <span className="hidden sm:inline">•</span>
               <span className="flex items-center space-x-1">
                 <span>Made with</span>
                 <span className="text-red-400">❤️</span>
                 <span>by</span>
-                <a href="https://github.com/phoenixdev100" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">
+                <a href="https://phoenixdev100.tech" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">
                   Deepak
                 </a>
               </span>

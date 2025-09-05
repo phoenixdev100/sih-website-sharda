@@ -781,8 +781,8 @@ const Contact = () => {
                 </div>
 
                 {/* Tab Navigation */}
-                <div className="flex justify-center mb-12">
-                    <div className="bg-white rounded-xl shadow-lg p-2 flex gap-2">
+                <div className="flex justify-center mb-8 sm:mb-12 px-4">
+                    <div className="bg-white rounded-xl shadow-lg p-1 sm:p-2 flex flex-wrap sm:flex-nowrap gap-1 sm:gap-2 w-full sm:w-auto">
                         {[
                             { id: 'contact', label: 'Contact Info', icon: '📞' },
                             { id: 'faq', label: 'FAQ', icon: '❓' },
@@ -791,13 +791,13 @@ const Contact = () => {
                             <button
                                 key={tab.id}
                                 onClick={() => setActiveTab(tab.id)}
-                                className={`flex items-center space-x-2 px-6 py-3 rounded-lg font-medium transition-all duration-300 ${activeTab === tab.id
+                                className={`flex items-center justify-center space-x-1 sm:space-x-2 px-3 sm:px-6 py-2 sm:py-3 rounded-lg font-medium transition-all duration-300 text-sm sm:text-base flex-1 sm:flex-none ${activeTab === tab.id
                                     ? 'bg-blue-600 text-white shadow-lg transform scale-105'
                                     : 'text-gray-600 hover:text-blue-600 hover:bg-blue-50'
                                     }`}
                             >
-                                <span className="text-lg">{tab.icon}</span>
-                                <span>{tab.label}</span>
+                                <span className="text-base sm:text-lg">{tab.icon}</span>
+                                <span className="hidden xs:inline sm:inline">{tab.label}</span>
                             </button>
                         ))}
                     </div>
