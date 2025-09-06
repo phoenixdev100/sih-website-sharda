@@ -23,16 +23,16 @@ const Timeline = () => {
     },
     {
       id: 3,
-      date: "August-September 2025",
+      date: "September 2025",
       title: "Internal Hackathon",
       description: "Institution-level hackathons to select teams for national finale",
-      status: "upcoming",
+      status: "Live",
       icon: "🏫",
       color: "purple",
     },
     {
       id: 4,
-      date: "August-September 2025",
+      date: "25 eptember 2025",
       title: "Nomination of Top Teams & Submission",
       description: "Top teams nominated by institutions and idea submissions on portal",
       status: "upcoming",
@@ -41,65 +41,11 @@ const Timeline = () => {
     },
     {
       id: 5,
-      date: "August-September 2025",
+      date: "31 September 2025",
       title: "Report Compilation & Portal Upload",
       description: "Compilation of reports and uploading on official SIH portal",
       status: "upcoming",
       icon: "📊",
-      color: "indigo",
-    },
-    {
-      id: 6,
-      date: "September-October 2025",
-      title: "Screening of Ideas",
-      description: "Expert evaluation and screening of submitted solutions",
-      status: "upcoming",
-      icon: "🔍",
-      color: "cyan",
-    },
-    {
-      id: 7,
-      date: "October 2025",
-      title: "Result Publication",
-      description: "Official announcement of selected teams for Grand Finale",
-      status: "upcoming",
-      icon: "📢",
-      color: "green",
-    },
-    {
-      id: 8,
-      date: "October 2025",
-      title: "Mentoring & Training Sessions",
-      description: "Expert mentoring and training for selected teams",
-      status: "upcoming",
-      icon: "🎓",
-      color: "blue",
-    },
-    {
-      id: 9,
-      date: "November 2025",
-      title: "Announcement of Shortlist for Grand Finale",
-      description: "Final shortlisted teams announced for the national finale",
-      status: "upcoming",
-      icon: "🎯",
-      color: "purple",
-    },
-    {
-      id: 10,
-      date: "December 2025",
-      title: "SIH Grand Finale & Winner Announcement",
-      description: "36-hour national finale and announcement of winners",
-      status: "upcoming",
-      icon: "🏆",
-      color: "red",
-    },
-    {
-      id: 11,
-      date: "October 2025",
-      title: "Communication of Results to Finalist Teams",
-      description: "Official communication and recognition of finalist teams",
-      status: "upcoming",
-      icon: "📧",
       color: "indigo",
     }
   ]
@@ -143,18 +89,6 @@ const Timeline = () => {
       events: [3, 4, 5],
       description: "Internal hackathons and team nominations",
       color: "bg-purple-100 text-purple-800"
-    },
-    {
-      name: "Evaluation Phase",
-      events: [6, 7, 8],
-      description: "Screening, results, and mentoring sessions",
-      color: "bg-green-100 text-green-800"
-    },
-    {
-      name: "Finale Phase",
-      events: [9, 10, 11],
-      description: "Grand finale and winner announcements",
-      color: "bg-red-100 text-red-800"
     }
   ]
 
@@ -174,13 +108,13 @@ const Timeline = () => {
           <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4 mb-8">
             Your complete roadmap to Smart India Hackathon 2025. Stay on track with all important dates and milestones.
           </p>
-          
+
           {/* Timeline Image */}
           <div className="max-w-5xl mx-auto mb-8 px-4">
             <div className="bg-gray-50 rounded-lg p-4">
-              <img 
-                src="/sih-timeline-2025.png" 
-                alt="Smart India Hackathon 2025 Complete Timeline Flow" 
+              <img
+                src="/sih-timeline-2025.png"
+                alt="Smart India Hackathon 2025 Complete Timeline Flow"
                 className="w-full h-auto"
                 style={{ maxHeight: '600px', objectFit: 'contain' }}
               />
@@ -189,7 +123,7 @@ const Timeline = () => {
         </div>
 
         {/* Phase Overview */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid md:grid-cols-2 gap-6 mb-16 max-w-4xl mx-auto">
           {phases.map((phase, index) => (
             <div key={index} className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
               <div className={`inline-block px-3 py-1 rounded-full text-sm font-medium mb-4 ${phase.color}`}>
@@ -219,31 +153,29 @@ const Timeline = () => {
               </span>
             </div>
             <div className="w-full bg-gray-200 rounded-full h-4 overflow-hidden">
-              <div 
+              <div
                 className="h-full bg-gradient-to-r from-blue-500 to-purple-600 rounded-full transition-all duration-1000 ease-out"
-                style={{ 
-                  width: `${(timelineEvents.filter(event => event.status === 'Live' || event.status === 'closed').length / timelineEvents.length) * 100}%` 
+                style={{
+                  width: `${(timelineEvents.filter(event => event.status === 'Live' || event.status === 'closed').length / timelineEvents.length) * 100}%`
                 }}
               ></div>
             </div>
             <div className="flex justify-between text-sm text-gray-500 mt-2">
               <span>Started: August 2025</span>
-              <span>Expected Completion: December 2025</span>
+              <span>Expected Completion: September 2025</span>
             </div>
           </div>
 
           {/* Phase-wise Progress */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid sm:grid-cols-2 gap-4">
             {phases.map((phase, index) => {
               const progress = calculatePhaseProgress(phase.events)
               const phaseColors = {
                 0: { bg: 'from-blue-50 to-blue-100', bar: 'bg-blue-200', fill: 'bg-blue-500', text: 'text-blue-700', circle: 'bg-blue-500', title: 'text-blue-800' },
-                1: { bg: 'from-purple-50 to-purple-100', bar: 'bg-purple-200', fill: 'bg-purple-500', text: 'text-purple-700', circle: 'bg-purple-500', title: 'text-purple-800' },
-                2: { bg: 'from-orange-50 to-orange-100', bar: 'bg-orange-200', fill: 'bg-orange-500', text: 'text-orange-700', circle: 'bg-orange-500', title: 'text-orange-800' },
-                3: { bg: 'from-green-50 to-green-100', bar: 'bg-green-200', fill: 'bg-green-500', text: 'text-green-700', circle: 'bg-green-500', title: 'text-green-800' }
+                1: { bg: 'from-purple-50 to-purple-100', bar: 'bg-purple-200', fill: 'bg-purple-500', text: 'text-purple-700', circle: 'bg-purple-500', title: 'text-purple-800' }
               }
               const colors = phaseColors[index]
-              
+
               return (
                 <div key={index} className={`bg-gradient-to-br ${colors.bg} rounded-xl p-4`}>
                   <div className="flex items-center mb-3">
@@ -316,17 +248,103 @@ const Timeline = () => {
                       </span>
                       <div className="flex items-center text-sm text-gray-500">
                         <div className={`w-3 h-3 ${getStatusColor(event.status)} rounded-full mr-2`}></div>
-                        {event.status === 'upcoming' ? 'Upcoming' : 
-                         event.status === 'current' ? 'Current' : 
-                         event.status === 'Live' ? 'Live' : 
-                         event.status === 'closed' ? 'Closed/Ended' : 'Upcoming'}
+                        {event.status === 'upcoming' ? 'Upcoming' :
+                          event.status === 'current' ? 'Current' :
+                            event.status === 'Live' ? 'Live' :
+                              event.status === 'closed' ? 'Closed/Ended' : 'Upcoming'}
                       </div>
                     </div>
                   </div>
 
+                  {/* Sub-cards for Internal Hackathon */}
+                  {event.id === 3 && (
+                    <div className="mt-6 space-y-4">
+                      <h4 className="text-lg font-semibold text-gray-800 mb-4 flex items-center">
+                        <span className="text-purple-500 mr-2">📅</span>
+                        Key Milestones
+                      </h4>
+
+                      {/* Registration Deadline Sub-card */}
+                      <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg p-4 border-l-4 border-blue-500">
+                        <div className="flex items-center justify-between">
+                          <div>
+                            <h5 className="font-semibold text-blue-800 mb-1">Team Registration Deadline</h5>
+                            <p className="text-blue-700 text-sm">Final date for team registrations</p>
+                          </div>
+                          <div className="text-right">
+                            <div className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                              17 September 2025
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* First Evaluation Sub-card */}
+                      <div className="bg-gradient-to-r from-green-50 to-green-100 rounded-lg p-4 border-l-4 border-green-500">
+                        <div className="flex items-center justify-between">
+                          <div>
+                            <h5 className="font-semibold text-green-800 mb-1">First Evaluation Round</h5>
+                            <p className="text-green-700 text-sm">Initial assessment of submitted ideas</p>
+                          </div>
+                          <div className="text-right">
+                            <div className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                              23 September 2025
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Second Evaluation Sub-card */}
+                      <div className="bg-gradient-to-r from-purple-50 to-purple-100 rounded-lg p-4 border-l-4 border-purple-500">
+                        <div className="flex items-center justify-between">
+                          <div>
+                            <h5 className="font-semibold text-purple-800 mb-1">Second Evaluation Round</h5>
+                            <p className="text-purple-700 text-sm">Final evaluation and team selection</p>
+                          </div>
+                          <div className="text-right">
+                            <div className="bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                              24 September 2025
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
                 </div>
               </div>
             ))}
+
+            {/* Timeline End Card */}
+            <div className="relative flex items-start mb-12">
+              {/* End dot */}
+              <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-r from-gray-400 to-gray-600 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg z-10">
+                🏁
+              </div>
+
+              {/* End card content */}
+              <div className="ml-8 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-8 shadow-lg flex-grow border-2 border-dashed border-gray-300">
+                <div className="text-center">
+                  <h3 className="text-2xl font-bold text-gray-800 mb-4">Timeline Complete</h3>
+                  <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                    This marks the end of the current SIH 2025 timeline. All institutional-level activities conclude with report compilation and portal upload.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <div className="bg-white rounded-lg px-4 py-2 shadow-sm border border-gray-200">
+                      <span className="text-sm text-gray-500">Phase Duration:</span>
+                      <div className="font-semibold text-gray-800">August - September 2025</div>
+                    </div>
+                    <div className="bg-white rounded-lg px-4 py-2 shadow-sm border border-gray-200">
+                      <span className="text-sm text-gray-500">Total Events:</span>
+                      <div className="font-semibold text-gray-800">{timelineEvents.length} Milestones</div>
+                    </div>
+                  </div>
+                  <div className="mt-6 text-sm text-gray-500">
+                    Stay tuned for updates on further phases and national-level competitions.
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -340,7 +358,7 @@ const Timeline = () => {
             <ul className="space-y-2">
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                Registration closes: Till September, 2025
+                Registration closes: 17 September, 2025
               </li>
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
