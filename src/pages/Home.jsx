@@ -36,12 +36,12 @@ const Home = () => {
   ]
 
   const tracks = [
-    { name: "MedTech/HealthTech", color: "bg-red-500", count: "85+", icon: "🏥" },
-    { name: "Smart Education", color: "bg-blue-500", count: "92+", icon: "🎓" },
-    { name: "Agriculture/FoodTech", color: "bg-green-500", count: "78+", icon: "🌱" },
-    { name: "Smart Automation", color: "bg-purple-500", count: "65+", icon: "🤖" },
-    { name: "Fintech", color: "bg-yellow-500", count: "58+", icon: "💰" },
-    { name: "Clean & Green Tech", color: "bg-teal-500", count: "72+", icon: "🌍" }
+    { name: "MedTech/HealthTech", color: "bg-red-600", count: "85+", icon: "🏥" },
+    { name: "Smart Education", color: "bg-blue-600", count: "92+", icon: "🎓" },
+    { name: "Agriculture/FoodTech", color: "bg-green-700", count: "78+", icon: "🌱" },
+    { name: "Smart Automation", color: "bg-purple-600", count: "65+", icon: "🤖" },
+    { name: "Fintech", color: "bg-yellow-700", count: "58+", icon: "💰" },
+    { name: "Clean & Green Tech", color: "bg-teal-700", count: "72+", icon: "🌍" }
   ]
 
   return (
@@ -236,7 +236,7 @@ const Home = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/registration"
-              className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-xl text-lg transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              className="bg-orange-700 hover:bg-orange-800 text-white font-bold py-4 px-8 rounded-xl text-lg transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
               Register Your Team
             </Link>

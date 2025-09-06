@@ -795,6 +795,8 @@ const Contact = () => {
                                     ? 'bg-blue-600 text-white shadow-lg transform scale-105'
                                     : 'text-gray-600 hover:text-blue-600 hover:bg-blue-50'
                                     }`}
+                                aria-label={`View ${tab.label} tab`}
+                                aria-pressed={activeTab === tab.id}
                             >
                                 <span className="text-base sm:text-lg">{tab.icon}</span>
                                 <span className="hidden xs:inline sm:inline">{tab.label}</span>

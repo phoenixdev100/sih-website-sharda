@@ -167,11 +167,12 @@ const FAQ = () => {
             <button
               key={category.id}
               onClick={() => setActiveCategory(category.id)}
-              className={`flex items-center space-x-2 px-6 py-3 rounded-lg font-medium transition-all duration-300 m-1 ${
-                activeCategory === category.id
-                  ? 'bg-blue-600 text-white shadow-lg transform scale-105'
-                  : 'text-gray-600 hover:bg-gray-100'
-              }`}
+              className={`flex items-center space-x-2 px-6 py-3 rounded-lg font-medium transition-all duration-300 m-1 ${activeCategory === category.id
+                ? 'bg-blue-600 text-white shadow-lg transform scale-105'
+                : 'text-gray-600 hover:text-blue-600 hover:bg-blue-50'
+                }`}
+              aria-label={`View ${category.title} FAQs`}
+              aria-pressed={activeCategory === category.id}
             >
               <span className="text-lg">{category.icon}</span>
               <span className="hidden sm:inline">{category.title}</span>
@@ -200,6 +201,8 @@ const FAQ = () => {
                         <button
                           onClick={() => toggleFAQ(category.id, index)}
                           className="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors duration-200 flex items-center justify-between"
+                          aria-expanded={isOpen}
+                          aria-label={`Toggle answer for: ${faq.q}`}
                         >
                           <span className="font-semibold text-gray-800">{faq.q}</span>
                           <svg
