@@ -173,7 +173,7 @@ const Footer = () => {
                 <span>Made with</span>
                 <span className="text-red-400">❤️</span>
                 <span>by</span>
-                <a href="https://phoenixdev100.tech" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">
+                <a href="https://github.com/phoenixdev100" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">
                   Deepak
                 </a>
               </span>
