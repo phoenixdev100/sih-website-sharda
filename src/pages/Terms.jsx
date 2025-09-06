@@ -203,6 +203,8 @@ const Terms = () => {
                   ? 'bg-green-600 text-white shadow-lg transform scale-105'
                   : 'text-gray-600 hover:text-green-600 hover:bg-green-50'
                   }`}
+                aria-label={`View ${section.title} section`}
+                aria-pressed={activeSection === section.id}
               >
                 <span className="text-sm sm:text-base flex-shrink-0">{section.icon}</span>
                 <span className="hidden xs:inline sm:inline truncate">{section.title}</span>
