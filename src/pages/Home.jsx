@@ -159,12 +159,12 @@ const Home = () => {
                   <div className="text-3xl sm:text-4xl mb-3 flex items-center justify-center">
                     {track.icon}
                   </div>
-                  
+
                   {/* Count Badge */}
                   <div className={`inline-flex items-center justify-center w-14 h-7 ${track.color} rounded-full text-white font-bold text-xs mb-3`}>
                     {track.count}
                   </div>
-                  
+
                   {/* Title */}
                   <h3 className="text-xs sm:text-sm font-bold text-gray-900 mb-1 leading-tight text-center px-1">{track.name}</h3>
                   <p className="text-xs text-gray-600">Problems</p>
