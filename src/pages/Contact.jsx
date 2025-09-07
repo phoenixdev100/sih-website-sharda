@@ -39,6 +39,7 @@ const Contact = () => {
             email: "vishal.jain@sharda.ac.in",
             phone: "+91 9899997263",
             icon: "👤",
+            office: "Block 3, 1st Floor, Room No 102, Cabin 3",
             color: "from-orange-500 to-orange-600"
         },
         {
@@ -47,6 +48,7 @@ const Contact = () => {
             email: "rani.astya@sharda.ac.in",
             phone: "+91 9818221080",  
             icon: "👤",
+            office: "Block 3, 1st Floor, Room No 102, Cabin 10",
             color: "from-orange-500 to-orange-600"
         },{
             title: "Team Member",

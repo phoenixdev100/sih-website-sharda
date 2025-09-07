@@ -5,6 +5,40 @@ const Announcements = () => {
 
   const announcements = [
     {
+      id: 3,
+      title: "🎯 Team Registration Now Open!",
+      content: "Exciting news! Team registration for Smart India Hackathon 2025 is now officially open. All eligible teams can register from September 8th to September 17th, 2025. Don't miss this opportunity to be part of India's biggest hackathon. Register your team today and showcase your innovative solutions!",
+      category: "registration",
+      priority: "high",
+      date: "2025-09-08",
+      details: [
+        "Registration period: September 8-17, 2025",
+        "Open for all eligible educational institutions",
+        "Team size: 6 members (1 Team Lead + 5 Other Team Members)",
+        "Each team must include at least one girl/female member",
+        "Multiple teams can register from same institution",
+        "A participant can be part of only one team"
+      ],
+      link: "/registration",
+      linkText: "Register Your Team"
+    },
+    {
+      id: 2,
+      title: "📊 Official Presentation Format Available",
+      content: "The official presentation template for SIH 2025 submissions is now available for download. All teams must use this standardized format for their final presentations to ensure consistency and proper evaluation. The template includes guidelines for content structure, design elements, and submission requirements.",
+      category: "guidelines",
+      priority: "high",
+      date: "2025-09-06",
+      details: [
+        "Standardized PowerPoint template with official SIH branding",
+        "Pre-defined slide layouts for problem statement, solution, and demo",
+        "Guidelines for content organization and presentation flow",
+        "Technical specifications and submission format requirements"
+      ],
+      link: "/SIH-Presentation-Format.pptx",
+      linkText: "Download PPT Template"
+    },
+    {
       id: 1,
       title: "🚀 SIH 2025 Problem Statements Are Now Live!",
       content: "We're excited to announce that the official Smart India Hackathon 2025 problem statements have been released! Teams can now browse through 18 major themes including MedTech/BioTech/HealthTech, Smart Education, Agriculture/FoodTech & Rural Development, Smart Automation, Fintech, Clean & Green Technology, and many more cutting-edge categories.",
