@@ -609,6 +609,66 @@ const Registration = () => {
           </div>
         </div>
 
+        {/* Sample PPT Download Card */}
+        <div className="mt-16 max-w-4xl mx-auto">
+          <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl shadow-xl p-8 text-center border-2 border-orange-200">
+            <div className="mb-8">
+              <div className="w-20 h-20 bg-gradient-to-r from-orange-600 to-red-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
+              <h2 className="text-3xl font-bold text-gray-800 mb-4">📊 Official Presentation Template</h2>
+              <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+                Download the official PowerPoint template for your SIH 2025 presentations. This standardized format ensures consistency and helps evaluators assess your solutions effectively.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl p-6 mb-8 shadow-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">📋 Template Features</h3>
+              <div className="grid md:grid-cols-2 gap-4 text-left">
+                <div>
+                  <h4 className="font-medium text-gray-800 mb-2">Included Sections:</h4>
+                  <ul className="space-y-1 text-sm text-gray-600">
+                    <li>• Problem statement overview</li>
+                    <li>• Solution approach & methodology</li>
+                    <li>• Technical implementation details</li>
+                    <li>• Demo and prototype showcase</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-medium text-gray-800 mb-2">Design Elements:</h4>
+                  <ul className="space-y-1 text-sm text-gray-600">
+                    <li>• Official SIH 2025 branding</li>
+                    <li>• Pre-formatted slide layouts</li>
+                    <li>• Consistent color scheme</li>
+                    <li>• Professional typography</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              <a
+                href="/SIH-Presentation-Format.pptx"
+                download
+                className="inline-block bg-gradient-to-r from-orange-600 to-red-600 text-white font-bold py-4 px-8 rounded-xl hover:from-orange-700 hover:to-red-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                📥 Download PPT Template
+              </a>
+              <p className="text-sm text-gray-500">
+                PowerPoint format (.pptx) • Compatible with MS Office & Google Slides
+              </p>
+            </div>
+
+            <div className="mt-8 p-4 bg-orange-50 border border-orange-200 rounded-lg">
+              <p className="text-sm text-orange-800">
+                <strong>💡 Tip:</strong> Use this template for both internal hackathon presentations and final submissions. Consistent formatting helps evaluators focus on your innovative solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Student Coordinators Section */}
         <div className="mt-16">
           <div className="text-center mb-12">
