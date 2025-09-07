@@ -6,6 +6,15 @@ const Timeline = () => {
     {
       id: 1,
       date: "August 2025",
+      title: "Registration of SPOCs",
+      description: "Single Point of Contact registration for educational institutions",
+      status: "completed",
+      icon: "👥",
+      color: "green",
+    },
+    {
+      id: 2,
+      date: "August 2025",
       title: "SIH Problem Statement Launch",
       description: "Official problem statements from various ministries and organizations released",
       status: "Live",
@@ -13,40 +22,40 @@ const Timeline = () => {
       color: "blue",
     },
     {
-      id: 2,
-      date: "August 2025",
-      title: "Registration of SPOCs",
-      description: "Single Point of Contact registration for educational institutions",
+      id: 3,
+      date: "September 2025",
+      title: "Registration of Teams",
+      description: "Team registration opens for participating in Smart India Hackathon 2025",
       status: "Live",
-      icon: "👥",
-      color: "green",
+      icon: "📝",
+      color: "cyan",
     },
     {
-      id: 3,
+      id: 4,
       date: "September 2025",
       title: "Internal Hackathon",
       description: "Institution-level hackathons to select teams for national finale",
-      status: "Live",
+      status: "upcoming",
       icon: "🏫",
       color: "purple",
     },
     {
-      id: 4,
-      date: "25 eptember 2025",
-      title: "Nomination of Top Teams & Submission",
+      id: 5,
+      date: "September 2025",
+      title: "Final Results Announcement",
       description: "Top teams nominated by institutions and idea submissions on portal",
       status: "upcoming",
-      icon: "📤",
-      color: "orange",
+      icon: "📢",
+      color: "indigo",
     },
     {
-      id: 5,
-      date: "31 September 2025",
+      id: 6,
+      date: "September 2025",
       title: "Report Compilation & Portal Upload",
       description: "Compilation of reports and uploading on official SIH portal",
       status: "upcoming",
       icon: "📊",
-      color: "indigo",
+      color: "orange",
     }
   ]
 
@@ -58,6 +67,8 @@ const Timeline = () => {
         return 'bg-blue-500'
       case 'upcoming':
         return 'bg-gray-400'
+      case 'completed':
+        return 'bg-blue-600'
       case 'closed':
         return 'bg-red-500'
       default:
@@ -251,17 +262,18 @@ const Timeline = () => {
                         {event.status === 'upcoming' ? 'Upcoming' :
                           event.status === 'current' ? 'Current' :
                             event.status === 'Live' ? 'Live' :
-                              event.status === 'closed' ? 'Closed/Ended' : 'Upcoming'}
+                              event.status === 'completed' ? 'Completed' :
+                                event.status === 'closed' ? 'Closed/Ended' : 'Upcoming'}
                       </div>
                     </div>
                   </div>
 
-                  {/* Sub-cards for Internal Hackathon */}
+                  {/* Sub-cards for Registration of Teams */}
                   {event.id === 3 && (
                     <div className="mt-6 space-y-4">
                       <h4 className="text-lg font-semibold text-gray-800 mb-4 flex items-center">
-                        <span className="text-purple-500 mr-2">📅</span>
-                        Key Milestones
+                        <span className="text-cyan-500 mr-2">📅</span>
+                        Registration Details
                       </h4>
 
                       {/* Registration Deadline Sub-card */}
@@ -278,6 +290,16 @@ const Timeline = () => {
                           </div>
                         </div>
                       </div>
+                    </div>
+                  )}
+
+                  {/* Sub-cards for Internal Hackathon */}
+                  {event.id === 4 && (
+                    <div className="mt-6 space-y-4">
+                      <h4 className="text-lg font-semibold text-gray-800 mb-4 flex items-center">
+                        <span className="text-purple-500 mr-2">📅</span>
+                        Evaluation Rounds
+                      </h4>
 
                       {/* First Evaluation Sub-card */}
                       <div className="bg-gradient-to-r from-green-50 to-green-100 rounded-lg p-4 border-l-4 border-green-500">
@@ -327,7 +349,7 @@ const Timeline = () => {
                 <div className="text-center">
                   <h3 className="text-2xl font-bold text-gray-800 mb-4">Timeline Complete</h3>
                   <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                    This marks the end of the current SIH 2025 timeline. All institutional-level activities conclude with report compilation and portal upload.
+                    This marks the end of the current Internal SIH 2025 timeline. All institutional-level activities conclude with report compilation and portal upload.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                     <div className="bg-white rounded-lg px-4 py-2 shadow-sm border border-gray-200">
