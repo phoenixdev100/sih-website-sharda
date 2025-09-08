@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 const Registration = () => {
   const [currentStep, setCurrentStep] = useState(1)
+  const [showRulesModal, setShowRulesModal] = useState(true)
   const [formData, setFormData] = useState({
     teamName: '',
     teamLeader: '',
@@ -25,7 +26,7 @@ const Registration = () => {
       items: [
         "Exactly 6 members per team",
         "At least one female member required",
-        "All members from same institution",
+        "All members from university",
         "Valid student ID for all members"
       ],
       icon: "👥",
@@ -489,10 +490,146 @@ const Registration = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">Registration Portal</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-6">
             Ready to join SIH 2025? Follow our comprehensive registration process to secure your team's spot.
           </p>
+          
+          {/* Important Rules Button */}
+          <button
+            onClick={() => setShowRulesModal(true)}
+            className="inline-flex items-center space-x-2 bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.664-.833-2.464 0L4.35 16.5c-.77.833.192 2.5 1.732 2.5z" />
+            </svg>
+            <span>⚠️ Important Team Rules</span>
+          </button>
         </div>
+
+        {/* Rules Modal */}
+        {showRulesModal && (
+          <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 p-4 backdrop-blur-sm">
+            <div className="bg-white rounded-3xl shadow-2xl max-w-4xl w-full h-[85vh] flex flex-col animate-fade-in">
+              {/* Modal Header */}
+              <div className="bg-gradient-to-r from-red-500 via-pink-500 to-red-600 text-white p-6 rounded-t-3xl flex-shrink-0">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-14 h-14 bg-white bg-opacity-20 rounded-2xl flex items-center justify-center backdrop-blur-sm">
+                      <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.664-.833-2.464 0L4.35 16.5c-.77.833.192 2.5 1.732 2.5z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h2 className="text-3xl font-bold">⚠️ Important Team Rules</h2>
+                      <p className="text-red-100 text-base">Please read carefully before registration</p>
+                    </div>
+                  </div>
+                  <button
+                    onClick={() => setShowRulesModal(false)}
+                    className="w-10 h-10 bg-white bg-opacity-20 hover:bg-opacity-30 rounded-full flex items-center justify-center transition-all duration-200 backdrop-blur-sm"
+                  >
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              {/* Modal Content - Scrollable */}
+              <div className="flex-1 overflow-hidden">
+                <div className="h-full overflow-y-auto px-8 py-6" style={{scrollbarWidth: 'none', msOverflowStyle: 'none'}}>
+                  <style jsx>{`
+                    div::-webkit-scrollbar {
+                      display: none;
+                    }
+                  `}</style>
+                  
+                  <div className="space-y-6">
+                    {/* Rule 1 */}
+                    <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-6 border-l-4 border-blue-500 shadow-sm hover:shadow-md transition-shadow duration-300">
+                      <div className="flex items-start space-x-4">
+                        <div className="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0 shadow-lg">
+                          1
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold text-blue-800 mb-3">Maximum Problem Statements</h3>
+                          <p className="text-blue-700 leading-relaxed text-base">
+                            Each team can submit a <strong>maximum of two problem statements/ideas</strong>. Choose your problem statements wisely to maximize your chances of success.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Rule 2 */}
+                    <div className="bg-gradient-to-r from-purple-50 to-purple-100 rounded-2xl p-6 border-l-4 border-purple-500 shadow-sm hover:shadow-md transition-shadow duration-300">
+                      <div className="flex items-start space-x-4">
+                        <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0 shadow-lg">
+                          2
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold text-purple-800 mb-3">Same Team Members</h3>
+                          <p className="text-purple-700 leading-relaxed text-base">
+                            If your team selects two ideas, <strong>the same team members must work on both problem statements</strong>. No member substitution is allowed between different submissions.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Rule 3 */}
+                    <div className="bg-gradient-to-r from-green-50 to-green-100 rounded-2xl p-6 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-300">
+                      <div className="flex items-start space-x-4">
+                        <div className="w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0 shadow-lg">
+                          3
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold text-green-800 mb-3">Gender Diversity Requirement</h3>
+                          <p className="text-green-700 leading-relaxed text-base">
+                            Each team <strong>must include at least one girl/female member</strong>. This is mandatory for all participating teams to ensure gender diversity and inclusive innovation.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Important Note */}
+                    <div className="bg-gradient-to-r from-orange-50 to-yellow-50 rounded-2xl p-6 border border-orange-200 shadow-sm">
+                      <div className="flex items-start space-x-4">
+                        <div className="w-10 h-10 bg-orange-500 text-white rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div>
+                          <h4 className="text-xl font-bold text-orange-800 mb-3">📋 Please Note</h4>
+                          <p className="text-orange-700 text-base leading-relaxed">
+                            Teams that do not comply with these rules will be automatically disqualified. Make sure to review your team composition and problem statement selections before final submission.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Action Buttons - Fixed at bottom */}
+              <div className="p-6 bg-gray-50 rounded-b-3xl flex-shrink-0 border-t border-gray-100">
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <button
+                    onClick={() => setShowRulesModal(false)}
+                    className="flex-1 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-4 px-8 rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 text-lg"
+                  >
+                    ✅ I Understand & Agree
+                  </button>
+                  <button
+                    onClick={() => setShowRulesModal(false)}
+                    className="flex-1 bg-gradient-to-r from-gray-200 to-gray-300 hover:from-gray-300 hover:to-gray-400 text-gray-700 font-bold py-4 px-8 rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 text-lg"
+                  >
+                    📖 Read Again Later
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Requirements Overview */}
         <div className="mb-16">

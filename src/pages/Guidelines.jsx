@@ -13,7 +13,7 @@ const Guidelines = () => {
           title: 'Participation Rules',
           items: [
             'Teams must consist of exactly 6 members',
-            'All team members must be from the same institution',
+            'All team members must be from the sharda university',
             'At least one female member is mandatory per team',
             'All participants must be currently enrolled students',
             'Valid student ID required for all team members'

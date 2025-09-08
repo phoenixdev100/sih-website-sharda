@@ -71,10 +71,10 @@ const Home = () => {
             <div className="space-y-4">
               <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black leading-tight">
                 <span className="block bg-gradient-to-r from-white via-cyan-200 to-blue-300 bg-clip-text text-transparent drop-shadow-2xl">
-                  Internal Smart India
+                  <span className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl">Internal</span>
                 </span>
                 <span className="block bg-gradient-to-r from-orange-400 via-pink-400 to-red-400 bg-clip-text text-transparent drop-shadow-2xl">
-                  Hackathon 2025
+                Smart India Hackathon 2025
                 </span>
               </h1>
               <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-xl rounded-full border border-white/30 shadow-2xl">
