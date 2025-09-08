@@ -36,7 +36,7 @@ const Header = () => {
                         <div className="relative">
                             {/* Logo Image */}
                             <img
-                                src="/logo1.png"
+                                src="./logo1.png"
                                 alt="SIH 2025 Logo"
                                 className="w-10 h-10 sm:w-12 sm:h-12 object-contain group-hover:scale-105 transition-all duration-300"
                             />
