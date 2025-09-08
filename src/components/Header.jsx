@@ -34,29 +34,12 @@ const Header = () => {
                     {/* Logo and Title */}
                     <Link to="/" className="flex items-center space-x-3 hover:opacity-90 transition-opacity group">
                         <div className="relative">
-                            {/* Modern Logo Design */}
-                            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
-                                <div className="relative">
-                                    {/* Main Logo Icon - Stylized SU with Tech Elements */}
-                                    <svg className="w-7 h-7 text-white" viewBox="0 0 32 32" fill="currentColor">
-                                        {/* S Shape */}
-                                        <path d="M8 6c-2.2 0-4 1.8-4 4s1.8 4 4 4h8c1.1 0 2 .9 2 2s-.9 2-2 2H8c-1.1 0-2-.9-2-2H4c0 2.2 1.8 4 4 4h8c2.2 0 4-1.8 4-4s-1.8-4-4-4H8c-1.1 0-2-.9-2-2s.9-2 2-2h8c1.1 0 2 .9 2 2h2c0-2.2-1.8-4-4-4H8z" />
-                                        {/* U Shape */}
-                                        <path d="M22 6v10c0 2.2 1.8 4 4 4s4-1.8 4-4V6h-2v10c0 1.1-.9 2-2 2s-2-.9-2-2V6h-2z" />
-                                        {/* Tech Circuit Elements */}
-                                        <circle cx="6" cy="26" r="1" opacity="0.7" />
-                                        <circle cx="10" cy="28" r="1" opacity="0.7" />
-                                        <circle cx="14" cy="26" r="1" opacity="0.7" />
-                                        <path d="M6 26h8M10 28v-2" stroke="currentColor" strokeWidth="0.5" opacity="0.5" />
-                                    </svg>
-                                </div>
-                            </div>
-                            {/* Animated Tech Indicator */}
-                            {/* <div className="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center shadow-md">
-                                <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
-                            </div> */}
-                            {/* Subtle Glow Effect */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-600 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300 blur-sm"></div>
+                            {/* Logo Image */}
+                            <img
+                                src="/logo1.png"
+                                alt="SIH 2025 Logo"
+                                className="w-10 h-10 sm:w-12 sm:h-12 object-contain group-hover:scale-105 transition-all duration-300"
+                            />
                         </div>
                         <div className="hidden sm:block">
                             <h1 className="text-xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent group-hover:from-blue-600 group-hover:to-purple-600 transition-all duration-300">
