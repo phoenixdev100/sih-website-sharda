@@ -33,24 +33,24 @@ const Contact = () => {
             icon: "🎯",
             color: "from-green-500 to-green-600"
         },
-        {
-            title: "Team Member",
-            name: "Dr. Vishal Jain",
-            email: "vishal.jain@sharda.ac.in",
-            phone: "+91 9899997263",
-            icon: "👤",
-            office: "Block 3, 1st Floor, Room No 102, Cabin 3",
-            color: "from-orange-500 to-orange-600"
-        },
+        // {
+        //     title: "Team Member",
+        //     name: "Dr. Vishal Jain",
+        //     email: "vishal.jain@sharda.ac.in",
+        //     phone: "+91 9899997263",
+        //     icon: "👤",
+        //     office: "Block 3, 1st Floor, Room No 102, Cabin 3",
+        //     color: "from-orange-500 to-orange-600"
+        // },
         {
             title: "Team Member",
             name: "Dr. Rani Astya",
             email: "rani.astya@sharda.ac.in",
-            phone: "+91 9818221080",  
+            phone: "+91 9818221080",
             icon: "👤",
             office: "Block 3, 1st Floor, Room No 102, Cabin 10",
             color: "from-orange-500 to-orange-600"
-        },{
+        }, {
             title: "Team Member",
             name: "Dr. Shikha Verma",
             email: "shikha.verma@sharda.ac.in",
@@ -58,7 +58,7 @@ const Contact = () => {
             office: "Block 1, 3rd Floor, Room No 317, Cabin 28",
             icon: "👤",
             color: "from-orange-500 to-orange-600"
-        },{
+        }, {
             title: "Team Member",
             name: "Mr. Durgesh Kumar",
             email: "durgesh.kumar1@sharda.ac.in",
@@ -66,7 +66,7 @@ const Contact = () => {
             office: "Block 3, 1st Floor, Room No 103, Cabin 2",
             icon: "👤",
             color: "from-orange-500 to-orange-600"
-        },{
+        }, {
             title: "Team Member",
             name: "Ms. Aanchal Vij",
             email: "aanchal.vij@sharda.ac.in",
@@ -74,7 +74,7 @@ const Contact = () => {
             office: "Basement, Block 2, Cabin 11",
             icon: "👤",
             color: "from-orange-500 to-orange-600"
-        },{
+        }, {
             title: "Team Member",
             name: "Mr. Jitendra Singh",
             email: "jitendra.singh6@sharda.ac.in",
@@ -335,264 +335,6 @@ const Contact = () => {
                 </div>
             </div>
 
-            {/* Department-wise Coordinators Section */}
-            <div className="mt-12 sm:mt-16">
-                <div className="text-center mb-8 sm:mb-12">
-                    <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4 px-4">Department-wise Hackathon Coordinators</h2>
-                    <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
-                        Connect with your department coordinator for specialized guidance and support
-                    </p>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-                    {/* Computer Science & Engineering */}
-                    <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-blue-300">
-                        <div className="text-center mb-4">
-                            <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-3">
-                                💻
-                            </div>
-                            <h3 className="text-lg font-bold text-gray-800 mb-1">Computer Science & Engineering</h3>
-                            <p className="text-blue-600 font-medium text-sm">Dr. Rajesh Kumar</p>
-                        </div>
-                        <div className="space-y-2">
-                            <div className="flex items-center bg-gray-50 rounded-lg p-2">
-                                <svg className="w-4 h-4 text-gray-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                </svg>
-                                <span className="text-gray-700 text-xs">rajesh.cse@sharda.ac.in</span>
-                            </div>
-                            <div className="flex items-center bg-gray-50 rounded-lg p-2">
-                                <svg className="w-4 h-4 text-gray-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                </svg>
-                                <span className="text-gray-700 text-xs">+91 120 4571100</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Electronics & Communication */}
-                    <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-green-300">
-                        <div className="text-center mb-4">
-                            <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-3">
-                                📡
-                            </div>
-                            <h3 className="text-lg font-bold text-gray-800 mb-1">Electronics & Communication</h3>
-                            <p className="text-green-600 font-medium text-sm">Dr. Priya Sharma</p>
-                        </div>
-                        <div className="space-y-2">
-                            <div className="flex items-center bg-gray-50 rounded-lg p-2">
-                                <svg className="w-4 h-4 text-gray-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                </svg>
-                                <span className="text-gray-700 text-xs">priya.ece@sharda.ac.in</span>
-                            </div>
-                            <div className="flex items-center bg-gray-50 rounded-lg p-2">
-                                <svg className="w-4 h-4 text-gray-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                </svg>
-                                <span className="text-gray-700 text-xs">+91 120 4571101</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Mechanical Engineering */}
-                    <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-orange-300">
-                        <div className="text-center mb-4">
-                            <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-3">
-                                ⚙️
-                            </div>
-                            <h3 className="text-lg font-bold text-gray-800 mb-1">Mechanical Engineering</h3>
-                            <p className="text-orange-600 font-medium text-sm">Dr. Amit Singh</p>
-                        </div>
-                        <div className="space-y-2">
-                            <div className="flex items-center bg-gray-50 rounded-lg p-2">
-                                <svg className="w-4 h-4 text-gray-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                </svg>
-                                <span className="text-gray-700 text-xs">amit.mech@sharda.ac.in</span>
-                            </div>
-                            <div className="flex items-center bg-gray-50 rounded-lg p-2">
-                                <svg className="w-4 h-4 text-gray-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                </svg>
-                                <span className="text-gray-700 text-xs">+91 120 4571102</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Civil Engineering */}
-                    <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-purple-300">
-                        <div className="text-center mb-4">
-                            <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-3">
-                                🏗️
-                            </div>
-                            <h3 className="text-lg font-bold text-gray-800 mb-1">Civil Engineering</h3>
-                            <p className="text-purple-600 font-medium text-sm">Dr. Neha Gupta</p>
-                        </div>
-                        <div className="space-y-2">
-                            <div className="flex items-center bg-gray-50 rounded-lg p-2">
-                                <svg className="w-4 h-4 text-gray-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                </svg>
-                                <span className="text-gray-700 text-xs">neha.civil@sharda.ac.in</span>
-                            </div>
-                            <div className="flex items-center bg-gray-50 rounded-lg p-2">
-                                <svg className="w-4 h-4 text-gray-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                </svg>
-                                <span className="text-gray-700 text-xs">+91 120 4571103</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Business Administration */}
-                    <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-indigo-300">
-                        <div className="text-center mb-4">
-                            <div className="w-16 h-16 bg-gradient-to-r from-indigo-500 to-indigo-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-3">
-                                💼
-                            </div>
-                            <h3 className="text-lg font-bold text-gray-800 mb-1">Business Administration</h3>
-                            <p className="text-indigo-600 font-medium text-sm">Dr. Rohit Verma</p>
-                        </div>
-                        <div className="space-y-2">
-                            <div className="flex items-center bg-gray-50 rounded-lg p-2">
-                                <svg className="w-4 h-4 text-gray-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                </svg>
-                                <span className="text-gray-700 text-xs">rohit.mba@sharda.ac.in</span>
-                            </div>
-                            <div className="flex items-center bg-gray-50 rounded-lg p-2">
-                                <svg className="w-4 h-4 text-gray-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                </svg>
-                                <span className="text-gray-700 text-xs">+91 120 4571104</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Biotechnology */}
-                    <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-teal-300">
-                        <div className="text-center mb-4">
-                            <div className="w-16 h-16 bg-gradient-to-r from-teal-500 to-teal-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-3">
-                                🧬
-                            </div>
-                            <h3 className="text-lg font-bold text-gray-800 mb-1">Biotechnology</h3>
-                            <p className="text-teal-600 font-medium text-sm">Dr. Kavita Joshi</p>
-                        </div>
-                        <div className="space-y-2">
-                            <div className="flex items-center bg-gray-50 rounded-lg p-2">
-                                <svg className="w-4 h-4 text-gray-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                </svg>
-                                <span className="text-gray-700 text-xs">kavita.biotech@sharda.ac.in</span>
-                            </div>
-                            <div className="flex items-center bg-gray-50 rounded-lg p-2">
-                                <svg className="w-4 h-4 text-gray-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                </svg>
-                                <span className="text-gray-700 text-xs">+91 120 4571105</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Architecture */}
-                    <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-red-300">
-                        <div className="text-center mb-4">
-                            <div className="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-3">
-                                🏛️
-                            </div>
-                            <h3 className="text-lg font-bold text-gray-800 mb-1">Architecture</h3>
-                            <p className="text-red-600 font-medium text-sm">Dr. Sanjay Mehta</p>
-                        </div>
-                        <div className="space-y-2">
-                            <div className="flex items-center bg-gray-50 rounded-lg p-2">
-                                <svg className="w-4 h-4 text-gray-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                </svg>
-                                <span className="text-gray-700 text-xs">sanjay.arch@sharda.ac.in</span>
-                            </div>
-                            <div className="flex items-center bg-gray-50 rounded-lg p-2">
-                                <svg className="w-4 h-4 text-gray-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                </svg>
-                                <span className="text-gray-700 text-xs">+91 120 4571106</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Law */}
-                    <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-yellow-300">
-                        <div className="text-center mb-4">
-                            <div className="w-16 h-16 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-3">
-                                ⚖️
-                            </div>
-                            <h3 className="text-lg font-bold text-gray-800 mb-1">Law</h3>
-                            <p className="text-yellow-600 font-medium text-sm">Dr. Anita Rao</p>
-                        </div>
-                        <div className="space-y-2">
-                            <div className="flex items-center bg-gray-50 rounded-lg p-2">
-                                <svg className="w-4 h-4 text-gray-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                </svg>
-                                <span className="text-gray-700 text-xs">anita.law@sharda.ac.in</span>
-                            </div>
-                            <div className="flex items-center bg-gray-50 rounded-lg p-2">
-                                <svg className="w-4 h-4 text-gray-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                </svg>
-                                <span className="text-gray-700 text-xs">+91 120 4571107</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Medicine */}
-                    <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-pink-300">
-                        <div className="text-center mb-4">
-                            <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-pink-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-3">
-                                🏥
-                            </div>
-                            <h3 className="text-lg font-bold text-gray-800 mb-1">Medicine</h3>
-                            <p className="text-pink-600 font-medium text-sm">Dr. Vikash Pandey</p>
-                        </div>
-                        <div className="space-y-2">
-                            <div className="flex items-center bg-gray-50 rounded-lg p-2">
-                                <svg className="w-4 h-4 text-gray-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                </svg>
-                                <span className="text-gray-700 text-xs">vikash.med@sharda.ac.in</span>
-                            </div>
-                            <div className="flex items-center bg-gray-50 rounded-lg p-2">
-                                <svg className="w-4 h-4 text-gray-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                </svg>
-                                <span className="text-gray-700 text-xs">+91 120 4571108</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Additional Departments Note */}
-                <div className="mt-8 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-200">
-                    <div className="text-center">
-                        <h4 className="text-lg font-semibold text-blue-800 mb-2">📚 More Departments Available</h4>
-                        <p className="text-blue-700 mb-4">
-                            Don't see your department listed? We have coordinators for all academic departments at Sharda University.
-                        </p>
-                        <div className="flex flex-wrap justify-center gap-2 text-sm text-blue-600">
-                            <span className="bg-white px-3 py-1 rounded-full">Pharmacy</span>
-                            <span className="bg-white px-3 py-1 rounded-full">Nursing</span>
-                            <span className="bg-white px-3 py-1 rounded-full">Dental Sciences</span>
-                            <span className="bg-white px-3 py-1 rounded-full">Agriculture</span>
-                            <span className="bg-white px-3 py-1 rounded-full">Mass Communication</span>
-                            <span className="bg-white px-3 py-1 rounded-full">Fine Arts</span>
-                            <span className="bg-white px-3 py-1 rounded-full">Education</span>
-                        </div>
-                        <p className="text-blue-600 text-sm mt-4">
-                            Contact the main hackathon coordinator for assistance with other departments.
-                        </p>
-                    </div>
-                </div>
-            </div>
         </div>
     )
 
@@ -768,7 +510,7 @@ const Contact = () => {
                                     </a>
                                 ) : (
                                     <a
-                                        href="https://chat.whatsapp.com/JPbRnAhHNnRLpfE5MIQ3PO"
+                                        href="https://chat.whatsapp.com/JPbRnAhHNnRLpfE5MIQ3PO?mode=ems_wa_c"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 sm:py-3 px-4 sm:px-6 rounded-lg transition-colors duration-200 flex items-center text-sm sm:text-base"
