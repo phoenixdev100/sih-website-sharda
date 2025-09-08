@@ -268,7 +268,7 @@ const Contact = () => {
                         <div className="text-center mb-4 sm:mb-6">
                             <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 rounded-full mx-auto mb-3 sm:mb-4 shadow-lg overflow-hidden bg-gray-200">
                                 <img
-                                    src="/image.png"
+                                    src="./image.png"
                                     alt="Deepak - Coordinator"
                                     className="w-full h-full object-cover"
                                 />
@@ -303,7 +303,7 @@ const Contact = () => {
                         <div className="text-center mb-4 sm:mb-6">
                             <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 rounded-full mx-auto mb-3 sm:mb-4 shadow-lg overflow-hidden bg-gray-200">
                                 <img
-                                    src="/image.png"
+                                    src="./image.png"
                                     alt="Pawan Upadhyay - Coordinator"
                                     className="w-full h-full object-cover"
                                 />

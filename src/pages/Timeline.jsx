@@ -124,7 +124,7 @@ const Timeline = () => {
           <div className="max-w-5xl mx-auto mb-8 px-4">
             <div className="bg-gray-50 rounded-lg p-4">
               <img
-                src="/sih-timeline-2025.png"
+                src="./sih-timeline-2025.png"
                 alt="Smart India Hackathon 2025 Complete Timeline Flow"
                 className="w-full h-auto"
                 style={{ maxHeight: '600px', objectFit: 'contain' }}

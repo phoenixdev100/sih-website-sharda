@@ -821,7 +821,7 @@ const Registration = () => {
               <div className="text-center mb-6">
                 <div className="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg overflow-hidden bg-gray-200">
                   <img
-                    src="/image.png"
+                    src="./image.png"
                     alt="Deepak - Coordinator"
                     className="w-full h-full object-cover"
                   />
@@ -865,7 +865,7 @@ const Registration = () => {
               <div className="text-center mb-6">
                 <div className="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg overflow-hidden bg-gray-200">
                   <img
-                    src="/image.png"
+                    src="./image.png"
                     alt="Pawan Upadhyay - Coordinator"
                     className="w-full h-full object-cover"
                   />
@@ -900,7 +900,7 @@ const Registration = () => {
               <div className="text-center mb-6">
                 <div className="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg overflow-hidden bg-gray-200">
                   <img
-                    src="/image.png"
+                    src="./image.png"
                     alt="Coordinator 3"
                     className="w-full h-full object-cover"
                   />
@@ -935,7 +935,7 @@ const Registration = () => {
               <div className="text-center mb-6">
                 <div className="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg overflow-hidden bg-gray-200">
                   <img
-                    src="/image.png"
+                    src="./image.png"
                     alt="Pawan Upadhyay - Coordinator"
                     className="w-full h-full object-cover"
                   />
