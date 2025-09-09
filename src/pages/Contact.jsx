@@ -33,70 +33,99 @@ const Contact = () => {
             icon: "🎯",
             color: "from-green-500 to-green-600"
         },
-        // {
-        //     title: "Team Member",
-        //     name: "Dr. Vishal Jain",
-        //     email: "vishal.jain@sharda.ac.in",
-        //     phone: "+91 9899997263",
-        //     icon: "👤",
-        //     office: "Block 3, 1st Floor, Room No 102, Cabin 3",
-        //     color: "from-orange-500 to-orange-600"
-        // },
         {
-            title: "Team Member",
+            title: "Faculty Coordinator",
             name: "Dr. Rani Astya",
             email: "rani.astya@sharda.ac.in",
             phone: "+91 9818221080",
             icon: "👤",
-            office: "Block 3, 1st Floor, Room No 102, Cabin 10",
             color: "from-orange-500 to-orange-600"
-        }, {
-            title: "Team Member",
+        },
+        {
+            title: "Faculty Coordinator",
             name: "Dr. Shikha Verma",
             email: "shikha.verma@sharda.ac.in",
             phone: "+91 9811363085",
-            office: "Block 1, 3rd Floor, Room No 317, Cabin 28",
             icon: "👤",
             color: "from-orange-500 to-orange-600"
-        }, {
-            title: "Team Member",
-            name: "Mr. Durgesh Kumar",
-            email: "durgesh.kumar1@sharda.ac.in",
-            phone: "+91 9457471140",
-            office: "Block 3, 1st Floor, Room No 103, Cabin 2",
+        },
+        {
+            title: "Faculty Coordinator",
+            name: "Dr. Ramneet",
+            email: "ramneet@sharda.ac.in",
+            phone: "+91 9878937770",
             icon: "👤",
             color: "from-orange-500 to-orange-600"
-        }, {
-            title: "Team Member",
+        },
+        {
+            title: "Faculty Coordinator",
+            name: "Dr. Yagyesh Godiyal",
+            email: "yagyesh.godiyal@sharda.ac.in",
+            phone: "+91 7895942282",
+            icon: "👤",
+            color: "from-orange-500 to-orange-600"
+        },
+        {
+            title: "Faculty Coordinator",
+            name: "Dr. Rosey",
+            email: "rosey.jadon@sharda.ac.in",
+            phone: "+91 7838744024",
+            icon: "👤",
+            color: "from-orange-500 to-orange-600"
+        },
+        {
+            title: "Faculty Coordinator",
+            name: "Dr. Shivam Tiwari",
+            email: "shivam.tiwari1@sharda.ac.in",
+            phone: "+91 7275055907",
+            icon: "👤",
+            color: "from-orange-500 to-orange-600"
+        },
+        {
+            title: "Faculty Coordinator",
             name: "Ms. Aanchal Vij",
             email: "aanchal.vij@sharda.ac.in",
             phone: "+91 8146325511",
-            office: "Basement, Block 2, Cabin 11",
             icon: "👤",
             color: "from-orange-500 to-orange-600"
-        }, {
-            title: "Team Member",
+        },
+        {
+            title: "Faculty Coordinator",
+            name: "Mr. Durgesh Kumar",
+            email: "durgesh.kumar1@sharda.ac.in",
+            phone: "+91 9457471140",
+            icon: "👤",
+            color: "from-orange-500 to-orange-600"
+        },
+        {
+            title: "Faculty Coordinator",
+            name: "Ms. Khushwant Virdi",
+            email: "khushwant.virdi8@sharda.ac.in",
+            phone: "+91 7009184273",
+            icon: "👤",
+            color: "from-orange-500 to-orange-600"
+        },
+        {
+            title: "Faculty Coordinator",
             name: "Mr. Jitendra Singh",
             email: "jitendra.singh6@sharda.ac.in",
             phone: "+91 8174870089",
-            office: "Basement, Block II, Cabin 10",
             icon: "👤",
             color: "from-orange-500 to-orange-600"
         },
         {
-            title: "Team Member",
-            name: "Ms. Mekhala",
-            email: "mekhala.1@sharda.ac.in",
-            phone: "+91 8287681938",
-            icon: "👤",
-            color: "from-orange-500 to-orange-600"
-        },
-        {
-            title: "Team Member",
+            title: "Faculty Coordinator",
             name: "Mr. Ashish Kumar",
             email: "ashish.kumar@sharda.ac.in",
             phone: "+91 8410707739",
-            office: "Basement, Block 2, Cabin 12",
+            icon: "👤",
+            color: "from-orange-500 to-orange-600"
+        },
+        {
+            title: "Faculty Coordinator",
+            name: "Ms. Mekhala",
+            email: "mekhala.1@sharda.ac.in",
+            phone: "+91 8287681938",
             icon: "👤",
             color: "from-orange-500 to-orange-600"
         }
@@ -328,6 +357,76 @@ const Contact = () => {
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                     </svg>
                                     <span className="text-gray-700 text-xs sm:text-sm">+91 8756066256</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Coordinator 3 */}
+                    <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 hover:shadow-xl transition-shadow duration-300 border-2 border-transparent hover:border-green-300">
+                        <div className="text-center mb-4 sm:mb-6">
+                            <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 rounded-full mx-auto mb-3 sm:mb-4 shadow-lg overflow-hidden bg-gray-200">
+                                <img
+                                    src="./image.png"
+                                    alt="Yashaswini Uddavolu - Coordinator"
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                            <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">Yashaswini Uddavolu</h3>
+                            <p className="text-green-600 font-medium mb-3 sm:mb-4 text-sm sm:text-base">Coordinator</p>
+                        </div>
+
+                        <div className="space-y-3 sm:space-y-4">
+                            <div className="flex items-center justify-center">
+                                <div className="flex items-center bg-gray-50 rounded-lg p-2 sm:p-3 w-full">
+                                    <svg className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500 mr-2 sm:mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+                                    <span className="text-gray-700 text-xs sm:text-sm break-all">yashaswiniuddavolu@gmail.com</span>
+                                </div>
+                            </div>
+
+                            <div className="flex items-center justify-center">
+                                <div className="flex items-center bg-gray-50 rounded-lg p-2 sm:p-3 w-full">
+                                    <svg className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500 mr-2 sm:mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                    </svg>
+                                    <span className="text-gray-700 text-xs sm:text-sm">+91 7095651833</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Coordinator 4 */}
+                    <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 hover:shadow-xl transition-shadow duration-300 border-2 border-transparent hover:border-yellow-300">
+                        <div className="text-center mb-4 sm:mb-6">
+                            <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 rounded-full mx-auto mb-3 sm:mb-4 shadow-lg overflow-hidden bg-gray-200">
+                                <img
+                                    src="./image.png"
+                                    alt="Saurav Suman - Coordinator"
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                            <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">Saurav Suman</h3>
+                            <p className="text-yellow-600 font-medium mb-3 sm:mb-4 text-sm sm:text-base">Coordinator</p>
+                        </div>
+
+                        <div className="space-y-3 sm:space-y-4">
+                            <div className="flex items-center justify-center">
+                                <div className="flex items-center bg-gray-50 rounded-lg p-2 sm:p-3 w-full">
+                                    <svg className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500 mr-2 sm:mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+                                    <span className="text-gray-700 text-xs sm:text-sm break-all">sauravs95088@gmail.com</span>
+                                </div>
+                            </div>
+
+                            <div className="flex items-center justify-center">
+                                <div className="flex items-center bg-gray-50 rounded-lg p-2 sm:p-3 w-full">
+                                    <svg className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500 mr-2 sm:mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                    </svg>
+                                    <span className="text-gray-700 text-xs sm:text-sm">+91 9508899651</span>
                                 </div>
                             </div>
                         </div>
