@@ -63,6 +63,16 @@ const Footer = () => {
       color: 'hover:bg-blue-700'
     },
     {
+      name: 'X (Twitter)',
+      icon: (
+        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+        </svg>
+      ),
+      url: 'https://x.com/sharda_uni?t=oKXsflB-TSwqKHOkGTnQ-g',
+      color: 'hover:bg-gray-700'
+    },
+    {
       name: 'Official Website',
       icon: (
         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -93,9 +103,9 @@ const Footer = () => {
           <div className="col-span-1 sm:col-span-2 md:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
               {/* Logo Image */}
-              <img 
-                src="./logo1.png" 
-                alt="SIH 2025 Logo" 
+              <img
+                src="./logo1.png"
+                alt="SIH 2025 Logo"
                 className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
               />
               <div>
@@ -150,7 +160,7 @@ const Footer = () => {
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-3 sm:space-y-0">
             <div className="text-center sm:text-left">
               <p className="text-gray-400 text-xs sm:text-sm">
-                © {currentYear} Sharda University. All rights reserved.
+                © {currentYear} phoenixdev100. All rights reserved.
               </p>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-xs sm:text-sm text-gray-400">
