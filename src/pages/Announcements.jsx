@@ -35,7 +35,7 @@ const Announcements = () => {
         "Guidelines for content organization and presentation flow",
         "Technical specifications and submission format requirements"
       ],
-      link: "/SIH-Presentation-Format.pptx",
+      link: "./SIH-Presentation-Format.pptx",
       linkText: "Download PPT Template"
     },
     {
@@ -139,8 +139,8 @@ const Announcements = () => {
               key={category.id}
               onClick={() => setActiveFilter(category.id)}
               className={`flex items-center space-x-2 px-6 py-3 rounded-lg font-medium transition-all duration-300 m-1 ${activeFilter === category.id
-                  ? 'bg-blue-600 text-white shadow-lg transform scale-105'
-                  : 'text-gray-600 hover:bg-gray-100'
+                ? 'bg-blue-600 text-white shadow-lg transform scale-105'
+                : 'text-gray-600 hover:bg-gray-100'
                 }`}
             >
               <span className="text-lg">{category.icon}</span>

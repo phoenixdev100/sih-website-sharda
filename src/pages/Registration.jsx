@@ -787,7 +787,7 @@ const Registration = () => {
 
             <div className="space-y-4">
               <a
-                href="/SIH-Presentation-Format.pptx"
+                href="./SIH-Presentation-Format.pptx"
                 download
                 className="inline-block bg-gradient-to-r from-orange-600 to-red-600 text-white font-bold py-4 px-8 rounded-xl hover:from-orange-700 hover:to-red-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
