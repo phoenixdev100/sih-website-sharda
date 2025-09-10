@@ -128,6 +128,14 @@ const Contact = () => {
             phone: "+91 8287681938",
             icon: "👤",
             color: "from-orange-500 to-orange-600"
+        },
+        {
+            title: "Faculty Coordinator",
+            name: "Ms. Kamini",
+            email: "kamini.2@sharda.ac.in",
+            phone: "+91 9582481172",
+            icon: "👤",
+            color: "from-orange-500 to-orange-600"
         }
     ]
 
