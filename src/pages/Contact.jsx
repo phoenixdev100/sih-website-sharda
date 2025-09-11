@@ -136,7 +136,15 @@ const Contact = () => {
             phone: "+91 9582481172",
             icon: "👤",
             color: "from-orange-500 to-orange-600"
-        }
+        },
+        {
+            title: "Faculty Coordinator",
+            name: "Dr. Rozey Chauhan",
+            email: "rozey.jadon@sharda.ac.in",
+            phone: "+91 7838744024",
+            icon: "👤",
+            color: "from-orange-500 to-orange-600"
+        },
     ]
 
     const faqData = [
