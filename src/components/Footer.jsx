@@ -164,9 +164,9 @@ const Footer = () => {
               </p>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-xs sm:text-sm text-gray-400">
-              <a href="/privacy" className="hover:text-white transition-colors">Privacy</a>
+              <Link to="/privacy" className="hover:text-white transition-colors">Privacy</Link>
               <span className="hidden sm:inline">•</span>
-              <a href="/terms" className="hover:text-white transition-colors">Terms</a>
+              <Link to="/terms" className="hover:text-white transition-colors">Terms</Link>
               <span className="hidden sm:inline">•</span>
               <span className="flex items-center space-x-1">
                 <span>Made with</span>
