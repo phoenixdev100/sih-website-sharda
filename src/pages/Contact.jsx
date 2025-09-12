@@ -450,6 +450,101 @@ const Contact = () => {
                 </div>
             </div>
 
+            {/* AWS Cloud Community Section */}
+            <div className="mt-12 sm:mt-16">
+                <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl shadow-xl p-6 sm:p-8 border-2 border-orange-200">
+                    <div className="text-center mb-8">
+                        <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4 flex items-center justify-center">
+                            <span className="text-orange-500 mr-3">☁️</span>
+                            Connect to AWS Cloud Community
+                        </h2>
+                        <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
+                            Join our vibrant AWS Cloud Community for technical support, resources, and networking opportunities
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-4xl mx-auto">
+                        {/* Discord Card */}
+                        <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-orange-100">
+                            <div className="text-center mb-6">
+                                <div className="w-16 h-16 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+                                    💬
+                                </div>
+                                <h3 className="text-xl font-bold text-gray-800 mb-2">Discord Community</h3>
+                                <p className="text-gray-600 text-sm">
+                                    Join our Discord server for real-time discussions, Q&A sessions, and community support
+                                </p>
+                            </div>
+
+                            <div className="space-y-4">
+                                <div className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-lg p-4 border border-indigo-100">
+                                    <h4 className="font-semibold text-indigo-800 mb-2 flex items-center">
+                                        <span className="mr-2">🎯</span>
+                                        What you'll get:
+                                    </h4>
+                                    <ul className="text-sm text-indigo-700 space-y-1">
+                                        <li>• Real-time technical support</li>
+                                        <li>• AWS learning resources</li>
+                                        <li>• Community events & workshops</li>
+                                        <li>• Networking with peers</li>
+                                    </ul>
+                                </div>
+
+                                <a
+                                    href="https://discord.com/invite/Eys77mrks5"
+                                    className="block w-full bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 text-center"
+                                >
+                                    💬 Join Discord Server
+                                </a>
+                            </div>
+                        </div>
+
+                        {/* Linktree Card */}
+                        <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-orange-100">
+                            <div className="text-center mb-6">
+                                <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+                                    🔗
+                                </div>
+                                <h3 className="text-xl font-bold text-gray-800 mb-2">All Links Hub</h3>
+                                <p className="text-gray-600 text-sm">
+                                    Access all our social media, resources, and important links in one place
+                                </p>
+                            </div>
+
+                            <div className="space-y-4">
+                                <div className="bg-gradient-to-r from-orange-50 to-red-50 rounded-lg p-4 border border-orange-100">
+                                    <h4 className="font-semibold text-orange-800 mb-2 flex items-center">
+                                        <span className="mr-2">📱</span>
+                                        Find us on:
+                                    </h4>
+                                    <ul className="text-sm text-orange-700 space-y-1">
+                                        <li>• LinkedIn & Instagram</li>
+                                        <li>• YouTube tutorials</li>
+                                        <li>• GitHub repositories</li>
+                                        <li>• Event registrations</li>
+                                    </ul>
+                                </div>
+
+                                <a
+                                    href="http://linktr.ee/awscloudclubshardauniversity"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="block w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 text-center"
+                                >
+                                    🔗 Visit Linktree
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="mt-8 bg-gradient-to-r from-orange-100 to-amber-100 rounded-xl p-6 border border-orange-200 text-center">
+                        <p className="text-orange-800 font-medium">
+                            <span className="text-orange-600">🌟 Special Benefits:</span> AWS Cloud Community members get priority access to workshops, exclusive AWS credits, and direct mentorship opportunities!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     )
 
