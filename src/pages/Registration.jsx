@@ -955,6 +955,104 @@ const Registration = () => {
           </div>
         </div>
 
+        {/* AWS Cloud Community Workshop Section */}
+        <div className="mt-16">
+          <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl shadow-xl p-8 text-center border-2 border-orange-200">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold text-gray-800 mb-4 flex items-center justify-center">
+                <span className="text-orange-500 mr-3">☁️</span>
+                AWS Cloud Community Workshop
+              </h2>
+              <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+                Join our exclusive workshop conducted by AWS Cloud Community to enhance your SIH preparation with cloud technologies
+              </p>
+
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="text-left space-y-6">
+                  <div className="bg-white rounded-xl p-6 shadow-lg border border-orange-100">
+                    <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                      <span className="text-orange-500 mr-2">🎯</span>
+                      Workshop Highlights
+                    </h3>
+                    <ul className="space-y-3 text-gray-700">
+                      <li className="flex items-start">
+                        <span className="text-orange-500 mr-2 mt-1">•</span>
+                        Cloud-based solution development for SIH
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-orange-500 mr-2 mt-1">•</span>
+                        AWS services integration and best practices
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-orange-500 mr-2 mt-1">•</span>
+                        Scalable architecture design patterns
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-orange-500 mr-2 mt-1">•</span>
+                        Hands-on deployment and monitoring
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-lg border border-orange-100">
+                    <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                      <span className="text-blue-500 mr-2">📅</span>
+                      Workshop Details
+                    </h3>
+                    <div className="space-y-3 text-gray-700">
+                      <div className="flex items-center">
+                        <span className="font-semibold text-gray-800 w-20">Date:</span>
+                        <span>Coming Soon</span>
+                      </div>
+                      <div className="flex items-center">
+                        <span className="font-semibold text-gray-800 w-20">Time:</span>
+                        <span>To be announced</span>
+                      </div>
+                      <div className="flex items-center">
+                        <span className="font-semibold text-gray-800 w-20">Mode:</span>
+                        <span>Hybrid (Online + Offline)</span>
+                      </div>
+                      <div className="flex items-center">
+                        <span className="font-semibold text-gray-800 w-20">Fee:</span>
+                        <span className="text-green-600 font-semibold">Free for SIH participants</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="text-center">
+                  <div className="bg-white rounded-2xl p-8 shadow-xl border border-orange-100">
+                    <div className="text-6xl mb-4">🚀</div>
+                    <h3 className="text-2xl font-bold text-gray-800 mb-4">Ready to Level Up?</h3>
+                    <p className="text-gray-600 mb-6">
+                      Enhance your hackathon project with cloud technologies and gain a competitive edge
+                    </p>
+                    <div className="space-y-4">
+                      <a
+                        href="http://linktr.ee/awscloudclubshardauniversity"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
+                      >
+                        🔗 Connect with AWS Community
+                      </a>
+                      <p className="text-sm text-gray-500">
+                        Stay tuned for registration details
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8 bg-gradient-to-r from-orange-100 to-amber-100 rounded-xl p-6 border border-orange-200">
+                <p className="text-orange-800 font-medium">
+                  <span className="text-orange-600">💡 Pro Tip:</span> Participants who attend this workshop will have access to exclusive AWS credits and resources for their SIH projects!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Student Coordinators Section */}
         <div className="mt-16">
           <div className="text-center mb-12">

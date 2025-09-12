@@ -74,7 +74,7 @@ const Home = () => {
                   <span className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl">Internal</span>
                 </span>
                 <span className="block bg-gradient-to-r from-orange-400 via-pink-400 to-red-400 bg-clip-text text-transparent drop-shadow-2xl">
-                Smart India Hackathon 2025
+                  Smart India Hackathon 2025
                 </span>
               </h1>
               <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-xl rounded-full border border-white/30 shadow-2xl">
@@ -246,6 +246,70 @@ const Home = () => {
             >
               Get Support
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* AWS Community Section */}
+      <section className="py-16 bg-gradient-to-br from-orange-50 to-amber-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Powered by & Hosted by
+            </h2>
+          </div>
+
+          <div className="flex justify-center">
+            <div className="bg-white rounded-2xl shadow-2xl p-8 sm:p-12 max-w-4xl w-full border border-orange-200 hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4 flex items-center justify-center">
+                  <span className="text-orange-500 mr-3">☁️</span>
+                  AWS Cloud Community
+                </h3>
+                <p className="text-gray-600 text-base sm:text-lg">
+                  Empowering innovation through cloud technology and community collaboration
+                </p>
+              </div>
+
+              <div className="relative overflow-hidden rounded-xl shadow-lg">
+                <img
+                  src="./aws-banner.jpg"
+                  alt="AWS Cloud Community Banner"
+                  className="w-full h-auto object-cover transition-transform duration-300 hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+              </div>
+
+              <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+                <div className="bg-gradient-to-br from-orange-100 to-orange-200 rounded-xl p-4">
+                  <div className="text-2xl mb-2">🚀</div>
+                  <h4 className="font-semibold text-gray-800 mb-1">Cloud Infrastructure</h4>
+                  <p className="text-sm text-gray-600">Scalable and reliable hosting</p>
+                </div>
+                <div className="bg-gradient-to-br from-blue-100 to-blue-200 rounded-xl p-4">
+                  <div className="text-2xl mb-2">🤝</div>
+                  <h4 className="font-semibold text-gray-800 mb-1">Community Support</h4>
+                  <p className="text-sm text-gray-600">Expert guidance and mentorship</p>
+                </div>
+                <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-xl p-4">
+                  <div className="text-2xl mb-2">💡</div>
+                  <h4 className="font-semibold text-gray-800 mb-1">Innovation Hub</h4>
+                  <p className="text-sm text-gray-600">Fostering technological advancement</p>
+                </div>
+              </div>
+
+              <div className="text-center mt-8">
+                <a
+                  href="http://linktr.ee/awscloudclubshardauniversity"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
+                >
+                  <span className="mr-2">🔗</span>
+                  Connect with AWS Cloud Community
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

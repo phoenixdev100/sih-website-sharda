@@ -162,6 +162,17 @@ const Footer = () => {
               <p className="text-gray-400 text-xs sm:text-sm">
                 © {currentYear} phoenixdev100. All rights reserved.
               </p>
+              <p className="text-gray-500 text-xs mt-1 flex items-center justify-center sm:justify-start">
+                <span>Powered by</span>
+                <a 
+                  href="http://linktr.ee/awscloudclubshardauniversity" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-orange-400 font-semibold ml-1 hover:text-orange-300 transition-colors"
+                >
+                  AWS Cloud Community
+                </a>
+              </p>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-xs sm:text-sm text-gray-400">
               <Link to="/privacy" className="hover:text-white transition-colors">Privacy</Link>
