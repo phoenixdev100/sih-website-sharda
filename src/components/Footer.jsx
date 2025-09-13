@@ -170,7 +170,7 @@ const Footer = () => {
                   rel="noopener noreferrer" 
                   className="text-orange-400 font-semibold ml-1 hover:text-orange-300 transition-colors"
                 >
-                  AWS Cloud Community
+                  AWS Cloud Club
                 </a>
               </p>
             </div>
