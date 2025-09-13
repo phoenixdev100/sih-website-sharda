@@ -274,7 +274,7 @@ const Home = () => {
               <div className="relative overflow-hidden rounded-xl shadow-lg">
                 <img
                   src="./aws-banner.jpg"
-                  alt="AWS Cloud Community Banner"
+                  alt="AWS Cloud Club Banner"
                   className="w-full h-auto object-cover transition-transform duration-300 hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
@@ -300,13 +300,13 @@ const Home = () => {
 
               <div className="text-center mt-8">
                 <a
-                  href="http://linktr.ee/awscloudclubshardauniversity"
+                  href="https://www.meetup.com/aws-cloud-club-at-sharda-university/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
                 >
                   <span className="mr-2">🔗</span>
-                  Connect with AWS Cloud Community
+                  Join AWS Cloud Club
                 </a>
               </div>
             </div>
