@@ -75,14 +75,6 @@ const Contact = () => {
         },
         {
             title: "Faculty Coordinator",
-            name: "Dr. Shivam Tiwari",
-            email: "shivam.tiwari1@sharda.ac.in",
-            phone: "+91 7275055907",
-            icon: "👤",
-            color: "from-orange-500 to-orange-600"
-        },
-        {
-            title: "Faculty Coordinator",
             name: "Ms. Aanchal Vij",
             email: "aanchal.vij@sharda.ac.in",
             phone: "+91 8146325511",
