@@ -45,25 +45,6 @@ const Announcements = () => {
       linkText: "Connect with AWS Cloud Club"
     },
     {
-      id: 4,
-      title: "📢 Technova Presents: Hackathon 101 Session",
-      content: "Hey Innovators! 👋 The Smart India Hackathon (SIH) 2025 Internal Round is here, and this is YOUR chance to shine at the national stage! 🌟 Technova – The Technical Society of SSCSE, Sharda University is organizing an exclusive online session to guide you towards SIH success.",
-      category: "events",
-      priority: "medium",
-      date: "2025-09-12",
-      details: [
-        "Date: Friday, 12th September 2025",
-        "Time: 9:30 PM – 10:30 PM",
-        "Venue: Microsoft Teams",
-        "Special Highlight: Hear from Team Outcast – Winners of SIH 2024",
-        "Learn success strategies and journey insights",
-        "Tips to excel in SIH 2025 and Q&A with experienced mentors",
-        "Use your college email ID to register"
-      ],
-      link: "https://luma.com/wafljh32",
-      linkText: "Register for Session"
-    },
-    {
       id: 3,
       title: "🎯 Team Registration Now Open!",
       content: "Exciting news! Team registration for Smart India Hackathon 2025 is now officially open. All eligible teams can register from September 8th to September 17th, 2025. Don't miss this opportunity to be part of India's biggest hackathon. Register your team today and showcase your innovative solutions!",
