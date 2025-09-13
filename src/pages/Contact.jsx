@@ -456,10 +456,10 @@ const Contact = () => {
                     <div className="text-center mb-8">
                         <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4 flex items-center justify-center">
                             <span className="text-orange-500 mr-3">☁️</span>
-                            Connect to AWS Cloud Community
+                            Connect to AWS Cloud Club
                         </h2>
                         <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
-                            Join our vibrant AWS Cloud Community for technical support, resources, and networking opportunities
+                            Join our vibrant AWS Cloud Club for technical support, resources, and networking opportunities
                         </p>
                     </div>
 
@@ -539,7 +539,7 @@ const Contact = () => {
 
                     <div className="mt-8 bg-gradient-to-r from-orange-100 to-amber-100 rounded-xl p-6 border border-orange-200 text-center">
                         <p className="text-orange-800 font-medium">
-                            <span className="text-orange-600">🌟 Special Benefits:</span> AWS Cloud Community members get priority access to workshops, exclusive AWS credits, and direct mentorship opportunities!
+                            <span className="text-orange-600">🌟 Special Benefits:</span> AWS Cloud Club members get priority access to workshops, exclusive AWS credits, and direct mentorship opportunities!
                         </p>
                     </div>
                 </div>

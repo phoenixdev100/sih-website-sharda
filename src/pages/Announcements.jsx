@@ -5,6 +5,26 @@ const Announcements = () => {
 
   const announcements = [
     {
+      id: 5,
+      title: "🤝 Official Partnership: AWS Cloud Club Sharda University",
+      content: "We're thrilled to announce our official collaboration with AWS Cloud Club Sharda University! 🎉 This strategic partnership brings world-class cloud computing resources, expert mentorship, and exclusive opportunities to all SIH 2025 participants. Get ready to leverage cutting-edge AWS technologies in your hackathon solutions!",
+      category: "partnership",
+      priority: "high",
+      date: "2025-09-13",
+      details: [
+        "🌟 Exclusive AWS credits for all registered teams",
+        "☁️ Access to premium AWS services and tools",
+        "👨‍💻 Technical workshops on cloud architecture",
+        "🎯 Direct mentorship from AWS certified professionals",
+        "🚀 Priority support for cloud-based solutions",
+        "📚 Comprehensive learning resources and documentation",
+        "🏆 Special recognition for best cloud implementation",
+        "🔗 Join the AWS Cloud Community for ongoing support"
+      ],
+      link: "http://linktr.ee/awscloudclubshardauniversity",
+      linkText: "Connect with AWS Cloud Club"
+    },
+    {
       id: 4,
       title: "📢 Technova Presents: Hackathon 101 Session",
       content: "Hey Innovators! 👋 The Smart India Hackathon (SIH) 2025 Internal Round is here, and this is YOUR chance to shine at the national stage! 🌟 Technova – The Technical Society of SSCSE, Sharda University is organizing an exclusive online session to guide you towards SIH success.",
@@ -77,6 +97,7 @@ const Announcements = () => {
 
   const categories = [
     { id: 'all', name: 'All Announcements', icon: '📢' },
+    { id: 'partnership', name: 'Partnerships', icon: '🤝' },
     { id: 'registration', name: 'Registration', icon: '📝' },
     { id: 'updates', name: 'Updates', icon: '🔄' },
     { id: 'guidelines', name: 'Guidelines', icon: '📋' },
