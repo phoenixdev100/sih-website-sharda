@@ -7,7 +7,7 @@ const Announcements = () => {
     {
       id: 6,
       title: "👨‍🏫 SIH 2025 Mentorship Program Begins September 15",
-      content: "Get ready to accelerate your SIH journey! Our comprehensive mentorship program starts on September 15, 2025. Learn from 2x SIH Winners, experienced hackathon mentors, and Microsoft-AWS professionals who will guide you through every step of your hackathon preparation.",
+      content: "Get ready to accelerate your SIH journey! AWS Cloud Club brings a comprehensive mentorship program starting on September 15, 2025. Learn from 2x SIH Winners, experienced hackathon mentors, and Microsoft-AWS professionals who will guide you through every step of your hackathon preparation.",
       category: "events",
       priority: "medium",
       date: "2025-09-13",
@@ -22,7 +22,7 @@ const Announcements = () => {
         "🚀 End-to-end preparation for SIH 2025 success"
       ],
       link: "https://discord.com/invite/Eys77mrks5",
-      linkText: "View Mentorship Details"
+      linkText: "Connect With Mentors"
     },
     {
       id: 5,
@@ -32,6 +32,7 @@ const Announcements = () => {
       priority: "medium",
       date: "2025-09-13",
       details: [
+        "🤝 Register on Meetup to join AWS Cloud Club",
         "🌟 Exclusive AWS credits for all registered teams",
         "☁️ Access to premium AWS services and tools",
         "👨‍💻 Technical workshops on cloud architecture",
@@ -39,7 +40,7 @@ const Announcements = () => {
         "🚀 Priority support for cloud-based solutions",
         "📚 Comprehensive learning resources and documentation",
         "🏆 Special recognition for best cloud implementation",
-        "🔗 Join the AWS Cloud Community for ongoing support"
+        "🔗 Join the AWS Cloud Club for ongoing support"
       ],
       link: "http://linktr.ee/awscloudclubshardauniversity",
       linkText: "Connect with AWS Cloud Club"
