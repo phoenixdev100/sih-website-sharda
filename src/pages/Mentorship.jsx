@@ -211,7 +211,16 @@ const Mentorship = () => {
                         Mentorship Program
                     </h1>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Accelerate your SIH journey with expert guidance from 2x SIH Winners, Hackathon Mentors, and Microsoft-AWS Professionals
+                        <span>Brought to you by{" "}
+                            <a 
+                                href="https://www.meetup.com/aws-cloud-club-at-sharda-university/" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                style={{ textDecoration: "underline" }}
+                            >
+                                <strong>AWS Cloud Club</strong>
+                            </a>{" "}<br /></span>
+                        <span>Learn from 2x SIH Winners, seasoned Hackathon Mentors, and Microsoft Professionals. Turn your ideas into winning solutions with personalized mentorship.</span>
                     </p>
                 </div>
 
