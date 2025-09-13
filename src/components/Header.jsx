@@ -11,6 +11,7 @@ const Header = () => {
         { path: '/about', label: 'About', icon: '📖' },
         { path: '/timeline', label: 'Timeline', icon: '📅' },
         { path: '/announcements', label: 'Announcements', icon: '📢' },
+        { path: '/mentorship', label: 'Mentorship', icon: '👨‍🏫' },
         { path: '/contact', label: 'Contact', icon: '📞' }
     ]
 

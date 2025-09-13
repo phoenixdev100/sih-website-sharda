@@ -10,6 +10,7 @@ import Contact from './pages/Contact'
 import Guidelines from './pages/Guidelines'
 import FAQ from './pages/FAQ'
 import Announcements from './pages/Announcements'
+import Mentorship from './pages/Mentorship'
 import Privacy from './pages/Privacy'
 import Terms from './pages/Terms'
 
@@ -39,6 +40,7 @@ function App() {
             <Route path="/guidelines" element={<Guidelines />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/announcements" element={<Announcements />} />
+            <Route path="/mentorship" element={<Mentorship />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
           </Routes>
