@@ -5,11 +5,31 @@ const Announcements = () => {
 
   const announcements = [
     {
+      id: 6,
+      title: "👨‍🏫 SIH 2025 Mentorship Program Begins September 15",
+      content: "Get ready to accelerate your SIH journey! Our comprehensive mentorship program starts on September 15, 2025. Learn from 2x SIH Winners, experienced hackathon mentors, and Microsoft-AWS professionals who will guide you through every step of your hackathon preparation.",
+      category: "events",
+      priority: "medium",
+      date: "2025-09-13",
+      details: [
+        "📅 Program starts: September 15, 2025",
+        "⏱️ Duration: 1-2 weeks of intensive mentorship",
+        "💻 Format: Online sessions for maximum accessibility",
+        "🏆 Learn from Jatin Vishwakarma (2x SIH Winner, SIH '24 Mentor)",
+        "☁️ Cloud expertise from Sourav Bera (AWS Solutions Architect, Microsoft PreSales)",
+        "🎯 Hackathon strategies and team leadership training",
+        "💡 Innovation workshops and technical skill development",
+        "🚀 End-to-end preparation for SIH 2025 success"
+      ],
+      link: "https://discord.com/invite/Eys77mrks5",
+      linkText: "View Mentorship Details"
+    },
+    {
       id: 5,
       title: "🤝 Official Partnership: AWS Cloud Club Sharda University",
       content: "We're thrilled to announce our official collaboration with AWS Cloud Club Sharda University! 🎉 This strategic partnership brings world-class cloud computing resources, expert mentorship, and exclusive opportunities to all SIH 2025 participants. Get ready to leverage cutting-edge AWS technologies in your hackathon solutions!",
       category: "partnership",
-      priority: "high",
+      priority: "medium",
       date: "2025-09-13",
       details: [
         "🌟 Exclusive AWS credits for all registered teams",
@@ -29,7 +49,7 @@ const Announcements = () => {
       title: "📢 Technova Presents: Hackathon 101 Session",
       content: "Hey Innovators! 👋 The Smart India Hackathon (SIH) 2025 Internal Round is here, and this is YOUR chance to shine at the national stage! 🌟 Technova – The Technical Society of SSCSE, Sharda University is organizing an exclusive online session to guide you towards SIH success.",
       category: "events",
-      priority: "high",
+      priority: "medium",
       date: "2025-09-12",
       details: [
         "Date: Friday, 12th September 2025",
