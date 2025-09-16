@@ -60,7 +60,7 @@ const Announcements = () => {
         "Multiple teams can register from same institution",
         "A participant can be part of only one team"
       ],
-      link: "/registration",
+      link: "https://forms.gle/CnqcDwV7DUrGxTD36",
       linkText: "Register Your Team"
     },
     {
