@@ -187,7 +187,7 @@ const Mentorship = () => {
 
                     <div className="text-center">
                         <a
-                            href="https://discord.com/invite/Eys77mrks5"
+                            href="https://www.meetup.com/aws-cloud-club-at-sharda-university/events/311064712/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link&utm_version=v2"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg text-lg"
@@ -212,9 +212,9 @@ const Mentorship = () => {
                     </h1>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                         <span>Brought to you by{" "}
-                            <a 
-                                href="https://www.meetup.com/aws-cloud-club-at-sharda-university/" 
-                                target="_blank" 
+                            <a
+                                href="https://www.meetup.com/aws-cloud-club-at-sharda-university/"
+                                target="_blank"
                                 rel="noopener noreferrer"
                                 style={{ textDecoration: "underline" }}
                             >
