@@ -5,6 +5,28 @@ const Announcements = () => {
 
   const announcements = [
     {
+      id: 7,
+      title: "🚨 Registration Closed - Evaluation Phase Begins!",
+      content: "Attention all teams! 📢 The registration phase for SIH 2025 has officially closed on September 17, 2025. It's now time to shift focus to the most crucial phase - preparing for evaluations! All registered teams should immediately begin working on their presentations and connect with mentors for guidance.",
+      category: "important",
+      priority: "high",
+      date: "2025-09-18",
+      details: [
+        "✅ Registration deadline has passed - No new registrations accepted",
+        "🎯 Focus on presentation preparation and solution development",
+        "👨‍🏫 Connect with assigned mentors for personalized guidance",
+        "📊 Prepare comprehensive project presentations",
+        "🔍 First Evaluation Round: September 23, 2025",
+        "🏆 Second Evaluation Round: September 24, 2025",
+        "💡 Refine your innovative solutions and technical implementations",
+        "📝 Ensure all documentation is complete and professional",
+        "🚀 Practice your pitch - presentation skills matter!",
+        "⏰ Time is limited - start preparation immediately!"
+      ],
+      link: "https://discord.com/invite/Eys77mrks5",
+      linkText: "Get Mentor Support"
+    },
+    {
       id: 6,
       title: "👨‍🏫 SIH 2025 Mentorship Program Begins September 15",
       content: "Get ready to accelerate your SIH journey! AWS Cloud Club brings a comprehensive mentorship program starting on September 15, 2025. Learn from 2x SIH Winners, experienced hackathon mentors, and Microsoft-AWS professionals who will guide you through every step of your hackathon preparation.",
@@ -99,6 +121,7 @@ const Announcements = () => {
 
   const categories = [
     { id: 'all', name: 'All Announcements', icon: '📢' },
+    { id: 'important', name: 'Important', icon: '🚨' },
     { id: 'partnership', name: 'Partnerships', icon: '🤝' },
     { id: 'registration', name: 'Registration', icon: '📝' },
     { id: 'updates', name: 'Updates', icon: '🔄' },
@@ -160,11 +183,11 @@ const Announcements = () => {
             </div>
             <div className="text-gray-600">High Priority</div>
           </div>
-          <div className="bg-white rounded-xl shadow-lg p-6 text-center border-l-4 border-green-500">
-            <div className="text-3xl font-bold text-green-600 mb-2">
-              {announcements.filter(a => a.category === 'registration').length}
+          <div className="bg-white rounded-xl shadow-lg p-6 text-center border-l-4 border-orange-500">
+            <div className="text-3xl font-bold text-orange-600 mb-2">
+              {announcements.filter(a => a.category === 'important').length}
             </div>
-            <div className="text-gray-600">Registration Related</div>
+            <div className="text-gray-600">Important Updates</div>
           </div>
           <div className="bg-white rounded-xl shadow-lg p-6 text-center border-l-4 border-purple-500">
             <div className="text-3xl font-bold text-purple-600 mb-2">

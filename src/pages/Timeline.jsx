@@ -17,7 +17,7 @@ const Timeline = () => {
       date: "August 2025",
       title: "SIH Problem Statement Launch",
       description: "Official problem statements from various ministries and organizations released",
-      status: "Live",
+      status: "completed",
       icon: "📋",
       color: "blue",
     },
@@ -26,7 +26,7 @@ const Timeline = () => {
       date: "September 2025",
       title: "Registration of Teams",
       description: "Team registration opens for participating in Smart India Hackathon 2025",
-      status: "Live",
+      status: "completed",
       icon: "📝",
       color: "cyan",
     },
@@ -106,7 +106,7 @@ const Timeline = () => {
   // Calculate phase progress dynamically
   const calculatePhaseProgress = (phaseEvents) => {
     const phaseEventData = timelineEvents.filter(event => phaseEvents.includes(event.id))
-    const completedEvents = phaseEventData.filter(event => event.status === 'Live' || event.status === 'closed').length
+    const completedEvents = phaseEventData.filter(event => event.status === 'completed').length
     return Math.round((completedEvents / phaseEventData.length) * 100)
   }
 
@@ -160,14 +160,14 @@ const Timeline = () => {
             <div className="flex justify-between items-center mb-3">
               <span className="text-lg font-semibold text-gray-800">Overall Progress</span>
               <span className="text-lg font-bold text-blue-600">
-                {Math.round((timelineEvents.filter(event => event.status === 'Live' || event.status === 'closed').length / timelineEvents.length) * 100)}%
+                {Math.round((timelineEvents.filter(event => event.status === 'completed').length / timelineEvents.length) * 100)}%
               </span>
             </div>
             <div className="w-full bg-gray-200 rounded-full h-4 overflow-hidden">
               <div
                 className="h-full bg-gradient-to-r from-blue-500 to-purple-600 rounded-full transition-all duration-1000 ease-out"
                 style={{
-                  width: `${(timelineEvents.filter(event => event.status === 'Live' || event.status === 'closed').length / timelineEvents.length) * 100}%`
+                  width: `${(timelineEvents.filter(event => event.status === 'completed').length / timelineEvents.length) * 100}%`
                 }}
               ></div>
             </div>
@@ -208,7 +208,7 @@ const Timeline = () => {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-gray-200">
             <div className="text-center">
               <div className="text-2xl font-bold text-blue-600">
-                {timelineEvents.filter(event => event.status === 'Live' || event.status === 'closed').length}
+                {timelineEvents.filter(event => event.status === 'completed').length}
               </div>
               <div className="text-sm text-gray-600">Completed</div>
             </div>
