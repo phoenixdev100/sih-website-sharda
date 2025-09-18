@@ -78,7 +78,7 @@ const Header = () => {
             </button> */}
 
                         {/* CTA Button */}
-                        <Link
+                        {/* <Link
                             to="/registration"
                             className="hidden md:flex items-center space-x-2 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-5 py-2 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-sm"
                         >
@@ -86,7 +86,7 @@ const Header = () => {
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                             </svg>
-                        </Link>
+                        </Link> */}
 
                         {/* Mobile menu button */}
                         <button
