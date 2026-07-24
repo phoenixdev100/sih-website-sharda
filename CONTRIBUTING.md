@@ -1,6 +1,6 @@
-# 🤝 Contributing to Sharda University Internal Hackathon 2025
+# 🤝 Contributing to Sharda University Internal Hackathon 2026
 
-Thank you for your interest in contributing to the Sharda University Internal Hackathon 2025 platform! We welcome contributions from students, faculty, and the broader community.
+Thank you for your interest in contributing to the Sharda University Internal Hackathon 2026 platform! We welcome contributions from students, faculty, and the broader community.
 
 ## 📋 Table of Contents
 
@@ -28,17 +28,20 @@ By participating in this project, you agree to abide by our [Code of Conduct](CO
 ### Setting Up Development Environment
 
 1. **Fork the repository**
+
    ```bash
    git clone https://github.com/phoenixdev100/sih-website-sharda.git
    cd sih-website-sharda
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start development server**
+
    ```bash
    npm run dev
    ```
@@ -65,6 +68,7 @@ We welcome various types of contributions:
 ### Areas for Contribution
 
 #### 🎯 High Priority Areas
+
 - **Mobile responsiveness improvements**
 - **Accessibility enhancements (WCAG compliance)**
 - **Performance optimizations**
@@ -72,6 +76,7 @@ We welcome various types of contributions:
 - **Form validation enhancements**
 
 #### 🔧 Technical Improvements
+
 - **Component refactoring**
 - **Code splitting and lazy loading**
 - **Error boundary implementations**
@@ -79,6 +84,7 @@ We welcome various types of contributions:
 - **Build process improvements**
 
 #### 🎨 Design & UX
+
 - **Animation and micro-interactions**
 - **Loading states and skeletons**
 - **Dark mode implementation**
@@ -92,6 +98,7 @@ We welcome various types of contributions:
 We follow these coding standards:
 
 #### JavaScript/React
+
 - Use functional components with hooks
 - Follow React best practices
 - Use meaningful variable and function names
@@ -102,17 +109,16 @@ We follow these coding standards:
 // ✅ Good
 const TeamRegistration = ({ onSubmit }) => {
   const [formData, setFormData] = useState({});
-  
-  const handleSubmit = useCallback((data) => {
-    // Handle form submission
-    onSubmit(data);
-  }, [onSubmit]);
 
-  return (
-    <form onSubmit={handleSubmit}>
-      {/* Form content */}
-    </form>
+  const handleSubmit = useCallback(
+    (data) => {
+      // Handle form submission
+      onSubmit(data);
+    },
+    [onSubmit],
   );
+
+  return <form onSubmit={handleSubmit}>{/* Form content */}</form>;
 };
 
 // ❌ Avoid
@@ -123,6 +129,7 @@ function teamRegistration(props) {
 ```
 
 #### CSS/Tailwind
+
 - Use Tailwind utility classes
 - Follow mobile-first responsive design
 - Use semantic class names for custom CSS
@@ -166,9 +173,7 @@ All components must be responsive and work across devices:
 ```jsx
 // Use responsive Tailwind classes
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-  <div className="p-4 sm:p-6 text-sm sm:text-base">
-    Content
-  </div>
+  <div className="p-4 sm:p-6 text-sm sm:text-base">Content</div>
 </div>
 ```
 
@@ -250,9 +255,11 @@ When submitting a PR, include:
 
 ```markdown
 ## Description
+
 Brief description of changes made
 
 ## Type of Change
+
 - [ ] Bug fix
 - [ ] New feature
 - [ ] Documentation update
@@ -260,15 +267,18 @@ Brief description of changes made
 - [ ] Refactoring
 
 ## Testing
+
 - [ ] Tested on desktop
 - [ ] Tested on mobile
 - [ ] Tested on tablet
 - [ ] Cross-browser testing completed
 
 ## Screenshots (if applicable)
+
 Add screenshots showing the changes
 
 ## Checklist
+
 - [ ] Code follows project style guidelines
 - [ ] Self-review completed
 - [ ] Comments added for complex code
@@ -402,7 +412,7 @@ Current project maintainers:
 
 ## 🙏 Thank You
 
-Thank you for contributing to the Sharda University Internal Hackathon 2025 platform! Your contributions help create a better experience for all participants and make the hackathon more successful.
+Thank you for contributing to the Sharda University Internal Hackathon 2026 platform! Your contributions help create a better experience for all participants and make the hackathon more successful.
 
 Every contribution, no matter how small, is valuable and appreciated. Together, we're building something amazing! 🚀
 

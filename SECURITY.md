@@ -4,22 +4,24 @@
 
 We actively maintain and provide security updates for the following versions:
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 1.0.x   | ✅ Yes            |
-| < 1.0   | ❌ No             |
+| Version | Supported |
+| ------- | --------- |
+| 1.0.x   | ✅ Yes    |
+| < 1.0   | ❌ No     |
 
 ## 🚨 Reporting a Vulnerability
 
-We take the security of the Sharda University Internal Hackathon 2025 platform seriously. If you discover a security vulnerability, please follow these steps:
+We take the security of the Sharda University Internal Hackathon 2026 platform seriously. If you discover a security vulnerability, please follow these steps:
 
 ### 📞 Contact Information
 
 **Primary Security Contact:**
+
 - **Email**: support@phoenixdev100.tech
 - **Response Time**: Within 48 hours
 
 **Backup Contacts:**
+
 - **Deepak**: support@phoenixdev100.tech
 
 ### 📋 Reporting Process
@@ -53,6 +55,7 @@ We take the security of the Sharda University Internal Hackathon 2025 platform s
 ### 🏆 Recognition
 
 We appreciate security researchers who help keep our platform safe:
+
 - Public acknowledgment (with your permission)
 - Hall of fame listing
 - Contribution recognition in release notes
@@ -60,6 +63,7 @@ We appreciate security researchers who help keep our platform safe:
 ## 🔐 Security Measures
 
 ### Current Protections
+
 - Input validation and sanitization
 - HTTPS enforcement
 - Secure form handling
@@ -67,6 +71,7 @@ We appreciate security researchers who help keep our platform safe:
 - Regular dependency updates
 
 ### Planned Enhancements
+
 - Rate limiting implementation
 - Enhanced authentication
 - Security headers optimization
@@ -75,6 +80,7 @@ We appreciate security researchers who help keep our platform safe:
 ## 📚 Security Best Practices
 
 ### For Contributors
+
 - Keep dependencies updated
 - Follow secure coding practices
 - Validate all user inputs
@@ -82,6 +88,7 @@ We appreciate security researchers who help keep our platform safe:
 - Implement proper error handling
 
 ### For Users
+
 - Use strong, unique passwords
 - Keep browsers updated
 - Report suspicious activities
@@ -90,6 +97,7 @@ We appreciate security researchers who help keep our platform safe:
 ## 🚫 Out of Scope
 
 The following are considered out of scope:
+
 - Social engineering attacks
 - Physical security issues
 - Denial of service attacks

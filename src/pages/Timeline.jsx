@@ -1,133 +1,145 @@
-import { useState } from 'react'
+import { useState } from "react";
 
 const Timeline = () => {
-
   const timelineEvents = [
     {
       id: 1,
-      date: "August 2025",
+      date: "July 2026",
       title: "Registration of SPOCs",
-      description: "Single Point of Contact registration for educational institutions",
+      description:
+        "Single Point of Contact registration for educational institutions",
       status: "completed",
       icon: "👥",
       color: "green",
     },
     {
       id: 2,
-      date: "August 2025",
+      date: "August 2026",
       title: "SIH Problem Statement Launch",
-      description: "Official problem statements from various ministries and organizations released",
-      status: "completed",
+      description:
+        "Official problem statements from various ministries and organizations released",
+      status: "upcoming",
       icon: "📋",
       color: "blue",
     },
     {
       id: 3,
-      date: "September 2025",
+      date: "August 2026",
       title: "Registration of Teams",
-      description: "Team registration opens for participating in Smart India Hackathon 2025",
-      status: "completed",
+      description:
+        "Team registration opens for participating in Smart India Hackathon 2026",
+      status: "upcoming",
       icon: "📝",
       color: "cyan",
     },
     {
       id: 4,
-      date: "September 2025",
+      date: "August 2026",
       title: "Internal Hackathon",
-      description: "Institution-level hackathons to select teams for national finale",
+      description:
+        "Institution-level hackathons to select teams for national finale",
       status: "upcoming",
       icon: "🏫",
       color: "purple",
     },
     {
       id: 5,
-      date: "September 2025",
+      date: "August 2026",
       title: "Final Results Announcement",
-      description: "Top teams nominated by institutions and idea submissions on portal",
+      description:
+        "Top teams nominated by institutions and idea submissions on portal",
       status: "upcoming",
       icon: "📢",
       color: "indigo",
     },
     {
       id: 6,
-      date: "September 2025",
+      date: "August 2026",
       title: "Report Compilation & Portal Upload",
-      description: "Compilation of reports and uploading on official SIH portal",
+      description:
+        "Compilation of reports and uploading on official SIH portal",
       status: "upcoming",
       icon: "📊",
       color: "orange",
-    }
-  ]
+    },
+  ];
 
   const getStatusColor = (status) => {
     switch (status) {
-      case 'Live':
-        return 'bg-green-500'
-      case 'current':
-        return 'bg-blue-500'
-      case 'upcoming':
-        return 'bg-gray-400'
-      case 'completed':
-        return 'bg-blue-600'
-      case 'closed':
-        return 'bg-red-500'
+      case "Live":
+        return "bg-green-500";
+      case "current":
+        return "bg-blue-500";
+      case "upcoming":
+        return "bg-gray-400";
+      case "completed":
+        return "bg-blue-600";
+      case "closed":
+        return "bg-red-500";
       default:
-        return 'bg-gray-400'
+        return "bg-gray-400";
     }
-  }
+  };
 
   const getEventColor = (color) => {
     const colors = {
-      blue: 'from-blue-500 to-blue-600',
-      green: 'from-green-500 to-green-600',
-      orange: 'from-orange-500 to-orange-600',
-      purple: 'from-purple-500 to-purple-600',
-      indigo: 'from-indigo-500 to-indigo-600',
-      red: 'from-red-500 to-red-600'
-    }
-    return colors[color] || 'from-gray-500 to-gray-600'
-  }
+      blue: "from-blue-500 to-blue-600",
+      green: "from-green-500 to-green-600",
+      orange: "from-orange-500 to-orange-600",
+      purple: "from-purple-500 to-purple-600",
+      indigo: "from-indigo-500 to-indigo-600",
+      red: "from-red-500 to-red-600",
+    };
+    return colors[color] || "from-gray-500 to-gray-600";
+  };
 
   const phases = [
     {
       name: "Launch Phase",
       events: [1, 2],
       description: "Problem statements release and SPOC registration",
-      color: "bg-blue-100 text-blue-800"
+      color: "bg-blue-100 text-blue-800",
     },
     {
       name: "Institution Phase",
       events: [3, 4, 5],
       description: "Internal hackathons and team nominations",
-      color: "bg-purple-100 text-purple-800"
-    }
-  ]
+      color: "bg-purple-100 text-purple-800",
+    },
+  ];
 
   // Calculate phase progress dynamically
   const calculatePhaseProgress = (phaseEvents) => {
-    const phaseEventData = timelineEvents.filter(event => phaseEvents.includes(event.id))
-    const completedEvents = phaseEventData.filter(event => event.status === 'completed').length
-    return Math.round((completedEvents / phaseEventData.length) * 100)
-  }
+    const phaseEventData = timelineEvents.filter((event) =>
+      phaseEvents.includes(event.id),
+    );
+    const completedEvents = phaseEventData.filter(
+      (event) => event.status === "completed",
+    ).length;
+    return Math.round((completedEvents / phaseEventData.length) * 100);
+  };
 
   return (
     <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6 px-4">SIH 2025 Timeline</h1>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6 px-4">
+            SIH 2026 Timeline
+          </h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4 mb-8">
-            Your complete roadmap to Smart India Hackathon 2025. Stay on track with all important dates and milestones.
+            Your complete roadmap to Smart India Hackathon 2026. Stay on track
+            with all important dates and milestones.
           </p>
 
           {/* Timeline Image */}
           <div className="max-w-5xl mx-auto mb-8 px-4">
             <div className="bg-gray-50 rounded-lg p-4">
               <img
-                src="./sih-timeline-2025.png"
-                alt="Smart India Hackathon 2025 Complete Timeline Flow"
+                src="./sih-timeline-2026.png"
+                alt="Smart India Hackathon 2026 Complete Timeline Flow"
                 className="w-full h-auto"
-                style={{ maxHeight: '600px', objectFit: 'contain' }}
+                style={{ maxHeight: "600px", objectFit: "contain" }}
               />
             </div>
           </div>
@@ -136,11 +148,18 @@ const Timeline = () => {
         {/* Phase Overview */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-12 sm:mb-16 max-w-4xl mx-auto px-4">
           {phases.map((phase, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-lg p-4 sm:p-6 hover:shadow-xl transition-shadow duration-300">
-              <div className={`inline-block px-3 py-1 rounded-full text-sm font-medium mb-4 ${phase.color}`}>
+            <div
+              key={index}
+              className="bg-white rounded-xl shadow-lg p-4 sm:p-6 hover:shadow-xl transition-shadow duration-300"
+            >
+              <div
+                className={`inline-block px-3 py-1 rounded-full text-sm font-medium mb-4 ${phase.color}`}
+              >
                 Phase {index + 1}
               </div>
-              <h3 className="text-lg font-bold text-gray-800 mb-2">{phase.name}</h3>
+              <h3 className="text-lg font-bold text-gray-800 mb-2">
+                {phase.name}
+              </h3>
               <p className="text-gray-600 text-sm">{phase.description}</p>
             </div>
           ))}
@@ -149,58 +168,96 @@ const Timeline = () => {
         {/* Progress Bar Section */}
         <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8 mb-12 sm:mb-16 mx-4">
           <div className="text-center mb-8">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">📊 SIH 2025 Progress Tracker</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">
+              📊 SIH 2026 Progress Tracker
+            </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Track the completion status of Smart India Hackathon 2025 phases and milestones
+              Track the completion status of Smart India Hackathon 2026 phases
+              and milestones
             </p>
           </div>
 
           {/* Overall Progress */}
           <div className="mb-8">
             <div className="flex justify-between items-center mb-3">
-              <span className="text-lg font-semibold text-gray-800">Overall Progress</span>
+              <span className="text-lg font-semibold text-gray-800">
+                Overall Progress
+              </span>
               <span className="text-lg font-bold text-blue-600">
-                {Math.round((timelineEvents.filter(event => event.status === 'completed').length / timelineEvents.length) * 100)}%
+                {Math.round(
+                  (timelineEvents.filter(
+                    (event) => event.status === "completed",
+                  ).length /
+                    timelineEvents.length) *
+                    100,
+                )}
+                %
               </span>
             </div>
             <div className="w-full bg-gray-200 rounded-full h-4 overflow-hidden">
               <div
                 className="h-full bg-gradient-to-r from-blue-500 to-purple-600 rounded-full transition-all duration-1000 ease-out"
                 style={{
-                  width: `${(timelineEvents.filter(event => event.status === 'completed').length / timelineEvents.length) * 100}%`
+                  width: `${(timelineEvents.filter((event) => event.status === "completed").length / timelineEvents.length) * 100}%`,
                 }}
               ></div>
             </div>
             <div className="flex justify-between text-sm text-gray-500 mt-2">
-              <span>Started: August 2025</span>
-              <span>Expected Completion: September 2025</span>
+              <span>Started: August 2026</span>
+              <span>Expected Completion: September 2026</span>
             </div>
           </div>
 
           {/* Phase-wise Progress */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
             {phases.map((phase, index) => {
-              const progress = calculatePhaseProgress(phase.events)
+              const progress = calculatePhaseProgress(phase.events);
               const phaseColors = {
-                0: { bg: 'from-blue-50 to-blue-100', bar: 'bg-blue-200', fill: 'bg-blue-500', text: 'text-blue-700', circle: 'bg-blue-500', title: 'text-blue-800' },
-                1: { bg: 'from-purple-50 to-purple-100', bar: 'bg-purple-200', fill: 'bg-purple-500', text: 'text-purple-700', circle: 'bg-purple-500', title: 'text-purple-800' }
-              }
-              const colors = phaseColors[index]
+                0: {
+                  bg: "from-blue-50 to-blue-100",
+                  bar: "bg-blue-200",
+                  fill: "bg-blue-500",
+                  text: "text-blue-700",
+                  circle: "bg-blue-500",
+                  title: "text-blue-800",
+                },
+                1: {
+                  bg: "from-purple-50 to-purple-100",
+                  bar: "bg-purple-200",
+                  fill: "bg-purple-500",
+                  text: "text-purple-700",
+                  circle: "bg-purple-500",
+                  title: "text-purple-800",
+                },
+              };
+              const colors = phaseColors[index];
 
               return (
-                <div key={index} className={`bg-gradient-to-br ${colors.bg} rounded-xl p-3 sm:p-4`}>
+                <div
+                  key={index}
+                  className={`bg-gradient-to-br ${colors.bg} rounded-xl p-3 sm:p-4`}
+                >
                   <div className="flex items-center mb-3">
-                    <div className={`w-8 h-8 ${colors.circle} rounded-full flex items-center justify-center text-white text-sm font-bold mr-3`}>
+                    <div
+                      className={`w-8 h-8 ${colors.circle} rounded-full flex items-center justify-center text-white text-sm font-bold mr-3`}
+                    >
                       {index + 1}
                     </div>
-                    <span className={`font-semibold ${colors.title}`}>{phase.name.replace(' Phase', '')}</span>
+                    <span className={`font-semibold ${colors.title}`}>
+                      {phase.name.replace(" Phase", "")}
+                    </span>
                   </div>
                   <div className={`w-full ${colors.bar} rounded-full h-2 mb-2`}>
-                    <div className={`h-full ${colors.fill} rounded-full transition-all duration-1000 ease-out`} style={{ width: `${progress}%` }}></div>
+                    <div
+                      className={`h-full ${colors.fill} rounded-full transition-all duration-1000 ease-out`}
+                      style={{ width: `${progress}%` }}
+                    ></div>
                   </div>
-                  <span className={`text-xs ${colors.text}`}>{progress}% Complete</span>
+                  <span className={`text-xs ${colors.text}`}>
+                    {progress}% Complete
+                  </span>
                 </div>
-              )
+              );
             })}
           </div>
 
@@ -208,24 +265,35 @@ const Timeline = () => {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-gray-200">
             <div className="text-center">
               <div className="text-2xl font-bold text-blue-600">
-                {timelineEvents.filter(event => event.status === 'completed').length}
+                {
+                  timelineEvents.filter((event) => event.status === "completed")
+                    .length
+                }
               </div>
               <div className="text-sm text-gray-600">Completed</div>
             </div>
             <div className="text-center">
               <div className="text-2xl font-bold text-orange-600">
-                {timelineEvents.filter(event => event.status === 'current').length}
+                {
+                  timelineEvents.filter((event) => event.status === "current")
+                    .length
+                }
               </div>
               <div className="text-sm text-gray-600">In Progress</div>
             </div>
             <div className="text-center">
               <div className="text-2xl font-bold text-gray-600">
-                {timelineEvents.filter(event => event.status === 'upcoming').length}
+                {
+                  timelineEvents.filter((event) => event.status === "upcoming")
+                    .length
+                }
               </div>
               <div className="text-sm text-gray-600">Upcoming</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-purple-600">{timelineEvents.length}</div>
+              <div className="text-2xl font-bold text-purple-600">
+                {timelineEvents.length}
+              </div>
               <div className="text-sm text-gray-600">Total Events</div>
             </div>
           </div>
@@ -238,7 +306,10 @@ const Timeline = () => {
             <div className="absolute left-6 sm:left-8 top-0 bottom-0 w-0.5 sm:w-1 bg-gradient-to-b from-blue-500 via-purple-500 to-red-500 rounded-full"></div>
 
             {timelineEvents.map((event, index) => (
-              <div key={event.id} className="relative flex items-start mb-8 sm:mb-12 group">
+              <div
+                key={event.id}
+                className="relative flex items-start mb-8 sm:mb-12 group"
+              >
                 {/* Timeline dot */}
                 <div
                   className={`flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r ${getEventColor(event.color)} rounded-full flex items-center justify-center text-white text-lg sm:text-2xl font-bold shadow-lg z-10 transform hover:scale-110 transition-all duration-300`}
@@ -250,20 +321,34 @@ const Timeline = () => {
                 <div className="ml-4 sm:ml-8 bg-white rounded-xl p-4 sm:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex-grow group-hover:transform group-hover:-translate-y-1">
                   <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-4">
                     <div>
-                      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-800 mb-2">{event.title}</h3>
-                      <p className="text-gray-700 text-sm sm:text-base lg:text-lg leading-relaxed">{event.description}</p>
+                      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-800 mb-2">
+                        {event.title}
+                      </h3>
+                      <p className="text-gray-700 text-sm sm:text-base lg:text-lg leading-relaxed">
+                        {event.description}
+                      </p>
                     </div>
                     <div className="mt-3 lg:mt-0 flex flex-col items-start lg:items-end gap-2">
-                      <span className={`inline-block px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium text-white bg-gradient-to-r ${getEventColor(event.color)}`}>
+                      <span
+                        className={`inline-block px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium text-white bg-gradient-to-r ${getEventColor(event.color)}`}
+                      >
                         {event.date}
                       </span>
                       <div className="flex items-center text-xs sm:text-sm text-gray-500">
-                        <div className={`w-3 h-3 ${getStatusColor(event.status)} rounded-full mr-2`}></div>
-                        {event.status === 'upcoming' ? 'Upcoming' :
-                          event.status === 'current' ? 'Current' :
-                            event.status === 'Live' ? 'Live' :
-                              event.status === 'completed' ? 'Completed' :
-                                event.status === 'closed' ? 'Closed/Ended' : 'Upcoming'}
+                        <div
+                          className={`w-3 h-3 ${getStatusColor(event.status)} rounded-full mr-2`}
+                        ></div>
+                        {event.status === "upcoming"
+                          ? "Upcoming"
+                          : event.status === "current"
+                            ? "Current"
+                            : event.status === "Live"
+                              ? "Live"
+                              : event.status === "completed"
+                                ? "Completed"
+                                : event.status === "closed"
+                                  ? "Closed/Ended"
+                                  : "Upcoming"}
                       </div>
                     </div>
                   </div>
@@ -280,12 +365,16 @@ const Timeline = () => {
                       <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg p-3 sm:p-4 border-l-4 border-blue-500">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                           <div>
-                            <h5 className="font-semibold text-blue-800 mb-1 text-sm sm:text-base">Team Registration Deadline</h5>
-                            <p className="text-blue-700 text-xs sm:text-sm">Final date for team registrations</p>
+                            <h5 className="font-semibold text-blue-800 mb-1 text-sm sm:text-base">
+                              Team Registration Deadline
+                            </h5>
+                            <p className="text-blue-700 text-xs sm:text-sm">
+                              Final date for team registrations
+                            </p>
                           </div>
                           <div className="text-left sm:text-right">
                             <div className="bg-blue-500 text-white px-2 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-medium">
-                              17 September 2025
+                              17 September 2026
                             </div>
                           </div>
                         </div>
@@ -305,12 +394,16 @@ const Timeline = () => {
                       <div className="bg-gradient-to-r from-green-50 to-green-100 rounded-lg p-3 sm:p-4 border-l-4 border-green-500">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                           <div>
-                            <h5 className="font-semibold text-green-800 mb-1 text-sm sm:text-base">First Evaluation Round</h5>
-                            <p className="text-green-700 text-xs sm:text-sm">Initial assessment of submitted ideas</p>
+                            <h5 className="font-semibold text-green-800 mb-1 text-sm sm:text-base">
+                              First Evaluation Round
+                            </h5>
+                            <p className="text-green-700 text-xs sm:text-sm">
+                              Initial assessment of submitted ideas
+                            </p>
                           </div>
                           <div className="text-left sm:text-right">
                             <div className="bg-green-500 text-white px-2 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-medium">
-                              23 September 2025
+                              23 September 2026
                             </div>
                           </div>
                         </div>
@@ -320,19 +413,22 @@ const Timeline = () => {
                       <div className="bg-gradient-to-r from-purple-50 to-purple-100 rounded-lg p-3 sm:p-4 border-l-4 border-purple-500">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                           <div>
-                            <h5 className="font-semibold text-purple-800 mb-1 text-sm sm:text-base">Second Evaluation Round</h5>
-                            <p className="text-purple-700 text-xs sm:text-sm">Final evaluation and team selection</p>
+                            <h5 className="font-semibold text-purple-800 mb-1 text-sm sm:text-base">
+                              Second Evaluation Round
+                            </h5>
+                            <p className="text-purple-700 text-xs sm:text-sm">
+                              Final evaluation and team selection
+                            </p>
                           </div>
                           <div className="text-left sm:text-right">
                             <div className="bg-purple-500 text-white px-2 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-medium">
-                              24 September 2025
+                              24 September 2026
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   )}
-
                 </div>
               </div>
             ))}
@@ -347,22 +443,35 @@ const Timeline = () => {
               {/* End card content */}
               <div className="ml-4 sm:ml-8 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-4 sm:p-6 lg:p-8 shadow-lg flex-grow border-2 border-dashed border-gray-300">
                 <div className="text-center">
-                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-800 mb-4">Timeline Complete</h3>
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-800 mb-4">
+                    Timeline Complete
+                  </h3>
                   <p className="text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed mb-4 sm:mb-6">
-                    This marks the end of the current Internal SIH 2025 timeline. All institutional-level activities conclude with report compilation and portal upload.
+                    This marks the end of the current Internal SIH 2026
+                    timeline. All institutional-level activities conclude with
+                    report compilation and portal upload.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
                     <div className="bg-white rounded-lg px-3 py-2 sm:px-4 shadow-sm border border-gray-200">
-                      <span className="text-xs sm:text-sm text-gray-500">Phase Duration:</span>
-                      <div className="font-semibold text-gray-800 text-sm sm:text-base">August - September 2025</div>
+                      <span className="text-xs sm:text-sm text-gray-500">
+                        Phase Duration:
+                      </span>
+                      <div className="font-semibold text-gray-800 text-sm sm:text-base">
+                        August - September 2026
+                      </div>
                     </div>
                     <div className="bg-white rounded-lg px-3 py-2 sm:px-4 shadow-sm border border-gray-200">
-                      <span className="text-xs sm:text-sm text-gray-500">Total Events:</span>
-                      <div className="font-semibold text-gray-800 text-sm sm:text-base">{timelineEvents.length} Milestones</div>
+                      <span className="text-xs sm:text-sm text-gray-500">
+                        Total Events:
+                      </span>
+                      <div className="font-semibold text-gray-800 text-sm sm:text-base">
+                        {timelineEvents.length} Milestones
+                      </div>
                     </div>
                   </div>
                   <div className="mt-4 sm:mt-6 text-xs sm:text-sm text-gray-500">
-                    Stay tuned for updates on further phases and national-level competitions.
+                    Stay tuned for updates on further phases and national-level
+                    competitions.
                   </div>
                 </div>
               </div>
@@ -380,7 +489,7 @@ const Timeline = () => {
             <ul className="space-y-2 text-sm sm:text-base">
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                Registration closes: 17 September, 2025
+                Registration closes: 17 September, 2026
               </li>
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
@@ -416,7 +525,7 @@ const Timeline = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Timeline
+export default Timeline;

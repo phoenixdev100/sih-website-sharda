@@ -1,197 +1,219 @@
-import { useState } from 'react'
+import { useState } from "react";
 
 const Announcements = () => {
-  const [activeFilter, setActiveFilter] = useState('all')
+  const [activeFilter, setActiveFilter] = useState("all");
 
   const announcements = [
-    {
-      id: 7,
-      title: "🚨 Registration Closed - Evaluation Phase Begins!",
-      content: "Attention all teams! 📢 The registration phase for SIH 2025 has officially closed on September 17, 2025. It's now time to shift focus to the most crucial phase - preparing for evaluations! All registered teams should immediately begin working on their presentations and connect with mentors for guidance.",
-      category: "important",
-      priority: "high",
-      date: "2025-09-18",
-      details: [
-        "✅ Registration deadline has passed - No new registrations accepted",
-        "🎯 Focus on presentation preparation and solution development",
-        "👨‍🏫 Connect with assigned mentors for personalized guidance",
-        "📊 Prepare comprehensive project presentations",
-        "🔍 First Evaluation Round: September 23, 2025",
-        "🏆 Second Evaluation Round: September 24, 2025",
-        "💡 Refine your innovative solutions and technical implementations",
-        "📝 Ensure all documentation is complete and professional",
-        "🚀 Practice your pitch - presentation skills matter!",
-        "⏰ Time is limited - start preparation immediately!"
-      ],
-      link: "https://discord.com/invite/Eys77mrks5",
-      linkText: "Get Mentor Support"
-    },
-    {
-      id: 6,
-      title: "👨‍🏫 SIH 2025 Mentorship Program Begins September 15",
-      content: "Get ready to accelerate your SIH journey! AWS Cloud Club brings a comprehensive mentorship program starting on September 15, 2025. Learn from 2x SIH Winners, experienced hackathon mentors, and Microsoft-AWS professionals who will guide you through every step of your hackathon preparation.",
-      category: "events",
-      priority: "medium",
-      date: "2025-09-13",
-      details: [
-        "📅 Program starts: September 15, 2025",
-        "⏱️ Duration: 1-2 weeks of intensive mentorship",
-        "💻 Format: Online sessions for maximum accessibility",
-        "🏆 Learn from Jatin Vishwakarma (2x SIH Winner, SIH '24 Mentor)",
-        "☁️ Cloud expertise from Sourav Bera (AWS Solutions Architect, Microsoft PreSales)",
-        "🎯 Hackathon strategies and team leadership training",
-        "💡 Innovation workshops and technical skill development",
-        "🚀 End-to-end preparation for SIH 2025 success"
-      ],
-      link: "https://discord.com/invite/Eys77mrks5",
-      linkText: "Connect With Mentors"
-    },
-    {
-      id: 5,
-      title: "🤝 Official Partnership: AWS Cloud Club Sharda University",
-      content: "We're thrilled to announce our official collaboration with AWS Cloud Club Sharda University! 🎉 This strategic partnership brings world-class cloud computing resources, expert mentorship, and exclusive opportunities to all SIH 2025 participants. Get ready to leverage cutting-edge AWS technologies in your hackathon solutions!",
-      category: "partnership",
-      priority: "medium",
-      date: "2025-09-13",
-      details: [
-        "🤝 Register on Meetup to join AWS Cloud Club",
-        "🌟 Exclusive AWS credits for all registered teams",
-        "☁️ Access to premium AWS services and tools",
-        "👨‍💻 Technical workshops on cloud architecture",
-        "🎯 Direct mentorship from AWS certified professionals",
-        "🚀 Priority support for cloud-based solutions",
-        "📚 Comprehensive learning resources and documentation",
-        "🏆 Special recognition for best cloud implementation",
-        "🔗 Join the AWS Cloud Club for ongoing support"
-      ],
-      link: "http://linktr.ee/awscloudclubshardauniversity",
-      linkText: "Connect with AWS Cloud Club"
-    },
-    {
-      id: 3,
-      title: "🎯 Team Registration Now Open!",
-      content: "Exciting news! Team registration for Smart India Hackathon 2025 is now officially open. All eligible teams can register from September 8th to September 17th, 2025. Don't miss this opportunity to be part of India's biggest hackathon. Register your team today and showcase your innovative solutions!",
-      category: "registration",
-      priority: "high",
-      date: "2025-09-08",
-      details: [
-        "Registration period: September 8-17, 2025",
-        "Open for all eligible educational institutions",
-        "Team size: 6 members (1 Team Lead + 5 Other Team Members)",
-        "Each team must include at least one girl/female member",
-        "Multiple teams can register from same institution",
-        "A participant can be part of only one team"
-      ],
-      link: "https://forms.gle/CnqcDwV7DUrGxTD36",
-      linkText: "Register Your Team"
-    },
-    {
-      id: 2,
-      title: "📊 Official Presentation Format Available",
-      content: "The official presentation template for SIH 2025 submissions is now available for download. All teams must use this standardized format for their final presentations to ensure consistency and proper evaluation. The template includes guidelines for content structure, design elements, and submission requirements.",
-      category: "guidelines",
-      priority: "high",
-      date: "2025-09-06",
-      details: [
-        "Standardized PowerPoint template with official SIH branding",
-        "Pre-defined slide layouts for problem statement, solution, and demo",
-        "Guidelines for content organization and presentation flow",
-        "Technical specifications and submission format requirements"
-      ],
-      link: "./SIH-Presentation-Format.pptx",
-      linkText: "Download PPT Template"
-    },
-    {
-      id: 1,
-      title: "🚀 SIH 2025 Problem Statements Are Now Live!",
-      content: "We're excited to announce that the official Smart India Hackathon 2025 problem statements have been released! Teams can now browse through 18 major themes including MedTech/BioTech/HealthTech, Smart Education, Agriculture/FoodTech & Rural Development, Smart Automation, Fintech, Clean & Green Technology, and many more cutting-edge categories.",
-      category: "updates",
-      priority: "high",
-      date: "2025-08-27",
-      details: [
-        "Over 2877+ problem statements across 18 major themes",
-        "Problems sourced from 100+ government ministries and departments",
-        "New themes include Space Technology, Robotics & Drones, Heritage & Culture",
-        "Enhanced focus on emerging technologies like Blockchain & Cybersecurity"
-      ],
-      link: "https://www.sih.gov.in/sih2025PS",
-      linkText: "View Problem Statements"
-    }
-  ]
+    // {
+    //   id: 7,
+    //   title: "🚨 Registration Closed - Evaluation Phase Begins!",
+    //   content:
+    //     "Attention all teams! 📢 The registration phase for SIH 2026 has officially closed on September 17, 2026. It's now time to shift focus to the most crucial phase - preparing for evaluations! All registered teams should immediately begin working on their presentations and connect with mentors for guidance.",
+    //   category: "important",
+    //   priority: "high",
+    //   date: "2026-09-18",
+    //   details: [
+    //     "✅ Registration deadline has passed - No new registrations accepted",
+    //     "🎯 Focus on presentation preparation and solution development",
+    //     "👨‍🏫 Connect with assigned mentors for personalized guidance",
+    //     "📊 Prepare comprehensive project presentations",
+    //     "🔍 First Evaluation Round: September 23, 2026",
+    //     "🏆 Second Evaluation Round: September 24, 2026",
+    //     "💡 Refine your innovative solutions and technical implementations",
+    //     "📝 Ensure all documentation is complete and professional",
+    //     "🚀 Practice your pitch - presentation skills matter!",
+    //     "⏰ Time is limited - start preparation immediately!",
+    //   ],
+    //   link: "https://discord.com/invite/Eys77mrks5",
+    //   linkText: "Get Mentor Support",
+    // },
+    // {
+    //   id: 6,
+    //   title: "👨‍🏫 SIH 2026 Mentorship Program Begins September 15",
+    //   content:
+    //     "Get ready to accelerate your SIH journey! AWS Cloud Club brings a comprehensive mentorship program starting on September 15, 2026. Learn from 2x SIH Winners, experienced hackathon mentors, and Microsoft-AWS professionals who will guide you through every step of your hackathon preparation.",
+    //   category: "events",
+    //   priority: "medium",
+    //   date: "2026-09-13",
+    //   details: [
+    //     "📅 Program starts: September 15, 2026",
+    //     "⏱️ Duration: 1-2 weeks of intensive mentorship",
+    //     "💻 Format: Online sessions for maximum accessibility",
+    //     "🏆 Learn from Jatin Vishwakarma (2x SIH Winner, SIH '24 Mentor)",
+    //     "☁️ Cloud expertise from Sourav Bera (AWS Solutions Architect, Microsoft PreSales)",
+    //     "🎯 Hackathon strategies and team leadership training",
+    //     "💡 Innovation workshops and technical skill development",
+    //     "🚀 End-to-end preparation for SIH 2026 success",
+    //   ],
+    //   link: "https://discord.com/invite/Eys77mrks5",
+    //   linkText: "Connect With Mentors",
+    // },
+    // {
+    //   id: 5,
+    //   title: "🤝 Official Partnership: AWS Cloud Club Sharda University",
+    //   content:
+    //     "We're thrilled to announce our official collaboration with AWS Cloud Club Sharda University! 🎉 This strategic partnership brings world-class cloud computing resources, expert mentorship, and exclusive opportunities to all SIH 2026 participants. Get ready to leverage cutting-edge AWS technologies in your hackathon solutions!",
+    //   category: "partnership",
+    //   priority: "medium",
+    //   date: "2026-09-13",
+    //   details: [
+    //     "🤝 Register on Meetup to join AWS Cloud Club",
+    //     "🌟 Exclusive AWS credits for all registered teams",
+    //     "☁️ Access to premium AWS services and tools",
+    //     "👨‍💻 Technical workshops on cloud architecture",
+    //     "🎯 Direct mentorship from AWS certified professionals",
+    //     "🚀 Priority support for cloud-based solutions",
+    //     "📚 Comprehensive learning resources and documentation",
+    //     "🏆 Special recognition for best cloud implementation",
+    //     "🔗 Join the AWS Cloud Club for ongoing support",
+    //   ],
+    //   link: "http://linktr.ee/awscloudclubshardauniversity",
+    //   linkText: "Connect with AWS Cloud Club",
+    // },
+    // {
+    //   id: 3,
+    //   title: "🎯 Team Registration Now Open!",
+    //   content:
+    //     "Exciting news! Team registration for Smart India Hackathon 2026 is now officially open. All eligible teams can register from September 8th to September 17th, 2026. Don't miss this opportunity to be part of India's biggest hackathon. Register your team today and showcase your innovative solutions!",
+    //   category: "registration",
+    //   priority: "high",
+    //   date: "2026-09-08",
+    //   details: [
+    //     "Registration period: September 8-17, 2026",
+    //     "Open for all eligible educational institutions",
+    //     "Team size: 6 members (1 Team Lead + 5 Other Team Members)",
+    //     "Each team must include at least one girl/female member",
+    //     "Multiple teams can register from same institution",
+    //     "A participant can be part of only one team",
+    //   ],
+    //   link: "https://forms.gle/CnqcDwV7DUrGxTD36",
+    //   linkText: "Register Your Team",
+    // },
+    // {
+    //   id: 2,
+    //   title: "📊 Official Presentation Format Available",
+    //   content:
+    //     "The official presentation template for SIH 2026 submissions is now available for download. All teams must use this standardized format for their final presentations to ensure consistency and proper evaluation. The template includes guidelines for content structure, design elements, and submission requirements.",
+    //   category: "guidelines",
+    //   priority: "high",
+    //   date: "2026-09-06",
+    //   details: [
+    //     "Standardized PowerPoint template with official SIH branding",
+    //     "Pre-defined slide layouts for problem statement, solution, and demo",
+    //     "Guidelines for content organization and presentation flow",
+    //     "Technical specifications and submission format requirements",
+    //   ],
+    //   link: "./SIH-Presentation-Format.pptx",
+    //   linkText: "Download PPT Template",
+    // },
+    // {
+    //   id: 1,
+    //   title: "🚀 SIH 2026 Problem Statements Are Now Live!",
+    //   content:
+    //     "We're excited to announce that the official Smart India Hackathon 2026 problem statements have been released! Teams can now browse through 18 major themes including MedTech/BioTech/HealthTech, Smart Education, Agriculture/FoodTech & Rural Development, Smart Automation, Fintech, Clean & Green Technology, and many more cutting-edge categories.",
+    //   category: "updates",
+    //   priority: "high",
+    //   date: "2026-08-27",
+    //   details: [
+    //     "Over 2877+ problem statements across 18 major themes",
+    //     "Problems sourced from 100+ government ministries and departments",
+    //     "New themes include Space Technology, Robotics & Drones, Heritage & Culture",
+    //     "Enhanced focus on emerging technologies like Blockchain & Cybersecurity",
+    //   ],
+    //   link: "https://www.sih.gov.in/sih2026PS",
+    //   linkText: "View Problem Statements",
+    // },
+  ];
 
   const categories = [
-    { id: 'all', name: 'All Announcements', icon: '📢' },
-    { id: 'important', name: 'Important', icon: '🚨' },
-    { id: 'partnership', name: 'Partnerships', icon: '🤝' },
-    { id: 'registration', name: 'Registration', icon: '📝' },
-    { id: 'updates', name: 'Updates', icon: '🔄' },
-    { id: 'guidelines', name: 'Guidelines', icon: '📋' },
-    { id: 'events', name: 'Events', icon: '🎉' }
-  ]
+    { id: "all", name: "All Announcements", icon: "📢" },
+    { id: "important", name: "Important", icon: "🚨" },
+    { id: "partnership", name: "Partnerships", icon: "🤝" },
+    { id: "registration", name: "Registration", icon: "📝" },
+    { id: "updates", name: "Updates", icon: "🔄" },
+    { id: "guidelines", name: "Guidelines", icon: "📋" },
+    { id: "events", name: "Events", icon: "🎉" },
+  ];
 
   const getPriorityColor = (priority) => {
     switch (priority) {
-      case 'high': return 'bg-red-100 text-red-800 border-red-200'
-      case 'medium': return 'bg-yellow-100 text-yellow-800 border-yellow-200'
-      case 'low': return 'bg-green-100 text-green-800 border-green-200'
-      default: return 'bg-gray-100 text-gray-800 border-gray-200'
+      case "high":
+        return "bg-red-100 text-red-800 border-red-200";
+      case "medium":
+        return "bg-yellow-100 text-yellow-800 border-yellow-200";
+      case "low":
+        return "bg-green-100 text-green-800 border-green-200";
+      default:
+        return "bg-gray-100 text-gray-800 border-gray-200";
     }
-  }
+  };
 
   const getPriorityIcon = (priority) => {
     switch (priority) {
-      case 'high': return '🔴'
-      case 'medium': return '🟡'
-      case 'low': return '🟢'
-      default: return '⚪'
+      case "high":
+        return "🔴";
+      case "medium":
+        return "🟡";
+      case "low":
+        return "🟢";
+      default:
+        return "⚪";
     }
-  }
+  };
 
-  const filteredAnnouncements = activeFilter === 'all'
-    ? announcements
-    : announcements.filter(announcement => announcement.category === activeFilter)
+  const filteredAnnouncements =
+    activeFilter === "all"
+      ? announcements
+      : announcements.filter(
+          (announcement) => announcement.category === activeFilter,
+        );
 
   const formatDate = (dateString) => {
-    const date = new Date(dateString)
-    return date.toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    })
-  }
+    const date = new Date(dateString);
+    return date.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+  };
 
   return (
     <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4 sm:mb-6 px-4">📢 Announcements</h1>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4 sm:mb-6 px-4">
+            📢 Announcements
+          </h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
-            Stay updated with the latest news, updates, and important information about SIH 2025
+            Stay updated with the latest news, updates, and important
+            information about SIH 2026
           </p>
         </div>
 
         {/* Stats Cards */}
         <div className="grid md:grid-cols-4 gap-6 mb-12">
           <div className="bg-white rounded-xl shadow-lg p-6 text-center border-l-4 border-blue-500">
-            <div className="text-3xl font-bold text-blue-600 mb-2">{announcements.length}</div>
+            <div className="text-3xl font-bold text-blue-600 mb-2">
+              {announcements.length}
+            </div>
             <div className="text-gray-600">Total Announcements</div>
           </div>
           <div className="bg-white rounded-xl shadow-lg p-6 text-center border-l-4 border-red-500">
             <div className="text-3xl font-bold text-red-600 mb-2">
-              {announcements.filter(a => a.priority === 'high').length}
+              {announcements.filter((a) => a.priority === "high").length}
             </div>
             <div className="text-gray-600">High Priority</div>
           </div>
           <div className="bg-white rounded-xl shadow-lg p-6 text-center border-l-4 border-orange-500">
             <div className="text-3xl font-bold text-orange-600 mb-2">
-              {announcements.filter(a => a.category === 'important').length}
+              {announcements.filter((a) => a.category === "important").length}
             </div>
             <div className="text-gray-600">Important Updates</div>
           </div>
           <div className="bg-white rounded-xl shadow-lg p-6 text-center border-l-4 border-purple-500">
             <div className="text-3xl font-bold text-purple-600 mb-2">
-              {announcements.filter(a => a.category === 'events').length}
+              {announcements.filter((a) => a.category === "events").length}
             </div>
             <div className="text-gray-600">Events & Workshops</div>
           </div>
@@ -203,10 +225,11 @@ const Announcements = () => {
             <button
               key={category.id}
               onClick={() => setActiveFilter(category.id)}
-              className={`flex items-center space-x-2 px-6 py-3 rounded-lg font-medium transition-all duration-300 m-1 ${activeFilter === category.id
-                ? 'bg-blue-600 text-white shadow-lg transform scale-105'
-                : 'text-gray-600 hover:bg-gray-100'
-                }`}
+              className={`flex items-center space-x-2 px-6 py-3 rounded-lg font-medium transition-all duration-300 m-1 ${
+                activeFilter === category.id
+                  ? "bg-blue-600 text-white shadow-lg transform scale-105"
+                  : "text-gray-600 hover:bg-gray-100"
+              }`}
             >
               <span className="text-lg">{category.icon}</span>
               <span className="hidden sm:inline">{category.name}</span>
@@ -217,24 +240,38 @@ const Announcements = () => {
         {/* Announcements Grid */}
         <div className="grid gap-8">
           {filteredAnnouncements.map((announcement) => (
-            <div key={announcement.id} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
+            <div
+              key={announcement.id}
+              className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
+            >
               <div className="p-8">
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6">
                   <div className="flex-grow">
                     <div className="flex items-center mb-4">
-                      <span className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium border ${getPriorityColor(announcement.priority)} mr-3`}>
-                        {getPriorityIcon(announcement.priority)} {announcement.priority.toUpperCase()}
+                      <span
+                        className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium border ${getPriorityColor(announcement.priority)} mr-3`}
+                      >
+                        {getPriorityIcon(announcement.priority)}{" "}
+                        {announcement.priority.toUpperCase()}
                       </span>
-                      <span className="text-sm text-gray-500">{formatDate(announcement.date)}</span>
+                      <span className="text-sm text-gray-500">
+                        {formatDate(announcement.date)}
+                      </span>
                     </div>
-                    <h2 className="text-2xl font-bold text-gray-800 mb-4">{announcement.title}</h2>
-                    <p className="text-gray-700 text-lg leading-relaxed mb-6">{announcement.content}</p>
+                    <h2 className="text-2xl font-bold text-gray-800 mb-4">
+                      {announcement.title}
+                    </h2>
+                    <p className="text-gray-700 text-lg leading-relaxed mb-6">
+                      {announcement.content}
+                    </p>
                   </div>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-800 mb-4">Key Details:</h3>
+                    <h3 className="text-lg font-semibold text-gray-800 mb-4">
+                      Key Details:
+                    </h3>
                     <ul className="space-y-2">
                       {announcement.details.map((detail, index) => (
                         <li key={index} className="flex items-start">
@@ -248,8 +285,16 @@ const Announcements = () => {
                   <div className="flex items-end justify-end">
                     <a
                       href={announcement.link}
-                      target={announcement.link.startsWith('http') ? '_blank' : '_self'}
-                      rel={announcement.link.startsWith('http') ? 'noopener noreferrer' : ''}
+                      target={
+                        announcement.link.startsWith("http")
+                          ? "_blank"
+                          : "_self"
+                      }
+                      rel={
+                        announcement.link.startsWith("http")
+                          ? "noopener noreferrer"
+                          : ""
+                      }
                       className="bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-3 px-8 rounded-lg hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
                     >
                       {announcement.linkText} →
@@ -265,8 +310,12 @@ const Announcements = () => {
         {filteredAnnouncements.length === 0 && (
           <div className="text-center py-12">
             <div className="text-6xl mb-4">📭</div>
-            <h3 className="text-2xl font-bold text-gray-800 mb-2">No Announcements Found</h3>
-            <p className="text-gray-600">No announcements match the selected filter.</p>
+            <h3 className="text-2xl font-bold text-gray-800 mb-2">
+              No Announcements Found
+            </h3>
+            <p className="text-gray-600">
+              No announcements match the selected filter.
+            </p>
           </div>
         )}
 
@@ -274,7 +323,8 @@ const Announcements = () => {
         <div className="mt-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl p-8 text-white text-center">
           <h3 className="text-2xl font-bold mb-4">📬 Stay Updated</h3>
           <p className="text-lg mb-6 max-w-2xl mx-auto">
-            Don't miss any important announcements! Join our WhatsApp group for instant notifications.
+            Don't miss any important announcements! Join our WhatsApp group for
+            instant notifications.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -293,7 +343,7 @@ const Announcements = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Announcements
+export default Announcements;

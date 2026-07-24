@@ -1,6 +1,6 @@
 # 📝 Changelog
 
-All notable changes to the Sharda University Internal Hackathon 2025 platform will be documented in this file.
+All notable changes to the Sharda University Internal Hackathon 2026 platform will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -8,15 +8,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### 🔄 In Development
+
 - Enhanced mobile responsiveness
 - Performance optimizations
 - Accessibility improvements
 
-## [1.0.0] - 2025-01-08
+## [1.0.0] - 2026-01-08
 
 ### 🎉 Initial Release
 
 #### ✨ Added
+
 - **Homepage** with hero section and 3D animations
 - **Registration Portal** with multi-step form process
 - **Contact System** with faculty and student coordinators
@@ -29,6 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Interactive Elements** with hover effects and animations
 
 #### 🎨 Features
+
 - **Team Registration System**
   - 6-member team formation
   - Gender diversity validation
@@ -69,6 +72,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Error handling and user feedback
 
 #### 🛠️ Technical Implementation
+
 - **React 19.1.1** with modern hooks and features
 - **Vite 7.1.2** for fast development and building
 - **Tailwind CSS 3.3.6** for utility-first styling
@@ -77,6 +81,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **PostCSS** and **Autoprefixer** for CSS processing
 
 #### 📱 Responsive Features
+
 - Mobile-optimized navigation menu
 - Touch-friendly interactive elements
 - Responsive grid layouts
@@ -84,6 +89,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Cross-device compatibility
 
 #### ♿ Accessibility
+
 - Semantic HTML structure
 - ARIA labels and roles
 - Keyboard navigation support
@@ -93,6 +99,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### 🔧 Technical Details
 
 #### Dependencies
+
 ```json
 {
   "react": "^19.1.1",
@@ -102,6 +109,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ```
 
 #### Development Dependencies
+
 ```json
 {
   "@vitejs/plugin-react": "^5.0.0",
@@ -112,12 +120,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ```
 
 #### Build Configuration
+
 - **Vite** for fast HMR and optimized builds
 - **Tailwind CSS** with custom configuration
 - **ESLint** with React-specific rules
 - **PostCSS** for CSS processing
 
 ### 📊 Statistics
+
 - **18** problem categories
 - **800+** total problem statements
 - **10** coordinator contacts
@@ -126,6 +136,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **WCAG 2.1** accessibility compliance
 
 ### 🌟 Highlights
+
 - **Modern Tech Stack** with latest React features
 - **Beautiful UI/UX** with professional design
 - **Comprehensive Information** for all participants
@@ -139,13 +150,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Upcoming Releases
 
-#### [1.1.0] - Planned for February 2025
+#### [1.1.0] - Planned for February 2026
+
 - Dark mode implementation
 - Advanced search functionality
 - Enhanced form validation
 - Performance optimizations
 
-#### [1.2.0] - Planned for March 2025
+#### [1.2.0] - Planned for March 2026
+
 - Real-time notifications
 - Team collaboration features
 - Advanced analytics dashboard
@@ -155,11 +168,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 🔗 Links
 
-- [GitHub Repository](https://github.com/your-username/sharda-sih-2025)
+- [GitHub Repository](https://github.com/your-username/sharda-sih-2026)
 - [Live Demo](https://your-demo-link.com)
 - [Documentation](README.md)
 - [Contributing Guidelines](CONTRIBUTING.md)
-- [Issue Tracker](https://github.com/your-username/sharda-sih-2025/issues)
+- [Issue Tracker](https://github.com/your-username/sharda-sih-2026/issues)
 
 ---
 
@@ -174,4 +187,4 @@ Special thanks to all contributors who made this release possible:
 
 ---
 
-**For detailed information about each release, visit our [GitHub Releases](https://github.com/your-username/sharda-sih-2025/releases) page.**
+**For detailed information about each release, visit our [GitHub Releases](https://github.com/your-username/sharda-sih-2026/releases) page.**

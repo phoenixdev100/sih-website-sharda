@@ -1,12 +1,12 @@
 <div align="center">
 
-# 🚀 Sharda University Internal Hackathon 2025
+# 🚀 Sharda University Internal Hackathon 2026
 
 </div>
 
 <div align="center">
 
-![SIH 2025](https://img.shields.io/badge/SIH-2025-blue?style=for-the-badge&logo=react)
+![SIH 2026](https://img.shields.io/badge/SIH-2026-blue?style=for-the-badge&logo=react)
 ![React](https://img.shields.io/badge/React-19.1.1-61DAFB?style=for-the-badge&logo=react)
 ![Vite](https://img.shields.io/badge/Vite-7.1.2-646CFF?style=for-the-badge&logo=vite)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind-3.3.6-38B2AC?style=for-the-badge&logo=tailwind-css)
@@ -21,7 +21,7 @@
 
 </div>
 
-The **Sharda University Internal Hackathon 2025** is the official institutional-level selection process for Smart India Hackathon (SIH) 2025. This comprehensive web platform serves as the central hub for registration, information, guidelines, and coordination for all participating teams.
+The **Sharda University Internal Hackathon 2026** is the official institutional-level selection process for Smart India Hackathon (SIH) 2026. This comprehensive web platform serves as the central hub for registration, information, guidelines, and coordination for all participating teams.
 
 ### 🎯 Key Features
 
@@ -41,12 +41,14 @@ The **Sharda University Internal Hackathon 2025** is the official institutional-
 </div>
 
 ### Frontend
+
 - **React 19.1.1** - Modern UI library with latest features
 - **Vite 7.1.2** - Lightning-fast build tool and dev server
 - **React Router DOM 6.20.1** - Client-side routing
 - **Tailwind CSS 3.3.6** - Utility-first CSS framework
 
 ### Development Tools
+
 - **ESLint** - Code linting and quality assurance
 - **PostCSS** - CSS processing and optimization
 - **Autoprefixer** - Automatic vendor prefixing
@@ -60,6 +62,7 @@ The **Sharda University Internal Hackathon 2025** is the official institutional-
 </div>
 
 ### Prerequisites
+
 - Node.js (v18 or higher)
 - npm or yarn package manager
 - Git
@@ -67,12 +70,14 @@ The **Sharda University Internal Hackathon 2025** is the official institutional-
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/phoenixdev100/sih-website-sharda.git
    cd sih-website-sharda
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    # or
@@ -80,6 +85,7 @@ The **Sharda University Internal Hackathon 2025** is the official institutional-
    ```
 
 3. **Start development server**
+
    ```bash
    npm run dev
    # or
@@ -143,24 +149,28 @@ sih-website-sharda/
 </div>
 
 ### 🏠 Homepage
+
 - **Hero Section** - Eye-catching introduction with 3D animations
 - **Statistics** - Live participant count and prize information
 - **Problem Tracks** - Visual representation of all domains
 - **Timeline Preview** - Key dates and milestones
 
 ### 📝 Registration Portal
+
 - **Multi-step Form** - Intuitive registration process
 - **Team Management** - 6-member team formation with validation
 - **Document Upload** - Secure file handling system
 - **Rules Modal** - Interactive popup with important guidelines
 
 ### 📞 Contact System
+
 - **Faculty Coordinators** - Complete contact information
 - **Student Coordinators** - Peer support network
 - **Department-wise Support** - Specialized guidance by domain
 - **Multiple Communication Channels** - Email, phone, WhatsApp
 
 ### 📋 Guidelines & FAQ
+
 - **Comprehensive Rules** - Detailed participation guidelines
 - **Eligibility Criteria** - Clear requirements and restrictions
 - **Technical Requirements** - Platform and skill specifications
@@ -175,6 +185,7 @@ sih-website-sharda/
 </div>
 
 ### 📊 Problem Categories (18 Domains)
+
 - **MedTech/BioTech/HealthTech** (85+ problems)
 - **Smart Education** (92+ problems)
 - **Agriculture & FoodTech** (78+ problems)
@@ -195,6 +206,7 @@ sih-website-sharda/
 - **Miscellaneous** (95+ problems)
 
 ### 👥 Team Requirements
+
 - **Team Size**: Exactly 6 members
 - **Gender Diversity**: At least 1 female member mandatory
 - **Eligibility**: All members must be current students
@@ -211,6 +223,7 @@ sih-website-sharda/
 We welcome contributions from the community! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute to this project.
 
 ### Development Workflow
+
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
 3. Commit your changes (`git commit -m 'Add amazing feature'`)
@@ -229,10 +242,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-
 ### 🔗 Important Links
+
 - [Official SIH Website](https://www.sih.gov.in/)
-- [Problem Statements](https://www.sih.gov.in/sih2025PS)
+- [Problem Statements](https://www.sih.gov.in/sih2026PS)
 - [Registration Form](https://forms.gle/CnqcDwV7DUrGxTD36)
 - [WhatsApp Group](https://chat.whatsapp.com/JPbRnAhHNnRLpfE5MIQ3PO)
 
@@ -255,7 +268,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Made with ❤️ by phoenixdev100**
 
-[![GitHub stars](https://img.shields.io/github/stars/phoenixdev100/sharda-sih-2025?style=social)](https://github.com/phoenixdev100/sharda-sih-2025/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/phoenixdev100/sharda-sih-2025?style=social)](https://github.com/phoenixdev100/sharda-sih-2025/network/members)
+[![GitHub stars](https://img.shields.io/github/stars/phoenixdev100/sharda-sih-2026?style=social)](https://github.com/phoenixdev100/sharda-sih-2026/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/phoenixdev100/sharda-sih-2026?style=social)](https://github.com/phoenixdev100/sharda-sih-2026/network/members)
 
 </div>

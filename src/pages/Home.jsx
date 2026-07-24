@@ -1,48 +1,68 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const stats = [
     { number: "36", label: "Hours", icon: "⏰" },
     { number: "₹1L+", label: "Prize Money", icon: "💰" },
     { number: "13,91,884", label: "Participants", icon: "👥" },
-    { number: "2877+", label: "Problem Statements", icon: "📋" }
-  ]
+    { number: "2877+", label: "Problem Statements", icon: "📋" },
+  ];
 
   const highlights = [
     {
       title: "Innovation Challenge",
       description: "Tackle real-world problems with cutting-edge solutions",
       icon: "💡",
-      gradient: "from-yellow-400 to-orange-500"
+      gradient: "from-yellow-400 to-orange-500",
     },
     {
       title: "Industry Mentors",
       description: "Get guidance from tech leaders and domain experts",
       icon: "🎓",
-      gradient: "from-blue-400 to-indigo-500"
+      gradient: "from-blue-400 to-indigo-500",
     },
     {
       title: "Government Impact",
       description: "Build solutions that can transform public services",
       icon: "🏛️",
-      gradient: "from-green-400 to-teal-500"
+      gradient: "from-green-400 to-teal-500",
     },
     {
       title: "Career Opportunities",
       description: "Connect with recruiters and showcase your talent",
       icon: "🚀",
-      gradient: "from-purple-400 to-pink-500"
-    }
-  ]
+      gradient: "from-purple-400 to-pink-500",
+    },
+  ];
 
   const tracks = [
-    { name: "MedTech/HealthTech", color: "bg-red-600", count: "85+", icon: "🏥" },
+    {
+      name: "MedTech/HealthTech",
+      color: "bg-red-600",
+      count: "85+",
+      icon: "🏥",
+    },
     { name: "Smart Education", color: "bg-blue-600", count: "92+", icon: "🎓" },
-    { name: "Agriculture/FoodTech", color: "bg-green-700", count: "78+", icon: "🌱" },
-    { name: "Smart Automation", color: "bg-purple-600", count: "65+", icon: "🤖" },
+    {
+      name: "Agriculture/FoodTech",
+      color: "bg-green-700",
+      count: "78+",
+      icon: "🌱",
+    },
+    {
+      name: "Smart Automation",
+      color: "bg-purple-600",
+      count: "65+",
+      icon: "🤖",
+    },
     { name: "Fintech", color: "bg-yellow-700", count: "58+", icon: "💰" },
-    { name: "Clean & Green Tech", color: "bg-teal-700", count: "72+", icon: "🌍" }
-  ]
+    {
+      name: "Clean & Green Tech",
+      color: "bg-teal-700",
+      count: "72+",
+      icon: "🌍",
+    },
+  ];
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -53,13 +73,25 @@ const Home = () => {
           {/* Animated geometric shapes */}
           <div className="absolute top-16 left-8 w-24 h-24 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-2xl rotate-45 opacity-20 animate-bounce"></div>
           <div className="absolute top-32 right-16 w-20 h-20 bg-gradient-to-r from-pink-400 to-red-500 rounded-full opacity-30 animate-pulse"></div>
-          <div className="absolute bottom-24 left-1/4 w-32 h-32 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-xl rotate-12 opacity-15 animate-spin" style={{ animationDuration: '20s' }}></div>
-          <div className="absolute bottom-16 right-1/3 w-24 h-24 bg-gradient-to-r from-green-400 to-teal-500 rounded-full opacity-25 animate-ping" style={{ animationDuration: '3s' }}></div>
+          <div
+            className="absolute bottom-24 left-1/4 w-32 h-32 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-xl rotate-12 opacity-15 animate-spin"
+            style={{ animationDuration: "20s" }}
+          ></div>
+          <div
+            className="absolute bottom-16 right-1/3 w-24 h-24 bg-gradient-to-r from-green-400 to-teal-500 rounded-full opacity-25 animate-ping"
+            style={{ animationDuration: "3s" }}
+          ></div>
 
           {/* Floating particles */}
           <div className="absolute top-1/4 left-1/2 w-2 h-2 bg-white rounded-full opacity-60 animate-pulse"></div>
-          <div className="absolute top-1/3 left-1/4 w-1 h-1 bg-cyan-300 rounded-full opacity-80 animate-bounce" style={{ animationDelay: '1s' }}></div>
-          <div className="absolute bottom-1/4 right-1/4 w-3 h-3 bg-pink-300 rounded-full opacity-50 animate-pulse" style={{ animationDelay: '2s' }}></div>
+          <div
+            className="absolute top-1/3 left-1/4 w-1 h-1 bg-cyan-300 rounded-full opacity-80 animate-bounce"
+            style={{ animationDelay: "1s" }}
+          ></div>
+          <div
+            className="absolute bottom-1/4 right-1/4 w-3 h-3 bg-pink-300 rounded-full opacity-50 animate-pulse"
+            style={{ animationDelay: "2s" }}
+          ></div>
 
           {/* Grid pattern overlay */}
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent transform -skew-y-12"></div>
@@ -71,19 +103,24 @@ const Home = () => {
             <div className="space-y-4">
               <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black leading-tight">
                 <span className="block bg-gradient-to-r from-white via-cyan-200 to-blue-300 bg-clip-text text-transparent drop-shadow-2xl">
-                  <span className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl">Internal</span>
+                  <span className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl">
+                    Internal
+                  </span>
                 </span>
                 <span className="block bg-gradient-to-r from-orange-400 via-pink-400 to-red-400 bg-clip-text text-transparent drop-shadow-2xl">
-                  Smart India Hackathon 2025
+                  Smart India Hackathon 2026
                 </span>
               </h1>
               <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-xl rounded-full border border-white/30 shadow-2xl">
-                <span className="text-white font-semibold text-sm">🏛️ Sharda University</span>
+                <span className="text-white font-semibold text-sm">
+                  🏛️ Sharda University
+                </span>
               </div>
             </div>
 
             <p className="text-base sm:text-lg md:text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed drop-shadow-lg px-4">
-              India's premier innovation platform where brilliant minds collaborate to solve real-world challenges
+              India's premier innovation platform where brilliant minds
+              collaborate to solve real-world challenges
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center items-center pt-4 px-4">
@@ -105,8 +142,12 @@ const Home = () => {
               {stats.map((stat, index) => (
                 <div key={index} className="text-center group">
                   <div className="bg-white/10 backdrop-blur-xl rounded-xl p-3 sm:p-4 border border-white/20 shadow-2xl group-hover:bg-white/20 transition-all duration-300 transform group-hover:-translate-y-1">
-                    <div className="text-xl sm:text-2xl md:text-3xl font-black text-cyan-300 mb-1 drop-shadow-lg">{stat.number}</div>
-                    <div className="text-blue-200 text-xs sm:text-sm font-medium">{stat.label}</div>
+                    <div className="text-xl sm:text-2xl md:text-3xl font-black text-cyan-300 mb-1 drop-shadow-lg">
+                      {stat.number}
+                    </div>
+                    <div className="text-blue-200 text-xs sm:text-sm font-medium">
+                      {stat.label}
+                    </div>
                   </div>
                 </div>
               ))}
@@ -119,7 +160,9 @@ const Home = () => {
       <section className="py-12 sm:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">Why Join SIH 2025?</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Why Join SIH 2026?
+            </h2>
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
               Experience innovation, mentorship, and real-world impact
             </p>
@@ -129,12 +172,18 @@ const Home = () => {
             {highlights.map((highlight, index) => (
               <div key={index} className="group text-center">
                 <div className="relative mb-6">
-                  <div className={`w-16 h-16 mx-auto rounded-2xl bg-gradient-to-r ${highlight.gradient} flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                  <div
+                    className={`w-16 h-16 mx-auto rounded-2xl bg-gradient-to-r ${highlight.gradient} flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform duration-300`}
+                  >
                     {highlight.icon}
                   </div>
                 </div>
-                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3">{highlight.title}</h3>
-                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">{highlight.description}</p>
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3">
+                  {highlight.title}
+                </h3>
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                  {highlight.description}
+                </p>
               </div>
             ))}
           </div>
@@ -145,7 +194,9 @@ const Home = () => {
       <section className="py-12 sm:py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">Problem Tracks</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Problem Tracks
+            </h2>
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
               Choose from diverse domains and make a real impact
             </p>
@@ -161,12 +212,16 @@ const Home = () => {
                   </div>
 
                   {/* Count Badge */}
-                  <div className={`inline-flex items-center justify-center w-14 h-7 ${track.color} rounded-full text-white font-bold text-xs mb-3`}>
+                  <div
+                    className={`inline-flex items-center justify-center w-14 h-7 ${track.color} rounded-full text-white font-bold text-xs mb-3`}
+                  >
                     {track.count}
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-xs sm:text-sm font-bold text-gray-900 mb-1 leading-tight text-center px-1">{track.name}</h3>
+                  <h3 className="text-xs sm:text-sm font-bold text-gray-900 mb-1 leading-tight text-center px-1">
+                    {track.name}
+                  </h3>
                   <p className="text-xs text-gray-600">Problems</p>
                 </div>
               </div>
@@ -179,9 +234,11 @@ const Home = () => {
       <section className="py-12 sm:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">Event Timeline</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Event Timeline
+            </h2>
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
-              Key dates and milestones for SIH 2025
+              Key dates and milestones for SIH 2026
             </p>
           </div>
 
@@ -190,24 +247,38 @@ const Home = () => {
               <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center text-white font-bold text-2xl mx-auto mb-4">
                 1
               </div>
-              <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2">Registration</h3>
-              <p className="text-sm sm:text-base text-gray-600">Opens August 2025</p>
-              <p className="text-sm text-gray-500">Form your team and register</p>
+              <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2">
+                Registration
+              </h3>
+              <p className="text-sm sm:text-base text-gray-600">
+                Opens August 2026
+              </p>
+              <p className="text-sm text-gray-500">
+                Form your team and register
+              </p>
             </div>
             <div className="text-center">
               <div className="w-20 h-20 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center text-white font-bold text-2xl mx-auto mb-4">
                 2
               </div>
-              <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2">Internal Hackathon</h3>
-              <p className="text-sm sm:text-base text-gray-600 mb-2">Aug-Sep 2025</p>
+              <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2">
+                Internal Hackathon
+              </h3>
+              <p className="text-sm sm:text-base text-gray-600 mb-2">
+                Aug-Sep 2026
+              </p>
               <p className="text-sm text-gray-500">Campus-level competition</p>
             </div>
             <div className="text-center">
               <div className="w-20 h-20 bg-gradient-to-r from-green-500 to-teal-500 rounded-full flex items-center justify-center text-white font-bold text-2xl mx-auto mb-4">
                 3
               </div>
-              <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2">Grand Finale</h3>
-              <p className="text-sm sm:text-base text-gray-600 mb-2">December 2025</p>
+              <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2">
+                Grand Finale
+              </h3>
+              <p className="text-sm sm:text-base text-gray-600 mb-2">
+                December 2026
+              </p>
               <p className="text-sm text-gray-500">National-level finale</p>
             </div>
           </div>
@@ -218,8 +289,18 @@ const Home = () => {
               className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-blue-600 hover:bg-blue-700 text-white text-sm sm:text-base font-semibold rounded-lg transition-colors duration-200"
             >
               View Complete Timeline
-              <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              <svg
+                className="w-4 h-4 ml-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"
+                />
               </svg>
             </Link>
           </div>
@@ -229,9 +310,12 @@ const Home = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-indigo-600 to-purple-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Innovate?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            Ready to Innovate?
+          </h2>
           <p className="text-xl text-indigo-100 mb-8 max-w-2xl mx-auto">
-            Join thousands of innovators and be part of India's largest hackathon. Start your journey today!
+            Join thousands of innovators and be part of India's largest
+            hackathon. Start your journey today!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -250,7 +334,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* AWS Community Section */}
+      {/* AWS Community Section
       <section className="py-16 bg-gradient-to-br from-orange-50 to-amber-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -267,7 +351,8 @@ const Home = () => {
                   AWS Cloud Club
                 </h3>
                 <p className="text-gray-600 text-base sm:text-lg">
-                  Empowering innovation through cloud technology and community collaboration
+                  Empowering innovation through cloud technology and community
+                  collaboration
                 </p>
               </div>
 
@@ -283,18 +368,30 @@ const Home = () => {
               <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
                 <div className="bg-gradient-to-br from-orange-100 to-orange-200 rounded-xl p-4">
                   <div className="text-2xl mb-2">🚀</div>
-                  <h4 className="font-semibold text-gray-800 mb-1">Cloud Infrastructure</h4>
-                  <p className="text-sm text-gray-600">Scalable and reliable hosting</p>
+                  <h4 className="font-semibold text-gray-800 mb-1">
+                    Cloud Infrastructure
+                  </h4>
+                  <p className="text-sm text-gray-600">
+                    Scalable and reliable hosting
+                  </p>
                 </div>
                 <div className="bg-gradient-to-br from-blue-100 to-blue-200 rounded-xl p-4">
                   <div className="text-2xl mb-2">🤝</div>
-                  <h4 className="font-semibold text-gray-800 mb-1">Community Support</h4>
-                  <p className="text-sm text-gray-600">Expert guidance and mentorship</p>
+                  <h4 className="font-semibold text-gray-800 mb-1">
+                    Community Support
+                  </h4>
+                  <p className="text-sm text-gray-600">
+                    Expert guidance and mentorship
+                  </p>
                 </div>
                 <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-xl p-4">
                   <div className="text-2xl mb-2">💡</div>
-                  <h4 className="font-semibold text-gray-800 mb-1">Innovation Hub</h4>
-                  <p className="text-sm text-gray-600">Fostering technological advancement</p>
+                  <h4 className="font-semibold text-gray-800 mb-1">
+                    Innovation Hub
+                  </h4>
+                  <p className="text-sm text-gray-600">
+                    Fostering technological advancement
+                  </p>
                 </div>
               </div>
 
@@ -312,9 +409,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
