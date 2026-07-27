@@ -1,0 +1,79 @@
+# Smart India Hackathon 2026 - Sharda University
+
+This is the official website for Smart India Hackathon 2026 at Sharda University, India's largest hackathon fostering innovation and technology solutions.
+
+## Website Information
+
+- **URL**: https://sih.awscc.dev
+- **Organization**: Sharda University
+- **Event**: Smart India Hackathon 2026
+- **Location**: Greater Noida, Uttar Pradesh, India
+
+## Key Pages
+
+- [Home](https://sih.awscc.dev/) - Main landing page with event overview
+- [About](https://sih.awscc.dev/about) - Information about SIH and Sharda University
+- [Timeline](https://sih.awscc.dev/timeline) - SIH 2026 schedule and important dates
+- [Announcements](https://sih.awscc.dev/announcements) - Latest news and updates
+- [Guidelines](https://sih.awscc.dev/guidelines) - Participation rules and guidelines
+- [FAQ](https://sih.awscc.dev/faq) - Frequently asked questions
+- [Contact](https://sih.awscc.dev/contact) - Contact information for coordinators
+
+## Important Resources
+
+- [Official SIH Website](https://www.sih.gov.in) - Government SIH portal
+- [Problem Statements](https://www.sih.gov.in/sih2025PS) - Official problem statement repository
+- [Sharda University](https://www.sharda.ac.in) - University website
+
+## Event Details
+
+Smart India Hackathon 2026 is a 36-hour continuous hackathon where students from across India compete to solve real-world problems. The event is organized by the Government of India in collaboration with Sharda University.
+
+### Key Dates
+
+- SPOC Registration: 31 July 2026
+- Problem Statement Launch: To be announced
+- Team Registration: To be announced
+- Internal Hackathon: To be announced
+- Grand Finale: December 2026
+
+### Themes
+
+The hackathon covers 18 major themes including:
+- Smart Automation
+- Heritage & Culture
+- Agriculture/FoodTech
+- Smart Vehicles
+- Transportation
+- Robotics & Drones
+- Clean & Green Tech
+- Tourism
+- Renewable Energy
+- Blockchain & Security
+- Smart Education
+- Disaster Management
+- Games & Toys
+- Fintech
+- Space Technology
+- Fitness & Sports
+- MedTech/HealthTech
+- Miscellaneous
+
+## Contact Information
+
+- **SPOC**: Mr. Ashish Kumar
+- **Faculty Coordinator**: Mr. Ashish Jain
+- **Email**: Available on contact page
+- **WhatsApp Group**: https://chat.whatsapp.com/JPbRnAhHNnRLpfE5MIQ3PO
+
+## Accessibility
+
+This website is designed to be accessible to all users, following WCAG guidelines. It includes proper color contrast, semantic HTML, and keyboard navigation support.
+
+## SEO
+
+The website is optimized for search engines with:
+- Proper meta tags and Open Graph data
+- Structured data (Event, Organization, WebSite schemas)
+- Sitemap.xml for search engine crawling
+- Robots.txt for crawler instructions

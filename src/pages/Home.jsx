@@ -40,22 +40,22 @@ const Home = () => {
 
   const tracks = [
     { name: "Smart Automation", color: "bg-purple-600", count: "150+", icon: "🤖" },
-    { name: "Heritage & Culture", color: "bg-orange-600", count: "45+", icon: "🏛️" },
-    { name: "Agriculture/FoodTech", color: "bg-green-700", count: "120+", icon: "�" },
+    { name: "Heritage & Culture", color: "bg-orange-700", count: "45+", icon: "🏛️" },
+    { name: "Agriculture/FoodTech", color: "bg-green-700", count: "120+", icon: "🌾" },
     { name: "Smart Vehicles", color: "bg-blue-700", count: "55+", icon: "🚗" },
     { name: "Transportation", color: "bg-indigo-600", count: "80+", icon: "🚚" },
-    { name: "Robotics & Drones", color: "bg-cyan-600", count: "95+", icon: "🛸" },
-    { name: "Clean & Green Tech", color: "bg-teal-700", count: "110+", icon: "�" },
+    { name: "Robotics & Drones", color: "bg-cyan-700", count: "95+", icon: "🛸" },
+    { name: "Clean & Green Tech", color: "bg-teal-700", count: "110+", icon: "🌱" },
     { name: "Tourism", color: "bg-pink-600", count: "40+", icon: "✈️" },
-    { name: "Renewable Energy", color: "bg-yellow-600", count: "75+", icon: "⚡" },
+    { name: "Renewable Energy", color: "bg-amber-700", count: "75+", icon: "⚡" },
     { name: "Blockchain & Security", color: "bg-red-700", count: "85+", icon: "🔒" },
     { name: "Smart Education", color: "bg-blue-600", count: "130+", icon: "🎓" },
     { name: "Disaster Management", color: "bg-gray-600", count: "50+", icon: "🚨" },
     { name: "Games & Toys", color: "bg-purple-700", count: "35+", icon: "🎮" },
-    { name: "Miscellaneous", color: "bg-gray-500", count: "60+", icon: "📦" },
+    { name: "Miscellaneous", color: "bg-gray-600", count: "60+", icon: "📦" },
     { name: "Fintech", color: "bg-yellow-700", count: "90+", icon: "💰" },
     { name: "Space Technology", color: "bg-indigo-700", count: "70+", icon: "🚀" },
-    { name: "Fitness & Sports", color: "bg-green-600", count: "30+", icon: "⚽" },
+    { name: "Fitness & Sports", color: "bg-green-700", count: "30+", icon: "⚽" },
     { name: "MedTech/HealthTech", color: "bg-red-600", count: "140+", icon: "🏥" }
   ]
 
