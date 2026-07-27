@@ -17,9 +17,9 @@ const Contact = () => {
     const contactInfo = [
         {
             title: "SIH (SPOC) Sharda University",
-            name: "Mr Ashish Jain",
-            email: "ashish.jain4@sharda.ac.in",
-            phone: "+91 8459321463",
+            name: "Mr Ashish Kumar",
+            email: "ashish.kumar@sharda.ac.in",
+            phone: "+91 8410707739",
             office: "Basement, Block 2, Cabin 19",
             icon: "🏛️",
             color: "from-blue-500 to-blue-600"
@@ -93,9 +93,9 @@ const Contact = () => {
         },
         {
             title: "Team Member",
-            name: "Mr. Ashish Kumar",
-            email: "ashish.kumar@sharda.ac.in",
-            phone: "+91 8410707739",
+            name: "Mr Ashish Jain",
+            email: "ashish.jain4@sharda.ac.in",
+            phone: "+91 8459321463",
             office: "Basement, Block 2, Cabin 12",
             icon: "👤",
             color: "from-orange-500 to-orange-600"
@@ -108,19 +108,19 @@ const Contact = () => {
             questions: [
                 {
                     q: "When does the Internal Hackathon take place?",
-                    a: "The Internal Hackathon at Sharda University is scheduled for August-September 2025, as part of the institution-level selection process for SIH 2025."
+                    a: "The Internal Hackathon at Sharda University is scheduled for August 2026, as part of the institution-level selection process for SIH 2026."
                 },
                 {
-                    q: "What is the complete timeline for SIH 2025?",
-                    a: "Key dates: Internal Hackathon (Aug-Sep 2025), Team Nominations & Submissions (Aug-Sep 2025), Screening of Ideas (Sep-Oct 2025), Results Publication (Oct 2025), Mentoring Sessions (Oct 2025), Grand Finale (Dec 2025)."
+                    q: "What is the complete timeline for SIH 2026?",
+                    a: "Key dates: Internal Hackathon (Aug 2026), Team Nominations & Submissions (Aug-Sep 2026), Screening of Ideas (Sep-Oct 2026), Results Publication (Oct 2026), Mentoring Sessions (Oct 2026), Grand Finale (Dec 2026)."
                 },
                 {
                     q: "When do registrations close?",
-                    a: "Registration for the Internal Hackathon closes by September 2025. No extensions will be granted, and incomplete registrations will be rejected."
+                    a: "Registration for the Internal Hackathon closes by August 2026. No extensions will be granted, and incomplete registrations will be rejected."
                 },
                 {
                     q: "Can I change my team members after registration?",
-                    a: "Team changes are allowed until the registration deadline in September 2025. After this date, no changes will be permitted except in exceptional circumstances."
+                    a: "Team changes are allowed until the registration deadline in August 2026. After this date, no changes will be permitted except in exceptional circumstances."
                 },
                 {
                     q: "Is there a registration fee?",
@@ -166,7 +166,7 @@ const Contact = () => {
                 },
                 {
                     q: "What happens after the Internal Hackathon?",
-                    a: "Top teams will be nominated for the national SIH 2025, undergo screening (Sep-Oct), receive mentoring (Oct), and potentially qualify for the Grand Finale (Dec 2025)."
+                    a: "Top teams will be nominated for the national SIH 2026, undergo screening (Sep-Oct), receive mentoring (Oct), and potentially qualify for the Grand Finale (Dec 2026)."
                 }
             ]
         }
@@ -736,7 +736,7 @@ const Contact = () => {
                 <div className="text-center mb-8 sm:mb-12">
                     <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4 sm:mb-6 px-4">Contact & Support</h1>
                     <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
-                        Get in touch with our team for any questions, support, or assistance with Sharda University Internal Hackathon 2025
+                        Get in touch with our team for any questions, support, or assistance with Sharda University Internal Hackathon 2026
                     </p>
                 </div>
 

@@ -1,7 +1,9 @@
 import { useState } from 'react'
+import Modal from '../components/Modal'
 
 const About = () => {
   const [activeTab, setActiveTab] = useState('overview')
+  const [showModal, setShowModal] = useState(false)
 
   const tabs = [
     { id: 'overview', label: 'Overview', icon: '📖' },
@@ -11,25 +13,31 @@ const About = () => {
   ]
 
   const achievements = [
-    { year: '2024', teams: '15,000+', solutions: '3,000+', states: '36' },
-    { year: '2023', teams: '12,000+', solutions: '2,500+', states: '35' },
-    { year: '2022', teams: '10,000+', solutions: '2,000+', states: '34' },
-    { year: '2021', teams: '8,000+', solutions: '1,500+', states: '32' }
+    { year: '2025', teams: '1360', solutions: '72,165', states: '60' },
+    { year: '2024', teams: '1300+', solutions: '86,000+', states: '51' },
+    { year: '2023', teams: '1200+', solutions: '51,000+', states: '48' },
+    { year: '2022', teams: '2033', solutions: '20,000+', states: '75' }
   ]
 
   const impactAreas = [
-    { icon: "🏥", title: "MedTech/HealthTech", description: "Digital health solutions and medical innovations" },
-    { icon: "🎓", title: "Smart Education", description: "EdTech and learning management systems" },
+    { icon: "🤖", title: "Smart Automation", description: "AI-driven automation and intelligent resource utilization" },
+    { icon: "🌿", title: "Heritage & Culture", description: "Preserving and promoting cultural heritage through technology" },
     { icon: "🌱", title: "Agriculture/FoodTech", description: "Smart farming and food security solutions" },
-    { icon: "🤖", title: "Smart Automation", description: "AI-driven automation and robotics solutions" },
-    { icon: "💰", title: "Fintech", description: "Financial technology and digital payment solutions" },
+    { icon: "🚗", title: "Smart Vehicles", description: "Innovative automotive and mobility solutions" },
+    { icon: "📦", title: "Transportation & Logistics", description: "Efficient transportation and supply chain solutions" },
+    { icon: "🛸", title: "Robotics & Drones", description: "Robotics and unmanned aerial vehicle technologies" },
     { icon: "🌍", title: "Clean & Green Tech", description: "Climate change and sustainability solutions" },
-    { icon: "🏙️", title: "Smart Cities", description: "Urban planning and infrastructure solutions" },
-    { icon: "🔒", title: "Cybersecurity", description: "Security and surveillance solutions" },
-    { icon: "🚗", title: "Transportation", description: "Mobility and logistics solutions" },
-    { icon: "⚡", title: "Energy", description: "Renewable energy and power solutions" },
-    { icon: "🏭", title: "Manufacturing", description: "Industry 4.0 and smart manufacturing" },
-    { icon: "🎯", title: "Social Innovation", description: "Solutions for social challenges and inclusion" }
+    { icon: "✈️", title: "Tourism", description: "Technology-driven tourism and travel solutions" },
+    { icon: "⚡", title: "Renewable Energy", description: "Sustainable and renewable energy solutions" },
+    { icon: "🔒", title: "Blockchain & Cybersecurity", description: "Decentralized ledger and security solutions" },
+    { icon: "🎓", title: "Smart Education", description: "EdTech and learning management systems" },
+    { icon: "🚨", title: "Disaster Management", description: "Risk mitigation and disaster response technologies" },
+    { icon: "🎮", title: "Games & Toys", description: "Innovative gaming and educational toy solutions" },
+    { icon: "📦", title: "Miscellaneous", description: "Technology solutions across various sectors" },
+    { icon: "💰", title: "Fintech", description: "Financial technology and digital payment solutions" },
+    { icon: "🚀", title: "Space Technology", description: "Space exploration and satellite technologies" },
+    { icon: "⚽", title: "Fitness & Sports", description: "Sports technology and fitness solutions" },
+    { icon: "🏥", title: "MedTech/HealthTech", description: "Digital health solutions and medical innovations" }
   ]
 
   const benefits = [
@@ -95,22 +103,38 @@ const About = () => {
                 </p>
               </div>
               <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-4 sm:p-6 lg:p-8">
-                <div className="grid grid-cols-2 gap-3 sm:gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6">
                   <div className="text-center">
-                    <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-1 sm:mb-2">7th</div>
-                    <div className="text-gray-600 text-sm sm:text-base">Edition</div>
+                    <div className="text-lg sm:text-xl md:text-2xl font-bold text-blue-600 mb-1 sm:mb-2 break-words">8th</div>
+                    <div className="text-gray-600 text-xs sm:text-xs md:text-sm break-words">Edition</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-1 sm:mb-2">36</div>
-                    <div className="text-gray-600 text-sm sm:text-base">Hours</div>
+                    <div className="text-lg sm:text-xl md:text-2xl font-bold text-blue-600 mb-1 sm:mb-2 break-words">72,165</div>
+                    <div className="text-gray-600 text-xs sm:text-xs md:text-sm break-words">Idea Submissions</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-1 sm:mb-2">100+</div>
-                    <div className="text-gray-600 text-sm sm:text-base">Ministries</div>
+                    <div className="text-lg sm:text-xl md:text-2xl font-bold text-blue-600 mb-1 sm:mb-2 break-words">2587</div>
+                    <div className="text-gray-600 text-xs sm:text-xs md:text-sm break-words">Institutions</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-1 sm:mb-2">6497+</div>
-                    <div className="text-gray-600 text-sm sm:text-base">Institutes</div>
+                    <div className="text-lg sm:text-xl md:text-2xl font-bold text-blue-600 mb-1 sm:mb-2 break-words">8,26,635+</div>
+                    <div className="text-gray-600 text-xs sm:text-xs md:text-sm break-words">Students</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-lg sm:text-xl md:text-2xl font-bold text-green-600 mb-1 sm:mb-2 break-words">60</div>
+                    <div className="text-gray-600 text-xs sm:text-xs md:text-sm break-words">Nodal Centers</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-lg sm:text-xl md:text-2xl font-bold text-green-600 mb-1 sm:mb-2 break-words">1360</div>
+                    <div className="text-gray-600 text-xs sm:text-xs md:text-sm break-words">Finale Teams</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-lg sm:text-xl md:text-2xl font-bold text-green-600 mb-1 sm:mb-2 break-words">8160+</div>
+                    <div className="text-gray-600 text-xs sm:text-xs md:text-sm break-words">Youngsters</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-lg sm:text-xl md:text-2xl font-bold text-green-600 mb-1 sm:mb-2 break-words">1.8:1</div>
+                    <div className="text-gray-600 text-xs sm:text-xs md:text-sm break-words">Male:Female Ratio</div>
                   </div>
                 </div>
               </div>
@@ -138,15 +162,15 @@ const About = () => {
                     <div className="grid grid-cols-3 gap-2 sm:gap-4 text-center">
                       <div>
                         <div className="text-lg sm:text-2xl font-bold text-blue-600">{achievement.teams}</div>
-                        <div className="text-xs sm:text-sm text-gray-600">Teams</div>
+                        <div className="text-xs sm:text-sm text-gray-600">{achievement.year === '2025' ? 'Finale Teams' : 'Teams'}</div>
                       </div>
                       <div>
                         <div className="text-lg sm:text-2xl font-bold text-green-600">{achievement.solutions}</div>
-                        <div className="text-xs sm:text-sm text-gray-600">Solutions</div>
+                        <div className="text-xs sm:text-sm text-gray-600">{achievement.year === '2025' ? 'Ideas' : 'Solutions'}</div>
                       </div>
                       <div>
                         <div className="text-lg sm:text-2xl font-bold text-orange-600">{achievement.states}</div>
-                        <div className="text-xs sm:text-sm text-gray-600">States</div>
+                        <div className="text-xs sm:text-sm text-gray-600">{achievement.year === '2025' ? 'Nodal Centers' : 'States'}</div>
                       </div>
                     </div>
                   </div>
@@ -167,11 +191,7 @@ const About = () => {
                     {area.icon}
                   </div>
                   <h4 className="text-lg sm:text-xl font-bold text-gray-800 mb-2 sm:mb-3">{area.title}</h4>
-                  <p className="text-gray-600 mb-3 sm:mb-4 leading-relaxed text-sm sm:text-base">{area.description}</p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs sm:text-sm text-gray-500">{area.projects}+ Projects</span>
-                    <div className={`w-2 h-2 sm:w-3 sm:h-3 bg-gradient-to-r ${area.color} rounded-full`}></div>
-                  </div>
+                  <p className="text-gray-600 leading-relaxed text-sm sm:text-base">{area.description}</p>
                 </div>
               ))}
             </div>
@@ -254,9 +274,12 @@ const About = () => {
             Join thousands of students across India in solving real-world problems and making a difference
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
-            {/* <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-xl text-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
+            <button
+              onClick={() => setShowModal(true)}
+              className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-xl text-base sm:text-lg transition-colors duration-200 shadow-lg hover:shadow-xl w-full sm:w-auto"
+            >
               Register Your Team
-            </button> */}
+            </button>
             <a
               href="https://www.sih.gov.in/sih2025PS"
               target="_blank"
@@ -270,6 +293,19 @@ const About = () => {
             </a>
           </div>
         </div>
+
+        <Modal
+          isOpen={showModal}
+          onClose={() => setShowModal(false)}
+          title="Registration Coming Soon"
+        >
+          <p className="text-lg mb-4">
+            Registration for SIH 2026 will open soon. Stay tuned for updates!
+          </p>
+          <p className="text-sm text-gray-500">
+            Follow our announcements page for the latest information about registration dates and procedures.
+          </p>
+        </Modal>
       </div>
     </div>
   )

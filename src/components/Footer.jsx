@@ -5,28 +5,12 @@ const Footer = () => {
 
   const footerSections = [
     {
-      title: 'Quick Links',
-      links: [
-        { name: 'Home', path: '/' },
-        { name: 'About SIH', path: '/about' },
-        { name: 'Timeline', path: '/timeline' },
-        { name: 'Registration', path: '/registration' }
-      ]
-    },
-    {
       title: 'Resources',
       links: [
         { name: 'Problem Statements', path: 'https://www.sih.gov.in/sih2025PS' },
         { name: 'Guidelines', path: '/guidelines' },
         { name: 'FAQs', path: '/faq' },
         { name: 'Support', path: '/contact' }
-      ]
-    },
-    {
-      title: 'Connect',
-      links: [
-        { name: 'Contact Us', path: '/contact' },
-        { name: 'Announcements', path: '/announcements' }
       ]
     }
   ]
@@ -96,97 +80,53 @@ const Footer = () => {
 
   return (
     <footer className="bg-gray-900 text-white">
-      {/* Main Footer */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
-          {/* Brand Section */}
-          <div className="col-span-1 sm:col-span-2 md:col-span-1">
-            <div className="flex items-center space-x-3 mb-4">
-              {/* Logo Image */}
-              <img
-                src="./logo1.png"
-                alt="SIH 2025 Logo"
-                className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
-              />
-              <div>
-                <h3 className="text-base sm:text-lg font-bold text-white">Sharda University</h3>
-                <p className="text-orange-400 font-medium text-xs sm:text-sm">SIH 2025</p>
-              </div>
-            </div>
-
-            <p className="text-gray-300 mb-4 text-xs sm:text-sm leading-relaxed">
-              India's premier innovation platform for solving real-world challenges.
-            </p>
-
-            {/* Social Links */}
-            <div className="flex flex-wrap gap-2">
-              {socialLinks.slice(0, 4).map((social, index) => (
-                <a
-                  key={index}
-                  href={social.url}
-                  className={`w-7 h-7 sm:w-8 sm:h-8 bg-gray-800 ${social.color} rounded-lg flex items-center justify-center text-sm transition-all duration-300 hover:scale-110`}
-                  title={social.name}
-                >
-                  <div className="w-4 h-4 sm:w-5 sm:h-5">{social.icon}</div>
-                </a>
-              ))}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+          {/* Brand */}
+          <div className="flex items-center space-x-3">
+            <img
+              src="./logo1.png"
+              alt="SIH 2026 Logo"
+              className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
+            />
+            <div>
+              <h3 className="text-sm sm:text-base font-bold text-white">Sharda University</h3>
+              <p className="text-orange-400 font-medium text-xs">SIH 2026</p>
             </div>
           </div>
 
-          {/* Links Sections */}
-          {footerSections.map((section, index) => (
-            <div key={index} className="mt-6 sm:mt-0">
-              <h4 className="text-sm sm:text-base font-semibold mb-3 sm:mb-4 text-blue-200">{section.title}</h4>
-              <ul className="space-y-1 sm:space-y-2">
-                {section.links.slice(0, 4).map((link, linkIndex) => (
-                  <li key={linkIndex}>
-                    <Link
-                      to={link.path}
-                      className="text-gray-300 hover:text-white transition-colors duration-200 text-xs sm:text-sm"
-                    >
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </div>
+          {/* Links */}
+          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-xs sm:text-sm text-gray-400">
+            <Link to="/about" className="hover:text-white transition-colors">About</Link>
+            <Link to="/timeline" className="hover:text-white transition-colors">Timeline</Link>
+            <Link to="/announcements" className="hover:text-white transition-colors">Announcements</Link>
+            <Link to="/guidelines" className="hover:text-white transition-colors">Guidelines</Link>
+            <Link to="/contact" className="hover:text-white transition-colors">Contact</Link>
+          </div>
 
-      {/* Bottom Bar */}
-      <div className="border-t border-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
-          <div className="flex flex-col sm:flex-row justify-between items-center space-y-3 sm:space-y-0">
-            <div className="text-center sm:text-left">
-              <p className="text-gray-400 text-xs sm:text-sm">
-                © {currentYear} phoenixdev100. All rights reserved.
-              </p>
-              <p className="text-gray-500 text-xs mt-1 flex items-center justify-center sm:justify-start">
-                <span>Powered by</span>
-                <a 
-                  href="http://linktr.ee/awscloudclubshardauniversity" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-orange-400 font-semibold ml-1 hover:text-orange-300 transition-colors"
-                >
-                  AWS Cloud Club
-                </a>
-              </p>
-            </div>
-            <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-xs sm:text-sm text-gray-400">
+          {/* Social Links */}
+          <div className="flex gap-2">
+            {socialLinks.slice(0, 4).map((social, index) => (
+              <a
+                key={index}
+                href={social.url}
+                className={`w-8 h-8 bg-gray-800 ${social.color} rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110`}
+                title={social.name}
+              >
+                <div className="w-4 h-4">{social.icon}</div>
+              </a>
+            ))}
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="border-t border-gray-800 mt-4 pt-4">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-gray-400">
+            <p>© {currentYear} <a href="https://github.com/phoenixdev100" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">phoenixdev100</a>. All rights reserved.</p>
+            <div className="flex items-center gap-3">
               <Link to="/privacy" className="hover:text-white transition-colors">Privacy</Link>
-              <span className="hidden sm:inline">•</span>
+              <span>•</span>
               <Link to="/terms" className="hover:text-white transition-colors">Terms</Link>
-              <span className="hidden sm:inline">•</span>
-              <span className="flex items-center space-x-1">
-                <span>Made with</span>
-                <span className="text-red-400">❤️</span>
-                <span>by</span>
-                <a href="https://github.com/phoenixdev100" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">
-                  Deepak
-                </a>
-              </span>
             </div>
           </div>
         </div>

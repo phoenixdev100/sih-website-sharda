@@ -1,122 +1,78 @@
 import { useState } from 'react'
+import Modal from '../components/Modal'
 
 const Announcements = () => {
   const [activeFilter, setActiveFilter] = useState('all')
+  const [showModal, setShowModal] = useState(false)
 
   const announcements = [
     {
-      id: 7,
-      title: "🚨 Registration Closed - Evaluation Phase Begins!",
-      content: "Attention all teams! 📢 The registration phase for SIH 2025 has officially closed on September 17, 2025. It's now time to shift focus to the most crucial phase - preparing for evaluations! All registered teams should immediately begin working on their presentations and connect with mentors for guidance.",
-      category: "important",
-      priority: "high",
-      date: "2025-09-18",
-      details: [
-        "✅ Registration deadline has passed - No new registrations accepted",
-        "🎯 Focus on presentation preparation and solution development",
-        "👨‍🏫 Connect with assigned mentors for personalized guidance",
-        "📊 Prepare comprehensive project presentations",
-        "🔍 First Evaluation Round: September 23, 2025",
-        "🏆 Second Evaluation Round: September 24, 2025",
-        "💡 Refine your innovative solutions and technical implementations",
-        "📝 Ensure all documentation is complete and professional",
-        "🚀 Practice your pitch - presentation skills matter!",
-        "⏰ Time is limited - start preparation immediately!"
-      ],
-      link: "https://discord.com/invite/Eys77mrks5",
-      linkText: "Get Mentor Support"
-    },
-    {
-      id: 6,
-      title: "👨‍🏫 SIH 2025 Mentorship Program Begins September 15",
-      content: "Get ready to accelerate your SIH journey! AWS Cloud Club brings a comprehensive mentorship program starting on September 15, 2025. Learn from 2x SIH Winners, experienced hackathon mentors, and Microsoft-AWS professionals who will guide you through every step of your hackathon preparation.",
-      category: "events",
-      priority: "medium",
-      date: "2025-09-13",
-      details: [
-        "📅 Program starts: September 15, 2025",
-        "⏱️ Duration: 1-2 weeks of intensive mentorship",
-        "💻 Format: Online sessions for maximum accessibility",
-        "🏆 Learn from Jatin Vishwakarma (2x SIH Winner, SIH '24 Mentor)",
-        "☁️ Cloud expertise from Sourav Bera (AWS Solutions Architect, Microsoft PreSales)",
-        "🎯 Hackathon strategies and team leadership training",
-        "💡 Innovation workshops and technical skill development",
-        "🚀 End-to-end preparation for SIH 2025 success"
-      ],
-      link: "https://discord.com/invite/Eys77mrks5",
-      linkText: "Connect With Mentors"
-    },
-    {
-      id: 5,
-      title: "🤝 Official Partnership: AWS Cloud Club Sharda University",
-      content: "We're thrilled to announce our official collaboration with AWS Cloud Club Sharda University! 🎉 This strategic partnership brings world-class cloud computing resources, expert mentorship, and exclusive opportunities to all SIH 2025 participants. Get ready to leverage cutting-edge AWS technologies in your hackathon solutions!",
-      category: "partnership",
-      priority: "medium",
-      date: "2025-09-13",
-      details: [
-        "🤝 Register on Meetup to join AWS Cloud Club",
-        "🌟 Exclusive AWS credits for all registered teams",
-        "☁️ Access to premium AWS services and tools",
-        "👨‍💻 Technical workshops on cloud architecture",
-        "🎯 Direct mentorship from AWS certified professionals",
-        "🚀 Priority support for cloud-based solutions",
-        "📚 Comprehensive learning resources and documentation",
-        "🏆 Special recognition for best cloud implementation",
-        "🔗 Join the AWS Cloud Club for ongoing support"
-      ],
-      link: "http://linktr.ee/awscloudclubshardauniversity",
-      linkText: "Connect with AWS Cloud Club"
-    },
-    {
-      id: 3,
-      title: "🎯 Team Registration Now Open!",
-      content: "Exciting news! Team registration for Smart India Hackathon 2025 is now officially open. All eligible teams can register from September 8th to September 17th, 2025. Don't miss this opportunity to be part of India's biggest hackathon. Register your team today and showcase your innovative solutions!",
+      id: 1,
+      title: "📢 SPOC Registration Now Open!",
+      content: "Registration for Single Point of Contact (SPOC) for Smart India Hackathon 2026 is going on. Institutions can register their SPOC until 31st July 2026. Stay tuned for further updates regarding problem statements, team registration, and other important dates.",
       category: "registration",
       priority: "high",
-      date: "2025-09-08",
+      date: "2026-07-01",
       details: [
-        "Registration period: September 8-17, 2025",
-        "Open for all eligible educational institutions",
-        "Team size: 6 members (1 Team Lead + 5 Other Team Members)",
-        "Each team must include at least one girl/female member",
-        "Multiple teams can register from same institution",
-        "A participant can be part of only one team"
+        "📅 SPOC Registration Deadline: 31st July 2026",
+        "🏛️ Open for all educational institutions",
+        "👤 One SPOC per institution",
+        "📢 More updates coming soon - stay tuned!"
       ],
-      link: "https://forms.gle/CnqcDwV7DUrGxTD36",
-      linkText: "Register Your Team"
-    },
-    {
-      id: 2,
-      title: "📊 Official Presentation Format Available",
-      content: "The official presentation template for SIH 2025 submissions is now available for download. All teams must use this standardized format for their final presentations to ensure consistency and proper evaluation. The template includes guidelines for content structure, design elements, and submission requirements.",
-      category: "guidelines",
-      priority: "high",
-      date: "2025-09-06",
-      details: [
-        "Standardized PowerPoint template with official SIH branding",
-        "Pre-defined slide layouts for problem statement, solution, and demo",
-        "Guidelines for content organization and presentation flow",
-        "Technical specifications and submission format requirements"
-      ],
-      link: "./SIH-Presentation-Format.pptx",
-      linkText: "Download PPT Template"
-    },
-    {
-      id: 1,
-      title: "🚀 SIH 2025 Problem Statements Are Now Live!",
-      content: "We're excited to announce that the official Smart India Hackathon 2025 problem statements have been released! Teams can now browse through 18 major themes including MedTech/BioTech/HealthTech, Smart Education, Agriculture/FoodTech & Rural Development, Smart Automation, Fintech, Clean & Green Technology, and many more cutting-edge categories.",
-      category: "updates",
-      priority: "high",
-      date: "2025-08-27",
-      details: [
-        "Over 2877+ problem statements across 18 major themes",
-        "Problems sourced from 100+ government ministries and departments",
-        "New themes include Space Technology, Robotics & Drones, Heritage & Culture",
-        "Enhanced focus on emerging technologies like Blockchain & Cybersecurity"
-      ],
-      link: "https://www.sih.gov.in/sih2025PS",
-      linkText: "View Problem Statements"
+      link: "https://sih.gov.in/signin",
+      linkText: "Register SPOC"
     }
+    // {
+    //   id: 3,
+    //   title: "🎯 Team Registration Now Open!",
+    //   content: "Exciting news! Team registration for Smart India Hackathon 2026 is now officially open. All eligible teams can register from September 8th to September 17th, 2026. Don't miss this opportunity to be part of India's biggest hackathon. Register your team today and showcase your innovative solutions!",
+    //   category: "registration",
+    //   priority: "high",
+    //   date: "2026-09-08",
+    //   details: [
+    //     "Registration period: September 8-17, 2026",
+    //     "Open for all eligible educational institutions",
+    //     "Team size: 6 members (1 Team Lead + 5 Other Team Members)",
+    //     "Each team must include at least one girl/female member",
+    //     "Multiple teams can register from same institution",
+    //     "A participant can be part of only one team"
+    //   ],
+    //   link: "#",
+    //   linkText: "Register Your Team",
+    //   onClick: () => setShowModal(true)
+    // },
+    // {
+    //   id: 2,
+    //   title: "📊 Official Presentation Format Available",
+    //   content: "The official presentation template for SIH 2026 submissions is now available for download. All teams must use this standardized format for their final presentations to ensure consistency and proper evaluation. The template includes guidelines for content structure, design elements, and submission requirements.",
+    //   category: "guidelines",
+    //   priority: "high",
+    //   date: "2026-09-06",
+    //   details: [
+    //     "Standardized PowerPoint template with official SIH branding",
+    //     "Pre-defined slide layouts for problem statement, solution, and demo",
+    //     "Guidelines for content organization and presentation flow",
+    //     "Technical specifications and submission format requirements"
+    //   ],
+    //   link: "./SIH2026-IDEA-Presentation-Format.pptx",
+    //   linkText: "Download PPT Template"
+    // },
+    // {
+    //   id: 1,
+    //   title: "🚀 SIH 2026 Problem Statements Are Now Live!",
+    //   content: "We're excited to announce that the official Smart India Hackathon 2026 problem statements have been released! Teams can now browse through 18 major themes including MedTech/BioTech/HealthTech, Smart Education, Agriculture/FoodTech & Rural Development, Smart Automation, Fintech, Clean & Green Technology, and many more cutting-edge categories.",
+    //   category: "updates",
+    //   priority: "high",
+    //   date: "2026-08-27",
+    //   details: [
+    //     "Over 2877+ problem statements across 18 major themes",
+    //     "Problems sourced from 100+ government ministries and departments",
+    //     "New themes include Space Technology, Robotics & Drones, Heritage & Culture",
+    //     "Enhanced focus on emerging technologies like Blockchain & Cybersecurity"
+    //   ],
+    //   link: "https://www.sih.gov.in/sih2025PS",
+    //   linkText: "View Problem Statements"
+    // }
   ]
 
   const categories = [
@@ -167,7 +123,7 @@ const Announcements = () => {
         <div className="text-center mb-12">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4 sm:mb-6 px-4">📢 Announcements</h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
-            Stay updated with the latest news, updates, and important information about SIH 2025
+            Stay updated with the latest news, updates, and important information about SIH 2026
           </p>
         </div>
 
@@ -246,14 +202,23 @@ const Announcements = () => {
                   </div>
 
                   <div className="flex items-end justify-end">
-                    <a
-                      href={announcement.link}
-                      target={announcement.link.startsWith('http') ? '_blank' : '_self'}
-                      rel={announcement.link.startsWith('http') ? 'noopener noreferrer' : ''}
-                      className="bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-3 px-8 rounded-lg hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
-                    >
-                      {announcement.linkText} →
-                    </a>
+                    {announcement.onClick ? (
+                      <button
+                        onClick={announcement.onClick}
+                        className="bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-3 px-8 rounded-lg hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+                      >
+                        {announcement.linkText} →
+                      </button>
+                    ) : (
+                      <a
+                        href={announcement.link}
+                        target={announcement.link.startsWith('http') ? '_blank' : '_self'}
+                        rel={announcement.link.startsWith('http') ? 'noopener noreferrer' : ''}
+                        className="bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-3 px-8 rounded-lg hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+                      >
+                        {announcement.linkText} →
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
@@ -283,14 +248,21 @@ const Announcements = () => {
             >
               💬 Join WhatsApp Group
             </a>
-            <a
-              href="mailto:support@phoenixdev100.tech"
-              className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-600 font-semibold py-3 px-6 rounded-lg transition-all duration-200"
-            >
-              📧 Email Notifications
-            </a>
           </div>
         </div>
+
+        <Modal
+          isOpen={showModal}
+          onClose={() => setShowModal(false)}
+          title="Registration Coming Soon"
+        >
+          <p className="text-lg mb-4">
+            Registration for SIH 2026 will open soon. Stay tuned for updates!
+          </p>
+          <p className="text-sm text-gray-500">
+            Follow our announcements page for the latest information about registration dates and procedures.
+          </p>
+        </Modal>
       </div>
     </div>
   )

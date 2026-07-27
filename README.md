@@ -1,12 +1,12 @@
 <div align="center">
 
-# 🚀 Sharda University Internal Hackathon 2025
+# 🚀 Sharda University Internal Hackathon 2026
 
 </div>
 
 <div align="center">
 
-![SIH 2025](https://img.shields.io/badge/SIH-2025-blue?style=for-the-badge&logo=react)
+![SIH 2026](https://img.shields.io/badge/SIH-2026-blue?style=for-the-badge&logo=react)
 ![React](https://img.shields.io/badge/React-19.1.1-61DAFB?style=for-the-badge&logo=react)
 ![Vite](https://img.shields.io/badge/Vite-7.1.2-646CFF?style=for-the-badge&logo=vite)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind-3.3.6-38B2AC?style=for-the-badge&logo=tailwind-css)
@@ -21,7 +21,7 @@
 
 </div>
 
-The **Sharda University Internal Hackathon 2025** is the official institutional-level selection process for Smart India Hackathon (SIH) 2025. This comprehensive web platform serves as the central hub for registration, information, guidelines, and coordination for all participating teams.
+The **Sharda University Internal Hackathon 2026** is the official institutional-level selection process for Smart India Hackathon (SIH) 2026. This comprehensive web platform serves as the central hub for registration, information, guidelines, and coordination for all participating teams.
 
 ### 🎯 Key Features
 
@@ -255,7 +255,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Made with ❤️ by phoenixdev100**
 
-[![GitHub stars](https://img.shields.io/github/stars/phoenixdev100/sharda-sih-2025?style=social)](https://github.com/phoenixdev100/sharda-sih-2025/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/phoenixdev100/sharda-sih-2025?style=social)](https://github.com/phoenixdev100/sharda-sih-2025/network/members)
+[![GitHub stars](https://img.shields.io/github/stars/phoenixdev100/sharda-sih-2026?style=social)](https://github.com/phoenixdev100/sharda-sih-2026/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/phoenixdev100/sharda-sih-2026?style=social)](https://github.com/phoenixdev100/sharda-sih-2026/network/members)
 
 </div>

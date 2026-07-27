@@ -11,19 +11,19 @@ const FAQ = () => {
       icon: '❓',
       questions: [
         {
-          q: "What is Smart India Hackathon (SIH) 2025?",
-          a: "Smart India Hackathon is a nationwide initiative by the Government of India to provide students with a platform to solve real-world problems through innovative technology solutions. SIH 2025 is the latest edition of this prestigious competition."
+          q: "What is Smart India Hackathon (SIH) 2026?",
+          a: "Smart India Hackathon is a nationwide initiative by the Government of India to provide students with a platform to solve real-world problems through innovative technology solutions. SIH 2026 is the latest edition of this prestigious competition."
         },
         {
-          q: "Who can participate in SIH 2025?",
+          q: "Who can participate in SIH 2026?",
           a: "All undergraduate and postgraduate students currently enrolled in recognized educational institutions in India can participate. Teams must consist of exactly 6 members from the same institution, including at least one female member."
         },
         {
-          q: "Is there any registration fee for SIH 2025?",
-          a: "No, participation in Smart India Hackathon 2025 is completely free. There are no registration fees or hidden charges."
+          q: "Is there any registration fee for SIH 2026?",
+          a: "No, participation in Smart India Hackathon 2026 is completely free. There are no registration fees or hidden charges."
         },
         {
-          q: "What are the prizes for SIH 2025?",
+          q: "What are the prizes for SIH 2026?",
           a: "Winners receive cash prizes, certificates, and recognition from the Government of India. Additionally, there are opportunities for internships, job offers, and funding for promising solutions."
         }
       ]
@@ -34,12 +34,12 @@ const FAQ = () => {
       icon: '📝',
       questions: [
         {
-          q: "How do I register for SIH 2025?",
+          q: "How do I register for SIH 2026?",
           a: "Registration is done through your institution's internal hackathon. First, form a team of 6 members, participate in your college's internal SIH event, and get selected to represent your institution at the national level."
         },
         {
           q: "When does registration open and close?",
-          a: "Registration for Internal Hackathon opens in August 2025 and closes by September 2025. No extensions will be granted, and incomplete registrations will be rejected. Check with Sharda University coordinators for exact dates."
+          a: "Registration for Internal Hackathon opens in August 2026 and closes by August 2026. No extensions will be granted, and incomplete registrations will be rejected. Check with Sharda University coordinators for exact dates."
         },
         {
           q: "Can team members be from different colleges?",
@@ -62,7 +62,7 @@ const FAQ = () => {
         },
         {
           q: "Is it mandatory to have a female team member?",
-          a: "Yes, each team must have at least one female member. This is a mandatory requirement for SIH 2025."
+          a: "Yes, each team must have at least one female member. This is a mandatory requirement for SIH 2026."
         },
         {
           q: "What roles should team members have?",
@@ -131,7 +131,7 @@ const FAQ = () => {
         },
         {
           q: "When are problem statements released?",
-          a: "Problem statements are released in August 2025 as part of the SIH Problem Statement Launch phase. They cover 18 major themes including MedTech/BioTech/HealthTech, Smart Education, Agriculture/FoodTech & Rural Development, Smart Automation, Fintech, Clean & Green Technology, Transportation & Logistics, Blockchain & Cybersecurity, Robotics and Drones, Smart Vehicles, Renewable/Sustainable Energy, Disaster Management, Tourism, Heritage & Culture, Games & Toys, Space Technology, Fitness & Sports, and Miscellaneous."
+          a: "Problem statements are released in August 2026 as part of the SIH Problem Statement Launch phase. They cover 18 major themes including MedTech/BioTech/HealthTech, Smart Education, Agriculture/FoodTech & Rural Development, Smart Automation, Fintech, Clean & Green Technology, Transportation & Logistics, Blockchain & Cybersecurity, Robotics and Drones, Smart Vehicles, Renewable/Sustainable Energy, Disaster Management, Tourism, Heritage & Culture, Games & Toys, Space Technology, Fitness & Sports, and Miscellaneous."
         },
         {
           q: "Can we suggest our own problem statement?",
@@ -157,7 +157,7 @@ const FAQ = () => {
         <div className="text-center mb-12">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">Frequently Asked Questions</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Find answers to common questions about Smart India Hackathon 2025
+            Find answers to common questions about Smart India Hackathon 2026
           </p>
         </div>
 

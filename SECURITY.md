@@ -11,7 +11,7 @@ We actively maintain and provide security updates for the following versions:
 
 ## 🚨 Reporting a Vulnerability
 
-We take the security of the Sharda University Internal Hackathon 2025 platform seriously. If you discover a security vulnerability, please follow these steps:
+We take the security of the Sharda University Internal Hackathon 2026 platform seriously. If you discover a security vulnerability, please follow these steps:
 
 ### 📞 Contact Information
 

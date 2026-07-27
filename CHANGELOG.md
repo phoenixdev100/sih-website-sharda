@@ -1,6 +1,6 @@
 # 📝 Changelog
 
-All notable changes to the Sharda University Internal Hackathon 2025 platform will be documented in this file.
+All notable changes to the Sharda University Internal Hackathon 2026 platform will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -12,7 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Performance optimizations
 - Accessibility improvements
 
-## [1.0.0] - 2025-01-08
+## [1.0.0] - 2026-01-08
 
 ### 🎉 Initial Release
 
@@ -139,13 +139,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Upcoming Releases
 
-#### [1.1.0] - Planned for February 2025
+#### [1.1.0] - Planned for February 2026
 - Dark mode implementation
 - Advanced search functionality
 - Enhanced form validation
 - Performance optimizations
 
-#### [1.2.0] - Planned for March 2025
+#### [1.2.0] - Planned for March 2026
 - Real-time notifications
 - Team collaboration features
 - Advanced analytics dashboard
@@ -155,11 +155,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 🔗 Links
 
-- [GitHub Repository](https://github.com/your-username/sharda-sih-2025)
+- [GitHub Repository](https://github.com/your-username/sharda-sih-2026)
 - [Live Demo](https://your-demo-link.com)
 - [Documentation](README.md)
 - [Contributing Guidelines](CONTRIBUTING.md)
-- [Issue Tracker](https://github.com/your-username/sharda-sih-2025/issues)
+- [Issue Tracker](https://github.com/your-username/sharda-sih-2026/issues)
 
 ---
 
@@ -174,4 +174,4 @@ Special thanks to all contributors who made this release possible:
 
 ---
 
-**For detailed information about each release, visit our [GitHub Releases](https://github.com/your-username/sharda-sih-2025/releases) page.**
+**For detailed information about each release, visit our [GitHub Releases](https://github.com/your-username/sharda-sih-2026/releases) page.**

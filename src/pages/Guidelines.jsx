@@ -13,7 +13,7 @@ const Guidelines = () => {
           title: 'Participation Rules',
           items: [
             'Teams must consist of exactly 6 members',
-            'All team members must be from the sharda university',
+            'All team members must be from Sharda University',
             'At least one female member is mandatory per team',
             'All participants must be currently enrolled students',
             'Valid student ID required for all team members'
@@ -25,7 +25,7 @@ const Guidelines = () => {
             'Open to undergraduate and postgraduate students',
             'Students with work experience can participate if currently enrolled',
             'All team members must have valid college enrollment',
-            'Institution must be registered with SIH 2025'
+            'Institution must be registered with SIH 2026'
           ]
         },
         {
@@ -142,11 +142,11 @@ const Guidelines = () => {
         {
           title: 'Important Deadlines',
           items: [
-            'Registration deadline: September 2025',
-            'Internal hackathon: August-September 2025',
-            'Nomination submission: September 2025',
-            'Grand finale: December 2025',
-            'Result announcement: Post finale'
+            'SPOC Registration deadline: 31 July 2026',
+            'Problem statement launch: To be announced',
+            'Team registration: To be announced',
+            'Internal hackathon: To be announced',
+            'Grand finale: To be announced'
           ]
         }
       ]
@@ -195,9 +195,9 @@ const Guidelines = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">SIH 2025 Guidelines</h1>
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">SIH 2026 Guidelines</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive guidelines to help you navigate through Smart India Hackathon 2025
+            Comprehensive guidelines to help you navigate through Smart India Hackathon 2026
           </p>
         </div>
 
@@ -230,15 +230,22 @@ const Guidelines = () => {
                   <h2 className="text-3xl font-bold text-gray-800">{section.title}</h2>
                 </div>
 
-                <div className="grid gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {section.content.map((subsection, index) => (
-                    <div key={index} className="bg-gray-50 rounded-lg p-6">
-                      <h3 className="text-xl font-bold text-gray-800 mb-4">{subsection.title}</h3>
-                      <ul className="space-y-3">
+                    <div key={index} className="bg-gradient-to-br from-gray-50 to-white rounded-xl p-6 border border-gray-100 hover:shadow-lg transition-all duration-300 hover:border-blue-200">
+                      <div className="flex items-center mb-4">
+                        <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center text-white font-bold mr-3">
+                          {index + 1}
+                        </div>
+                        <h3 className="text-lg font-bold text-gray-800">{subsection.title}</h3>
+                      </div>
+                      <ul className="space-y-2">
                         {subsection.items.map((item, itemIndex) => (
-                          <li key={itemIndex} className="flex items-start">
-                            <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                            <span className="text-gray-700">{item}</span>
+                          <li key={itemIndex} className="flex items-start text-sm text-gray-600">
+                            <svg className="w-4 h-4 text-blue-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>{item}</span>
                           </li>
                         ))}
                       </ul>

@@ -5,34 +5,34 @@ const Timeline = () => {
   const timelineEvents = [
     {
       id: 1,
-      date: "August 2025",
+      date: "31 July 2026",
       title: "Registration of SPOCs",
       description: "Single Point of Contact registration for educational institutions",
-      status: "completed",
+      status: "upcoming",
       icon: "👥",
       color: "green",
     },
     {
       id: 2,
-      date: "August 2025",
+      date: "To be announced",
       title: "SIH Problem Statement Launch",
       description: "Official problem statements from various ministries and organizations released",
-      status: "completed",
+      status: "upcoming",
       icon: "📋",
       color: "blue",
     },
     {
       id: 3,
-      date: "September 2025",
+      date: "To be announced",
       title: "Registration of Teams",
-      description: "Team registration opens for participating in Smart India Hackathon 2025",
-      status: "completed",
+      description: "Team registration opens for participating in Smart India Hackathon 2026",
+      status: "upcoming",
       icon: "📝",
       color: "cyan",
     },
     {
       id: 4,
-      date: "September 2025",
+      date: "To be announced",
       title: "Internal Hackathon",
       description: "Institution-level hackathons to select teams for national finale",
       status: "upcoming",
@@ -41,7 +41,7 @@ const Timeline = () => {
     },
     {
       id: 5,
-      date: "September 2025",
+      date: "To be announced",
       title: "Final Results Announcement",
       description: "Top teams nominated by institutions and idea submissions on portal",
       status: "upcoming",
@@ -50,12 +50,21 @@ const Timeline = () => {
     },
     {
       id: 6,
-      date: "September 2025",
+      date: "To be announced",
       title: "Report Compilation & Portal Upload",
       description: "Compilation of reports and uploading on official SIH portal",
       status: "upcoming",
       icon: "📊",
       color: "orange",
+    },
+    {
+      id: 7,
+      date: "To be announced",
+      title: "Grand Finale",
+      description: "National-level hackathon finale at nodal centers across India",
+      status: "upcoming",
+      icon: "🏆",
+      color: "red",
     }
   ]
 
@@ -97,9 +106,15 @@ const Timeline = () => {
     },
     {
       name: "Institution Phase",
-      events: [3, 4, 5],
+      events: [3, 4, 5, 6],
       description: "Internal hackathons and team nominations",
       color: "bg-purple-100 text-purple-800"
+    },
+    {
+      name: "Finale Phase",
+      events: [7],
+      description: "National-level grand finale",
+      color: "bg-red-100 text-red-800"
     }
   ]
 
@@ -115,17 +130,17 @@ const Timeline = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6 px-4">SIH 2025 Timeline</h1>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6 px-4">SIH 2026 Timeline</h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4 mb-8">
-            Your complete roadmap to Smart India Hackathon 2025. Stay on track with all important dates and milestones.
+            Your complete roadmap to Smart India Hackathon 2026 (9th Edition). Stay on track with all important dates and milestones.
           </p>
 
           {/* Timeline Image */}
           <div className="max-w-5xl mx-auto mb-8 px-4">
             <div className="bg-gray-50 rounded-lg p-4">
               <img
-                src="./sih-timeline-2025.png"
-                alt="Smart India Hackathon 2025 Complete Timeline Flow"
+                src="./sih-timeline-2026.png"
+                alt="Smart India Hackathon 2026 Complete Timeline Flow"
                 className="w-full h-auto"
                 style={{ maxHeight: '600px', objectFit: 'contain' }}
               />
@@ -149,9 +164,9 @@ const Timeline = () => {
         {/* Progress Bar Section */}
         <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8 mb-12 sm:mb-16 mx-4">
           <div className="text-center mb-8">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">📊 SIH 2025 Progress Tracker</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">📊 SIH 2026 Progress Tracker</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Track the completion status of Smart India Hackathon 2025 phases and milestones
+              Track the completion status of Smart India Hackathon 2026 phases and milestones
             </p>
           </div>
 
@@ -172,8 +187,8 @@ const Timeline = () => {
               ></div>
             </div>
             <div className="flex justify-between text-sm text-gray-500 mt-2">
-              <span>Started: August 2025</span>
-              <span>Expected Completion: September 2025</span>
+              <span>SPOC Registration: 31 July 2026</span>
+              <span>Other dates: To be announced</span>
             </div>
           </div>
 
@@ -183,7 +198,8 @@ const Timeline = () => {
               const progress = calculatePhaseProgress(phase.events)
               const phaseColors = {
                 0: { bg: 'from-blue-50 to-blue-100', bar: 'bg-blue-200', fill: 'bg-blue-500', text: 'text-blue-700', circle: 'bg-blue-500', title: 'text-blue-800' },
-                1: { bg: 'from-purple-50 to-purple-100', bar: 'bg-purple-200', fill: 'bg-purple-500', text: 'text-purple-700', circle: 'bg-purple-500', title: 'text-purple-800' }
+                1: { bg: 'from-purple-50 to-purple-100', bar: 'bg-purple-200', fill: 'bg-purple-500', text: 'text-purple-700', circle: 'bg-purple-500', title: 'text-purple-800' },
+                2: { bg: 'from-red-50 to-red-100', bar: 'bg-red-200', fill: 'bg-red-500', text: 'text-red-700', circle: 'bg-red-500', title: 'text-red-800' }
               }
               const colors = phaseColors[index]
 
@@ -285,7 +301,7 @@ const Timeline = () => {
                           </div>
                           <div className="text-left sm:text-right">
                             <div className="bg-blue-500 text-white px-2 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-medium">
-                              17 September 2025
+                              To be announced
                             </div>
                           </div>
                         </div>
@@ -310,7 +326,7 @@ const Timeline = () => {
                           </div>
                           <div className="text-left sm:text-right">
                             <div className="bg-green-500 text-white px-2 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-medium">
-                              23 September 2025
+                              To be announced
                             </div>
                           </div>
                         </div>
@@ -325,7 +341,7 @@ const Timeline = () => {
                           </div>
                           <div className="text-left sm:text-right">
                             <div className="bg-purple-500 text-white px-2 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-medium">
-                              24 September 2025
+                              To be announced
                             </div>
                           </div>
                         </div>
@@ -349,12 +365,12 @@ const Timeline = () => {
                 <div className="text-center">
                   <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-800 mb-4">Timeline Complete</h3>
                   <p className="text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed mb-4 sm:mb-6">
-                    This marks the end of the current Internal SIH 2025 timeline. All institutional-level activities conclude with report compilation and portal upload.
+                    This marks the end of the current Internal SIH 2026 timeline. All institutional-level activities conclude with report compilation and portal upload.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
                     <div className="bg-white rounded-lg px-3 py-2 sm:px-4 shadow-sm border border-gray-200">
-                      <span className="text-xs sm:text-sm text-gray-500">Phase Duration:</span>
-                      <div className="font-semibold text-gray-800 text-sm sm:text-base">August - September 2025</div>
+                      <span className="text-xs sm:text-sm text-gray-500">Confirmed Date:</span>
+                      <div className="font-semibold text-gray-800 text-sm sm:text-base">SPOC: 31 July 2026</div>
                     </div>
                     <div className="bg-white rounded-lg px-3 py-2 sm:px-4 shadow-sm border border-gray-200">
                       <span className="text-xs sm:text-sm text-gray-500">Total Events:</span>
@@ -380,7 +396,11 @@ const Timeline = () => {
             <ul className="space-y-2 text-sm sm:text-base">
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                Registration closes: 17 September, 2025
+                SPOC Registration: 31 July, 2026
+              </li>
+              <li className="flex items-center">
+                <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
+                Other dates: To be announced
               </li>
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-white rounded-full mr-3"></span>

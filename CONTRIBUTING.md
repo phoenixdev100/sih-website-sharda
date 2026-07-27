@@ -1,6 +1,6 @@
-# 🤝 Contributing to Sharda University Internal Hackathon 2025
+# 🤝 Contributing to Sharda University Internal Hackathon 2026
 
-Thank you for your interest in contributing to the Sharda University Internal Hackathon 2025 platform! We welcome contributions from students, faculty, and the broader community.
+Thank you for your interest in contributing to the Sharda University Internal Hackathon 2026 platform! We welcome contributions from students, faculty, and the broader community.
 
 ## 📋 Table of Contents
 
@@ -402,7 +402,7 @@ Current project maintainers:
 
 ## 🙏 Thank You
 
-Thank you for contributing to the Sharda University Internal Hackathon 2025 platform! Your contributions help create a better experience for all participants and make the hackathon more successful.
+Thank you for contributing to the Sharda University Internal Hackathon 2026 platform! Your contributions help create a better experience for all participants and make the hackathon more successful.
 
 Every contribution, no matter how small, is valuable and appreciated. Together, we're building something amazing! 🚀
 

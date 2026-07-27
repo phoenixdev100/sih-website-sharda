@@ -19,7 +19,7 @@ const Privacy = () => {
             <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-200">
               <h3 className="text-2xl font-bold text-blue-800 mb-4">🛡️ Privacy Overview</h3>
               <p className="text-blue-700 text-lg leading-relaxed mb-4">
-                At Sharda University's Smart India Hackathon 2025, we are committed to protecting your privacy. This website serves as an information portal only. We do not collect any personal data through this website. All registration and data collection occurs exclusively through official Google Forms.
+                At Sharda University's Smart India Hackathon 2026, we are committed to protecting your privacy. This website serves as an information portal only. We do not collect any personal data through this website. All registration and data collection occurs exclusively through official Google Forms.
               </p>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="bg-white rounded-lg p-4 border border-blue-100">
@@ -287,7 +287,7 @@ const Privacy = () => {
 
         {/* Last Updated */}
         <div className="text-center mt-8 text-gray-500">
-          <p>Last updated: September 5, 2025</p>
+          <p>Last updated: July 27, 2026</p>
         </div>
       </div>
     </div>

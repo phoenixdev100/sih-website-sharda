@@ -1,16 +1,16 @@
 const Mentorship = () => {
 
     const mentorshipProgram = {
-        title: "SIH 2025 Comprehensive Mentorship Program",
-        description: "Complete guidance from 2x SIH Winners, Hackathon Mentors, and Microsoft-AWS Professionals",
+        title: "SIH 2026 Comprehensive Mentorship Program",
+        description: "Complete guidance from 2x SIH Winners, Hackathon Mentors, and Industry Professionals",
         icon: "🚀",
-        startDate: "September 15, 2025",
+        startDate: "September 15, 2026",
         duration: "1-2 weeks",
         format: "Online",
         features: [
             "Success strategies from 2x SIH Winners",
             "End-to-end hackathon preparation",
-            "Cloud architecture with AWS & Microsoft Azure",
+            "Cloud architecture and modern technologies",
             "Technical skill development and code reviews",
             "Innovation and ideation workshops",
             "Team management and leadership training",
@@ -26,16 +26,16 @@ const Mentorship = () => {
             name: "Deepak Kumar",
             title: "2x SIH Winner & Lead Mentor",
             expertise: ["Full Stack Development", "System Design", "Team Leadership"],
-            achievements: ["SIH 2023 Winner", "SIH 2024 Winner", "AWS Certified"],
+            achievements: ["SIH 2023 Winner", "SIH 2024 Winner", "Cloud Certified"],
             image: "./image.png",
             bio: "Experienced hackathon winner with expertise in building scalable solutions and leading winning teams."
         },
         {
-            name: "AWS Cloud Professionals",
+            name: "Cloud Professionals",
             title: "Certified Cloud Architects",
             expertise: ["Cloud Computing", "DevOps", "Microservices", "Serverless"],
-            achievements: ["AWS Solutions Architect", "Microsoft Azure Expert", "Google Cloud Professional"],
-            image: "./aws-banner.jpg",
+            achievements: ["Solutions Architect", "Microsoft Azure Expert", "Google Cloud Professional"],
+            image: "./image.png",
             bio: "Industry experts specializing in cloud-native solutions and modern application architecture."
         }
     ]
@@ -45,10 +45,10 @@ const Mentorship = () => {
             {/* Hero Section */}
             <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8 text-center border border-blue-200">
                 <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">
-                    🚀 SIH 2025 Mentorship Program
+                    🚀 SIH 2026 Mentorship Program
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-6">
-                    Get expert guidance from 2x SIH Winners, experienced Hackathon Mentors, and Microsoft-AWS Professionals.
+                    Get expert guidance from 2x SIH Winners, experienced Hackathon Mentors, and Industry Professionals.
                     Transform your ideas into winning solutions with personalized mentorship.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4 text-sm mb-6">
@@ -164,13 +164,13 @@ const Mentorship = () => {
                                     </div>
                                     <div>
                                         <h5 className="text-lg font-bold text-gray-800">Sourav Bera</h5>
-                                        <p className="text-orange-600 font-medium text-sm">AWS Solutions Architect, PreSales @ Microsoft</p>
+                                        <p className="text-orange-600 font-medium text-sm">Solutions Architect, PreSales @ Microsoft</p>
                                     </div>
                                 </div>
                                 <div className="space-y-2">
                                     <div className="flex items-center text-sm text-gray-700">
                                         <span className="text-orange-500 mr-2">☁️</span>
-                                        <span>AWS Solutions Architect Certified</span>
+                                        <span>Solutions Architect Certified</span>
                                     </div>
                                     <div className="flex items-center text-sm text-gray-700">
                                         <span className="text-orange-500 mr-2">🏢</span>
@@ -187,7 +187,7 @@ const Mentorship = () => {
 
                     <div className="text-center">
                         <a
-                            href="https://www.meetup.com/aws-cloud-club-at-sharda-university/events/311064712/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link&utm_version=v2"
+                            href="/contact"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg text-lg"
@@ -211,15 +211,7 @@ const Mentorship = () => {
                         Mentorship Program
                     </h1>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        <span>Brought to you by{" "}
-                            <a
-                                href="https://www.meetup.com/aws-cloud-club-at-sharda-university/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                style={{ textDecoration: "underline" }}
-                            >
-                                <strong>AWS Cloud Club</strong>
-                            </a>{" "}<br /></span>
+                        <span>Brought to you by Sharda University</span>
                         <span>Learn from 2x SIH Winners, seasoned Hackathon Mentors, and Microsoft Professionals. Turn your ideas into winning solutions with personalized mentorship.</span>
                     </p>
                 </div>

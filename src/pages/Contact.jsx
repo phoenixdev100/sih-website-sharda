@@ -17,9 +17,9 @@ const Contact = () => {
     const contactInfo = [
         {
             title: "SIH (SPOC) Sharda University",
-            name: "Mr Ashish Jain",
-            email: "ashish.jain4@sharda.ac.in",
-            phone: "+91 8459321463",
+            name: "Mr Ashish Kumar",
+            email: "ashish.kumar@sharda.ac.in",
+            phone: "+91 8410707739",
             office: "Basement, Block 2, Cabin 19",
             icon: "🏛️",
             color: "from-blue-500 to-blue-600"
@@ -107,9 +107,9 @@ const Contact = () => {
         },
         {
             title: "Faculty Coordinator",
-            name: "Mr. Ashish Kumar",
-            email: "ashish.kumar@sharda.ac.in",
-            phone: "+91 8410707739",
+            name: "Mr Ashish Jain",
+            email: "ashish.jain4@sharda.ac.in",
+            phone: "+91 8459321463",
             icon: "👤",
             color: "from-orange-500 to-orange-600"
         },
@@ -145,19 +145,19 @@ const Contact = () => {
             questions: [
                 {
                     q: "When does the Internal Hackathon take place?",
-                    a: "The Internal Hackathon at Sharda University is scheduled for August-September 2025, as part of the institution-level selection process for SIH 2025."
+                    a: "The Internal Hackathon at Sharda University is scheduled for August 2026, as part of the institution-level selection process for SIH 2026."
                 },
                 {
-                    q: "What is the complete timeline for SIH 2025?",
-                    a: "Key dates: Internal Hackathon (Aug-Sep 2025), Team Nominations & Submissions (Aug-Sep 2025), Screening of Ideas (Sep-Oct 2025), Results Publication (Oct 2025), Mentoring Sessions (Oct 2025), Grand Finale (Dec 2025)."
+                    q: "What is the complete timeline for SIH 2026?",
+                    a: "Key dates: Internal Hackathon (Aug 2026), Team Nominations & Submissions (Aug-Sep 2026), Screening of Ideas (Sep-Oct 2026), Results Publication (Oct 2026), Mentoring Sessions (Oct 2026), Grand Finale (Dec 2026)."
                 },
                 {
                     q: "When do registrations close?",
-                    a: "Registration for the Internal Hackathon closes by September 2025. No extensions will be granted, and incomplete registrations will be rejected."
+                    a: "Registration for the Internal Hackathon closes by August 2026. No extensions will be granted, and incomplete registrations will be rejected."
                 },
                 {
                     q: "Can I change my team members after registration?",
-                    a: "Team changes are allowed until the registration deadline in September 2025. After this date, no changes will be permitted except in exceptional circumstances."
+                    a: "Team changes are allowed until the registration deadline in August 2026. After this date, no changes will be permitted except in exceptional circumstances."
                 },
                 {
                     q: "Is there a registration fee?",
@@ -203,7 +203,7 @@ const Contact = () => {
                 },
                 {
                     q: "What happens after the Internal Hackathon?",
-                    a: "Top teams will be nominated for the national SIH 2025, undergo screening (Sep-Oct), receive mentoring (Oct), and potentially qualify for the Grand Finale (Dec 2025)."
+                    a: "Top teams will be nominated for the national SIH 2026, undergo screening (Sep-Oct), receive mentoring (Oct), and potentially qualify for the Grand Finale (Dec 2026)."
                 }
             ]
         }
@@ -442,101 +442,6 @@ const Contact = () => {
                 </div>
             </div>
 
-            {/* AWS Cloud Community Section */}
-            <div className="mt-12 sm:mt-16">
-                <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl shadow-xl p-6 sm:p-8 border-2 border-orange-200">
-                    <div className="text-center mb-8">
-                        <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4 flex items-center justify-center">
-                            <span className="text-orange-500 mr-3">☁️</span>
-                            Connect to AWS Cloud Club
-                        </h2>
-                        <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
-                            Join our vibrant AWS Cloud Club for technical support, resources, and networking opportunities
-                        </p>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-4xl mx-auto">
-                        {/* Discord Card */}
-                        <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-orange-100">
-                            <div className="text-center mb-6">
-                                <div className="w-16 h-16 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
-                                    💬
-                                </div>
-                                <h3 className="text-xl font-bold text-gray-800 mb-2">Discord Community</h3>
-                                <p className="text-gray-600 text-sm">
-                                    Join our Discord server for real-time discussions, Q&A sessions, and community support
-                                </p>
-                            </div>
-
-                            <div className="space-y-4">
-                                <div className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-lg p-4 border border-indigo-100">
-                                    <h4 className="font-semibold text-indigo-800 mb-2 flex items-center">
-                                        <span className="mr-2">🎯</span>
-                                        What you'll get:
-                                    </h4>
-                                    <ul className="text-sm text-indigo-700 space-y-1">
-                                        <li>• Real-time technical support</li>
-                                        <li>• AWS learning resources</li>
-                                        <li>• Community events & workshops</li>
-                                        <li>• Networking with peers</li>
-                                    </ul>
-                                </div>
-
-                                <a
-                                    href="https://discord.com/invite/Eys77mrks5"
-                                    className="block w-full bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 text-center"
-                                >
-                                    💬 Join Discord Server
-                                </a>
-                            </div>
-                        </div>
-
-                        {/* Linktree Card */}
-                        <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-orange-100">
-                            <div className="text-center mb-6">
-                                <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
-                                    🔗
-                                </div>
-                                <h3 className="text-xl font-bold text-gray-800 mb-2">All Links Hub</h3>
-                                <p className="text-gray-600 text-sm">
-                                    Access all our social media, resources, and important links in one place
-                                </p>
-                            </div>
-
-                            <div className="space-y-4">
-                                <div className="bg-gradient-to-r from-orange-50 to-red-50 rounded-lg p-4 border border-orange-100">
-                                    <h4 className="font-semibold text-orange-800 mb-2 flex items-center">
-                                        <span className="mr-2">📱</span>
-                                        Find us on:
-                                    </h4>
-                                    <ul className="text-sm text-orange-700 space-y-1">
-                                        <li>• LinkedIn & Instagram</li>
-                                        <li>• YouTube tutorials</li>
-                                        <li>• GitHub repositories</li>
-                                        <li>• Event registrations</li>
-                                    </ul>
-                                </div>
-
-                                <a
-                                    href="http://linktr.ee/awscloudclubshardauniversity"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="block w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 text-center"
-                                >
-                                    🔗 Visit Linktree
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="mt-8 bg-gradient-to-r from-orange-100 to-amber-100 rounded-xl p-6 border border-orange-200 text-center">
-                        <p className="text-orange-800 font-medium">
-                            <span className="text-orange-600">🌟 Special Benefits:</span> AWS Cloud Club members get priority access to workshops, exclusive AWS credits, and direct mentorship opportunities!
-                        </p>
-                    </div>
-                </div>
-            </div>
-
         </div>
     )
 
@@ -680,7 +585,7 @@ const Contact = () => {
                 <div className="text-center mb-8 sm:mb-12">
                     <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4 sm:mb-6 px-4">Contact & Support</h1>
                     <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
-                        Get in touch with our team for any questions, support, or assistance with Sharda University Internal Hackathon 2025
+                        Get in touch with our team for any questions, support, or assistance with Sharda University Internal Hackathon 2026
                     </p>
                 </div>
 

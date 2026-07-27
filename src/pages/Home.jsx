@@ -1,6 +1,9 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import Modal from '../components/Modal'
 
 const Home = () => {
+  const [showModal, setShowModal] = useState(false)
   const stats = [
     { number: "36", label: "Hours", icon: "⏰" },
     { number: "₹1L+", label: "Prize Money", icon: "💰" },
@@ -36,12 +39,24 @@ const Home = () => {
   ]
 
   const tracks = [
-    { name: "MedTech/HealthTech", color: "bg-red-600", count: "85+", icon: "🏥" },
-    { name: "Smart Education", color: "bg-blue-600", count: "92+", icon: "🎓" },
-    { name: "Agriculture/FoodTech", color: "bg-green-700", count: "78+", icon: "🌱" },
-    { name: "Smart Automation", color: "bg-purple-600", count: "65+", icon: "🤖" },
-    { name: "Fintech", color: "bg-yellow-700", count: "58+", icon: "💰" },
-    { name: "Clean & Green Tech", color: "bg-teal-700", count: "72+", icon: "🌍" }
+    { name: "Smart Automation", color: "bg-purple-600", count: "150+", icon: "🤖" },
+    { name: "Heritage & Culture", color: "bg-orange-600", count: "45+", icon: "🏛️" },
+    { name: "Agriculture/FoodTech", color: "bg-green-700", count: "120+", icon: "�" },
+    { name: "Smart Vehicles", color: "bg-blue-700", count: "55+", icon: "🚗" },
+    { name: "Transportation", color: "bg-indigo-600", count: "80+", icon: "🚚" },
+    { name: "Robotics & Drones", color: "bg-cyan-600", count: "95+", icon: "🛸" },
+    { name: "Clean & Green Tech", color: "bg-teal-700", count: "110+", icon: "�" },
+    { name: "Tourism", color: "bg-pink-600", count: "40+", icon: "✈️" },
+    { name: "Renewable Energy", color: "bg-yellow-600", count: "75+", icon: "⚡" },
+    { name: "Blockchain & Security", color: "bg-red-700", count: "85+", icon: "🔒" },
+    { name: "Smart Education", color: "bg-blue-600", count: "130+", icon: "🎓" },
+    { name: "Disaster Management", color: "bg-gray-600", count: "50+", icon: "🚨" },
+    { name: "Games & Toys", color: "bg-purple-700", count: "35+", icon: "🎮" },
+    { name: "Miscellaneous", color: "bg-gray-500", count: "60+", icon: "📦" },
+    { name: "Fintech", color: "bg-yellow-700", count: "90+", icon: "💰" },
+    { name: "Space Technology", color: "bg-indigo-700", count: "70+", icon: "🚀" },
+    { name: "Fitness & Sports", color: "bg-green-600", count: "30+", icon: "⚽" },
+    { name: "MedTech/HealthTech", color: "bg-red-600", count: "140+", icon: "🏥" }
   ]
 
   return (
@@ -74,7 +89,7 @@ const Home = () => {
                   <span className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl">Internal</span>
                 </span>
                 <span className="block bg-gradient-to-r from-orange-400 via-pink-400 to-red-400 bg-clip-text text-transparent drop-shadow-2xl">
-                  Smart India Hackathon 2025
+                  Smart India Hackathon 2026
                 </span>
               </h1>
               <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-xl rounded-full border border-white/30 shadow-2xl">
@@ -87,12 +102,12 @@ const Home = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center items-center pt-4 px-4">
-              <Link
-                to="/registration"
+              <button
+                onClick={() => setShowModal(true)}
                 className="w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 hover:from-orange-600 hover:via-red-600 hover:to-pink-600 text-white font-bold rounded-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 shadow-2xl text-center"
               >
                 🚀 Register Now
-              </Link>
+              </button>
               <Link
                 to="/about"
                 className="w-full sm:w-auto px-6 py-3 border-2 border-white/40 text-white hover:bg-white/20 font-semibold rounded-lg transition-all duration-300 backdrop-blur-md shadow-xl text-center"
@@ -119,7 +134,7 @@ const Home = () => {
       <section className="py-12 sm:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">Why Join SIH 2025?</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">Why Join SIH 2026?</h2>
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
               Experience innovation, mentorship, and real-world impact
             </p>
@@ -181,7 +196,7 @@ const Home = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">Event Timeline</h2>
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
-              Key dates and milestones for SIH 2025
+              Key dates and milestones for SIH 2026
             </p>
           </div>
 
@@ -191,7 +206,7 @@ const Home = () => {
                 1
               </div>
               <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2">Registration</h3>
-              <p className="text-sm sm:text-base text-gray-600">Opens August 2025</p>
+              <p className="text-sm sm:text-base text-gray-600">Opens August 2026</p>
               <p className="text-sm text-gray-500">Form your team and register</p>
             </div>
             <div className="text-center">
@@ -199,7 +214,7 @@ const Home = () => {
                 2
               </div>
               <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2">Internal Hackathon</h3>
-              <p className="text-sm sm:text-base text-gray-600 mb-2">Aug-Sep 2025</p>
+              <p className="text-sm sm:text-base text-gray-600 mb-2">Aug-Sep 2026</p>
               <p className="text-sm text-gray-500">Campus-level competition</p>
             </div>
             <div className="text-center">
@@ -207,7 +222,7 @@ const Home = () => {
                 3
               </div>
               <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2">Grand Finale</h3>
-              <p className="text-sm sm:text-base text-gray-600 mb-2">December 2025</p>
+              <p className="text-sm sm:text-base text-gray-600 mb-2">December 2026</p>
               <p className="text-sm text-gray-500">National-level finale</p>
             </div>
           </div>
@@ -234,12 +249,12 @@ const Home = () => {
             Join thousands of innovators and be part of India's largest hackathon. Start your journey today!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/registration"
+            <button
+              onClick={() => setShowModal(true)}
               className="bg-orange-700 hover:bg-orange-800 text-white font-bold py-4 px-8 rounded-xl text-lg transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
               Register Your Team
-            </Link>
+            </button>
             <Link
               to="/contact"
               className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-purple-600 font-bold py-4 px-8 rounded-xl text-lg transition-all duration-200"
@@ -250,69 +265,19 @@ const Home = () => {
         </div>
       </section>
 
-      {/* AWS Community Section */}
-      <section className="py-16 bg-gradient-to-br from-orange-50 to-amber-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Powered & Hosted by
-            </h2>
-          </div>
+      <Modal
+        isOpen={showModal}
+        onClose={() => setShowModal(false)}
+        title="Registration Coming Soon"
+      >
+        <p className="text-lg mb-4">
+          Registration for SIH 2026 will open soon. Stay tuned for updates!
+        </p>
+        <p className="text-sm text-gray-500">
+          Follow our announcements page for the latest information about registration dates and procedures.
+        </p>
+      </Modal>
 
-          <div className="flex justify-center">
-            <div className="bg-white rounded-2xl shadow-2xl p-8 sm:p-12 max-w-4xl w-full border border-orange-200 hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="text-center mb-8">
-                <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4 flex items-center justify-center">
-                  <span className="text-orange-500 mr-3">☁️</span>
-                  AWS Cloud Club
-                </h3>
-                <p className="text-gray-600 text-base sm:text-lg">
-                  Empowering innovation through cloud technology and community collaboration
-                </p>
-              </div>
-
-              <div className="relative overflow-hidden rounded-xl shadow-lg">
-                <img
-                  src="./aws-banner.jpg"
-                  alt="AWS Cloud Club Banner"
-                  className="w-full h-auto object-cover transition-transform duration-300 hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-              </div>
-
-              <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
-                <div className="bg-gradient-to-br from-orange-100 to-orange-200 rounded-xl p-4">
-                  <div className="text-2xl mb-2">🚀</div>
-                  <h4 className="font-semibold text-gray-800 mb-1">Cloud Infrastructure</h4>
-                  <p className="text-sm text-gray-600">Scalable and reliable hosting</p>
-                </div>
-                <div className="bg-gradient-to-br from-blue-100 to-blue-200 rounded-xl p-4">
-                  <div className="text-2xl mb-2">🤝</div>
-                  <h4 className="font-semibold text-gray-800 mb-1">Community Support</h4>
-                  <p className="text-sm text-gray-600">Expert guidance and mentorship</p>
-                </div>
-                <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-xl p-4">
-                  <div className="text-2xl mb-2">💡</div>
-                  <h4 className="font-semibold text-gray-800 mb-1">Innovation Hub</h4>
-                  <p className="text-sm text-gray-600">Fostering technological advancement</p>
-                </div>
-              </div>
-
-              <div className="text-center mt-8">
-                <a
-                  href="https://www.meetup.com/aws-cloud-club-at-sharda-university/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
-                >
-                  <span className="mr-2">🔗</span>
-                  Join AWS Cloud Club
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   )
 }

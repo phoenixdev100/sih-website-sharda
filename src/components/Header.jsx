@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import Modal from './Modal'
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [isScrolled, setIsScrolled] = useState(false)
+    const [showModal, setShowModal] = useState(false)
     const location = useLocation()
 
     const navItems = [
@@ -11,7 +13,7 @@ const Header = () => {
         { path: '/about', label: 'About', icon: '📖' },
         { path: '/timeline', label: 'Timeline', icon: '📅' },
         { path: '/announcements', label: 'Announcements', icon: '📢' },
-        { path: '/mentorship', label: 'Mentorship', icon: '👨‍🏫' },
+        { path: '/guidelines', label: 'Guidelines', icon: '📋' },
         { path: '/contact', label: 'Contact', icon: '📞' }
     ]
 
@@ -38,7 +40,7 @@ const Header = () => {
                             {/* Logo Image */}
                             <img
                                 src="./logo1.png"
-                                alt="SIH 2025 Logo"
+                                alt="SIH 2026 Logo"
                                 className="w-10 h-10 sm:w-12 sm:h-12 object-contain group-hover:scale-105 transition-all duration-300"
                             />
                         </div>
@@ -46,7 +48,7 @@ const Header = () => {
                             <h1 className="text-xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent group-hover:from-blue-600 group-hover:to-purple-600 transition-all duration-300">
                                 Sharda University
                             </h1>
-                            <p className="text-xs font-semibold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Internal Hackathon 2025</p>
+                            <p className="text-xs font-semibold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Internal Hackathon 2026</p>
                         </div>
                     </Link>
 
@@ -57,7 +59,7 @@ const Header = () => {
                                 key={item.path}
                                 to={item.path}
                                 className={`flex items-center space-x-2 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 ${isActive(item.path)
-                                    ? 'bg-white text-blue-600 shadow-md transform scale-105'
+                                    ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-md transform scale-105'
                                     : 'text-gray-600 hover:text-blue-600 hover:bg-white/70'
                                     }`}
                             >
@@ -130,21 +132,36 @@ const Header = () => {
 
                             {/* Mobile CTA */}
                             <div className="pt-4 border-t border-gray-100 mt-4">
-                                <Link
-                                    to="/registration"
-                                    onClick={() => setIsMenuOpen(false)}
-                                    className="flex items-center justify-center space-x-2 bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold px-4 py-3 rounded-lg transition-all duration-200 shadow-lg"
+                                <button
+                                    onClick={() => {
+                                        setShowModal(true);
+                                        setIsMenuOpen(false);
+                                    }}
+                                    className="flex items-center justify-center space-x-2 bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold px-4 py-3 rounded-lg transition-all duration-200 shadow-lg w-full"
                                 >
                                     <span>Register Now</span>
                                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                                     </svg>
-                                </Link>
+                                </button>
                             </div>
                         </div>
                     </div>
                 )}
             </div>
+
+            <Modal
+                isOpen={showModal}
+                onClose={() => setShowModal(false)}
+                title="Registration Coming Soon"
+            >
+                <p className="text-lg mb-4">
+                    Registration for SIH 2026 will open soon. Stay tuned for updates!
+                </p>
+                <p className="text-sm text-gray-500">
+                    Follow our announcements page for the latest information about registration dates and procedures.
+                </p>
+            </Modal>
         </header>
     )
 }

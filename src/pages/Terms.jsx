@@ -17,7 +17,7 @@ const Terms = () => {
             <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-6 border border-green-200">
               <h3 className="text-2xl font-bold text-green-800 mb-4">📋 Terms & Conditions Overview</h3>
               <p className="text-green-700 text-lg leading-relaxed mb-4">
-                Welcome to Smart India Hackathon 2025 hosted by Sharda University. This website serves as an information portal only. By registering through our Google Forms, you agree to comply with these terms and conditions.
+                Welcome to Smart India Hackathon 2026 hosted by Sharda University. This website serves as an information portal only. By registering through our Google Forms, you agree to comply with these terms and conditions.
               </p>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="bg-white rounded-lg p-4 border border-green-100">
@@ -188,7 +188,7 @@ const Terms = () => {
         <div className="text-center mb-12">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6 px-4">📋 Terms & Conditions</h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
-            Please read these terms and conditions carefully before participating in Smart India Hackathon 2025.
+            Please read these terms and conditions carefully before participating in Smart India Hackathon 2026.
           </p>
         </div>
 
@@ -220,7 +220,7 @@ const Terms = () => {
 
         {/* Last Updated */}
         <div className="text-center mt-8 text-gray-500">
-          <p>Last updated: September 5, 2025</p>
+          <p>Last updated: July 27, 2026</p>
         </div>
       </div>
     </div>
