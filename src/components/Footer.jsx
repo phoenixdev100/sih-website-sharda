@@ -85,7 +85,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="flex items-center space-x-3">
             <img
-              src="./logo1.png"
+              src="./logo-sharda.png"
               alt="SIH 2026 Logo"
               className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
             />

@@ -251,13 +251,13 @@ const Home = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={() => setShowModal(true)}
-              className="bg-orange-700 hover:bg-orange-800 text-white font-bold py-4 px-8 rounded-xl text-lg transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              className="bg-orange-700 hover:bg-orange-800 text-white font-bold py-3 px-6 rounded-xl text-base transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
               Register Your Team
             </button>
             <Link
               to="/contact"
-              className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-purple-600 font-bold py-4 px-8 rounded-xl text-lg transition-all duration-200"
+              className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-purple-600 font-bold py-3 px-6 rounded-xl text-base transition-all duration-200"
             >
               Get Support
             </Link>
