@@ -8,7 +8,7 @@ const Timeline = () => {
       date: "31 July 2026",
       title: "Registration of SPOCs",
       description: "Single Point of Contact registration for educational institutions",
-      status: "upcoming",
+      status: "Live",
       icon: "👥",
       color: "green",
     },

@@ -8,19 +8,17 @@ const Announcements = () => {
   const announcements = [
     {
       id: 1,
-      title: "📢 SPOC Registration Now Open!",
-      content: "Registration for Single Point of Contact (SPOC) for Smart India Hackathon 2026 is going on. Institutions can register their SPOC until 31st July 2026. Stay tuned for further updates regarding problem statements, team registration, and other important dates.",
+      title: "📢 SPOC Registration Update",
+      content: "The Single Point of Contact (SPOC) for Sharda University has already been registered. Students do not need to take any action regarding SPOC registration. Our SPOC, Mr. Ashish Kumar, will handle all coordination and communication for SIH 2026. Stay tuned for further updates regarding problem statements, team registration, and other important dates.",
       category: "registration",
       priority: "high",
       date: "2026-07-01",
       details: [
-        "📅 SPOC Registration Deadline: 31st July 2026",
-        "🏛️ Open for all educational institutions",
-        "👤 One SPOC per institution",
+        "✅ Sharda University SPOC already registered",
+        "👤 SPOC Name: Mr. Ashish Kumar",
+        "🎓 Students do not need to register as SPOC",
         "📢 More updates coming soon - stay tuned!"
-      ],
-      link: "https://sih.gov.in/signin",
-      linkText: "Register SPOC"
+      ]
     }
     // {
     //   id: 3,
@@ -202,22 +200,26 @@ const Announcements = () => {
                   </div>
 
                   <div className="flex items-end justify-end">
-                    {announcement.onClick ? (
-                      <button
-                        onClick={announcement.onClick}
-                        className="bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-3 px-8 rounded-lg hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
-                      >
-                        {announcement.linkText} →
-                      </button>
-                    ) : (
-                      <a
-                        href={announcement.link}
-                        target={announcement.link.startsWith('http') ? '_blank' : '_self'}
-                        rel={announcement.link.startsWith('http') ? 'noopener noreferrer' : ''}
-                        className="bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-3 px-8 rounded-lg hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
-                      >
-                        {announcement.linkText} →
-                      </a>
+                    {announcement.linkText && (
+                      <>
+                        {announcement.onClick ? (
+                          <button
+                            onClick={announcement.onClick}
+                            className="bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-3 px-8 rounded-lg hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+                          >
+                            {announcement.linkText} →
+                          </button>
+                        ) : (
+                          <a
+                            href={announcement.link}
+                            target={announcement.link && announcement.link.startsWith('http') ? '_blank' : '_self'}
+                            rel={announcement.link && announcement.link.startsWith('http') ? 'noopener noreferrer' : ''}
+                            className="bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-3 px-8 rounded-lg hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+                          >
+                            {announcement.linkText} →
+                          </a>
+                        )}
+                      </>
                     )}
                   </div>
                 </div>

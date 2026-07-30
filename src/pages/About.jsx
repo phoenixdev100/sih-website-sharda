@@ -177,6 +177,79 @@ const About = () => {
                 </div>
               ))}
             </div>
+
+            {/* SIH 2025 Winners Section */}
+            <div className="mt-8 sm:mt-12 bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl p-6 sm:p-8 border-2 border-yellow-200">
+              <div className="flex items-center mb-6">
+                <div className="text-4xl sm:text-5xl mr-4">🏆</div>
+                <div>
+                  <h3 className="text-2xl sm:text-3xl font-bold text-gray-800">SIH 2025 Winners Announced</h3>
+                  <p className="text-gray-600 text-sm sm:text-base">Software Edition - December 12, 2025</p>
+                </div>
+              </div>
+              
+              <div className="bg-white rounded-xl p-4 sm:p-6 mb-6 shadow-md">
+                <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-4">
+                  The Grand Finale of Smart India Hackathon 2025 concluded with five exceptional student teams emerging as winners after an intense 36-hour coding marathon. Organised by MIC and AICTE, the event brought together innovators from 12 states across 60 nodal centres nationwide.
+                </p>
+                <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
+                  Finalists developed AI-driven solutions for Jammu & Kashmir's problem statements, focusing on educational and technological needs including AI-driven timetable generation, digital mental health ecosystems, and personalised career advisory systems.
+                </p>
+              </div>
+
+              <div className="mb-6">
+                <img 
+                  src="/sih-2025-winners.jpeg" 
+                  alt="SIH 2025 Winners" 
+                  className="w-full h-auto rounded-xl shadow-lg"
+                />
+              </div>
+
+              <h4 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4">🥇 Winning Teams (₹1,50,000 each)</h4>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow">
+                  <div className="flex items-center mb-2">
+                    <span className="text-2xl mr-2">🎯</span>
+                    <h5 className="font-bold text-gray-800">Eklavya</h5>
+                  </div>
+                  <p className="text-gray-600 text-sm">MIT Academy of Engineering, Pune, Maharashtra</p>
+                </div>
+                <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow">
+                  <div className="flex items-center mb-2">
+                    <span className="text-2xl mr-2">🌉</span>
+                    <h5 className="font-bold text-gray-800">Gap Bridgers</h5>
+                  </div>
+                  <p className="text-gray-600 text-sm">IIIT Nagpur, Maharashtra</p>
+                </div>
+                <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow">
+                  <div className="flex items-center mb-2">
+                    <span className="text-2xl mr-2">🐕</span>
+                    <h5 className="font-bold text-gray-800">Hack Hounds</h5>
+                  </div>
+                  <p className="text-gray-600 text-sm">Dr. Mahalingam College of Engineering, Coimbatore, Tamil Nadu</p>
+                </div>
+                <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow">
+                  <div className="flex items-center mb-2">
+                    <span className="text-2xl mr-2">🚀</span>
+                    <h5 className="font-bold text-gray-800">Team Pioneers</h5>
+                  </div>
+                  <p className="text-gray-600 text-sm">Kalasalingam Academy of Research and Education, Tamil Nadu</p>
+                </div>
+                <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow">
+                  <div className="flex items-center mb-2">
+                    <span className="text-2xl mr-2">🦸</span>
+                    <h5 className="font-bold text-gray-800">Teen Titans</h5>
+                  </div>
+                  <p className="text-gray-600 text-sm">Bharatiya Vidya Bhavan's Sardar Patel Institute of Technology, Mumbai, Maharashtra</p>
+                </div>
+              </div>
+
+              <div className="mt-6 bg-blue-50 rounded-lg p-4 border border-blue-200">
+                <p className="text-gray-700 text-sm sm:text-base italic">
+                  "SIH pushed us to refine our idea, respond to real-time feedback, and validate the real impact of our solution." - Winner Team Member
+                </p>
+              </div>
+            </div>
           </div>
         )
 

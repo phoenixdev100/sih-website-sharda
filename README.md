@@ -145,7 +145,7 @@ sih-website-sharda/
 ### 🏠 Homepage
 - **Hero Section** - Eye-catching introduction with 3D animations
 - **Statistics** - Live participant count and prize information
-- **Problem Tracks** - Visual representation of all domains
+- **Problem Themes** - Visual representation of all domains
 - **Timeline Preview** - Key dates and milestones
 
 ### 📝 Registration Portal
