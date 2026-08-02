@@ -5,7 +5,7 @@ const Timeline = () => {
   const timelineEvents = [
     {
       id: 1,
-      date: "31 July 2026",
+      date: "14 August 2026",
       title: "Registration of SPOCs",
       description: "Single Point of Contact registration for educational institutions",
       status: "Live",
@@ -187,7 +187,7 @@ const Timeline = () => {
               ></div>
             </div>
             <div className="flex justify-between text-sm text-gray-500 mt-2">
-              <span>SPOC Registration: 31 July 2026</span>
+              <span>SPOC Registration: 14 August 2026</span>
               <span>Other dates: To be announced</span>
             </div>
           </div>
@@ -370,7 +370,7 @@ const Timeline = () => {
                   <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
                     <div className="bg-white rounded-lg px-3 py-2 sm:px-4 shadow-sm border border-gray-200">
                       <span className="text-xs sm:text-sm text-gray-500">Confirmed Date:</span>
-                      <div className="font-semibold text-gray-800 text-sm sm:text-base">SPOC: 31 July 2026</div>
+                      <div className="font-semibold text-gray-800 text-sm sm:text-base">SPOC: 14 August 2026</div>
                     </div>
                     <div className="bg-white rounded-lg px-3 py-2 sm:px-4 shadow-sm border border-gray-200">
                       <span className="text-xs sm:text-sm text-gray-500">Total Events:</span>
@@ -396,7 +396,7 @@ const Timeline = () => {
             <ul className="space-y-2 text-sm sm:text-base">
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                SPOC Registration: 31 July, 2026
+                SPOC Registration: 14 August 2026
               </li>
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-white rounded-full mr-3"></span>

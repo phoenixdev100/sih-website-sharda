@@ -12,7 +12,7 @@ const Announcements = () => {
       content: "The Single Point of Contact (SPOC) for Sharda University has already been registered. Students do not need to take any action regarding SPOC registration. Our SPOC, Mr. Ashish Kumar, will handle all coordination and communication for SIH 2026. Stay tuned for further updates regarding problem statements, team registration, and other important dates.",
       category: "registration",
       priority: "high",
-      date: "2026-07-01",
+      date: "2026-07-27",
       details: [
         "✅ Sharda University SPOC already registered",
         "👤 SPOC Name: Mr. Ashish Kumar",
