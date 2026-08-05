@@ -16,11 +16,11 @@ We take the security of the Sharda University Internal Hackathon 2026 platform s
 ### 📞 Contact Information
 
 **Primary Security Contact:**
-- **Email**: support@phoenixdev100.tech
+- **Email**: deepakkumar312005@gmail.com
 - **Response Time**: Within 48 hours
 
 **Backup Contacts:**
-- **Deepak**: support@phoenixdev100.tech
+- **Deepak**: deepakkumar312005@gmail.com
 
 ### 📋 Reporting Process
 

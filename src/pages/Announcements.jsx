@@ -8,11 +8,27 @@ const Announcements = () => {
   const announcements = [
     {
       id: 1,
-      title: "🚀 SIH 2026 Problem Statements Are Now Live!",
+      title: "🚀 Team Registration Has Started!",
+      content: "Team registration for Smart India Hackathon 2026 is now open! Form your teams of 6 members and register before the deadline. Don't miss this opportunity to participate in India's biggest hackathon!",
+      category: "registration",
+      priority: "high",
+      date: "2026-08-06",
+      details: [
+        "Team registration is now live",
+        "Deadline: 12 August 2026, 04:00 PM",
+        "Teams must have exactly 6 members",
+        "At least one female member is mandatory per team"
+      ],
+      link: "/registration",
+      linkText: "Register Your Team"
+    },
+    {
+      id: 2,
+      title: "🎯 SIH 2026 Problem Statements Are Now Live!",
       content: "We're excited to announce that the official Smart India Hackathon 2026 problem statements have been released! Teams can now browse through problem statements across Software and Hardware categories. Start exploring the challenges and choose the one that excites your team!",
       category: "updates",
       priority: "high",
-      date: "2026-08-05",
+      date: "2026-08-06",
       details: [
         "Problem statements now available for Software and Hardware categories",
         "Browse through innovative challenges from various domains",
@@ -23,12 +39,12 @@ const Announcements = () => {
       linkText: "View Problem Statements"
     },
     {
-      id: 2,
+      id: 3,
       title: "📋 Official Presentation Format Available",
       content: "The official presentation template for SIH 2026 submissions is now available for download. All teams must use this standardized format for their final presentations to ensure consistency and proper evaluation. The template includes guidelines for content structure, design elements, and submission requirements.",
       category: "guidelines",
       priority: "high",
-      date: "2026-08-05",
+      date: "2026-08-06",
       details: [
         "Standardized PowerPoint template with official SIH branding",
         "Pre-defined slide layouts for problem statement, solution, and demo",
@@ -39,7 +55,7 @@ const Announcements = () => {
       linkText: "Download PPT Template"
     },
     {
-      id: 3,
+      id: 4,
       title: "✅ SPOC Registration Update",
       content: "The Single Point of Contact (SPOC) for Sharda University has already been registered. Students do not need to take any action regarding SPOC registration. Our SPOC, Mr. Ashish Kumar, will handle all coordination and communication for SIH 2026. Stay tuned for further updates regarding problem statements, team registration, and other important dates.",
       category: "registration",
@@ -229,7 +245,7 @@ const Announcements = () => {
               href="https://chat.whatsapp.com/JPbRnAhHNnRLpfE5MIQ3PO"
               className="bg-white text-blue-600 hover:bg-gray-100 font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
             >
-              💬 Join WhatsApp Group
+              💬 Join WhatsApp Community
             </a>
           </div>
         </div>

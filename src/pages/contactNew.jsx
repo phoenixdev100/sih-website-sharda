@@ -182,7 +182,7 @@ const Contact = () => {
             action: "view"
         },
         {
-            title: "Join WhatsApp Group",
+            title: "Join WhatsApp Community",
             description: "Get instant updates and connect with Internal Hackathon participants",
             icon: "💬",
             color: "bg-green-600",
@@ -284,7 +284,7 @@ const Contact = () => {
                                     <svg className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500 mr-2 sm:mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                     </svg>
-                                    <span className="text-gray-700 text-xs sm:text-sm break-all">support@phoenixdev100.tech</span>
+                                    <span className="text-gray-700 text-xs sm:text-sm break-all">deepakkumar312005@gmail.com</span>
                                 </div>
                             </div>
 
@@ -773,7 +773,7 @@ const Contact = () => {
                                         className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 sm:py-3 px-4 sm:px-6 rounded-lg transition-colors duration-200 flex items-center text-sm sm:text-base"
                                     >
                                         <span className="mr-2">💬</span>
-                                        Join WhatsApp
+                                        Join WhatsApp Community
                                     </a>
                                 )}
                             </div>

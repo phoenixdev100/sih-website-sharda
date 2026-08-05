@@ -8,25 +8,25 @@ const Timeline = () => {
       date: "14 August 2026",
       title: "Registration of SPOCs",
       description: "Single Point of Contact registration for educational institutions",
-      status: "Live",
+      status: "completed",
       icon: "👥",
       color: "green",
     },
     {
       id: 2,
-      date: "To be announced",
+      date: "06-08-2026",
       title: "SIH Problem Statement Launch",
       description: "Official problem statements from various ministries and organizations released",
-      status: "upcoming",
+      status: "Live",
       icon: "📋",
       color: "blue",
     },
     {
       id: 3,
-      date: "To be announced",
+      date: "06-08-2026",
       title: "Registration of Teams",
       description: "Team registration opens for participating in Smart India Hackathon 2026",
-      status: "upcoming",
+      status: "Live",
       icon: "📝",
       color: "cyan",
     },
@@ -148,19 +148,6 @@ const Timeline = () => {
           </div>
         </div>
 
-        {/* Phase Overview */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-12 sm:mb-16 max-w-4xl mx-auto px-4">
-          {phases.map((phase, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-lg p-4 sm:p-6 hover:shadow-xl transition-shadow duration-300">
-              <div className={`inline-block px-3 py-1 rounded-full text-sm font-medium mb-4 ${phase.color}`}>
-                Phase {index + 1}
-              </div>
-              <h3 className="text-lg font-bold text-gray-800 mb-2">{phase.name}</h3>
-              <p className="text-gray-600 text-sm">{phase.description}</p>
-            </div>
-          ))}
-        </div>
-
         {/* Progress Bar Section */}
         <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8 mb-12 sm:mb-16 mx-4">
           <div className="text-center mb-8">
@@ -193,7 +180,7 @@ const Timeline = () => {
           </div>
 
           {/* Phase-wise Progress */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
             {phases.map((phase, index) => {
               const progress = calculatePhaseProgress(phase.events)
               const phaseColors = {
@@ -301,7 +288,7 @@ const Timeline = () => {
                           </div>
                           <div className="text-left sm:text-right">
                             <div className="bg-blue-500 text-white px-2 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-medium">
-                              To be announced
+                              12-08-2026
                             </div>
                           </div>
                         </div>
@@ -363,14 +350,18 @@ const Timeline = () => {
               {/* End card content */}
               <div className="ml-4 sm:ml-8 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-4 sm:p-6 lg:p-8 shadow-lg flex-grow border-2 border-dashed border-gray-300">
                 <div className="text-center">
-                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-800 mb-4">Timeline Complete</h3>
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-800 mb-4">Timeline In Progress</h3>
                   <p className="text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed mb-4 sm:mb-6">
-                    This marks the end of the current Internal SIH 2026 timeline. All institutional-level activities conclude with report compilation and portal upload.
+                    The SIH 2026 timeline is currently active. Problem statements and team registration are now open. Stay tuned for updates on internal hackathon dates and grand finale schedule.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
                     <div className="bg-white rounded-lg px-3 py-2 sm:px-4 shadow-sm border border-gray-200">
-                      <span className="text-xs sm:text-sm text-gray-500">Confirmed Date:</span>
-                      <div className="font-semibold text-gray-800 text-sm sm:text-base">SPOC: 14 August 2026</div>
+                      <span className="text-xs sm:text-sm text-gray-500">SPOC Registration:</span>
+                      <div className="font-semibold text-gray-800 text-sm sm:text-base">Completed</div>
+                    </div>
+                    <div className="bg-white rounded-lg px-3 py-2 sm:px-4 shadow-sm border border-gray-200">
+                      <span className="text-xs sm:text-sm text-gray-500">Team Reg. Deadline:</span>
+                      <div className="font-semibold text-gray-800 text-sm sm:text-base">12-08-2026</div>
                     </div>
                     <div className="bg-white rounded-lg px-3 py-2 sm:px-4 shadow-sm border border-gray-200">
                       <span className="text-xs sm:text-sm text-gray-500">Total Events:</span>
@@ -378,7 +369,7 @@ const Timeline = () => {
                     </div>
                   </div>
                   <div className="mt-4 sm:mt-6 text-xs sm:text-sm text-gray-500">
-                    Stay tuned for updates on further phases and national-level competitions.
+                    Next up: Internal Hackathon evaluation rounds (dates to be announced)
                   </div>
                 </div>
               </div>
@@ -396,11 +387,15 @@ const Timeline = () => {
             <ul className="space-y-2 text-sm sm:text-base">
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                SPOC Registration: 14 August 2026
+                SPOC Registration: Completed
               </li>
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                Other dates: To be announced
+                Team Registration Deadline: 12-08-2026
+              </li>
+              <li className="flex items-center">
+                <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
+                Problem Statements: Live (06-08-2026)
               </li>
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
@@ -430,6 +425,14 @@ const Timeline = () => {
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
                 Practice with mock hackathons
+              </li>
+              <li className="flex items-center">
+                <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
+                Register before the deadline
+              </li>
+              <li className="flex items-center">
+                <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
+                Review problem statements carefully
               </li>
             </ul>
           </div>

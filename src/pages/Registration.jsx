@@ -3,6 +3,8 @@ import { useState } from 'react'
 const Registration = () => {
   const [currentStep, setCurrentStep] = useState(1)
   const [showRulesModal, setShowRulesModal] = useState(true)
+  const [copied, setCopied] = useState(null)
+  const [copyMessage, setCopyMessage] = useState('')
   const [formData, setFormData] = useState({
     teamName: '',
     teamLeader: '',
@@ -12,6 +14,17 @@ const Registration = () => {
     contact: '',
     selectedCategory: ''
   })
+
+  const copyToClipboard = (text, id, type) => {
+    navigator.clipboard.writeText(text).then(() => {
+      setCopied(id)
+      setCopyMessage(type === 'email' ? 'Email copied!' : 'Phone number copied!')
+      setTimeout(() => {
+        setCopied(null)
+        setCopyMessage('')
+      }, 2000)
+    })
+  }
 
   const steps = [
     { id: 1, title: "Team Information", icon: "👥" },
@@ -508,100 +521,77 @@ const Registration = () => {
 
         {/* Rules Modal */}
         {showRulesModal && (
-          <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 p-2 sm:p-4 backdrop-blur-sm">
-            <div className="bg-white rounded-2xl sm:rounded-3xl shadow-2xl max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-4xl w-full h-[90vh] sm:h-[85vh] flex flex-col animate-fade-in">
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+            <div className="bg-white rounded-lg shadow-lg max-w-lg w-full max-h-[90vh] flex flex-col" onClick={(e) => e.stopPropagation()}>
               {/* Modal Header */}
-              <div className="bg-gradient-to-r from-red-500 via-pink-500 to-red-600 text-white p-3 sm:p-4 md:p-6 rounded-t-2xl sm:rounded-t-3xl flex-shrink-0">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center space-x-2 sm:space-x-3 md:space-x-4">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14 bg-white bg-opacity-20 rounded-lg sm:rounded-xl md:rounded-2xl flex items-center justify-center backdrop-blur-sm">
-                      <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-7 md:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.664-.833-2.464 0L4.35 16.5c-.77.833.192 2.5 1.732 2.5z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold">⚠️ Important Team Rules</h2>
-                      <p className="text-red-100 text-xs sm:text-sm md:text-base hidden sm:block">Please read carefully before registration</p>
-                    </div>
-                  </div>
-                  <button
-                    onClick={() => setShowRulesModal(false)}
-                    className="w-8 h-8 sm:w-10 sm:h-10 bg-white bg-opacity-20 hover:bg-opacity-30 rounded-full flex items-center justify-center transition-all duration-200 backdrop-blur-sm"
-                  >
-                    <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                  </button>
+              <div className="bg-red-500 text-white p-4 rounded-t-lg flex-shrink-0">
+                <div>
+                  <h2 className="text-xl font-bold">⚠️ Important Team Rules</h2>
+                  <p className="text-red-100 text-sm">Please read carefully before registration</p>
                 </div>
               </div>
 
               {/* Modal Content - Scrollable */}
               <div className="flex-1 overflow-hidden">
-                <div className="h-full overflow-y-auto px-3 sm:px-4 md:px-6 lg:px-8 py-3 sm:py-4 md:py-6" style={{scrollbarWidth: 'none', msOverflowStyle: 'none'}}>
-                  <style jsx>{`
-                    div::-webkit-scrollbar {
-                      display: none;
-                    }
-                  `}</style>
-                  
-                  <div className="space-y-4 sm:space-y-6">
+                <div className="h-full overflow-y-auto p-4">
+                  <div className="space-y-3">
                     {/* Rule 1 */}
-                    <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg sm:rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-6 border-l-2 sm:border-l-4 border-blue-500 shadow-sm hover:shadow-md transition-shadow duration-300">
-                      <div className="flex items-start space-x-2 sm:space-x-3 md:space-x-4">
-                        <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm sm:text-base md:text-lg flex-shrink-0 shadow-lg">
+                    <div className="bg-gray-50 rounded p-3 border-l-2 border-blue-500">
+                      <div className="flex items-start space-x-2">
+                        <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">
                           1
                         </div>
                         <div>
-                          <h3 className="text-base sm:text-lg md:text-xl font-bold text-blue-800 mb-2 sm:mb-3">Maximum Problem Statements</h3>
-                          <p className="text-blue-700 leading-relaxed text-sm sm:text-base">
-                            Each team can submit a <strong>maximum of two problem statements/ideas</strong>. Choose your problem statements wisely to maximize your chances of success.
+                          <h3 className="text-base font-bold text-gray-800 mb-1">Maximum Problem Statements</h3>
+                          <p className="text-gray-600 text-sm">
+                            Each team can submit a <strong>maximum of two problem statements/ideas</strong>.
                           </p>
                         </div>
                       </div>
                     </div>
 
                     {/* Rule 2 */}
-                    <div className="bg-gradient-to-r from-purple-50 to-purple-100 rounded-lg sm:rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-6 border-l-2 sm:border-l-4 border-purple-500 shadow-sm hover:shadow-md transition-shadow duration-300">
-                      <div className="flex items-start space-x-2 sm:space-x-3 md:space-x-4">
-                        <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-purple-500 text-white rounded-full flex items-center justify-center font-bold text-sm sm:text-base md:text-lg flex-shrink-0 shadow-lg">
+                    <div className="bg-gray-50 rounded p-3 border-l-2 border-purple-500">
+                      <div className="flex items-start space-x-2">
+                        <div className="w-6 h-6 bg-purple-500 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">
                           2
                         </div>
                         <div>
-                          <h3 className="text-base sm:text-lg md:text-xl font-bold text-purple-800 mb-2 sm:mb-3">Same Team Members</h3>
-                          <p className="text-purple-700 leading-relaxed text-sm sm:text-base">
-                            If your team selects two ideas, <strong>the same team members must work on both problem statements</strong>. No member substitution is allowed between different submissions.
+                          <h3 className="text-base font-bold text-gray-800 mb-1">Same Team Members</h3>
+                          <p className="text-gray-600 text-sm">
+                            If your team selects two ideas, <strong>the same team members must work on both problem statements</strong>.
                           </p>
                         </div>
                       </div>
                     </div>
 
                     {/* Rule 3 */}
-                    <div className="bg-gradient-to-r from-green-50 to-green-100 rounded-lg sm:rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-6 border-l-2 sm:border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-300">
-                      <div className="flex items-start space-x-2 sm:space-x-3 md:space-x-4">
-                        <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-sm sm:text-base md:text-lg flex-shrink-0 shadow-lg">
+                    <div className="bg-gray-50 rounded p-3 border-l-2 border-green-500">
+                      <div className="flex items-start space-x-2">
+                        <div className="w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">
                           3
                         </div>
                         <div>
-                          <h3 className="text-base sm:text-lg md:text-xl font-bold text-green-800 mb-2 sm:mb-3">Gender Diversity Requirement</h3>
-                          <p className="text-green-700 leading-relaxed text-sm sm:text-base">
-                            Each team <strong>must include at least one girl/female member</strong>. This is mandatory for all participating teams to ensure gender diversity and inclusive innovation.
+                          <h3 className="text-base font-bold text-gray-800 mb-1">Gender Diversity Requirement</h3>
+                          <p className="text-gray-600 text-sm">
+                            Each team <strong>must include at least one girl/female member</strong>.
                           </p>
                         </div>
                       </div>
                     </div>
 
                     {/* Important Note */}
-                    <div className="bg-gradient-to-r from-orange-50 to-yellow-50 rounded-lg sm:rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-6 border border-orange-200 shadow-sm">
-                      <div className="flex items-start space-x-2 sm:space-x-3 md:space-x-4">
-                        <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-orange-500 text-white rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                          <svg className="w-3 h-3 sm:w-4 sm:h-4 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="bg-gray-50 rounded p-3 border border-gray-200">
+                      <div className="flex items-start space-x-2">
+                        <div className="w-6 h-6 bg-orange-500 text-white rounded-full flex items-center justify-center flex-shrink-0">
+                          <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                           </svg>
                         </div>
                         <div>
-                          <h4 className="text-base sm:text-lg md:text-xl font-bold text-orange-800 mb-2 sm:mb-3">📋 Please Note</h4>
-                          <p className="text-orange-700 text-sm sm:text-base leading-relaxed">
-                            Teams that do not comply with these rules will be automatically disqualified. Make sure to review your team composition and problem statement selections before final submission.
+                          <h4 className="text-base font-bold text-gray-800 mb-1">📋 Please Note</h4>
+                          <p className="text-gray-600 text-sm">
+                            Teams that do not comply with these rules will be automatically disqualified.
                           </p>
                         </div>
                       </div>
@@ -611,21 +601,13 @@ const Registration = () => {
               </div>
 
               {/* Action Buttons - Fixed at bottom */}
-              <div className="p-3 sm:p-4 md:p-6 bg-gray-50 rounded-b-2xl sm:rounded-b-3xl flex-shrink-0 border-t border-gray-100">
-                <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4">
-                  <button
-                    onClick={() => setShowRulesModal(false)}
-                    className="flex-1 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-2 sm:py-3 md:py-4 px-4 sm:px-6 md:px-8 rounded-lg sm:rounded-xl md:rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 text-sm sm:text-base md:text-lg"
-                  >
-                    ✅ I Understand & Agree
-                  </button>
-                  <button
-                    onClick={() => setShowRulesModal(false)}
-                    className="flex-1 bg-gradient-to-r from-gray-200 to-gray-300 hover:from-gray-300 hover:to-gray-400 text-gray-700 font-bold py-2 sm:py-3 md:py-4 px-4 sm:px-6 md:px-8 rounded-lg sm:rounded-xl md:rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 text-sm sm:text-base md:text-lg"
-                  >
-                    📖 Read Again Later
-                  </button>
-                </div>
+              <div className="p-4 bg-gray-50 rounded-b-lg flex-shrink-0 border-t border-gray-100">
+                <button
+                  onClick={() => setShowRulesModal(false)}
+                  className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg text-sm"
+                >
+                  ✅ I Understand & Agree
+                </button>
               </div>
             </div>
           </div>
@@ -726,7 +708,7 @@ const Registration = () => {
 
             <div className="space-y-4">
               <a
-                href="https://forms.gle/CnqcDwV7DUrGxTD36"
+                href="https://forms.gle/bDVPvVPEAtXg6Z637"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold py-4 px-8 rounded-xl hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
@@ -787,7 +769,7 @@ const Registration = () => {
 
             <div className="space-y-4">
               <a
-                href="./SIH-Presentation-Format.pptx"
+                href="./SIH2026-IDEA-Presentation-Format.pptx"
                 download
                 className="inline-block bg-gradient-to-r from-orange-600 to-red-600 text-white font-bold py-4 px-8 rounded-xl hover:from-orange-700 hover:to-red-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
@@ -808,43 +790,73 @@ const Registration = () => {
         {/* Student Coordinators Section */}
         <div className="mt-16">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">SIH Coordinators</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">SIH Student Coordinators</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Need help with registration? Contact our dedicated SIH Coordinators for assistance
+              Need help with registration? Contact our dedicated SIH Student Coordinators for assistance
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 max-w-7xl mx-auto">
             {/* Coordinator 1 */}
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 border-2 border-transparent hover:border-blue-300">
-              <div className="text-center mb-6">
-                <div className="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg overflow-hidden bg-gray-200">
+            <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 hover:shadow-xl transition-shadow duration-300 border-2 border-transparent hover:border-blue-300">
+              <div className="text-center mb-4 sm:mb-6">
+                <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 rounded-full mx-auto mb-3 sm:mb-4 shadow-lg overflow-hidden bg-gray-200">
                   <img
                     src="./image.png"
                     alt="Deepak - Coordinator"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-2">Deepak</h3>
-                <p className="text-blue-600 font-medium mb-4">Coordinator</p>
+                <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">Deepak</h3>
+                <p className="text-blue-600 font-medium mb-3 sm:mb-4 text-sm sm:text-base">Coordinator</p>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-3 sm:space-y-4">
                 <div className="flex items-center justify-center">
-                  <div className="flex items-center bg-gray-50 rounded-lg p-3 w-full">
-                    <svg className="w-5 h-5 text-gray-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="flex items-center bg-gray-50 rounded-lg p-2 sm:p-3 w-full">
+                    <svg className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500 mr-2 sm:mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
-                    <span className="text-gray-700 text-sm">support@phoenixdev100.tech</span>
+                    <span className="text-gray-700 text-xs sm:text-sm flex-grow break-all">deepakkumar312005@gmail.com</span>
+                    <button
+                      onClick={() => copyToClipboard('deepakkumar312005@gmail.com', 'deepak-email', 'email')}
+                      className="ml-2 p-1 hover:bg-gray-200 rounded transition-colors flex-shrink-0"
+                      title="Copy email"
+                    >
+                      {copied === 'deepak-email' ? (
+                        <svg className="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                      ) : (
+                        <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                        </svg>
+                      )}
+                    </button>
                   </div>
                 </div>
 
                 <div className="flex items-center justify-center">
-                  <div className="flex items-center bg-gray-50 rounded-lg p-3 w-full">
-                    <svg className="w-5 h-5 text-gray-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="flex items-center bg-gray-50 rounded-lg p-2 sm:p-3 w-full">
+                    <svg className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500 mr-2 sm:mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
-                    <span className="text-gray-700 text-sm">+91 9773850767</span>
+                    <span className="text-gray-700 text-xs sm:text-sm flex-grow">+91 9773850767</span>
+                    <button
+                      onClick={() => copyToClipboard('+91 9773850767', 'deepak-phone', 'phone')}
+                      className="ml-2 p-1 hover:bg-gray-200 rounded transition-colors flex-shrink-0"
+                      title="Copy phone"
+                    >
+                      {copied === 'deepak-phone' ? (
+                        <svg className="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                      ) : (
+                        <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                        </svg>
+                      )}
+                    </button>
                   </div>
                 </div>
               </div>
@@ -860,120 +872,213 @@ const Registration = () => {
             </div>
 
             {/* Coordinator 2 */}
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 border-2 border-transparent hover:border-purple-300">
-              <div className="text-center mb-6">
-                <div className="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg overflow-hidden bg-gray-200">
+            <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 hover:shadow-xl transition-shadow duration-300 border-2 border-transparent hover:border-purple-300">
+              <div className="text-center mb-4 sm:mb-6">
+                <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 rounded-full mx-auto mb-3 sm:mb-4 shadow-lg overflow-hidden bg-gray-200">
                   <img
                     src="./image.png"
                     alt="Pawan Upadhyay - Coordinator"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-2">Pawan Upadhyay</h3>
-                <p className="text-purple-600 font-medium mb-4">Coordinator</p>
+                <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">Pawan Upadhyay</h3>
+                <p className="text-purple-600 font-medium mb-3 sm:mb-4 text-sm sm:text-base">Coordinator</p>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-3 sm:space-y-4">
                 <div className="flex items-center justify-center">
-                  <div className="flex items-center bg-gray-50 rounded-lg p-3 w-full">
-                    <svg className="w-5 h-5 text-gray-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="flex items-center bg-gray-50 rounded-lg p-2 sm:p-3 w-full">
+                    <svg className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500 mr-2 sm:mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
-                    <span className="text-gray-700 text-sm">upawan680@gmail.com</span>
+                    <span className="text-gray-700 text-xs sm:text-sm flex-grow break-all">upawan680@gmail.com</span>
+                    <button
+                      onClick={() => copyToClipboard('upawan680@gmail.com', 'pawan-email', 'email')}
+                      className="ml-2 p-1 hover:bg-gray-200 rounded transition-colors flex-shrink-0"
+                      title="Copy email"
+                    >
+                      {copied === 'pawan-email' ? (
+                        <svg className="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                      ) : (
+                        <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                        </svg>
+                      )}
+                    </button>
                   </div>
                 </div>
 
                 <div className="flex items-center justify-center">
-                  <div className="flex items-center bg-gray-50 rounded-lg p-3 w-full">
-                    <svg className="w-5 h-5 text-gray-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="flex items-center bg-gray-50 rounded-lg p-2 sm:p-3 w-full">
+                    <svg className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500 mr-2 sm:mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
-                    <span className="text-gray-700 text-sm">+91 8756066256</span>
+                    <span className="text-gray-700 text-xs sm:text-sm flex-grow">+91 8756066256</span>
+                    <button
+                      onClick={() => copyToClipboard('+91 8756066256', 'pawan-phone', 'phone')}
+                      className="ml-2 p-1 hover:bg-gray-200 rounded transition-colors flex-shrink-0"
+                      title="Copy phone"
+                    >
+                      {copied === 'pawan-phone' ? (
+                        <svg className="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                      ) : (
+                        <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                        </svg>
+                      )}
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Coordinator 3 */}
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 border-2 border-transparent hover:border-green-300">
-              <div className="text-center mb-6">
-                <div className="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg overflow-hidden bg-gray-200">
+            <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 hover:shadow-xl transition-shadow duration-300 border-2 border-transparent hover:border-green-300">
+              <div className="text-center mb-4 sm:mb-6">
+                <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 rounded-full mx-auto mb-3 sm:mb-4 shadow-lg overflow-hidden bg-gray-200">
                   <img
                     src="./image.png"
-                    alt="Coordinator 3"
+                    alt="Yashaswini Uddavolu - Coordinator"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-2">Yashaswini Uddavolu</h3>
-                <p className="text-green-600 font-medium mb-4">Coordinator</p>
+                <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">Yashaswini Uddavolu</h3>
+                <p className="text-green-600 font-medium mb-3 sm:mb-4 text-sm sm:text-base">Coordinator</p>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-3 sm:space-y-4">
                 <div className="flex items-center justify-center">
-                  <div className="flex items-center bg-gray-50 rounded-lg p-3 w-full">
-                    <svg className="w-5 h-5 text-gray-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="flex items-center bg-gray-50 rounded-lg p-2 sm:p-3 w-full">
+                    <svg className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500 mr-2 sm:mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
-                    <span className="text-gray-700 text-sm">yashaswiniuddavolu@gmail.com</span>
+                    <span className="text-gray-700 text-xs sm:text-sm flex-grow break-all">yashaswiniuddavolu@gmail.com</span>
+                    <button
+                      onClick={() => copyToClipboard('yashaswiniuddavolu@gmail.com', 'yashaswini-email', 'email')}
+                      className="ml-2 p-1 hover:bg-gray-200 rounded transition-colors flex-shrink-0"
+                      title="Copy email"
+                    >
+                      {copied === 'yashaswini-email' ? (
+                        <svg className="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                      ) : (
+                        <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                        </svg>
+                      )}
+                    </button>
                   </div>
                 </div>
 
                 <div className="flex items-center justify-center">
-                  <div className="flex items-center bg-gray-50 rounded-lg p-3 w-full">
-                    <svg className="w-5 h-5 text-gray-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="flex items-center bg-gray-50 rounded-lg p-2 sm:p-3 w-full">
+                    <svg className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500 mr-2 sm:mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
-                    <span className="text-gray-700 text-sm">+91 7095651833</span>
+                    <span className="text-gray-700 text-xs sm:text-sm flex-grow">+91 7095651833</span>
+                    <button
+                      onClick={() => copyToClipboard('+91 7095651833', 'yashaswini-phone', 'phone')}
+                      className="ml-2 p-1 hover:bg-gray-200 rounded transition-colors flex-shrink-0"
+                      title="Copy phone"
+                    >
+                      {copied === 'yashaswini-phone' ? (
+                        <svg className="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                      ) : (
+                        <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                        </svg>
+                      )}
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Coordinator 4 */}
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 border-2 border-transparent hover:border-yellow-300">
-              <div className="text-center mb-6">
-                <div className="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg overflow-hidden bg-gray-200">
+            <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 hover:shadow-xl transition-shadow duration-300 border-2 border-transparent hover:border-yellow-300">
+              <div className="text-center mb-4 sm:mb-6">
+                <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 rounded-full mx-auto mb-3 sm:mb-4 shadow-lg overflow-hidden bg-gray-200">
                   <img
                     src="./image.png"
-                    alt="Pawan Upadhyay - Coordinator"
+                    alt="Saurav Suman - Coordinator"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-2">Saurav Suman</h3>
-                <p className="text-yellow-600 font-medium mb-4">Coordinator</p>
+                <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">Saurav Suman</h3>
+                <p className="text-yellow-600 font-medium mb-3 sm:mb-4 text-sm sm:text-base">Coordinator</p>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-3 sm:space-y-4">
                 <div className="flex items-center justify-center">
-                  <div className="flex items-center bg-gray-50 rounded-lg p-3 w-full">
-                    <svg className="w-5 h-5 text-gray-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="flex items-center bg-gray-50 rounded-lg p-2 sm:p-3 w-full">
+                    <svg className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500 mr-2 sm:mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
-                    <span className="text-gray-700 text-sm">sauravs95088@gmail.com</span>
+                    <span className="text-gray-700 text-xs sm:text-sm flex-grow break-all">sauravs95088@gmail.com</span>
+                    <button
+                      onClick={() => copyToClipboard('sauravs95088@gmail.com', 'saurav-email', 'email')}
+                      className="ml-2 p-1 hover:bg-gray-200 rounded transition-colors flex-shrink-0"
+                      title="Copy email"
+                    >
+                      {copied === 'saurav-email' ? (
+                        <svg className="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                      ) : (
+                        <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                        </svg>
+                      )}
+                    </button>
                   </div>
                 </div>
 
                 <div className="flex items-center justify-center">
-                  <div className="flex items-center bg-gray-50 rounded-lg p-3 w-full">
-                    <svg className="w-5 h-5 text-gray-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="flex items-center bg-gray-50 rounded-lg p-2 sm:p-3 w-full">
+                    <svg className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500 mr-2 sm:mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
-                    <span className="text-gray-700 text-sm">+91 9508899651</span>
+                    <span className="text-gray-700 text-xs sm:text-sm flex-grow">+91 9304250574</span>
+                    <button
+                      onClick={() => copyToClipboard('+91 9304250574', 'saurav-phone', 'phone')}
+                      className="ml-2 p-1 hover:bg-gray-200 rounded transition-colors flex-shrink-0"
+                      title="Copy phone"
+                    >
+                      {copied === 'saurav-phone' ? (
+                        <svg className="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                      ) : (
+                        <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                        </svg>
+                      )}
+                    </button>
                   </div>
                 </div>
               </div>
-
-              {/* <div className="mt-6 flex gap-3">
-                <a href="mailto:[coordinator2@email.com]" className="flex-1 bg-purple-600 text-white text-center py-2 px-4 rounded-lg hover:bg-purple-700 transition-colors duration-200 text-sm font-medium">
-                  📧 Email
-                </a>
-                <a href="tel:[+91XXXXXXXXXX]" className="flex-1 bg-green-600 text-white text-center py-2 px-4 rounded-lg hover:bg-green-700 transition-colors duration-200 text-sm font-medium">
-                  📞 Call
-                </a>
-              </div> */}
             </div>
 
           </div>
+
+          {/* Toast Notification */}
+          {copied && (
+            <div className="fixed bottom-4 right-4 bg-white text-gray-800 px-4 py-2 rounded-lg shadow-lg z-50 flex items-center gap-2 text-sm">
+              <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              {copyMessage}
+            </div>
+          )}
         </div>
       </div>
     </div>

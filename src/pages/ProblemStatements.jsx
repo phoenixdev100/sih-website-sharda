@@ -145,25 +145,25 @@ const ProblemStatements = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header Section */}
-      <section className="bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 py-16">
+      <section className="bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
               Problem Statements
             </h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              Browse through 100+ challenging problem statements across 19 categories. Choose the one that excites your team!
+            <p className="text-base sm:text-lg md:text-xl text-blue-100 max-w-3xl mx-auto px-4">
+              Browse through challenging problem statements across 15 categories. Choose the one that excites your team!
             </p>
-            <div className="mt-8 flex justify-center gap-4 flex-wrap">
+            <div className="mt-6 sm:mt-8 flex justify-center gap-3 sm:gap-4 flex-wrap px-4">
               <Link
                 to="/registration"
-                className="px-6 py-3 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold rounded-lg transition-all duration-300"
+                className="px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold rounded-lg transition-all duration-300 text-sm sm:text-base"
               >
                 Register Your Team
               </Link>
               <Link
                 to="/guidelines"
-                className="px-6 py-3 border-2 border-white text-white hover:bg-white/20 font-semibold rounded-lg transition-all duration-300"
+                className="px-4 sm:px-6 py-2 sm:py-3 border-2 border-white text-white hover:bg-white/20 font-semibold rounded-lg transition-all duration-300 text-sm sm:text-base"
               >
                 View Guidelines
               </Link>
@@ -173,7 +173,7 @@ const ProblemStatements = () => {
       </section>
 
       {/* Search and Filter Section */}
-      <section className="py-4 bg-white shadow-md">
+      <section className="py-3 sm:py-4 bg-white shadow-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row gap-3 items-center justify-between">
             {/* Search Bar */}
@@ -183,7 +183,7 @@ const ProblemStatements = () => {
                 placeholder="Search problem statements..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                className="w-full px-3 py-2 text-xs sm:text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
               />
             </div>
 
@@ -191,14 +191,14 @@ const ProblemStatements = () => {
             <div className="w-full md:w-1/2 relative" ref={dropdownRef}>
               <button
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent bg-white text-left flex items-center justify-between"
+                className="w-full px-3 py-2 text-xs sm:text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent bg-white text-left flex items-center justify-between"
               >
                 <span>{categories.find(cat => cat.id === selectedCategory)?.name}</span>
                 <svg className={`w-4 h-4 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-              
+
               {isDropdownOpen && (
                 <div className="absolute top-full left-0 right-0 mt-1 bg-white border border-gray-300 rounded-lg shadow-lg z-10">
                   {categories.map(category => (
@@ -208,7 +208,7 @@ const ProblemStatements = () => {
                         setSelectedCategory(category.id)
                         setIsDropdownOpen(false)
                       }}
-                      className={`w-full px-3 py-2 text-sm text-left hover:bg-indigo-50 transition-colors ${
+                      className={`w-full px-3 py-2 text-xs sm:text-sm text-left hover:bg-indigo-50 transition-colors ${
                         selectedCategory === category.id ? 'bg-indigo-100 text-indigo-700 font-medium' : 'text-gray-700'
                       }`}
                     >
@@ -223,42 +223,42 @@ const ProblemStatements = () => {
       </section>
 
       {/* Problem Statements Grid */}
-      <section className="py-12">
+      <section className="py-8 sm:py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-900">
+          <div className="mb-6 sm:mb-8">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900">
               {selectedCategory === 'all' ? 'All Problem Statements' : selectedCategoryData?.name}
             </h2>
-            <p className="text-gray-600 mt-2">
+            <p className="text-gray-600 mt-2 text-sm sm:text-base">
               Showing {filteredStatements.length} problem statement{filteredStatements.length !== 1 ? 's' : ''}
             </p>
           </div>
 
-          <div className="overflow-x-auto border border-gray-300 rounded-xl">
-            <table className="w-full bg-white shadow-md overflow-hidden">
+          <div className="overflow-x-auto border border-gray-300 rounded-xl scrollbar-hide">
+            <table className="w-full bg-white shadow-md overflow-hidden min-w-[600px]">
               <thead className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
                 <tr>
-                  <th className="px-4 py-3 text-center text-sm font-semibold border-b border-r border-gray-300">S. No.</th>
-                  <th className="px-4 py-3 text-center text-sm font-semibold border-b border-r border-gray-300">Problem ID</th>
-                  <th className="px-4 py-3 text-center text-sm font-semibold border-b border-r border-gray-300">Problem Statement Title</th>
-                  <th className="px-4 py-3 text-center text-sm font-semibold border-b border-r border-gray-300">Category</th>
-                  <th className="px-4 py-3 text-center text-sm font-semibold border-b border-gray-300">Theme</th>
+                  <th className="px-2 sm:px-4 py-2 sm:py-3 text-center text-xs sm:text-sm font-semibold border-b border-r border-gray-300">S. No.</th>
+                  <th className="px-2 sm:px-4 py-2 sm:py-3 text-center text-xs sm:text-sm font-semibold border-b border-r border-gray-300">Problem ID</th>
+                  <th className="px-2 sm:px-4 py-2 sm:py-3 text-center text-xs sm:text-sm font-semibold border-b border-r border-gray-300">Problem Statement Title</th>
+                  <th className="px-2 sm:px-4 py-2 sm:py-3 text-center text-xs sm:text-sm font-semibold border-b border-r border-gray-300">Category</th>
+                  <th className="px-2 sm:px-4 py-2 sm:py-3 text-center text-xs sm:text-sm font-semibold border-b border-gray-300">Theme</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-300">
                 {filteredStatements.map((statement, index) => (
                   <tr key={statement.id} className="hover:bg-gray-50 transition-colors border-b border-gray-300">
-                    <td className="px-4 py-3 text-sm font-medium text-black border-r border-gray-300">{index + 1}</td>
-                    <td className="px-4 py-3 border-r border-gray-300 text-sm text-black">{statement.problemId}</td>
-                    <td className="px-4 py-3 border-r border-gray-300">
-                      <div className="text-sm font-medium text-black max-w-2xl">
+                    <td className="px-2 sm:px-4 py-2 sm:py-3 text-xs sm:text-sm font-medium text-black border-r border-gray-300">{index + 1}</td>
+                    <td className="px-2 sm:px-4 py-2 sm:py-3 border-r border-gray-300 text-xs sm:text-sm text-black">{statement.problemId}</td>
+                    <td className="px-2 sm:px-4 py-2 sm:py-3 border-r border-gray-300">
+                      <div className="text-xs sm:text-sm font-medium text-black max-w-2xl">
                         {statement.title}
                       </div>
                     </td>
-                    <td className="px-4 py-3 border-r border-gray-300 text-sm text-black">
+                    <td className="px-2 sm:px-4 py-2 sm:py-3 border-r border-gray-300 text-xs sm:text-sm text-black">
                       {categories.find(cat => cat.id === statement.category)?.name}
                     </td>
-                    <td className="px-4 py-3 text-sm text-black max-w-[180px]">
+                    <td className="px-2 sm:px-4 py-2 sm:py-3 text-xs sm:text-sm text-black max-w-[150px] sm:max-w-[180px]">
                       {statement.theme}
                     </td>
                   </tr>
@@ -268,30 +268,12 @@ const ProblemStatements = () => {
           </div>
 
           {filteredStatements.length === 0 && (
-            <div className="text-center py-12">
-              <div className="text-6xl mb-4">🔍</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">No problem statements found</h3>
-              <p className="text-gray-600">Try adjusting your search or filter criteria</p>
+            <div className="text-center py-8 sm:py-12">
+              <div className="text-4xl sm:text-6xl mb-4">🔍</div>
+              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">No problem statements found</h3>
+              <p className="text-gray-600 text-sm sm:text-base">Try adjusting your search or filter criteria</p>
             </div>
           )}
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-orange-500 to-red-500">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
-            Ready to Solve These Challenges?
-          </h2>
-          <p className="text-xl text-orange-100 mb-8">
-            Register your team now and start working on innovative solutions
-          </p>
-          <Link
-            to="/registration"
-            className="inline-block px-8 py-4 bg-white text-orange-600 font-bold rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-lg"
-          >
-            Register Your Team
-          </Link>
         </div>
       </section>
     </div>

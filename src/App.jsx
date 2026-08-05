@@ -5,7 +5,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
 import Timeline from './pages/Timeline'
-// import Registration from './pages/Registration'
+import Registration from './pages/Registration'
 import Contact from './pages/Contact'
 import Guidelines from './pages/Guidelines'
 import FAQ from './pages/FAQ'
@@ -37,7 +37,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/timeline" element={<Timeline />} />
-            {/* <Route path="/registration" element={<Registration />} /> */}
+            <Route path="/registration" element={<Registration />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/guidelines" element={<Guidelines />} />
             <Route path="/faq" element={<FAQ />} />

@@ -383,7 +383,7 @@ Contributors will be recognized in:
 Current project maintainers:
 
 - **Deepak** - [@phoenixdev100](https://github.com/phoenixdev100)
-  - 📧 support@phoenixdev100.tech
+  - 📧 deepakkumar312005@gmail.com
 
 ## 📚 Resources
 

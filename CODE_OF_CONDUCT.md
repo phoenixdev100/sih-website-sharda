@@ -51,7 +51,7 @@ This includes:
 Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at:
 
 ### Primary Contacts
-- **Deepak** - support@phoenixdev100.tech
+- **Deepak** - deepakkumar312005@gmail.com
 - **Pawan Upadhyay** - upawan680@gmail.com
 
 ### Faculty Coordinators

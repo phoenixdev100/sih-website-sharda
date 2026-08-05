@@ -1,12 +1,9 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import Modal from '../components/Modal'
 
 const Home = () => {
-  const [showModal, setShowModal] = useState(false)
   const stats = [
     { number: "36", label: "Hours", icon: "⏰" },
-    { number: "₹1L+", label: "Prize Money", icon: "💰" },
+    { number: "₹1.5L+", label: "Prize Money", icon: "💰" },
     { number: "13,91,884", label: "Participants", icon: "👥" },
     { number: "2877+", label: "Problem Statements", icon: "📋" }
   ]
@@ -102,12 +99,12 @@ const Home = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center items-center pt-4 px-4">
-              <button
-                onClick={() => setShowModal(true)}
+              <Link
+                to="/registration"
                 className="w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 hover:from-orange-600 hover:via-red-600 hover:to-pink-600 text-white font-bold rounded-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 shadow-2xl text-center"
               >
                 🚀 Register Now
-              </button>
+              </Link>
               <Link
                 to="/about"
                 className="w-full sm:w-auto px-6 py-3 border-2 border-white/40 text-white hover:bg-white/20 font-semibold rounded-lg transition-all duration-300 backdrop-blur-md shadow-xl text-center"
@@ -241,42 +238,93 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-indigo-600 to-purple-600">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Innovate?</h2>
-          <p className="text-xl text-indigo-100 mb-8 max-w-2xl mx-auto">
-            Join thousands of innovators and be part of India's largest hackathon. Start your journey today!
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button
-              onClick={() => setShowModal(true)}
-              className="bg-orange-700 hover:bg-orange-800 text-white font-bold py-3 px-6 rounded-xl text-base transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-            >
-              Register Your Team
-            </button>
-            <Link
-              to="/contact"
-              className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-purple-600 font-bold py-3 px-6 rounded-xl text-base transition-all duration-200"
-            >
-              Get Support
-            </Link>
+      {/* Gallery Section - SIH 2025 Glimpses */}
+      <section className="py-16 sm:py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+              Internal SIH 2025 Glimpses
+            </h2>
+            <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+              Memories from our previous internal hackathon - innovation, collaboration, and success
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            {/* Photo 1 */}
+            <div className="relative group overflow-hidden rounded-xl shadow-lg bg-gray-200 aspect-[4/3]">
+              <img
+                src="./2025-glimpses/6.jpeg"
+                alt="SIH 2025 - Team Collaboration"
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                onError={(e) => {
+                  e.target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300"%3E%3Crect fill="%23e5e7eb" width="400" height="300"/%3E%3Ctext fill="%239ca3af" font-family="Arial" font-size="20" x="50%25" y="50%25" text-anchor="middle" dy=".3em"%3EAdd Photo Here%3C/text%3E%3C/svg%3E'
+                }}
+              />
+            </div>
+
+            {/* Photo 2 */}
+            <div className="relative group overflow-hidden rounded-xl shadow-lg bg-gray-200 aspect-[4/3]">
+              <img
+                src="./2025-glimpses/5.jpeg"
+                alt="SIH 2025 - Innovation in Action"
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                onError={(e) => {
+                  e.target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300"%3E%3Crect fill="%23e5e7eb" width="400" height="300"/%3E%3Ctext fill="%239ca3af" font-family="Arial" font-size="20" x="50%25" y="50%25" text-anchor="middle" dy=".3em"%3EAdd Photo Here%3C/text%3E%3C/svg%3E'
+                }}
+              />
+            </div>
+
+            {/* Photo 3 */}
+            <div className="relative group overflow-hidden rounded-xl shadow-lg bg-gray-200 aspect-[4/3]">
+              <img
+                src="./2025-glimpses/4.jpeg"
+                alt="SIH 2025 - Winners Celebration"
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                onError={(e) => {
+                  e.target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300"%3E%3Crect fill="%23e5e7eb" width="400" height="300"/%3E%3Ctext fill="%239ca3af" font-family="Arial" font-size="20" x="50%25" y="50%25" text-anchor="middle" dy=".3em"%3EAdd Photo Here%3C/text%3E%3C/svg%3E'
+                }}
+              />
+            </div>
+
+            {/* Photo 4 */}
+            <div className="relative group overflow-hidden rounded-xl shadow-lg bg-gray-200 aspect-[4/3]">
+              <img
+                src="./2025-glimpses/3.jpeg"
+                alt="SIH 2025 - Mentorship Session"
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                onError={(e) => {
+                  e.target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300"%3E%3Crect fill="%23e5e7eb" width="400" height="300"/%3E%3Ctext fill="%239ca3af" font-family="Arial" font-size="20" x="50%25" y="50%25" text-anchor="middle" dy=".3em"%3EAdd Photo Here%3C/text%3E%3C/svg%3E'
+                }}
+              />
+            </div>
+
+            {/* Photo 5 */}
+            <div className="relative group overflow-hidden rounded-xl shadow-lg bg-gray-200 aspect-[4/3]">
+              <img
+                src="./2025-glimpses/2.jpeg"
+                alt="SIH 2025 - Presentation Time"
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                onError={(e) => {
+                  e.target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300"%3E%3Crect fill="%23e5e7eb" width="400" height="300"/%3E%3Ctext fill="%239ca3af" font-family="Arial" font-size="20" x="50%25" y="50%25" text-anchor="middle" dy=".3em"%3EAdd Photo Here%3C/text%3E%3C/svg%3E'
+                }}
+              />
+            </div>
+
+            {/* Photo 6 */}
+            <div className="relative group overflow-hidden rounded-xl shadow-lg bg-gray-200 aspect-[4/3]">
+              <img
+                src="./2025-glimpses/1.jpeg"
+                alt="SIH 2025 - Team Spirit"
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                onError={(e) => {
+                  e.target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300"%3E%3Crect fill="%23e5e7eb" width="400" height="300"/%3E%3Ctext fill="%239ca3af" font-family="Arial" font-size="20" x="50%25" y="50%25" text-anchor="middle" dy=".3em"%3EAdd Photo Here%3C/text%3E%3C/svg%3E'
+                }}
+              />
+            </div>
           </div>
         </div>
       </section>
-
-      <Modal
-        isOpen={showModal}
-        onClose={() => setShowModal(false)}
-        title="Registration Coming Soon"
-      >
-        <p className="text-lg mb-4">
-          Registration for SIH 2026 will open soon. Stay tuned for updates!
-        </p>
-        <p className="text-sm text-gray-500">
-          Follow our announcements page for the latest information about registration dates and procedures.
-        </p>
-      </Modal>
 
     </div>
   )
