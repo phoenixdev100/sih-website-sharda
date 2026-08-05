@@ -7,7 +7,7 @@ const Footer = () => {
     {
       title: 'Resources',
       links: [
-        { name: 'Problem Statements', path: 'https://www.sih.gov.in/sih2025PS' },
+        { name: 'Problem Statements', path: '/problem-statements' },
         { name: 'Guidelines', path: '/guidelines' },
         { name: 'FAQs', path: '/faq' },
         { name: 'Support', path: '/contact' }

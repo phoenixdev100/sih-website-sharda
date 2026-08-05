@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import Modal from '../components/Modal'
 
 const About = () => {
@@ -353,17 +354,15 @@ const About = () => {
             >
               Register Your Team
             </button>
-            <a
-              href="https://www.sih.gov.in/sih2025PS"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/problem-statements"
               className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-purple-600 font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-xl text-base sm:text-lg transition-all duration-200 inline-flex items-center justify-center space-x-2 w-full sm:w-auto"
             >
               <span>View Problem Statements</span>
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
 

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -606,15 +607,13 @@ const Contact = () => {
                             </div>
                             <div className="flex justify-center sm:justify-end">
                                 {action.action === 'view' ? (
-                                    <a
-                                        href="https://www.sih.gov.in/sih2025PS"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
+                                    <Link
+                                        to="/problem-statements"
                                         className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 sm:py-3 px-4 sm:px-6 rounded-lg transition-colors duration-200 flex items-center text-sm sm:text-base"
                                     >
                                         <span className="mr-2">🎯</span>
                                         View Statements
-                                    </a>
+                                    </Link>
                                 ) : (
                                     <a
                                         href="https://chat.whatsapp.com/JPbRnAhHNnRLpfE5MIQ3PO?mode=ems_wa_c"

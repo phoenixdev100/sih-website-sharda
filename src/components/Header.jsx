@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import Modal from './Modal'
 
@@ -6,15 +6,21 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [isScrolled, setIsScrolled] = useState(false)
     const [showModal, setShowModal] = useState(false)
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false)
+    const dropdownRef = useRef(null)
     const location = useLocation()
 
     const navItems = [
         { path: '/', label: 'Home', icon: '🏠' },
+        { path: '/problem-statements', label: 'Problem Statements', icon: '🎯' },
+        { path: '/announcements', label: 'Announcements', icon: '📢' },
+        { path: '/contact', label: 'Contact', icon: '📞' }
+    ]
+
+    const dropdownItems = [
         { path: '/about', label: 'About', icon: '📖' },
         { path: '/timeline', label: 'Timeline', icon: '📅' },
-        { path: '/announcements', label: 'Announcements', icon: '📢' },
-        { path: '/guidelines', label: 'Guidelines', icon: '📋' },
-        { path: '/contact', label: 'Contact', icon: '📞' }
+        { path: '/guidelines', label: 'Guidelines', icon: '📋' }
     ]
 
     const isActive = (path) => location.pathname === path
@@ -26,6 +32,22 @@ const Header = () => {
         window.addEventListener('scroll', handleScroll)
         return () => window.removeEventListener('scroll', handleScroll)
     }, [])
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+                setIsDropdownOpen(false)
+            }
+        }
+
+        if (isDropdownOpen) {
+            document.addEventListener('mousedown', handleClickOutside)
+        }
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside)
+        }
+    }, [isDropdownOpen])
 
     return (
         <header className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled
@@ -67,6 +89,41 @@ const Header = () => {
                                 <span>{item.label}</span>
                             </Link>
                         ))}
+                        
+                        {/* Dropdown */}
+                        <div className="relative" ref={dropdownRef}>
+                            <button
+                                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                                className={`flex items-center space-x-2 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 ${dropdownItems.some(item => isActive(item.path))
+                                    ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-md transform scale-105'
+                                    : 'text-gray-600 hover:text-blue-600 hover:bg-white/70'
+                                    }`}
+                            >
+                                <span>More</span>
+                                <svg className={`w-4 h-4 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            
+                            {isDropdownOpen && (
+                                <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-xl border border-gray-100 py-2 z-50">
+                                    {dropdownItems.map((item) => (
+                                        <Link
+                                            key={item.path}
+                                            to={item.path}
+                                            onClick={() => setIsDropdownOpen(false)}
+                                            className={`flex items-center space-x-3 px-4 py-2 text-sm transition-all duration-200 ${isActive(item.path)
+                                                ? 'bg-blue-50 text-blue-600 font-semibold'
+                                                : 'text-gray-700 hover:bg-gray-50 hover:text-blue-600'
+                                                }`}
+                                        >
+                                            <span>{item.icon}</span>
+                                            <span>{item.label}</span>
+                                        </Link>
+                                    ))}
+                                </div>
+                            )}
+                        </div>
                     </nav>
 
                     {/* Right Side Actions */}
@@ -112,7 +169,7 @@ const Header = () => {
                 {isMenuOpen && (
                     <div className="lg:hidden border-t border-gray-100 py-4 animate-fade-in">
                         <div className="flex flex-col space-y-1">
-                            {navItems.map((item) => (
+                            {[...navItems, ...dropdownItems].map((item) => (
                                 <Link
                                     key={item.path}
                                     to={item.path}

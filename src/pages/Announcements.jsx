@@ -8,69 +8,50 @@ const Announcements = () => {
   const announcements = [
     {
       id: 1,
-      title: "📢 SPOC Registration Update",
+      title: "🚀 SIH 2026 Problem Statements Are Now Live!",
+      content: "We're excited to announce that the official Smart India Hackathon 2026 problem statements have been released! Teams can now browse through problem statements across Software and Hardware categories. Start exploring the challenges and choose the one that excites your team!",
+      category: "updates",
+      priority: "high",
+      date: "2026-08-05",
+      details: [
+        "Problem statements now available for Software and Hardware categories",
+        "Browse through innovative challenges from various domains",
+        "Select problem statements that match your team's expertise",
+        "Start preparing your innovative solutions today"
+      ],
+      link: "/problem-statements",
+      linkText: "View Problem Statements"
+    },
+    {
+      id: 2,
+      title: "📋 Official Presentation Format Available",
+      content: "The official presentation template for SIH 2026 submissions is now available for download. All teams must use this standardized format for their final presentations to ensure consistency and proper evaluation. The template includes guidelines for content structure, design elements, and submission requirements.",
+      category: "guidelines",
+      priority: "high",
+      date: "2026-08-05",
+      details: [
+        "Standardized PowerPoint template with official SIH branding",
+        "Pre-defined slide layouts for problem statement, solution, and demo",
+        "Guidelines for content organization and presentation flow",
+        "Technical specifications and submission format requirements"
+      ],
+      link: "./SIH2026-IDEA-Presentation-Format.pptx",
+      linkText: "Download PPT Template"
+    },
+    {
+      id: 3,
+      title: "✅ SPOC Registration Update",
       content: "The Single Point of Contact (SPOC) for Sharda University has already been registered. Students do not need to take any action regarding SPOC registration. Our SPOC, Mr. Ashish Kumar, will handle all coordination and communication for SIH 2026. Stay tuned for further updates regarding problem statements, team registration, and other important dates.",
       category: "registration",
       priority: "high",
       date: "2026-07-27",
       details: [
-        "✅ Sharda University SPOC already registered",
-        "👤 SPOC Name: Mr. Ashish Kumar",
-        "🎓 Students do not need to register as SPOC",
-        "📢 More updates coming soon - stay tuned!"
+        "Sharda University SPOC already registered",
+        "SPOC Name: Mr. Ashish Kumar",
+        "Students do not need to register as SPOC",
+        "More updates coming soon - stay tuned!"
       ]
     }
-    // {
-    //   id: 3,
-    //   title: "🎯 Team Registration Now Open!",
-    //   content: "Exciting news! Team registration for Smart India Hackathon 2026 is now officially open. All eligible teams can register from September 8th to September 17th, 2026. Don't miss this opportunity to be part of India's biggest hackathon. Register your team today and showcase your innovative solutions!",
-    //   category: "registration",
-    //   priority: "high",
-    //   date: "2026-09-08",
-    //   details: [
-    //     "Registration period: September 8-17, 2026",
-    //     "Open for all eligible educational institutions",
-    //     "Team size: 6 members (1 Team Lead + 5 Other Team Members)",
-    //     "Each team must include at least one girl/female member",
-    //     "Multiple teams can register from same institution",
-    //     "A participant can be part of only one team"
-    //   ],
-    //   link: "#",
-    //   linkText: "Register Your Team",
-    //   onClick: () => setShowModal(true)
-    // },
-    // {
-    //   id: 2,
-    //   title: "📊 Official Presentation Format Available",
-    //   content: "The official presentation template for SIH 2026 submissions is now available for download. All teams must use this standardized format for their final presentations to ensure consistency and proper evaluation. The template includes guidelines for content structure, design elements, and submission requirements.",
-    //   category: "guidelines",
-    //   priority: "high",
-    //   date: "2026-09-06",
-    //   details: [
-    //     "Standardized PowerPoint template with official SIH branding",
-    //     "Pre-defined slide layouts for problem statement, solution, and demo",
-    //     "Guidelines for content organization and presentation flow",
-    //     "Technical specifications and submission format requirements"
-    //   ],
-    //   link: "./SIH2026-IDEA-Presentation-Format.pptx",
-    //   linkText: "Download PPT Template"
-    // },
-    // {
-    //   id: 1,
-    //   title: "🚀 SIH 2026 Problem Statements Are Now Live!",
-    //   content: "We're excited to announce that the official Smart India Hackathon 2026 problem statements have been released! Teams can now browse through 18 major themes including MedTech/BioTech/HealthTech, Smart Education, Agriculture/FoodTech & Rural Development, Smart Automation, Fintech, Clean & Green Technology, and many more cutting-edge categories.",
-    //   category: "updates",
-    //   priority: "high",
-    //   date: "2026-08-27",
-    //   details: [
-    //     "Over 2877+ problem statements across 18 major themes",
-    //     "Problems sourced from 100+ government ministries and departments",
-    //     "New themes include Space Technology, Robotics & Drones, Heritage & Culture",
-    //     "Enhanced focus on emerging technologies like Blockchain & Cybersecurity"
-    //   ],
-    //   link: "https://www.sih.gov.in/sih2025PS",
-    //   linkText: "View Problem Statements"
-    // }
   ]
 
   const categories = [
