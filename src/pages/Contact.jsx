@@ -229,7 +229,7 @@ const Contact = () => {
             description: "Browse all available problem categories for Internal Hackathon",
             icon: "🎯",
             color: "bg-green-500",
-            action: "view"
+            action: "external"
         },
         {
             title: "Join WhatsApp Community",
@@ -771,14 +771,16 @@ const Contact = () => {
                                 </div>
                             </div>
                             <div className="flex justify-center sm:justify-end">
-                                {action.action === 'view' ? (
-                                    <Link
-                                        to="/problem-statements"
+                                {action.action === 'external' ? (
+                                    <a
+                                        href="https://sih.gov.in/sih2025PS"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                         className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 sm:py-3 px-4 sm:px-6 rounded-lg transition-colors duration-200 flex items-center text-sm sm:text-base"
                                     >
                                         <span className="mr-2">🎯</span>
                                         View Statements
-                                    </Link>
+                                    </a>
                                 ) : (
                                     <a
                                         href="https://chat.whatsapp.com/JPbRnAhHNnRLpfE5MIQ3PO?mode=ems_wa_c"

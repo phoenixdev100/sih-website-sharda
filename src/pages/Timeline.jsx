@@ -13,22 +13,22 @@ const Timeline = () => {
       color: "green",
     },
     {
-      id: 2,
-      date: "06-08-2026",
-      title: "SIH Problem Statement Launch",
-      description: "Official problem statements from various ministries and organizations released",
-      status: "Live",
-      icon: "📋",
-      color: "blue",
-    },
-    {
       id: 3,
-      date: "06-08-2026",
+      date: "August 08 2026",
       title: "Registration of Teams",
       description: "Team registration opens for participating in Smart India Hackathon 2026",
       status: "Live",
       icon: "📝",
       color: "cyan",
+    },
+    {
+      id: 2,
+      date: "To be announced",
+      title: "SIH Problem Statement Launch",
+      description: "Official problem statements from various ministries and organizations",
+      status: "upcoming",
+      icon: "📋",
+      color: "blue",
     },
     {
       id: 4,
@@ -100,14 +100,14 @@ const Timeline = () => {
   const phases = [
     {
       name: "Launch Phase",
-      events: [1, 2],
-      description: "Problem statements release and SPOC registration",
+      events: [1, 3],
+      description: "SPOC registration and team registration",
       color: "bg-blue-100 text-blue-800"
     },
     {
       name: "Institution Phase",
-      events: [3, 4, 5, 6],
-      description: "Internal hackathons and team nominations",
+      events: [2, 4, 5, 6],
+      description: "Problem statements, internal hackathons and team nominations",
       color: "bg-purple-100 text-purple-800"
     },
     {
@@ -175,7 +175,7 @@ const Timeline = () => {
             </div>
             <div className="flex justify-between text-sm text-gray-500 mt-2">
               <span>SPOC Registration: 14 August 2026</span>
-              <span>Other dates: To be announced</span>
+              <span>Team Registration: August 08 2026</span>
             </div>
           </div>
 
@@ -288,7 +288,7 @@ const Timeline = () => {
                           </div>
                           <div className="text-left sm:text-right">
                             <div className="bg-blue-500 text-white px-2 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-medium">
-                              12-08-2026
+                              August 08 2026
                             </div>
                           </div>
                         </div>
@@ -352,7 +352,7 @@ const Timeline = () => {
                 <div className="text-center">
                   <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-800 mb-4">Timeline In Progress</h3>
                   <p className="text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed mb-4 sm:mb-6">
-                    The SIH 2026 timeline is currently active. Problem statements and team registration are now open. Stay tuned for updates on internal hackathon dates and grand finale schedule.
+                    The SIH 2026 timeline is currently active. SPOC registration is completed. Team registration opens on August 08 2026. Problem statements will be announced soon. Stay tuned for updates on internal hackathon dates and grand finale schedule.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
                     <div className="bg-white rounded-lg px-3 py-2 sm:px-4 shadow-sm border border-gray-200">
@@ -361,7 +361,7 @@ const Timeline = () => {
                     </div>
                     <div className="bg-white rounded-lg px-3 py-2 sm:px-4 shadow-sm border border-gray-200">
                       <span className="text-xs sm:text-sm text-gray-500">Team Reg. Deadline:</span>
-                      <div className="font-semibold text-gray-800 text-sm sm:text-base">12-08-2026</div>
+                      <div className="font-semibold text-gray-800 text-sm sm:text-base">August 08 2026</div>
                     </div>
                     <div className="bg-white rounded-lg px-3 py-2 sm:px-4 shadow-sm border border-gray-200">
                       <span className="text-xs sm:text-sm text-gray-500">Total Events:</span>
@@ -369,7 +369,7 @@ const Timeline = () => {
                     </div>
                   </div>
                   <div className="mt-4 sm:mt-6 text-xs sm:text-sm text-gray-500">
-                    Next up: Internal Hackathon evaluation rounds (dates to be announced)
+                    Next up: Team registration (August 08 2026) and problem statements (to be announced)
                   </div>
                 </div>
               </div>
@@ -391,11 +391,11 @@ const Timeline = () => {
               </li>
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                Team Registration Deadline: 12-08-2026
+                Team Registration Deadline: August 08 2026
               </li>
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                Problem Statements: Live (06-08-2026)
+                Problem Statements: To be announced
               </li>
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
@@ -432,7 +432,7 @@ const Timeline = () => {
               </li>
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                Review problem statements carefully
+                Stay updated on announcements
               </li>
             </ul>
           </div>

@@ -12,14 +12,15 @@ const Header = () => {
 
     const navItems = [
         { path: '/', label: 'Home', icon: '🏠' },
-        { path: '/problem-statements', label: 'Problem Statements', icon: '🎯' },
+        { path: '/timeline', label: 'Timeline', icon: '📅' },
+        // { path: 'https://sih.gov.in/sih2025PS', label: 'Problem Statements', icon: '🎯', external: true },
         { path: '/announcements', label: 'Announcements', icon: '📢' },
         { path: '/contact', label: 'Contact', icon: '📞' }
     ]
 
     const dropdownItems = [
         { path: '/about', label: 'About', icon: '📖' },
-        { path: '/timeline', label: 'Timeline', icon: '📅' },
+        // { path: '/timeline', label: 'Timeline', icon: '📅' },
         { path: '/guidelines', label: 'Guidelines', icon: '📋' }
     ]
 
@@ -77,17 +78,30 @@ const Header = () => {
                     {/* Desktop Navigation */}
                     <nav className="hidden lg:flex items-center space-x-1 bg-gray-50 rounded-xl p-1">
                         {navItems.map((item) => (
-                            <Link
-                                key={item.path}
-                                to={item.path}
-                                className={`flex items-center space-x-2 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 ${isActive(item.path)
-                                    ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-md transform scale-105'
-                                    : 'text-gray-600 hover:text-blue-600 hover:bg-white/70'
-                                    }`}
-                            >
-                                <span className="text-base">{item.icon}</span>
-                                <span>{item.label}</span>
-                            </Link>
+                            item.external ? (
+                                <a
+                                    key={item.path}
+                                    href={item.path}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center space-x-2 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 text-gray-600 hover:text-blue-600 hover:bg-white/70"
+                                >
+                                    <span className="text-base">{item.icon}</span>
+                                    <span>{item.label}</span>
+                                </a>
+                            ) : (
+                                <Link
+                                    key={item.path}
+                                    to={item.path}
+                                    className={`flex items-center space-x-2 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 ${isActive(item.path)
+                                        ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-md transform scale-105'
+                                        : 'text-gray-600 hover:text-blue-600 hover:bg-white/70'
+                                        }`}
+                                >
+                                    <span className="text-base">{item.icon}</span>
+                                    <span>{item.label}</span>
+                                </Link>
+                            )
                         ))}
                         
                         {/* Dropdown */}
@@ -171,28 +185,42 @@ const Header = () => {
                         <div className="flex flex-col space-y-1">
                             {[
                                 { path: '/', label: 'Home', icon: '🏠' },
-                                { path: '/about', label: 'About', icon: '📖' },
-                                { path: '/timeline', label: 'Timeline', icon: '📅' },
+                                { path: '/timeline', label: 'Timeline', icon: '�' },
+                                { path: '/about', label: 'About', icon: '�' },
                                 { path: '/guidelines', label: 'Guidelines', icon: '📋' },
-                                { path: '/problem-statements', label: 'Problem Statements', icon: '🎯' },
+                                // { path: 'https://sih.gov.in/sih2025PS', label: 'Problem Statements', icon: '🎯', external: true },
                                 { path: '/announcements', label: 'Announcements', icon: '📢' },
                                 { path: '/contact', label: 'Contact', icon: '📞' }
                             ].map((item) => (
-                                <Link
-                                    key={item.path}
-                                    to={item.path}
-                                    onClick={() => setIsMenuOpen(false)}
-                                    className={`flex items-center space-x-3 px-4 py-3 rounded-lg font-medium transition-all duration-200 ${isActive(item.path)
-                                        ? 'bg-blue-600 text-white shadow-lg'
-                                        : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
-                                        }`}
-                                >
-                                    <span className="text-xl">{item.icon}</span>
-                                    <span>{item.label}</span>
-                                    {isActive(item.path) && (
-                                        <div className="ml-auto w-2 h-2 bg-orange-400 rounded-full"></div>
-                                    )}
-                                </Link>
+                                item.external ? (
+                                    <a
+                                        key={item.path}
+                                        href={item.path}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        onClick={() => setIsMenuOpen(false)}
+                                        className="flex items-center space-x-3 px-4 py-3 rounded-lg font-medium transition-all duration-200 text-gray-700 hover:text-blue-600 hover:bg-blue-50"
+                                    >
+                                        <span className="text-xl">{item.icon}</span>
+                                        <span>{item.label}</span>
+                                    </a>
+                                ) : (
+                                    <Link
+                                        key={item.path}
+                                        to={item.path}
+                                        onClick={() => setIsMenuOpen(false)}
+                                        className={`flex items-center space-x-3 px-4 py-3 rounded-lg font-medium transition-all duration-200 ${isActive(item.path)
+                                            ? 'bg-blue-600 text-white shadow-lg'
+                                            : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
+                                            }`}
+                                    >
+                                        <span className="text-xl">{item.icon}</span>
+                                        <span>{item.label}</span>
+                                        {isActive(item.path) && (
+                                            <div className="ml-auto w-2 h-2 bg-orange-400 rounded-full"></div>
+                                        )}
+                                    </Link>
+                                )
                             ))}
 
                             {/* Mobile CTA */}
