@@ -3,16 +3,14 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 
-// Register Service Worker for PWA
+// Unregister existing service worker to fix caching issues
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js')
-      .then((registration) => {
-        // console.log('Service Worker registered: ', registration)
+    navigator.serviceWorker.getRegistrations().then((registrations) => {
+      registrations.forEach((registration) => {
+        registration.unregister()
       })
-      .catch((registrationError) => {
-        console.log('Service Worker registration failed: ', registrationError)
-      })
+    })
   })
 }
 
