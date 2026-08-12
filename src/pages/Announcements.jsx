@@ -15,7 +15,6 @@ const Announcements = () => {
       date: "2026-08-06",
       details: [
         "Team registration is now live",
-        "Deadline: 12 August 2026, 04:00 PM",
         "Teams must have exactly 6 members",
         "At least one female member is mandatory per team"
       ],

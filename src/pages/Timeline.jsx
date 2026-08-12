@@ -14,7 +14,7 @@ const Timeline = () => {
     },
     {
       id: 3,
-      date: "August 08 2026",
+      date: "August 06 2026",
       title: "Registration of Teams",
       description: "Team registration opens for participating in Smart India Hackathon 2026",
       status: "Live",
