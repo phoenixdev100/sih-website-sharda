@@ -288,7 +288,7 @@ const Timeline = () => {
                           </div>
                           <div className="text-left sm:text-right">
                             <div className="bg-blue-500 text-white px-2 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-medium">
-                              August 08 2026
+                              To be announced
                             </div>
                           </div>
                         </div>
