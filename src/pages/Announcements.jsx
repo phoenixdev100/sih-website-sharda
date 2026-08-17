@@ -21,22 +21,22 @@ const Announcements = () => {
       link: "/registration",
       linkText: "Register Your Team"
     },
-    // {
-    //   id: 2,
-    //   title: "🎯 SIH 2026 Problem Statements Are Now Live!",
-    //   content: "We're excited to announce that the official Smart India Hackathon 2026 problem statements have been released! Teams can now browse through problem statements across Software and Hardware categories. Start exploring the challenges and choose the one that excites your team!",
-    //   category: "updates",
-    //   priority: "high",
-    //   date: "2026-08-06",
-    //   details: [
-    //     "Problem statements now available for Software and Hardware categories",
-    //     "Browse through innovative challenges from various domains",
-    //     "Select problem statements that match your team's expertise",
-    //     "Start preparing your innovative solutions today"
-    //   ],
-    //   link: "/problem-statements",
-    //   linkText: "View Problem Statements"
-    // },
+    {
+      id: 2,
+      title: "🎯 SIH 2026 Problem Statements Are Now Live!",
+      content: "We're excited to announce that the Sharda Internal Smart India Hackathon 2026 problem statements have been released! Teams can now browse through problem statements across Software and Hardware categories. Start exploring the challenges and choose the one that excites your team!",
+      category: "updates",
+      priority: "high",
+      date: "2026-08-06",
+      details: [
+        "Problem statements now available for Software and Hardware categories",
+        "Browse through innovative challenges from various domains",
+        "Select problem statements that match your team's expertise",
+        "Start preparing your innovative solutions today"
+      ],
+      link: "/problem-statements",
+      linkText: "View Problem Statements"
+    },
     {
       id: 3,
       title: "📋 Official Presentation Format Available",

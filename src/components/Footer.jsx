@@ -7,7 +7,7 @@ const Footer = () => {
     {
       title: 'Resources',
       links: [
-        { name: 'Problem Statements', path: 'https://sih.gov.in/sih2025PS', external: true },
+        { name: 'Problem Statements', path: '/problem-statements' },
         { name: 'Guidelines', path: '/guidelines' },
         { name: 'FAQs', path: '/faq' },
         { name: 'Support', path: '/contact' }
@@ -101,7 +101,7 @@ const Footer = () => {
             <Link to="/timeline" className="hover:text-white transition-colors">Timeline</Link>
             <Link to="/announcements" className="hover:text-white transition-colors">Announcements</Link>
             <Link to="/guidelines" className="hover:text-white transition-colors">Guidelines</Link>
-            {/* <a href="https://sih.gov.in/sih2025PS" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Problem Statements</a> */}
+            <Link to="/problem-statements" className="hover:text-white transition-colors">Problem Statements</Link>
             <Link to="/contact" className="hover:text-white transition-colors">Contact</Link>
           </div>
 

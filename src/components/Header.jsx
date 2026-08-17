@@ -13,15 +13,14 @@ const Header = () => {
     const navItems = [
         { path: '/', label: 'Home', icon: '🏠' },
         { path: '/timeline', label: 'Timeline', icon: '📅' },
-        // { path: 'https://sih.gov.in/sih2025PS', label: 'Problem Statements', icon: '🎯', external: true },
-        { path: '/announcements', label: 'Announcements', icon: '📢' },
-        { path: '/contact', label: 'Contact', icon: '📞' }
+        { path: '/problem-statements', label: 'Problem Statements', icon: '🎯' },
+        { path: '/announcements', label: 'Announcements', icon: '📢' }
     ]
 
     const dropdownItems = [
         { path: '/about', label: 'About', icon: '📖' },
-        // { path: '/timeline', label: 'Timeline', icon: '📅' },
-        { path: '/guidelines', label: 'Guidelines', icon: '📋' }
+        { path: '/guidelines', label: 'Guidelines', icon: '�' },
+        { path: '/contact', label: 'Contact', icon: '�' }
     ]
 
     const isActive = (path) => location.pathname === path
@@ -188,7 +187,7 @@ const Header = () => {
                                 { path: '/timeline', label: 'Timeline', icon: '�' },
                                 { path: '/about', label: 'About', icon: '�' },
                                 { path: '/guidelines', label: 'Guidelines', icon: '📋' },
-                                // { path: 'https://sih.gov.in/sih2025PS', label: 'Problem Statements', icon: '🎯', external: true },
+                                { path: '/problem-statements', label: 'Problem Statements', icon: '🎯' },
                                 { path: '/announcements', label: 'Announcements', icon: '📢' },
                                 { path: '/contact', label: 'Contact', icon: '📞' }
                             ].map((item) => (

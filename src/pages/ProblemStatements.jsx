@@ -113,14 +113,16 @@ const ProblemStatements = () => {
     { id: 97, problemId: 'SW072', title: 'Bridging the Measurability Gap - A Digital Solution for validated Citizens Charter norms\' adherence across public interfaces and customer touchpoints of DoP', category: 'software', theme: 'Transportation & Logistics' },
     { id: 98, problemId: 'SW073', title: 'Road Transport Network Telematics Develop a telematics solution to enable efficient trucking operations for the long haul to connect the country through route optimization, live tracking and monitoring, optimal capacity utilization analysis and to enable appropriate response.', category: 'software', theme: 'Transportation & Logistics' },
     { id: 99, problemId: 'SW074', title: 'Enhancing Navigation for Railway Station Facilities and Locations', category: 'software', theme: 'Transportation & Logistics' },
-    { id: 100, problemId: 'SW075', title: 'Development of a mobile application to provide recreational suitability information of beach locations across India.', category: 'software', theme: 'Travel & Tourism' }
+    { id: 100, problemId: 'SW075', title: 'Development of a mobile application to provide recreational suitability information of beach locations across India.', category: 'software', theme: 'Travel & Tourism' },
+    { id: 101, problemId: 'SW076', title: 'Student Innovation - Software Category', category: 'software', theme: 'Student Innovation' },
+    { id: 102, problemId: 'HW026', title: 'Student Innovation - Hardware Category', category: 'hardware', theme: 'Student Innovation' }
   ]
 
   const filteredStatements = problemStatements.filter(statement => {
     const matchesCategory = selectedCategory === 'all' || statement.category === selectedCategory
     const matchesSearch = searchTerm === '' || 
                          statement.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         statement.description.toLowerCase().includes(searchTerm.toLowerCase())
+                         (statement.description && statement.description.toLowerCase().includes(searchTerm.toLowerCase()))
     return matchesCategory && matchesSearch
   })
 
