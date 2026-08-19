@@ -19,8 +19,8 @@ const Header = () => {
 
     const dropdownItems = [
         { path: '/about', label: 'About', icon: '📖' },
-        { path: '/guidelines', label: 'Guidelines', icon: '�' },
-        { path: '/contact', label: 'Contact', icon: '�' }
+        { path: '/guidelines', label: 'Guidelines', icon: '📋' },
+        { path: '/contact', label: 'Contact', icon: '📞' }
     ]
 
     const isActive = (path) => location.pathname === path
