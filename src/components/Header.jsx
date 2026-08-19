@@ -184,8 +184,8 @@ const Header = () => {
                         <div className="flex flex-col space-y-1">
                             {[
                                 { path: '/', label: 'Home', icon: '🏠' },
-                                { path: '/timeline', label: 'Timeline', icon: '�' },
-                                { path: '/about', label: 'About', icon: '�' },
+                                { path: '/timeline', label: 'Timeline', icon: '⌛' },
+                                { path: '/about', label: 'About', icon: '📑' },
                                 { path: '/guidelines', label: 'Guidelines', icon: '📋' },
                                 { path: '/problem-statements', label: 'Problem Statements', icon: '🎯' },
                                 { path: '/announcements', label: 'Announcements', icon: '📢' },
