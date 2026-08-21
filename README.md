@@ -232,7 +232,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### 🔗 Important Links
 - [Official SIH Website](https://www.sih.gov.in/)
-- [Problem Statements](https://www.sih.gov.in/sih2025PS)
+- [Problem Statements](https://www.sih.gov.in/sih2026PS)
 - [Registration Form](https://forms.gle/CnqcDwV7DUrGxTD36)
 - [WhatsApp Group](https://chat.whatsapp.com/JPbRnAhHNnRLpfE5MIQ3PO)
 

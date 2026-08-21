@@ -22,7 +22,7 @@ This is the official website for Smart India Hackathon 2026 at Sharda University
 ## Important Resources
 
 - [Official SIH Website](https://www.sih.gov.in) - Government SIH portal
-- [Problem Statements](https://www.sih.gov.in/sih2025PS) - Official problem statement repository
+- [Problem Statements](https://www.sih.gov.in/sih2026PS) - Official problem statement repository
 - [Sharda University](https://www.sharda.ac.in) - University website
 
 ## Event Details

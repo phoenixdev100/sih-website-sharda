@@ -804,7 +804,7 @@ const Contact = () => {
                             <div className="flex justify-center sm:justify-end">
                                 {action.action === 'external' ? (
                                     <a
-                                        href="https://www.sih.gov.in/sih2025PS"
+                                        href="https://www.sih.gov.in/sih2026PS"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 sm:py-3 px-4 sm:px-6 rounded-lg transition-colors duration-200 flex items-center text-sm sm:text-base"
