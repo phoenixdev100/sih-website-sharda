@@ -27,7 +27,7 @@ const Announcements = () => {
       content: "We're excited to announce that the Sharda Internal Smart India Hackathon 2026 problem statements have been released! Teams can now browse through problem statements across Software and Hardware categories. Start exploring the challenges and choose the one that excites your team!",
       category: "updates",
       priority: "high",
-      date: "2026-08-06",
+      date: "2026-08-21",
       details: [
         "Problem statements now available for Software and Hardware categories",
         "Browse through innovative challenges from various domains",

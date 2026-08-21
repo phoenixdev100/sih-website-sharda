@@ -49,9 +49,64 @@ const Contact = () => {
         },
         {
             title: "Faculty Coordinator",
+            name: "Dr. Mohit Sahni",
+            email: "N/A",
+            icon: "👤",
+            color: "from-orange-500 to-orange-600"
+        },
+        {
+            title: "Faculty Coordinator",
             name: "Dr. Rani Astya",
             email: "rani.astya@sharda.ac.in",
-            phone: "+91 9818221080",
+            icon: "👤",
+            color: "from-orange-500 to-orange-600"
+        },
+        {
+            title: "Faculty Coordinator",
+            name: "Dr. Laxmi Kant",
+            email: "laxmi.sagar1@sharda.ac.in",
+            icon: "👤",
+            color: "from-orange-500 to-orange-600"
+        },
+        {
+            title: "Faculty Coordinator",
+            name: "Prof.(Dr). Shajee Mohan",
+            email: "shajee.mohan@sharda.ac.in",
+            icon: "👤",
+            color: "from-orange-500 to-orange-600"
+        },
+        {
+            title: "Faculty Coordinator",
+            name: "Prof Tarun Varshney",
+            email: "tarun.varshney@sharda.ac.in",
+            icon: "👤",
+            color: "from-orange-500 to-orange-600"
+        },
+        {
+            title: "Faculty Coordinator",
+            name: "Prof PK Singh",
+            email: "pramodkumar.singh@sharda.ac.in",
+            icon: "👤",
+            color: "from-orange-500 to-orange-600"
+        },
+        {
+            title: "Faculty Coordinator",
+            name: "Dr. Manmohan Singh",
+            email: "manmohan.yadav@sharda.ac.in",
+            icon: "👤",
+            color: "from-orange-500 to-orange-600"
+        },
+        {
+            title: "Faculty Coordinator",
+            name: "Dr. Nikhil Sharma",
+            email: "nikhil.sharma2@sharda.ac.in",
+            icon: "👤",
+            color: "from-orange-500 to-orange-600"
+        },
+        {
+            title: "Faculty Coordinator",
+            name: "Mr. Durgesh",
+            email: "durgesh.kumar1@sharda.ac.in",
             icon: "👤",
             color: "from-orange-500 to-orange-600"
         },
@@ -59,7 +114,13 @@ const Contact = () => {
             title: "Faculty Coordinator",
             name: "Dr. Shikha Verma",
             email: "shikha.verma@sharda.ac.in",
-            phone: "+91 9811363085",
+            icon: "👤",
+            color: "from-orange-500 to-orange-600"
+        },
+        {
+            title: "Faculty Coordinator",
+            name: "Dr. Rosey Jadon",
+            email: "rosey.jadon@sharda.ac.in",
             icon: "👤",
             color: "from-orange-500 to-orange-600"
         },
@@ -67,71 +128,34 @@ const Contact = () => {
             title: "Faculty Coordinator",
             name: "Dr. Ramneet",
             email: "ramneet@sharda.ac.in",
-            phone: "+91 9878937770",
             icon: "👤",
             color: "from-orange-500 to-orange-600"
         },
         {
             title: "Faculty Coordinator",
-            name: "Dr. Yagyesh Godiyal",
-            email: "yagyesh.godiyal@sharda.ac.in",
-            phone: "+91 7895942282",
+            name: "Ms. Sphurty",
+            email: "sphurty.raman@sharda.ac.in",
             icon: "👤",
             color: "from-orange-500 to-orange-600"
         },
         {
             title: "Faculty Coordinator",
-            name: "Dr. Rosey",
-            email: "rosey.jadon@sharda.ac.in",
-            phone: "+91 7838744024",
-            icon: "👤",
-            color: "from-orange-500 to-orange-600"
-        },
-        {
-            title: "Faculty Coordinator",
-            name: "Ms. Aanchal Vij",
-            email: "aanchal.vij@sharda.ac.in",
-            phone: "+91 8146325511",
-            icon: "👤",
-            color: "from-orange-500 to-orange-600"
-        },
-        {
-            title: "Faculty Coordinator",
-            name: "Mr. Durgesh Kumar",
-            email: "durgesh.kumar1@sharda.ac.in",
-            phone: "+91 9457471140",
-            icon: "👤",
-            color: "from-orange-500 to-orange-600"
-        },
-        {
-            title: "Faculty Coordinator",
-            name: "Ms. Khushwant Virdi",
-            email: "khushwant.virdi8@sharda.ac.in",
-            phone: "+91 7009184273",
-            icon: "👤",
-            color: "from-orange-500 to-orange-600"
-        },
-        {
-            title: "Faculty Coordinator",
-            name: "Mr. Jitendra Singh",
-            email: "jitendra.singh6@sharda.ac.in",
-            phone: "+91 8174870089",
-            icon: "👤",
-            color: "from-orange-500 to-orange-600"
-        },
-        {
-            title: "Faculty Coordinator",
-            name: "Mr Ashish Jain",
+            name: "Mr. Ashish Jain",
             email: "ashish.jain4@sharda.ac.in",
-            phone: "+91 8459321463",
             icon: "👤",
             color: "from-orange-500 to-orange-600"
         },
         {
             title: "Faculty Coordinator",
-            name: "Ms. Mekhala",
-            email: "mekhala.1@sharda.ac.in",
-            phone: "+91 8287681938",
+            name: "Mr. Ashutosh Shankhdhar",
+            email: "ashutosh.shankhdhar@sharda.ac.in",
+            icon: "👤",
+            color: "from-orange-500 to-orange-600"
+        },
+        {
+            title: "Faculty Coordinator",
+            name: "Dr. Nidhi Gupta",
+            email: "nidhi.gupta1@sharda.ac.in",
             icon: "👤",
             color: "from-orange-500 to-orange-600"
         },
@@ -139,15 +163,48 @@ const Contact = () => {
             title: "Faculty Coordinator",
             name: "Ms. Kamini",
             email: "kamini.2@sharda.ac.in",
-            phone: "+91 9582481172",
             icon: "👤",
             color: "from-orange-500 to-orange-600"
         },
         {
             title: "Faculty Coordinator",
-            name: "Dr. Rozey Chauhan",
-            email: "rozey.jadon@sharda.ac.in",
-            phone: "+91 7838744024",
+            name: "Dr Himanshu Payal",
+            email: "himanshu.payal@sharda.ac.in",
+            icon: "👤",
+            color: "from-orange-500 to-orange-600"
+        },
+        {
+            title: "Faculty Coordinator",
+            name: "Ms. Mekhala",
+            email: "mekhala.1@sharda.ac.in",
+            icon: "👤",
+            color: "from-orange-500 to-orange-600"
+        },
+        {
+            title: "Faculty Coordinator",
+            name: "Dr. Satya Prakash Mishra",
+            email: "satya.prakash@sharda.ac.in",
+            icon: "👤",
+            color: "from-orange-500 to-orange-600"
+        },
+        {
+            title: "Faculty Coordinator",
+            name: "Mr. Jitendra Singh",
+            email: "jitendra.singh6@sharda.ac.in",
+            icon: "👤",
+            color: "from-orange-500 to-orange-600"
+        },
+        {
+            title: "Faculty Coordinator",
+            name: "Dr. Kavita",
+            email: "kavita.bhati@sharda.ac.in",
+            icon: "👤",
+            color: "from-orange-500 to-orange-600"
+        },
+        {
+            title: "Faculty Coordinator",
+            name: "Dr. Chaitenya Verma",
+            email: "chaitenya.verma@sharda.ac.in",
             icon: "👤",
             color: "from-orange-500 to-orange-600"
         },
@@ -576,6 +633,7 @@ const Contact = () => {
                                     <p className="text-xs sm:text-sm text-gray-600 mb-3">{contact.designation}</p>
 
                                     <div className="space-y-2">
+                                        {contact.email && (
                                         <div className="flex items-center text-xs sm:text-sm text-gray-600">
                                             <svg className="w-3 h-3 sm:w-4 sm:h-4 mr-2 text-blue-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -599,6 +657,8 @@ const Contact = () => {
                                                 )}
                                             </button>
                                         </div>
+                                        )}
+                                        {contact.phone && (
                                         <div className="flex items-center text-xs sm:text-sm text-gray-600">
                                             <svg className="w-3 h-3 sm:w-4 sm:h-4 mr-2 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -622,6 +682,7 @@ const Contact = () => {
                                                 )}
                                             </button>
                                         </div>
+                                        )}
                                         {contact.office && (
                                             <div className="flex items-center text-xs sm:text-sm text-gray-600">
                                                 <svg className="w-3 h-3 sm:w-4 sm:h-4 mr-2 text-purple-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
