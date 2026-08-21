@@ -23,10 +23,10 @@ const Timeline = () => {
     },
     {
       id: 2,
-      date: "To be announced",
+      date: "21 August 2026",
       title: "SIH Problem Statement Launch",
       description: "Official problem statements from various ministries and organizations",
-      status: "upcoming",
+      status: "live",
       icon: "📋",
       color: "blue",
     },
