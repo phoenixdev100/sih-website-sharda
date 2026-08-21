@@ -246,12 +246,43 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        // Handle form submission
-        console.log('Form submitted:', formData)
+        const subject = formData.subject || 'SIH 2026 Query'
+        const body = `Name: ${formData.firstName} ${formData.lastName}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nCategory: ${formData.category}\nPriority: ${formData.priority}\n\nMessage:\n${formData.message}`
+        window.location.href = `mailto:sih.sharda@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
     }
 
     const renderContactTab = () => (
-        <div className="space-y-8">            {/* SIH Coordinators Section */}
+        <div className="space-y-8">
+            {/* General Query Email Section */}
+            <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-lg p-6 sm:p-8 text-white text-center">
+                <h2 className="text-xl sm:text-2xl font-bold mb-2">General Queries</h2>
+                <p className="text-blue-100 text-sm sm:text-base mb-4">For any questions related to SIH 2026 Internal Hackathon, reach out to us at:</p>
+                <div className="flex items-center justify-center gap-3 flex-wrap">
+                    <a href="mailto:sih.sharda@gmail.com" className="bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors duration-200 flex items-center gap-2">
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        sih.sharda@gmail.com
+                    </a>
+                    <button
+                        onClick={() => copyToClipboard('sih.sharda@gmail.com', 'general-email', 'email')}
+                        className="bg-white/20 hover:bg-white/30 text-white font-medium px-4 py-3 rounded-lg transition-colors duration-200 flex items-center gap-2"
+                    >
+                        {copied === 'general-email' ? (
+                            <svg className="w-5 h-5 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            </svg>
+                        ) : (
+                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                            </svg>
+                        )}
+                        Copy
+                    </button>
+                </div>
+            </div>
+
+            {/* SIH Coordinators Section */}
             <div>
                 <div className="text-center mb-8 sm:mb-12">
                     <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4 px-4">Internal Hackathon Student Coordinators</h2>
@@ -772,13 +803,15 @@ const Contact = () => {
                             </div>
                             <div className="flex justify-center sm:justify-end">
                                 {action.action === 'external' ? (
-                                    <Link
-                                        to="/problem-statements"
+                                    <a
+                                        href="https://www.sih.gov.in/sih2025PS"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                         className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 sm:py-3 px-4 sm:px-6 rounded-lg transition-colors duration-200 flex items-center text-sm sm:text-base"
                                     >
                                         <span className="mr-2">🎯</span>
                                         View Statements
-                                    </Link>
+                                    </a>
                                 ) : (
                                     <a
                                         href="https://chat.whatsapp.com/JPbRnAhHNnRLpfE5MIQ3PO?mode=ems_wa_c"

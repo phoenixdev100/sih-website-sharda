@@ -34,7 +34,7 @@ const Announcements = () => {
         "Select problem statements that match your team's expertise",
         "Start preparing your innovative solutions today"
       ],
-      link: "/problem-statements",
+      link: "https://www.sih.gov.in/sih2025PS",
       linkText: "View Problem Statements"
     },
     {

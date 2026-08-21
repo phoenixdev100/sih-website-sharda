@@ -101,7 +101,7 @@ const Footer = () => {
             <Link to="/timeline" className="hover:text-white transition-colors">Timeline</Link>
             <Link to="/announcements" className="hover:text-white transition-colors">Announcements</Link>
             <Link to="/guidelines" className="hover:text-white transition-colors">Guidelines</Link>
-            <Link to="/problem-statements" className="hover:text-white transition-colors">Problem Statements</Link>
+            <a href="https://www.sih.gov.in/sih2025PS" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Problem Statements</a>
             <Link to="/contact" className="hover:text-white transition-colors">Contact</Link>
           </div>
 

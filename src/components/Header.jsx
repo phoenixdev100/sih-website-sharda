@@ -13,7 +13,7 @@ const Header = () => {
     const navItems = [
         { path: '/', label: 'Home', icon: '🏠' },
         { path: '/timeline', label: 'Timeline', icon: '📅' },
-        { path: '/problem-statements', label: 'Problem Statements', icon: '🎯' },
+        { path: 'https://www.sih.gov.in/sih2025PS', label: 'Problem Statements', icon: '🎯', external: true },
         { path: '/announcements', label: 'Announcements', icon: '📢' }
     ]
 
@@ -187,8 +187,8 @@ const Header = () => {
                                 { path: '/timeline', label: 'Timeline', icon: '⌛' },
                                 { path: '/about', label: 'About', icon: '📑' },
                                 { path: '/guidelines', label: 'Guidelines', icon: '📋' },
-                                { path: '/problem-statements', label: 'Problem Statements', icon: '🎯' },
-                                { path: '/announcements', label: 'Announcements', icon: '📢' },
+                                { path: 'https://www.sih.gov.in/sih2025PS', label: 'Problem Statements', icon: '🎯', external: true },
+                                { path: '/announcements', label: 'Announcements', icon: '📢'},
                                 { path: '/contact', label: 'Contact', icon: '📞' }
                             ].map((item) => (
                                 item.external ? (
