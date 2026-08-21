@@ -8,6 +8,22 @@ const Announcements = () => {
   const announcements = [
     {
       id: 1,
+      title: "🎯 SIH 2026 Problem Statements Are Now Live!",
+      content: "We're excited to announce that the Official Smart India Hackathon 2026 problem statements have been released! Teams can now browse through problem statements across Software and Hardware categories. Start exploring the challenges and choose the one that excites your team!",
+      category: "updates",
+      priority: "high",
+      date: "2026-08-21",
+      details: [
+        "Problem statements now available for Software and Hardware categories",
+        "Browse through innovative challenges from various domains",
+        "Select problem statements that match your team's expertise",
+        "Start preparing your innovative solutions today"
+      ],
+      link: "https://www.sih.gov.in/sih2026PS",
+      linkText: "View Problem Statements"
+    },
+    {
+      id: 2,
       title: "🚀 Team Registration Has Started!",
       content: "Team registration for Smart India Hackathon 2026 is now open! Form your teams of 6 members and register before the deadline. Don't miss this opportunity to participate in India's biggest hackathon!",
       category: "registration",
@@ -20,22 +36,6 @@ const Announcements = () => {
       ],
       link: "/registration",
       linkText: "Register Your Team"
-    },
-    {
-      id: 2,
-      title: "🎯 SIH 2026 Problem Statements Are Now Live!",
-      content: "We're excited to announce that the Sharda Internal Smart India Hackathon 2026 problem statements have been released! Teams can now browse through problem statements across Software and Hardware categories. Start exploring the challenges and choose the one that excites your team!",
-      category: "updates",
-      priority: "high",
-      date: "2026-08-21",
-      details: [
-        "Problem statements now available for Software and Hardware categories",
-        "Browse through innovative challenges from various domains",
-        "Select problem statements that match your team's expertise",
-        "Start preparing your innovative solutions today"
-      ],
-      link: "https://www.sih.gov.in/sih2026PS",
-      linkText: "View Problem Statements"
     },
     {
       id: 3,

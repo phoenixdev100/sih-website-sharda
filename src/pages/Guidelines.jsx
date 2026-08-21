@@ -15,6 +15,7 @@ const Guidelines = () => {
             'Teams must consist of exactly 6 members',
             'All team members must be from Sharda University',
             'At least one female member is mandatory per team',
+            'Each team must choose a faculty member as a mentor',
             'All participants must be currently enrolled students',
             'Valid student ID required for all team members'
           ]
@@ -22,7 +23,7 @@ const Guidelines = () => {
         {
           title: 'Eligibility Criteria',
           items: [
-            'Open to undergraduate and postgraduate students',
+            'Open to all undergraduate and postgraduate students',
             'Students with work experience can participate if currently enrolled',
             'All team members must have valid college enrollment',
             'Institution must be registered with SIH 2026'
@@ -123,6 +124,7 @@ const Guidelines = () => {
           title: 'Registration Phase',
           items: [
             'Team formation and registration',
+            'Each team must select a faculty mentor',
             'Problem statement selection',
             'Document submission and verification',
             'Institution-level internal hackathon',
@@ -159,6 +161,7 @@ const Guidelines = () => {
         {
           title: 'Available Resources',
           items: [
+            'Each team is assigned a faculty mentor for guidance',
             'Mentoring sessions with industry experts',
             'Technical workshops and training',
             'Access to cloud platforms and tools',
@@ -260,7 +263,7 @@ const Guidelines = () => {
         <div className="mt-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl p-8 text-white text-center">
           <h3 className="text-2xl font-bold mb-4">⚠️ Important Notice</h3>
           <p className="text-lg mb-4">
-            These guidelines are subject to updates. Please check the official SIH website regularly for the latest information.
+            Each team must choose a faculty member as a mentor. These guidelines are subject to updates. Please check the official SIH website regularly for the latest information.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
