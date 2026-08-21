@@ -26,7 +26,7 @@ const Timeline = () => {
       date: "21 August 2026",
       title: "SIH Problem Statement Launch",
       description: "Official problem statements from various ministries and organizations",
-      status: "live",
+      status: "Live",
       icon: "📋",
       color: "blue",
     },
@@ -121,7 +121,7 @@ const Timeline = () => {
   // Calculate phase progress dynamically
   const calculatePhaseProgress = (phaseEvents) => {
     const phaseEventData = timelineEvents.filter(event => phaseEvents.includes(event.id))
-    const completedEvents = phaseEventData.filter(event => event.status === 'completed').length
+    const completedEvents = phaseEventData.filter(event => event.status === 'completed' || event.status === 'Live').length
     return Math.round((completedEvents / phaseEventData.length) * 100)
   }
 
@@ -162,14 +162,14 @@ const Timeline = () => {
             <div className="flex justify-between items-center mb-3">
               <span className="text-lg font-semibold text-gray-800">Overall Progress</span>
               <span className="text-lg font-bold text-blue-600">
-                {Math.round((timelineEvents.filter(event => event.status === 'completed').length / timelineEvents.length) * 100)}%
+                {Math.round((timelineEvents.filter(event => event.status === 'completed' || event.status === 'Live').length / timelineEvents.length) * 100)}%
               </span>
             </div>
             <div className="w-full bg-gray-200 rounded-full h-4 overflow-hidden">
               <div
                 className="h-full bg-gradient-to-r from-blue-500 to-purple-600 rounded-full transition-all duration-1000 ease-out"
                 style={{
-                  width: `${(timelineEvents.filter(event => event.status === 'completed').length / timelineEvents.length) * 100}%`
+                  width: `${(timelineEvents.filter(event => event.status === 'completed' || event.status === 'Live').length / timelineEvents.length) * 100}%`
                 }}
               ></div>
             </div>
@@ -211,19 +211,19 @@ const Timeline = () => {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-gray-200">
             <div className="text-center">
               <div className="text-2xl font-bold text-blue-600">
-                {timelineEvents.filter(event => event.status === 'completed').length}
+                {timelineEvents.filter(event => event.status === 'completed' || event.status === 'Live').length}
               </div>
               <div className="text-sm text-gray-600">Completed</div>
             </div>
             <div className="text-center">
               <div className="text-2xl font-bold text-orange-600">
-                {timelineEvents.filter(event => event.status === 'current').length}
+                {timelineEvents.filter(event => event.status === 'current' || event.status === 'Live').length}
               </div>
               <div className="text-sm text-gray-600">In Progress</div>
             </div>
             <div className="text-center">
               <div className="text-2xl font-bold text-gray-600">
-                {timelineEvents.filter(event => event.status === 'upcoming').length}
+                {timelineEvents.filter(event => event.status === 'upcoming' && event.status !== 'Live').length}
               </div>
               <div className="text-sm text-gray-600">Upcoming</div>
             </div>
@@ -348,29 +348,9 @@ const Timeline = () => {
               </div>
 
               {/* End card content */}
-              <div className="ml-4 sm:ml-8 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-4 sm:p-6 lg:p-8 shadow-lg flex-grow border-2 border-dashed border-gray-300">
+              <div className="ml-4 sm:ml-8 bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-4 sm:p-6 lg:p-8 shadow-lg flex-grow border-2 border-green-300">
                 <div className="text-center">
-                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-800 mb-4">Timeline In Progress</h3>
-                  <p className="text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed mb-4 sm:mb-6">
-                    The SIH 2026 timeline is currently active. SPOC registration is completed. Team registration opens on August 08 2026. Problem statements will be announced soon. Stay tuned for updates on internal hackathon dates and grand finale schedule.
-                  </p>
-                  <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
-                    <div className="bg-white rounded-lg px-3 py-2 sm:px-4 shadow-sm border border-gray-200">
-                      <span className="text-xs sm:text-sm text-gray-500">SPOC Registration:</span>
-                      <div className="font-semibold text-gray-800 text-sm sm:text-base">Completed</div>
-                    </div>
-                    <div className="bg-white rounded-lg px-3 py-2 sm:px-4 shadow-sm border border-gray-200">
-                      <span className="text-xs sm:text-sm text-gray-500">Team Reg. Deadline:</span>
-                      <div className="font-semibold text-gray-800 text-sm sm:text-base">August 08 2026</div>
-                    </div>
-                    <div className="bg-white rounded-lg px-3 py-2 sm:px-4 shadow-sm border border-gray-200">
-                      <span className="text-xs sm:text-sm text-gray-500">Total Events:</span>
-                      <div className="font-semibold text-gray-800 text-sm sm:text-base">{timelineEvents.length} Milestones</div>
-                    </div>
-                  </div>
-                  <div className="mt-4 sm:mt-6 text-xs sm:text-sm text-gray-500">
-                    Next up: Team registration (August 08 2026) and problem statements (to be announced)
-                  </div>
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-800">✅ Timeline Completed</h3>
                 </div>
               </div>
             </div>
@@ -391,11 +371,11 @@ const Timeline = () => {
               </li>
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                Team Registration Deadline: August 08 2026
+                Team Registration Deadline: To be announced
               </li>
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                Problem Statements: To be announced
+                Problem Statements: August 21 2026
               </li>
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-white rounded-full mr-3"></span>

@@ -39,6 +39,13 @@ const Contact = () => {
             color: "from-blue-500 to-blue-600"
         },
         {
+            title: "Institutional Advisor",
+            name: "Dr. Mohit Sahni",
+            email: "N/A",
+            icon: "👔",
+            color: "from-purple-500 to-purple-600"
+        },
+        {
             title: "SIH Internal Coordinator",
             name: "Dr. Sandeep Kumar",
             email: "sandeep.kumar16@sharda.ac.in",
@@ -46,13 +53,6 @@ const Contact = () => {
             office: "Block 1, 3rd Floor, Room No 317, Cabin 3",
             icon: "🎯",
             color: "from-green-500 to-green-600"
-        },
-        {
-            title: "Faculty Coordinator",
-            name: "Dr. Mohit Sahni",
-            email: "N/A",
-            icon: "👤",
-            color: "from-orange-500 to-orange-600"
         },
         {
             title: "Faculty Coordinator",
