@@ -519,6 +519,18 @@ const Registration = () => {
           </button>
         </div>
 
+        {/* Sticky Floating Registration Button */}
+        <div className="fixed bottom-6 right-6 z-40">
+          <a
+            href="https://forms.gle/bDVPvVPEAtXg6Z637"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center space-x-2 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold py-3 px-5 rounded-full shadow-2xl hover:from-orange-600 hover:to-red-600 transform hover:scale-105 transition-all duration-300 text-sm sm:text-base"
+          >
+            <span>🚀 Register Now</span>
+          </a>
+        </div>
+
         {/* Rules Modal */}
         {showRulesModal && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
@@ -613,6 +625,57 @@ const Registration = () => {
           </div>
         )}
 
+        {/* Registration Form Section */}
+        <div className="mx-auto mb-8">
+          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl shadow-xl overflow-hidden">
+            {/* Top Row: Heading + Button */}
+            <div className="flex flex-col md:flex-row items-center justify-between gap-6 p-6 sm:p-8">
+              <div className="text-center md:text-left">
+                <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">Ready to Register?</h2>
+                <p className="text-blue-100 text-sm sm:text-base">
+                  Complete your SIH 2026 registration through our official Google Form.
+                </p>
+              </div>
+              <a
+                href="https://forms.gle/bDVPvVPEAtXg6Z637"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 bg-white text-blue-600 font-bold py-3 px-6 rounded-xl hover:bg-blue-50 transform hover:scale-105 transition-all duration-300 shadow-lg whitespace-nowrap"
+              >
+                <span>Start Registration</span>
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Sample PPT Download Card */}
+        <div className="mx-auto mb-8">
+          <div className="bg-gradient-to-r from-orange-600 to-red-600 rounded-2xl shadow-xl overflow-hidden">
+            {/* Top Row: Heading + Button */}
+            <div className="flex flex-col md:flex-row items-center justify-between gap-6 p-6 sm:p-8">
+              <div className="text-center md:text-left">
+                <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">📊 Official Presentation Template</h2>
+                <p className="text-orange-100 text-sm sm:text-base">
+                  Download the official PowerPoint template for your SIH 2026 presentations.
+                </p>
+              </div>
+              <a
+                href="./SIH2026-IDEA-Presentation-Format.pptx"
+                download
+                className="flex items-center space-x-2 bg-white text-orange-600 font-bold py-3 px-6 rounded-xl hover:bg-orange-50 transform hover:scale-105 transition-all duration-300 shadow-lg whitespace-nowrap"
+              >
+                <span>Download PPT Template</span>
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
         {/* Requirements Overview */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-gray-800 text-center mb-8">Eligibility Requirements</h2>
@@ -667,126 +730,6 @@ const Registration = () => {
           </div>
         </div>
 
-        {/* Registration Form Section */}
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl shadow-xl p-8 text-center">
-            <div className="mb-8">
-              <div className="w-20 h-20 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
-              </div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-4">Ready to Register?</h2>
-              <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-                Complete your SIH 2026 registration through our official Google Form. Make sure you have all the required documents and team information ready before starting.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl p-6 mb-8 shadow-lg">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">📋 Before You Start</h3>
-              <div className="grid md:grid-cols-2 gap-4 text-left">
-                <div>
-                  <h4 className="font-medium text-gray-800 mb-2">Have Ready:</h4>
-                  <ul className="space-y-1 text-sm text-gray-600">
-                    <li>• Team name and leader details</li>
-                    <li>• All 6 team members' information</li>
-                    <li>• Student ID cards (scanned copies)</li>
-                    <li>• Problem statement preference</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-medium text-gray-800 mb-2">Important Notes:</h4>
-                  <ul className="space-y-1 text-sm text-gray-600">
-                    <li>• Form can be saved and resumed later</li>
-                    <li>• All fields are mandatory</li>
-                    <li>• Double-check information before submitting</li>
-                    <li>• You'll receive confirmation email</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div className="space-y-4">
-              <a
-                href="https://forms.gle/bDVPvVPEAtXg6Z637"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold py-4 px-8 rounded-xl hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
-              >
-                🚀 Start Registration Form
-              </a>
-              <p className="text-sm text-gray-500">
-                Registration will open in a new tab. Keep this page open for reference.
-              </p>
-            </div>
-
-            <div className="mt-8 p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
-              <p className="text-sm text-yellow-800">
-                <strong>⚠️ Important:</strong> Registration deadline is approaching. Complete your registration as soon as possible to secure your team's spot in SIH 2026.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Sample PPT Download Card */}
-        <div className="mt-16 max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl shadow-xl p-8 text-center border-2 border-orange-200">
-            <div className="mb-8">
-              <div className="w-20 h-20 bg-gradient-to-r from-orange-600 to-red-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
-              </div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-4">📊 Official Presentation Template</h2>
-              <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-                Download the official PowerPoint template for your SIH 2026 presentations. This standardized format ensures consistency and helps evaluators assess your solutions effectively.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl p-6 mb-8 shadow-lg">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">📋 Template Features</h3>
-              <div className="grid md:grid-cols-2 gap-4 text-left">
-                <div>
-                  <h4 className="font-medium text-gray-800 mb-2">Included Sections:</h4>
-                  <ul className="space-y-1 text-sm text-gray-600">
-                    <li>• Problem statement overview</li>
-                    <li>• Solution approach & methodology</li>
-                    <li>• Technical implementation details</li>
-                    <li>• Demo and prototype showcase</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-medium text-gray-800 mb-2">Design Elements:</h4>
-                  <ul className="space-y-1 text-sm text-gray-600">
-                    <li>• Official SIH 2026 branding</li>
-                    <li>• Pre-formatted slide layouts</li>
-                    <li>• Consistent color scheme</li>
-                    <li>• Professional typography</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div className="space-y-4">
-              <a
-                href="./SIH2026-IDEA-Presentation-Format.pptx"
-                download
-                className="inline-block bg-gradient-to-r from-orange-600 to-red-600 text-white font-bold py-4 px-8 rounded-xl hover:from-orange-700 hover:to-red-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
-              >
-                📥 Download PPT Template
-              </a>
-              <p className="text-sm text-gray-500">
-                PowerPoint format (.pptx) • Compatible with MS Office & Google Slides
-              </p>
-            </div>
-
-            <div className="mt-8 p-4 bg-orange-50 border border-orange-200 rounded-lg">
-              <p className="text-sm text-orange-800">
-                <strong>💡 Tip:</strong> Use this template for both internal hackathon presentations and final submissions. Consistent formatting helps evaluators focus on your innovative solutions.
-              </p>
-            </div>
-          </div>
-        </div>
         {/* Student Coordinators Section */}
         <div className="mt-16">
           <div className="text-center mb-12">
