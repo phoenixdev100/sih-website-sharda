@@ -14,7 +14,7 @@ import Announcements from './pages/Announcements'
 import Privacy from './pages/Privacy'
 import Terms from './pages/Terms'
 import NotFound from './pages/NotFound'
-import ProblemStatements from './pages/ProblemStatements'
+// import ProblemStatements from './pages/ProblemStatements'
 
 function ScrollToTop() {
   const { pathname } = useLocation()  
@@ -45,7 +45,7 @@ function App() {
             {/* <Route path="/mentorship" element={<Mentorship />} /> */}
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
-            <Route path="/problem-statements" element={<ProblemStatements />} />
+            {/* <Route path="/problem-statements" element={<ProblemStatements />} /> */}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
