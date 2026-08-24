@@ -635,6 +635,7 @@ const Registration = () => {
                 <p className="text-blue-100 text-sm sm:text-base">
                   Complete your SIH 2026 registration through our official Google Form.
                 </p>
+                <p className="text-white text-sm sm:text-base font-semibold mt-2">⏰ Deadline: September 3, 2026</p>
               </div>
               <a
                 href="https://forms.gle/bDVPvVPEAtXg6Z637"

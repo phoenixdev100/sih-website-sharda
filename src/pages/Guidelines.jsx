@@ -146,7 +146,7 @@ const Guidelines = () => {
           items: [
             'SPOC Registration deadline: 14 August 2026',
             'Problem statement launch: To be announced',
-            'Team registration: To be announced',
+            'Team registration deadline: September 3, 2026',
             'Internal hackathon: To be announced',
             'Grand finale: To be announced'
           ]

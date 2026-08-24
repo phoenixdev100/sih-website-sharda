@@ -288,7 +288,7 @@ const Timeline = () => {
                           </div>
                           <div className="text-left sm:text-right">
                             <div className="bg-blue-500 text-white px-2 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-medium">
-                              To be announced
+                              September 3, 2026
                             </div>
                           </div>
                         </div>
@@ -371,7 +371,7 @@ const Timeline = () => {
               </li>
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                Team Registration Deadline: To be announced
+                Team Registration Deadline: September 3, 2026
               </li>
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-white rounded-full mr-3"></span>

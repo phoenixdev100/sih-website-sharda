@@ -224,11 +224,11 @@ const Contact = () => {
                 },
                 {
                     q: "When do registrations close?",
-                    a: "Registration for the Internal Hackathon closes by August 2026. No extensions will be granted, and incomplete registrations will be rejected."
+                    a: "Registration for the Internal Hackathon closes on September 3, 2026. No extensions will be granted, and incomplete registrations will be rejected."
                 },
                 {
                     q: "Can I change my team members after registration?",
-                    a: "Team changes are allowed until the registration deadline in August 2026. After this date, no changes will be permitted except in exceptional circumstances."
+                    a: "Team changes are allowed until the registration deadline on September 3, 2026. After this date, no changes will be permitted except in exceptional circumstances."
                 },
                 {
                     q: "Is there a registration fee?",

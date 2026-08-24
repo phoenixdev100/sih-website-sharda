@@ -8,6 +8,22 @@ const Announcements = () => {
   const announcements = [
     {
       id: 1,
+      title: "⏰ Team Registration Deadline: September 3, 2026",
+      content: "This is a reminder that the deadline for team registration for Smart India Hackathon 2026 is September 3, 2026. No extensions will be granted. Please ensure your team is registered and all details are submitted before this date. Incomplete registrations will be rejected.",
+      category: "registration",
+      priority: "high",
+      date: "2026-08-24",
+      details: [
+        "Registration closes on September 3, 2026 - no extensions",
+        "Teams must have exactly 6 members with at least one female member",
+        "All fields in the registration form are mandatory",
+        "Incomplete or late registrations will be automatically rejected"
+      ],
+      link: "/registration",
+      linkText: "Register Now"
+    },
+    {
+      id: 2,
       title: "🎯 SIH 2026 Problem Statements Are Now Live!",
       content: "We're excited to announce that the Official Smart India Hackathon 2026 problem statements have been released! Teams can now browse through problem statements across Software and Hardware categories. Start exploring the challenges and choose the one that excites your team!",
       category: "updates",
@@ -25,7 +41,7 @@ const Announcements = () => {
     {
       id: 2,
       title: "🚀 Team Registration Has Started!",
-      content: "Team registration for Smart India Hackathon 2026 is now open! Form your teams of 6 members and register before the deadline. Don't miss this opportunity to participate in India's biggest hackathon!",
+      content: "Team registration for Smart India Hackathon 2026 is now open! Form your teams of 6 members and register before September 3, 2026. Don't miss this opportunity to participate in India's biggest hackathon!",
       category: "registration",
       priority: "high",
       date: "2026-08-06",
