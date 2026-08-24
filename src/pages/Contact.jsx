@@ -55,6 +55,13 @@ const Contact = () => {
             color: "from-green-500 to-green-600"
         },
         {
+            title: "Convener - IIC",
+            name: "Dr. Shelja Sharma",
+            email: "N/A",
+            icon: "🏛️",
+            color: "from-indigo-500 to-indigo-600"
+        },
+        {
             title: "Faculty Coordinator",
             name: "Dr. Rani Astya",
             email: "rani.astya@sharda.ac.in",

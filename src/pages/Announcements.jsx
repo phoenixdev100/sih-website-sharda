@@ -91,8 +91,7 @@ const Announcements = () => {
     { id: 'partnership', name: 'Partnerships', icon: '🤝' },
     { id: 'registration', name: 'Registration', icon: '📝' },
     { id: 'updates', name: 'Updates', icon: '🔄' },
-    { id: 'guidelines', name: 'Guidelines', icon: '📋' },
-    { id: 'events', name: 'Events', icon: '🎉' }
+    { id: 'guidelines', name: 'Guidelines', icon: '📋' }
   ]
 
   const getPriorityColor = (priority) => {
@@ -138,28 +137,22 @@ const Announcements = () => {
         </div>
 
         {/* Stats Cards */}
-        <div className="grid md:grid-cols-4 gap-6 mb-12">
-          <div className="bg-white rounded-xl shadow-lg p-6 text-center border-l-4 border-blue-500">
-            <div className="text-3xl font-bold text-blue-600 mb-2">{announcements.length}</div>
-            <div className="text-gray-600">Total Announcements</div>
+        <div className="grid grid-cols-3 gap-3 sm:gap-6 mb-10 px-4">
+          <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 text-center border-l-4 border-blue-500">
+            <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-1">{announcements.length}</div>
+            <div className="text-gray-600 text-xs sm:text-sm">Total</div>
           </div>
-          <div className="bg-white rounded-xl shadow-lg p-6 text-center border-l-4 border-red-500">
-            <div className="text-3xl font-bold text-red-600 mb-2">
+          <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 text-center border-l-4 border-red-500">
+            <div className="text-2xl sm:text-3xl font-bold text-red-600 mb-1">
               {announcements.filter(a => a.priority === 'high').length}
             </div>
-            <div className="text-gray-600">High Priority</div>
+            <div className="text-gray-600 text-xs sm:text-sm">High Priority</div>
           </div>
-          <div className="bg-white rounded-xl shadow-lg p-6 text-center border-l-4 border-orange-500">
-            <div className="text-3xl font-bold text-orange-600 mb-2">
+          <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 text-center border-l-4 border-orange-500">
+            <div className="text-2xl sm:text-3xl font-bold text-orange-600 mb-1">
               {announcements.filter(a => a.category === 'important').length}
             </div>
-            <div className="text-gray-600">Important Updates</div>
-          </div>
-          <div className="bg-white rounded-xl shadow-lg p-6 text-center border-l-4 border-purple-500">
-            <div className="text-3xl font-bold text-purple-600 mb-2">
-              {announcements.filter(a => a.category === 'events').length}
-            </div>
-            <div className="text-gray-600">Events & Workshops</div>
+            <div className="text-gray-600 text-xs sm:text-sm">Important</div>
           </div>
         </div>
 
