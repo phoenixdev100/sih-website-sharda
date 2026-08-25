@@ -59,7 +59,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section with 3D Background */}
-      <section className="relative py-8 sm:py-16 pt-20 sm:pt-10 h-screen overflow-hidden bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900">
+      <section className="relative py-8 sm:py-16 pt-0 sm:pt-10 h-screen overflow-hidden bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900">
         {/* 3D Background Elements */}
         <div className="absolute inset-0">
           {/* Animated geometric shapes */}
@@ -83,15 +83,15 @@ const Home = () => {
             <div className="space-y-4">
               <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black leading-tight">
                 <span className="block bg-gradient-to-r from-white via-cyan-200 to-blue-300 bg-clip-text text-transparent drop-shadow-2xl">
-                  <span className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl">Internal</span>
+                  <span className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl">Sharda</span>
                 </span>
                 <span className="block bg-gradient-to-r from-orange-400 via-pink-400 to-red-400 bg-clip-text text-transparent drop-shadow-2xl">
                   Smart India Hackathon 2026
                 </span>
               </h1>
-              <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-xl rounded-full border border-white/30 shadow-2xl">
+              {/* <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-xl rounded-full border border-white/30 shadow-2xl">
                 <span className="text-white font-semibold text-sm">🏛️ Sharda University</span>
-              </div>
+              </div> */}
             </div>
 
             <p className="text-base sm:text-lg md:text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed drop-shadow-lg px-4">
