@@ -33,8 +33,8 @@ const Timeline = () => {
     {
       id: 4,
       date: "To be announced",
-      title: "Internal Hackathon",
-      description: "Institution-level hackathons to select teams for national finale",
+      title: "Sharda Smart India Hackathon",
+      description: "Institution-level hackathon to select teams for national finale",
       status: "upcoming",
       icon: "🏫",
       color: "purple",
@@ -107,7 +107,7 @@ const Timeline = () => {
     {
       name: "Institution Phase",
       events: [2, 4, 5, 6],
-      description: "Problem statements, internal hackathons and team nominations",
+      description: "Problem statements, Sharda Smart India Hackathon and team nominations",
       color: "bg-purple-100 text-purple-800"
     },
     {
@@ -296,7 +296,7 @@ const Timeline = () => {
                     </div>
                   )}
 
-                  {/* Sub-cards for Internal Hackathon */}
+                  {/* Sub-cards for Sharda Smart India Hackathon */}
                   {event.id === 4 && (
                     <div className="mt-4 sm:mt-6 space-y-3 sm:space-y-4">
                       <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-3 sm:mb-4 flex items-center">

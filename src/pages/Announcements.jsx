@@ -8,6 +8,23 @@ const Announcements = () => {
   const announcements = [
     {
       id: 1,
+      title: "📢 Important: Faculty Mentor Approval for SIH 2026",
+      content: "All teams are required to get official approval from their selected Faculty Mentor. The Team Leader must email the faculty member requesting them to be the team's Faculty Mentor. Once the faculty mentor replies with their approval, the Team Leader must take a screenshot of the approval email and add it to Slide 2 of the presentation. If the team does not have a clear approval/reply from the Faculty Mentor, the team's presentation will not be considered for the Sharda Smart India Hackathon screening.",
+      category: "important",
+      priority: "high",
+      date: "2026-08-25",
+      details: [
+        "Team Leader must email the selected faculty member requesting them to be the Faculty Mentor",
+        "Faculty mentor must reply with their approval",
+        "Take a screenshot of the approval email",
+        "Add the screenshot to Slide 2 of your presentation",
+        "Without clear faculty mentor approval, presentation will NOT be considered for Sharda Smart India Hackathon screening"
+      ],
+      link: "/registration",
+      linkText: "Go to Registration"
+    },
+    {
+      id: 2,
       title: "⏰ Team Registration Deadline: September 3, 2026",
       content: "This is a reminder that the deadline for team registration for Smart India Hackathon 2026 is September 3, 2026. No extensions will be granted. Please ensure your team is registered and all details are submitted before this date. Incomplete registrations will be rejected.",
       category: "registration",

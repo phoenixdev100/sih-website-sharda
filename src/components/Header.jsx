@@ -70,7 +70,7 @@ const Header = () => {
                             <h1 className="text-xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent group-hover:from-blue-600 group-hover:to-purple-600 transition-all duration-300">
                                 Sharda University
                             </h1>
-                            <p className="text-xs font-semibold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Internal Hackathon 2026</p>
+                            <p className="text-xs font-semibold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Sharda Smart India Hackathon 2026</p>
                         </div>
                     </Link>
 

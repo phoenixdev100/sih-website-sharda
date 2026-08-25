@@ -211,7 +211,7 @@ const Home = () => {
               <div className="w-20 h-20 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center text-white font-bold text-2xl mx-auto mb-4">
                 2
               </div>
-              <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2">Internal Hackathon</h3>
+              <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2">Sharda Smart India Hackathon</h3>
               <p className="text-sm sm:text-base text-gray-600 mb-2">Aug-Sep 2026</p>
               <p className="text-sm text-gray-500">Campus-level competition</p>
             </div>
@@ -244,10 +244,10 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-              Internal SIH 2025 Glimpses
+              Sharda SIH 2025 Glimpses
             </h2>
             <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
-              Memories from our previous internal hackathon - innovation, collaboration, and success
+              Memories from our previous Sharda Smart India Hackathon - innovation, collaboration, and success
             </p>
           </div>
 

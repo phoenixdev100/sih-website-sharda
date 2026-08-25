@@ -265,7 +265,7 @@ const Registration = () => {
     {
       step: 4,
       title: "Preparation",
-      description: "Get ready for the internal hackathon",
+      description: "Get ready for the Sharda Smart India Hackathon",
       details: [
         "Research your chosen problem deeply",
         "Plan your solution approach",
@@ -544,8 +544,7 @@ const Registration = () => {
               </div>
 
               {/* Modal Content - Scrollable */}
-              <div className="flex-1 overflow-hidden">
-                <div className="h-full overflow-y-auto p-4">
+              <div className="flex-1 overflow-y-auto p-4 min-h-0">
                   <div className="space-y-3">
                     {/* Rule 1 */}
                     <div className="bg-gray-50 rounded p-3 border-l-2 border-blue-500">
@@ -592,6 +591,29 @@ const Registration = () => {
                       </div>
                     </div>
 
+                    {/* Rule 4 */}
+                    <div className="bg-red-50 rounded p-3 border-l-2 border-red-500">
+                      <div className="flex items-start space-x-2">
+                        <div className="w-6 h-6 bg-red-500 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">
+                          4
+                        </div>
+                        <div>
+                          <h3 className="text-base font-bold text-gray-800 mb-1">Faculty Mentor Approval (Mandatory)</h3>
+                          <p className="text-gray-600 text-sm mb-2">
+                            All teams must get <strong>official approval from their selected Faculty Mentor</strong>. The Team Leader must:
+                          </p>
+                          <ul className="text-gray-600 text-sm space-y-1 ml-4 list-disc">
+                            <li>Email the faculty member requesting them to be the team's Faculty Mentor</li>
+                            <li>Take a <strong>screenshot of the approval email</strong> from the faculty mentor</li>
+                            <li>Add the screenshot to <strong>Slide 2 of the presentation</strong></li>
+                          </ul>
+                          <p className="text-red-600 text-sm font-semibold mt-2">
+                            ⚠️ Without clear faculty mentor approval, the team's presentation will NOT be considered for Sharda Smart India Hackathon screening.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
                     {/* Important Note */}
                     <div className="bg-gray-50 rounded p-3 border border-gray-200">
                       <div className="flex items-start space-x-2">
@@ -609,7 +631,6 @@ const Registration = () => {
                       </div>
                     </div>
                   </div>
-                </div>
               </div>
 
               {/* Action Buttons - Fixed at bottom */}

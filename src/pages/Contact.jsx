@@ -222,16 +222,16 @@ const Contact = () => {
             category: "Registration & Timeline",
             questions: [
                 {
-                    q: "When does the Internal Hackathon take place?",
-                    a: "The Internal Hackathon at Sharda University is scheduled for August 2026, as part of the institution-level selection process for SIH 2026."
+                    q: "When does the Sharda Smart India Hackathon take place?",
+                    a: "The Sharda Smart India Hackathon is scheduled for August 2026, as part of the institution-level selection process for SIH 2026."
                 },
                 {
                     q: "What is the complete timeline for SIH 2026?",
-                    a: "Key dates: Internal Hackathon (Aug 2026), Team Nominations & Submissions (Aug-Sep 2026), Screening of Ideas (Sep-Oct 2026), Results Publication (Oct 2026), Mentoring Sessions (Oct 2026), Grand Finale (Dec 2026)."
+                    a: "Key dates: Sharda Smart India Hackathon (Aug 2026), Team Nominations & Submissions (Aug-Sep 2026), Screening of Ideas (Sep-Oct 2026), Results Publication (Oct 2026), Mentoring Sessions (Oct 2026), Grand Finale (Dec 2026)."
                 },
                 {
                     q: "When do registrations close?",
-                    a: "Registration for the Internal Hackathon closes on September 3, 2026. No extensions will be granted, and incomplete registrations will be rejected."
+                    a: "Registration for the Sharda Smart India Hackathon closes on September 3, 2026. No extensions will be granted, and incomplete registrations will be rejected."
                 },
                 {
                     q: "Can I change my team members after registration?",
@@ -280,7 +280,7 @@ const Contact = () => {
                     a: "Yes, you can use existing libraries, APIs, and frameworks, but the core solution must be developed during the hackathon period."
                 },
                 {
-                    q: "What happens after the Internal Hackathon?",
+                    q: "What happens after the Sharda Smart India Hackathon?",
                     a: "Top teams will be nominated for the national SIH 2026, undergo screening (Sep-Oct), receive mentoring (Oct), and potentially qualify for the Grand Finale (Dec 2026)."
                 }
             ]
@@ -290,14 +290,14 @@ const Contact = () => {
     const quickActions = [
         {
             title: "View Problem Statements",
-            description: "Browse all available problem categories for Internal Hackathon",
+            description: "Browse all available problem categories for Sharda Smart India Hackathon",
             icon: "🎯",
             color: "bg-green-500",
             action: "external"
         },
         {
             title: "Join WhatsApp Community",
-            description: "Get instant updates and connect with Internal Hackathon participants",
+            description: "Get instant updates and connect with Sharda Smart India Hackathon participants",
             icon: "💬",
             color: "bg-green-600",
             action: "join"
@@ -320,7 +320,7 @@ const Contact = () => {
             {/* General Query Email Section */}
             <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-lg p-6 sm:p-8 text-white text-center">
                 <h2 className="text-xl sm:text-2xl font-bold mb-2">General Queries</h2>
-                <p className="text-blue-100 text-sm sm:text-base mb-4">For any questions related to SIH 2026 Internal Hackathon, reach out to us at:</p>
+                <p className="text-blue-100 text-sm sm:text-base mb-4">For any questions related to Sharda Smart India Hackathon 2026, reach out to us at:</p>
                 <div className="flex items-center justify-center gap-3 flex-wrap">
                     <a href="mailto:sih.sharda@gmail.com" className="bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors duration-200 flex items-center gap-2">
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -349,9 +349,9 @@ const Contact = () => {
             {/* SIH Coordinators Section */}
             <div>
                 <div className="text-center mb-8 sm:mb-12">
-                    <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4 px-4">Internal Hackathon Student Coordinators</h2>
+                    <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4 px-4">Sharda Smart India Hackathon Student Coordinators</h2>
                     <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
-                        Need help with anything related to Internal Hackathon? Contact our dedicated Internal Hackathon Student Coordinators for assistance
+                        Need help with anything related to Sharda Smart India Hackathon? Contact our dedicated Student Coordinators for assistance
                     </p>
                 </div>
 
@@ -850,7 +850,7 @@ const Contact = () => {
                 <div className="text-center mb-8 sm:mb-12">
                     <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4 sm:mb-6 px-4">Contact & Support</h1>
                     <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
-                        Get in touch with our team for any questions, support, or assistance with Sharda University Internal Hackathon 2026
+                        Get in touch with our team for any questions, support, or assistance with Sharda Smart India Hackathon 2026
                     </p>
                 </div>
 

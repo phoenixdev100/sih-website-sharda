@@ -38,6 +38,17 @@ const Guidelines = () => {
             'Original work and innovative thinking is expected',
             'Follow all venue rules and regulations'
           ]
+        },
+        {
+          title: '⚠️ Faculty Mentor Approval (Mandatory)',
+          items: [
+            'All teams must get official approval from their selected Faculty Mentor',
+            'Team Leader must email the faculty member requesting them to be the Faculty Mentor',
+            'Faculty mentor must reply with their approval',
+            'Take a screenshot of the approval email from the faculty mentor',
+            'Add the screenshot to Slide 2 of the presentation',
+            'Without clear faculty mentor approval, presentation will NOT be considered for Sharda Smart India Hackathon screening'
+          ]
         }
       ]
     },
@@ -127,7 +138,7 @@ const Guidelines = () => {
             'Each team must select a faculty mentor',
             'Problem statement selection',
             'Document submission and verification',
-            'Institution-level internal hackathon',
+            'Sharda Smart India Hackathon',
             'Top teams nomination for national finale'
           ]
         },
@@ -147,7 +158,7 @@ const Guidelines = () => {
             'SPOC Registration deadline: 14 August 2026',
             'Problem statement launch: To be announced',
             'Team registration deadline: September 3, 2026',
-            'Internal hackathon: To be announced',
+            'Sharda Smart India Hackathon: To be announced',
             'Grand finale: To be announced'
           ]
         }

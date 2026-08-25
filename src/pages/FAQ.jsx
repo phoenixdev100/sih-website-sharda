@@ -35,11 +35,11 @@ const FAQ = () => {
       questions: [
         {
           q: "How do I register for SIH 2026?",
-          a: "Registration is done through your institution's internal hackathon. First, form a team of 6 members, participate in your college's internal SIH event, and get selected to represent your institution at the national level."
+          a: "Registration is done through the Sharda Smart India Hackathon. First, form a team of 6 members, participate in the Sharda SIH event, and get selected to represent the institution at the national level."
         },
         {
           q: "When does registration open and close?",
-          a: "Registration for Internal Hackathon opens in August 2026 and closes by August 2026. No extensions will be granted, and incomplete registrations will be rejected. Check with Sharda University coordinators for exact dates."
+          a: "Registration for Sharda Smart India Hackathon opens in August 2026 and closes by August 2026. No extensions will be granted, and incomplete registrations will be rejected. Check with Sharda University coordinators for exact dates."
         },
         {
           q: "Can team members be from different colleges?",
