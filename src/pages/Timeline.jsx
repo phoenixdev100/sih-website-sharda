@@ -32,15 +32,15 @@ const Timeline = () => {
     },
     {
       id: 4,
-      date: "To be announced",
-      title: "Sharda Smart India Hackathon",
-      description: "Institution-level hackathon to select teams for national finale",
+      date: "5 Sept 2026",
+      title: "Screening Round",
+      description: "Online screening via Google Meet to evaluate team presentations and select finalists",
       status: "upcoming",
-      icon: "🏫",
+      icon: "🎥",
       color: "purple",
     },
     {
-      id: 5,
+      id: 6,
       date: "To be announced",
       title: "Final Results Announcement",
       description: "Top teams nominated by institutions and idea submissions on portal",
@@ -49,7 +49,7 @@ const Timeline = () => {
       color: "indigo",
     },
     {
-      id: 6,
+      id: 7,
       date: "To be announced",
       title: "Report Compilation & Portal Upload",
       description: "Compilation of reports and uploading on official SIH portal",
@@ -58,13 +58,13 @@ const Timeline = () => {
       color: "orange",
     },
     {
-      id: 7,
+      id: 8,
       date: "To be announced",
       title: "Grand Finale",
       description: "National-level hackathon finale at nodal centers across India",
       status: "upcoming",
       icon: "🏆",
-      color: "red",
+      color: "red"
     }
   ]
 
@@ -106,8 +106,8 @@ const Timeline = () => {
     },
     {
       name: "Institution Phase",
-      events: [2, 4, 5, 6],
-      description: "Problem statements, Sharda Smart India Hackathon and team nominations",
+      events: [2, 4, 6],
+      description: "Problem statements, screening rounds and team nominations",
       color: "bg-purple-100 text-purple-800"
     },
     {
@@ -288,7 +288,7 @@ const Timeline = () => {
                           </div>
                           <div className="text-left sm:text-right">
                             <div className="bg-blue-500 text-white px-2 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-medium">
-                              September 3, 2026
+                              September 4, 2026
                             </div>
                           </div>
                         </div>
@@ -313,7 +313,7 @@ const Timeline = () => {
                           </div>
                           <div className="text-left sm:text-right">
                             <div className="bg-green-500 text-white px-2 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-medium">
-                              To be announced
+                              10 September 2026
                             </div>
                           </div>
                         </div>
@@ -328,7 +328,7 @@ const Timeline = () => {
                           </div>
                           <div className="text-left sm:text-right">
                             <div className="bg-purple-500 text-white px-2 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-medium">
-                              To be announced
+                              11 September 2026
                             </div>
                           </div>
                         </div>
@@ -371,7 +371,7 @@ const Timeline = () => {
               </li>
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                Team Registration Deadline: September 3, 2026
+                Team Registration Deadline: September 4, 2026
               </li>
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-white rounded-full mr-3"></span>

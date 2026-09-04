@@ -8,6 +8,23 @@ const Announcements = () => {
   const announcements = [
     {
       id: 1,
+      title: "📢 Important: Screening & Final Round Dates Announced",
+      content: "The 1st Screening Round will be held on 5 September 2026 via Google Meet (Online). The Final Round of Sharda Smart India Hackathon is scheduled for 10-11 September 2026. All registered teams should prepare their presentations and prototypes accordingly.",
+      category: "important",
+      priority: "high",
+      date: "2026-09-04",
+      details: [
+        "1st Screening Round: 5 September 2026 (Online Google Meet)",
+        "Final Round: 10-11 September 2026",
+        "Ensure your presentations are ready with faculty mentor approval screenshot on Slide 2",
+        "Selected teams from screening will proceed to the final round",
+        "Top teams from final round will be nominated for national SIH 2026"
+      ],
+      link: "/timeline",
+      linkText: "View Timeline"
+    },
+    {
+      id: 2,
       title: "📢 Important: Faculty Mentor Approval for SIH 2026",
       content: "All teams are required to get official approval from their selected Faculty Mentor. The Team Leader must email the faculty member requesting them to be the team's Faculty Mentor. Once the faculty mentor replies with their approval, the Team Leader must take a screenshot of the approval email and add it to Slide 2 of the presentation. If the team does not have a clear approval/reply from the Faculty Mentor, the team's presentation will not be considered for the Sharda Smart India Hackathon screening.",
       category: "important",
@@ -24,14 +41,14 @@ const Announcements = () => {
       linkText: "Go to Registration"
     },
     {
-      id: 2,
-      title: "⏰ Team Registration Deadline: September 3, 2026",
-      content: "This is a reminder that the deadline for team registration for Smart India Hackathon 2026 is September 3, 2026. No extensions will be granted. Please ensure your team is registered and all details are submitted before this date. Incomplete registrations will be rejected.",
+      id: 3,
+      title: "⏰ Team Registration Deadline: September 4, 2026",
+      content: "This is a reminder that the deadline for team registration for Smart India Hackathon 2026 is September 4, 2026. No extensions will be granted. Please ensure your team is registered and all details are submitted before this date. Incomplete registrations will be rejected.",
       category: "registration",
       priority: "high",
       date: "2026-08-24",
       details: [
-        "Registration closes on September 3, 2026 - no extensions",
+        "Registration closes on September 4, 2026 - no extensions",
         "Teams must have exactly 6 members with at least one female member",
         "All fields in the registration form are mandatory",
         "Incomplete or late registrations will be automatically rejected"
@@ -58,7 +75,7 @@ const Announcements = () => {
     {
       id: 2,
       title: "🚀 Team Registration Has Started!",
-      content: "Team registration for Smart India Hackathon 2026 is now open! Form your teams of 6 members and register before September 3, 2026. Don't miss this opportunity to participate in India's biggest hackathon!",
+      content: "Team registration for Smart India Hackathon 2026 is now open! Form your teams of 6 members and register before September 4, 2026. Don't miss this opportunity to participate in India's biggest hackathon!",
       category: "registration",
       priority: "high",
       date: "2026-08-06",

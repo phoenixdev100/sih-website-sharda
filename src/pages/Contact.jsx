@@ -223,19 +223,19 @@ const Contact = () => {
             questions: [
                 {
                     q: "When does the Sharda Smart India Hackathon take place?",
-                    a: "The Sharda Smart India Hackathon is scheduled for August 2026, as part of the institution-level selection process for SIH 2026."
+                    a: "The 1st Screening Round is on 5 September 2026 (Online Google Meet), and the Final Round is on 10-11 September 2026."
                 },
                 {
                     q: "What is the complete timeline for SIH 2026?",
-                    a: "Key dates: Sharda Smart India Hackathon (Aug 2026), Team Nominations & Submissions (Aug-Sep 2026), Screening of Ideas (Sep-Oct 2026), Results Publication (Oct 2026), Mentoring Sessions (Oct 2026), Grand Finale (Dec 2026)."
+                    a: "Key dates: Team Registration (closes Sept 4), 1st Screening Round (Sept 5 - Online), Final Round (Sept 10-11), Results Publication (Sept 2026), Grand Finale (Dec 2026)."
                 },
                 {
                     q: "When do registrations close?",
-                    a: "Registration for the Sharda Smart India Hackathon closes on September 3, 2026. No extensions will be granted, and incomplete registrations will be rejected."
+                    a: "Registration for the Sharda Smart India Hackathon closes on September 4, 2026. No extensions will be granted, and incomplete registrations will be rejected."
                 },
                 {
                     q: "Can I change my team members after registration?",
-                    a: "Team changes are allowed until the registration deadline on September 3, 2026. After this date, no changes will be permitted except in exceptional circumstances."
+                    a: "Team changes are allowed until the registration deadline on September 4, 2026. After this date, no changes will be permitted except in exceptional circumstances."
                 },
                 {
                     q: "Is there a registration fee?",

@@ -156,9 +156,10 @@ const Guidelines = () => {
           title: 'Important Deadlines',
           items: [
             'SPOC Registration deadline: 14 August 2026',
-            'Problem statement launch: To be announced',
-            'Team registration deadline: September 3, 2026',
-            'Sharda Smart India Hackathon: To be announced',
+            'Problem statement launch: 21 August 2026',
+            'Team registration deadline: September 4, 2026',
+            '1st Screening Round (Online): 5 September 2026',
+            'Sharda Smart India Hackathon Final Round: 10-11 September 2026',
             'Grand finale: To be announced'
           ]
         }
