@@ -205,14 +205,14 @@ const Home = () => {
               <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2">Registration</h3>
               <p className="text-sm sm:text-base text-gray-600">Opens August 2026</p>
               <p className="text-sm text-gray-500">Form your team and register</p>
-              <p className="text-sm font-semibold text-red-600 mt-1">⏰ Deadline: September 4, 2026</p>
+              <p className="text-sm font-semibold text-red-600 mt-1">⏰ Deadline: Sept 5, 2026 11:59 PM</p>
             </div>
             <div className="text-center">
               <div className="w-20 h-20 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center text-white font-bold text-2xl mx-auto mb-4">
                 2
               </div>
               <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2">Sharda Smart India Hackathon</h3>
-              <p className="text-sm sm:text-base text-gray-600 mb-2">5 Sept (Screening) & 10-11 Sept (Final)</p>
+              <p className="text-sm sm:text-base text-gray-600 mb-2">7 Sept (Screening) & 10-11 Sept (Final)</p>
               <p className="text-sm text-gray-500">Online & Campus-level</p>
             </div>
             <div className="text-center">

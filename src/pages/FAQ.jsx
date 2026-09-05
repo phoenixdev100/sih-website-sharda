@@ -39,7 +39,7 @@ const FAQ = () => {
         },
         {
           q: "When does registration open and close?",
-          a: "Registration for Sharda Smart India Hackathon opens in August 2026 and closes on September 4, 2026. The 1st Screening Round is on 5 September 2026 (Online), and the Final Round is on 10-11 September 2026."
+          a: "Registration for Sharda Smart India Hackathon opens in August 2026 and closes on September 5, 2026 at 11:59 PM. The 1st Screening Round is on 7 September 2026 (Online), and the Final Round is on 10-11 September 2026."
         },
         {
           q: "Can team members be from different colleges?",

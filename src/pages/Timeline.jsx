@@ -32,7 +32,7 @@ const Timeline = () => {
     },
     {
       id: 4,
-      date: "5 Sept 2026",
+      date: "7 Sept 2026",
       title: "Screening Round",
       description: "Online screening via Google Meet to evaluate team presentations and select finalists",
       status: "upcoming",
@@ -288,7 +288,7 @@ const Timeline = () => {
                           </div>
                           <div className="text-left sm:text-right">
                             <div className="bg-blue-500 text-white px-2 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-medium">
-                              September 4, 2026
+                              Sept 5, 2026 11:59 PM
                             </div>
                           </div>
                         </div>
@@ -371,7 +371,7 @@ const Timeline = () => {
               </li>
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                Team Registration Deadline: September 4, 2026
+                Team Registration Deadline: September 5, 2026 11:59 PM
               </li>
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-white rounded-full mr-3"></span>

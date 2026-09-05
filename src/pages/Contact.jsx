@@ -223,19 +223,19 @@ const Contact = () => {
             questions: [
                 {
                     q: "When does the Sharda Smart India Hackathon take place?",
-                    a: "The 1st Screening Round is on 5 September 2026 (Online Google Meet), and the Final Round is on 10-11 September 2026."
+                    a: "The 1st Screening Round is on 7 September 2026 (Online Google Meet), and the Final Round is on 10-11 September 2026."
                 },
                 {
                     q: "What is the complete timeline for SIH 2026?",
-                    a: "Key dates: Team Registration (closes Sept 4), 1st Screening Round (Sept 5 - Online), Final Round (Sept 10-11), Results Publication (Sept 2026), Grand Finale (Dec 2026)."
+                    a: "Key dates: Team Registration (closes Sept 5, 11:59 PM), 1st Screening Round (Sept 7 - Online), Final Round (Sept 10-11), Results Publication (Sept 2026), Grand Finale (Dec 2026)."
                 },
                 {
                     q: "When do registrations close?",
-                    a: "Registration for the Sharda Smart India Hackathon closes on September 4, 2026. No extensions will be granted, and incomplete registrations will be rejected."
+                    a: "Registration for the Sharda Smart India Hackathon closes on September 5, 2026 at 11:59 PM. No extensions will be granted, and incomplete registrations will be rejected."
                 },
                 {
                     q: "Can I change my team members after registration?",
-                    a: "Team changes are allowed until the registration deadline on September 4, 2026. After this date, no changes will be permitted except in exceptional circumstances."
+                    a: "Team changes are allowed until the registration deadline on September 5, 2026 11:59 PM. After this date, no changes will be permitted except in exceptional circumstances."
                 },
                 {
                     q: "Is there a registration fee?",
